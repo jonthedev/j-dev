@@ -16,7 +16,7 @@
 
 Online portfolio for some of my work & projects.
 
-I used my [vite-r-ts-starter-pack]() for the base of this project.
+I used my [vite-r-ts-starter-pack](https://github.com/jonthedev/vite-r-ts-starter-pack) for the base of this project.
 
 
 
