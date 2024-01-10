@@ -8,7 +8,7 @@
 
 🌐 https://j-dev.online/
 
-📋 [github readme](https://github.com/jonthedev/jonthedev)
+📋 [My Github Profile](https://github.com/jonthedev/jonthedev)
 
 ---
 
