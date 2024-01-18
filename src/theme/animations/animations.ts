@@ -1,6 +1,20 @@
-import { generateAnimationString } from "./utils"
+export interface GenerateAnimationStringProps {
+  name: string
+  duration?: string
+  timing?: string
+  iterationCount?: string
+  direction?: string
+}
 
-// Updated consistent names
+const generateAnimationString = ({
+  name,
+  duration = "1s",
+  timing = "ease",
+  iterationCount = "infinite",
+  direction = "alternate",
+}: GenerateAnimationStringProps): string =>
+  `${name} ${duration} ${timing} ${iterationCount} ${direction}`
+
 const fadeInDefault = generateAnimationString({ name: "fadeIn" })
 const fadeInSlow = generateAnimationString({ name: "fadeIn", duration: "3s" })
 
