@@ -8,9 +8,9 @@ import svgr from "vite-plugin-svgr"
 import checker from "vite-plugin-checker"
 
 const manualChunks = (id) => {
-  if(id.includes("node_modules")) return "vendor"
+  if (id.includes("node_modules")) return "vendor"
 
-  if(id.includes("components")) return "components"
+  if (id.includes("components")) return "components"
 
   return "main"
 }
@@ -28,7 +28,7 @@ export default defineConfig({
           },
         })
       : undefined,
-      splitVendorChunkPlugin()
+    splitVendorChunkPlugin(),
   ],
   resolve: {
     alias: {
@@ -37,6 +37,7 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "./src/components"),
       "@db": path.resolve(__dirname, "./src/db"),
       "@theme": path.resolve(__dirname, "./src/theme"),
+      "@types": path.resolve(__dirname, "./src/types"),
     },
   },
   test: {
@@ -48,8 +49,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: manualChunks
-      }
-    }
-  }
+        manualChunks: manualChunks,
+      },
+    },
+  },
 })

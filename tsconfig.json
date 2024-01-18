@@ -26,9 +26,10 @@
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@db/*": ["./src/db/*"],
-      "@theme/*": ["./src/theme/*"]
-    }
+      "@theme/*": ["./src/theme/*"],
+      "@types/*": ["./src/types/*"],
+    },
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
 }
