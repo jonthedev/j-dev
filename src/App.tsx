@@ -1,5 +1,5 @@
 import SectionTitle from "@src/components/Typography/Title/SectionTitle"
-import Hacker from "@src/components/SVGR/Hacker"
+import Hacker from "@components/SVGR/Hacker"
 
 function App() {
   return (
