@@ -1,9 +1,8 @@
-import {
-  CssPropertyName,
-  PropertyValue,
-  MergedCssProperty,
-  GenerateAnimationStringProps,
-} from "@src/types/animations/util.type"
+export type CssPropertyName = string
+
+export type PropertyValue = Record<string, string>
+
+export type MergedCssProperty<T extends CssPropertyName> = Record<T, string>
 
 export const mergeCssValues = <T extends CssPropertyName>(
   cssPropertyName: T,
@@ -19,12 +18,3 @@ export const mergeCssValues = <T extends CssPropertyName>(
     `Property ${cssPropertyName} is missing in one of the objects`,
   )
 }
-
-export const generateAnimationString = ({
-  name,
-  duration = "1s",
-  timing = "ease",
-  iterationCount = "infinite",
-  direction = "alternate",
-}: GenerateAnimationStringProps): string =>
-  `${name} ${duration} ${timing} ${iterationCount} ${direction}`
