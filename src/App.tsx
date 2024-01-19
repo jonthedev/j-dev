@@ -1,4 +1,5 @@
 import Navbar from "@components/ui/Navbar"
+import Hero from "./components/ui/Hero"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       data-testid="app"
     >
       <Navbar />
+      <Hero />
     </div>
   )
 }
