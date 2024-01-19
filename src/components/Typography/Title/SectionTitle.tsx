@@ -1,9 +1,11 @@
+import Heading from "../Heading/Heading"
+
 interface SectionTitleProps {
   title: string
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
-  return <h2>{title}</h2>
+  return <Heading variant="h2">{title}</Heading>
 }
 
 export default SectionTitle
