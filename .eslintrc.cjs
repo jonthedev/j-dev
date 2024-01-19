@@ -14,7 +14,6 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.json",
     tsconfigRootDir: __dirname,
-    extraFileExtensions: [".css"],
   },
   rules: {
     "react-refresh/only-export-components": [
