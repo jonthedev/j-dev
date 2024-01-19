@@ -1,12 +1,13 @@
-import SectionTitle from "@src/components/Typography/Title/SectionTitle"
-import Hacker from "@src/components/SVGR/Hacker"
+import Navbar from "@components/ui/Navbar"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <SectionTitle title="This is a title"></SectionTitle>
-      <Hacker />
+    <div
+      className="bg-neutral-900 font-kanit leading-loose"
+      id="home"
+      data-testid="app"
+    >
+      <Navbar />
     </div>
   )
 }

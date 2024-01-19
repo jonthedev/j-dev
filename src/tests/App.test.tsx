@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react"
-import App from "../App"
+import App from "@src/App"
 
-it("should have hello world", () => {
+it("renders App component", () => {
   render(<App />)
-  const message = screen.queryByText(/Hello World/i)
-  expect(message).toBeVisible()
+  const app = screen.getByTestId("app")
+  expect(app).toBeInTheDocument()
 })

@@ -16,8 +16,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "format": "prettier --write --cache \"src/**/*.{ts,tsx,css}\"",
-    "lint": "eslint \"src/**/*.{ts,tsx}\" --cache --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "lint": "eslint --cache src --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint --cache src --fix",
     "preview": "npm run build && vite preview",
     "test": "vitest run",
     "test:ui": "vitest --ui",
@@ -25,8 +25,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "nanoid": "^5.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
@@ -63,7 +65,7 @@
     "vitest-dom": "^0.1.1"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,css}": [
+    "src/**/*.{ts,tsx}": [
       "npm run format",
       "npm run lint:fix",
       "npm run lint"
