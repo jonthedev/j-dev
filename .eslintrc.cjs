@@ -9,11 +9,12 @@ module.exports = {
     "prettier",
   ],
   plugins: ["react-refresh", "@typescript-eslint", "prettier", "jsx-a11y"],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "*.config.*"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "*.config.*", ".css"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "./tsconfig.json",
     tsconfigRootDir: __dirname,
+    extraFileExtensions: [".css"],
   },
   rules: {
     "react-refresh/only-export-components": [
