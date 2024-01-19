@@ -25,7 +25,6 @@ const Navbar = () => {
             )
           })}
         </div>
-        <h1 className="p-4 pt-4 text-slate-300">YOOOOOOOOOO</h1>
       </div>
     </nav>
   )
