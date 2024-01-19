@@ -16,7 +16,7 @@ export const skills: SkillItem[] = [
     title: "HTML & CSS",
     icon: (
       <FaHtml5
-        className="h-11 w-11 md:h-16 md:w-16 text-orange-700"
+        className="h-11 w-11 text-orange-700 md:h-16 md:w-16"
         title="HTML and CSS"
       />
     ),
@@ -27,7 +27,7 @@ export const skills: SkillItem[] = [
     title: "JavaScript",
     icon: (
       <FaJs
-        className="h-11 w-11 md:h-16 md:w-16 text-yellow-500 animate-bounce"
+        className="h-11 w-11 animate-bounce text-yellow-500 md:h-16 md:w-16"
         title="JavaScript"
       />
     ),
@@ -38,7 +38,7 @@ export const skills: SkillItem[] = [
     title: "React",
     icon: (
       <FaReact
-        className="h-11 w-11 md:h-16 md:w-16 text-cyan-400 animate-spin"
+        className="h-11 w-11 animate-spin text-cyan-400 md:h-16 md:w-16"
         title="React"
       />
     ),
@@ -49,7 +49,7 @@ export const skills: SkillItem[] = [
     title: "TypeScript",
     icon: (
       <TbBrandTypescript
-        className="h-11 w-11 md:h-16 md:w-16 text-blue-600 animate-pulse"
+        className="h-11 w-11 animate-pulse text-blue-600 md:h-16 md:w-16"
         title="TypeScript"
       />
     ),
@@ -60,7 +60,7 @@ export const skills: SkillItem[] = [
     title: "Github",
     icon: (
       <FaGithub
-        className="h-11 w-11 md:h-16 md:w-16 text-slate-50 animate-bounce"
+        className="h-11 w-11 animate-bounce text-slate-50 md:h-16 md:w-16"
         title="Github"
       />
     ),
@@ -71,7 +71,7 @@ export const skills: SkillItem[] = [
     title: "CSS Frameworks",
     icon: (
       <TbBrandTailwind
-        className="h-11 w-11 md:h-16 md:w-16 text-cyan-400 animate-spin"
+        className="h-11 w-11 animate-spin text-cyan-400 md:h-16 md:w-16"
         title="Tailwind CSS"
       />
     ),
