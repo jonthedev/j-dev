@@ -11,7 +11,7 @@ const Heading: React.FC<HeadingProps> = ({
   variant = "h1",
   className = "",
 }: HeadingProps) => {
-  const classNames = `font-bold tracking-wider text-slate-50 ${className}`
+  const classNames = `tracking-wider text-slate-50 ${className}`
 
   switch (variant) {
     case "h1":
