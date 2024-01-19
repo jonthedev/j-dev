@@ -28,7 +28,7 @@ export const projects: ProjectItem[] = [
       <img
         src={ProjectANWB}
         alt="Screenshot of the traffic verkeer app"
-        className="w-full object-cover rounded-t-lg h-64"
+        className="h-64 w-full rounded-t-lg object-cover"
       />
     ),
     url: "https://www.anwb.nl/verkeer",
@@ -68,7 +68,7 @@ export const projects: ProjectItem[] = [
       <img
         src={ProjectVanlanschot}
         alt="screenshot of homepage for van lanschot kempen"
-        className="w-full object-cover rounded-t-lg h-64"
+        className="h-64 w-full rounded-t-lg object-cover"
       />
     ),
     url: "https://www.vanlanschotkempen.com/en-nl",
