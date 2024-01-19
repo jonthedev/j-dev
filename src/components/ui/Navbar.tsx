@@ -7,8 +7,8 @@ const Navbar = () => {
       id="navbar"
       data-testid="navbar"
     >
-      <div className="align-element flex flex-col py-4 sm:flex-row sm:items-center sm:gap-x-16 sm:py-8">
-        <h2 className="text-3xl font-bold italic text-amber-600">
+      <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
+        <h2 className="text-3xl font-bold text-amber-600 italic">
           J<span className="text-neutral-50">Dev.</span>
         </h2>
         <div className="flex gap-x-3">
@@ -18,14 +18,13 @@ const Navbar = () => {
               <a
                 key={id}
                 href={href}
-                className="text-lg capitalize tracking-wide text-slate-50 duration-300 hover:text-neutral-500"
+                className="capitalize text-lg tracking-wide text-slate-50 hover:text-neutral-500 duration-300"
               >
                 {text}
               </a>
             )
           })}
         </div>
-        <h1 className="p-4 pt-4 text-slate-300">YOOOOOOOOOO</h1>
       </div>
     </nav>
   )
