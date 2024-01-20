@@ -1,9 +1,9 @@
 import Hacker from "@components/SVGR/Hacker"
-import Heading from "../Typography/Heading/Heading"
-import Text from "../Typography/Text/Text"
-import Link from "../Common/Link"
-import IconGithub from "../Icons/IconGithub"
-import iconLinkedIn from "../Icons/iconLinkedIn"
+import Heading from "@components/Typography/Heading/Heading"
+import Text from "@components/Typography/Text/Text"
+import Link from "@components/Common/Link"
+import IconGithub from "@components/Icons/IconGithub"
+import IconLinkedIn from "@components/Icons/IconLinkedIn"
 
 const Hero = () => {
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
             <Link href="https://github.com/jonthedev" icon={IconGithub}></Link>
             <Link
               href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
-              icon={iconLinkedIn}
+              icon={IconLinkedIn}
             ></Link>
           </div>
         </article>
