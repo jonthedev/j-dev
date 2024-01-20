@@ -1,6 +1,8 @@
 import Navbar from "@components/ui/Navbar"
 import Hero from "./components/ui/Hero"
 
+import TechStack from "./components/ui/TechStack"
+
 function App() {
   return (
     <div
@@ -10,6 +12,7 @@ function App() {
     >
       <Navbar />
       <Hero />
+      <TechStack />
     </div>
   )
 }

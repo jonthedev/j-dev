@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface TextProps {
   children: ReactNode
@@ -11,27 +12,19 @@ const Text: React.FC<TextProps> = ({
   size = "medium",
   className = "",
 }) => {
-  let textSizeClass = ""
-
-  switch (size) {
-    case "small":
-      textSizeClass = "text-xs md:text-sm"
-      break
-    case "large":
-      textSizeClass = "text-xl md:text-2xl"
-      break
-    default:
-      textSizeClass = "text-md md:text-lg"
-      break
+  const textSizeClasses = {
+    small: "text-xs md:text-sm",
+    medium: "text-base md:text-lg",
+    large: "text-xl md:text-2xl",
   }
 
-  return (
-    <p
-      className={`mt-4 ${textSizeClass} capitalize tracking-wide text-slate-50 ${className}`}
-    >
-      {children}
-    </p>
+  const classNames = twMerge(
+    "mt-4 capitalize tracking-wide text-slate-50",
+    textSizeClasses[size],
+    className,
   )
+
+  return <p className={classNames}>{children}</p>
 }
 
 export default Text

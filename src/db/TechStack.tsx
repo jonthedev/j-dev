@@ -3,14 +3,14 @@ import { nanoid } from "nanoid"
 import { FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa"
 import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb"
 
-interface SkillItem {
+interface TechItem {
   id: string
   title: string
   icon: React.ReactElement
   text: string
 }
 
-export const skills: SkillItem[] = [
+export const techStack: TechItem[] = [
   {
     id: nanoid(),
     title: "HTML & CSS",
