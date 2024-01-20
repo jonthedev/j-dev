@@ -1,4 +1,5 @@
 import links from "@src/db/navigationLinks"
+import Heading from "../Typography/Heading/Heading"
 
 const Navbar = () => {
   return (
@@ -8,9 +9,9 @@ const Navbar = () => {
       data-testid="navbar"
     >
       <div className="align-element flex flex-col py-4 sm:flex-row sm:items-center sm:gap-x-16 sm:py-8">
-        <h2 className="text-3xl font-bold italic text-amber-600">
-          J<span className="text-neutral-50">Dev.</span>
-        </h2>
+        <Heading variant="h5" className="italic text-amber-600">
+          J<span className="text-slate-50">Dev.</span>
+        </Heading>
         <div className="flex gap-x-3">
           {links.map((link) => {
             const { id, href, text } = link
