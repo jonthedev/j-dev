@@ -16,7 +16,7 @@ const Link: React.FC<LinkProps> = ({
   children,
   className = "",
 }) => {
-  const baseStyles = "hover:text-neutral-500 text-slate-50"
+  const baseStyles = "hover:text-neutral-500 text-slate-50 cursor-pointer"
 
   const classNames = twMerge(baseStyles, className)
 

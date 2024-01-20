@@ -14,7 +14,7 @@ const Text: React.FC<TextProps> = ({
 }) => {
   const textSizeClasses = {
     small: "text-xs md:text-sm",
-    medium: "text-md md:text-lg",
+    medium: "text-base md:text-lg",
     large: "text-xl md:text-2xl",
   }
 

@@ -15,12 +15,12 @@ const Heading: React.FC<HeadingProps> = ({
   const baseStyles = "tracking-wider text-slate-50"
 
   const headingStyles = {
-    h1: "text-5xl md:text-7xl",
-    h2: "text-4xl md:text-6xl",
-    h3: "text-3xl md:text-5xl",
-    h4: "text-2xl md:text-4xl",
-    h5: "text-xl md:text-3xl",
-    h6: "text-lg md:text-2xl",
+    h1: "text-7xl md:text-8xl",
+    h2: "text-5xl md:text-6xl",
+    h3: "text-3xl md:text-4xl",
+    h4: "text-xl md:text-2xl",
+    h5: "text-base md:text-lg",
+    h6: "text-xs md:text-sm",
   }
 
   const classNames = twMerge(baseStyles, headingStyles[variant], className)

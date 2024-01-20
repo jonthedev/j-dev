@@ -10,10 +10,10 @@ const Hero = () => {
     <div className="py-24">
       <div className="align-element grid items-center gap-8 md:grid-cols-2">
         <article>
-          <Heading variant="h1" className="font-bold">
+          <Heading variant="h2" className="font-bold tracking-wider">
             I'm Jonathan
           </Heading>
-          <Text size="large">Web Developer | Front End Specialist</Text>
+          <Text size="medium">Web Developer | Front End Specialist</Text>
           <Text size="medium">
             London{" "}
             <span role="img" aria-label="Union Jack Flag">
