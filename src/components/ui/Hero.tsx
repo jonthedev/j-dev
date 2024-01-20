@@ -2,8 +2,7 @@ import Hacker from "@components/SVGR/Hacker"
 import Heading from "@components/Typography/Heading/Heading"
 import Text from "@components/Typography/Text/Text"
 import Link from "@components/Common/Link"
-import IconGithub from "@components/Icons/IconGithub"
-import IconLinkedIn from "@components/Icons/IconLinkedIn"
+import Icon from "@components/Icons/Icon"
 
 const Hero = () => {
   return (
@@ -26,11 +25,12 @@ const Hero = () => {
           </Text>
           <Text size="medium">turning ideas into interactive reality</Text>
           <div className="mt-4 flex items-center gap-x-4">
-            <Link href="https://github.com/jonthedev" icon={IconGithub}></Link>
-            <Link
-              href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
-              icon={IconLinkedIn}
-            ></Link>
+            <Link href="https://github.com/jonthedev">
+              <Icon name="github" className="text-slate-50" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/">
+              <Icon name="linkedIn" className="text-blue-500" />
+            </Link>
           </div>
         </article>
         <article className="hidden md:block">
