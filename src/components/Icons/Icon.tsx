@@ -7,7 +7,12 @@ import {
   FaJs,
   FaReact,
   FaPlus,
+  FaBrain,
+  FaCogs,
+  FaRegAddressCard,
+  FaTrophy,
 } from "react-icons/fa"
+import { FaPersonRays } from "react-icons/fa6"
 import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb"
 import { twMerge } from "tailwind-merge"
 
@@ -25,6 +30,11 @@ interface IconProps {
     | "react"
     | "typescript"
     | "tailwind"
+    | "brain"
+    | "cog-wheel"
+    | "reg-address-card"
+    | "trophy"
+    | "person-rays"
     | "plus"
   className?: string
   variant: "base" | "tech-stack"
@@ -39,6 +49,11 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   react: FaReact,
   typescript: TbBrandTypescript,
   tailwind: TbBrandTailwind,
+  brain: FaBrain,
+  "cog-wheel": FaCogs,
+  "reg-address-card": FaRegAddressCard,
+  trophy: FaTrophy,
+  "person-rays": FaPersonRays,
   plus: FaPlus,
 }
 
@@ -53,10 +68,7 @@ const Icon: React.FC<IconProps> = ({
     return null
   }
 
-  const baseIconStyles = twMerge(
-    "h-8 w-8 duration-300 hover:text-neutral-500",
-    className,
-  )
+  const baseIconStyles = twMerge("inline-block", className)
 
   const techStackIconStyles = twMerge("h-11 w-11 md:h-16 md:w-16", className)
 

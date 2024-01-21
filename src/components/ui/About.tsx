@@ -1,9 +1,8 @@
 import J2 from "@assets/J2.png"
 import SectionTitle from "@components/Typography/Title/SectionTitle"
 
-import { FaBrain, FaCogs, FaRegAddressCard, FaTrophy } from "react-icons/fa"
-import { FaPersonRays } from "react-icons/fa6"
-import Text from "../Typography/Text/Text"
+import Text from "@components/Typography/Text/Text"
+import Icon from "@components/Icons/Icon"
 
 const About = () => {
   return (
@@ -15,7 +14,7 @@ const About = () => {
         <article>
           <SectionTitle title="About" />
           <Text size="medium">
-            <FaBrain className="inline-block text-pink-500" />
+            <Icon name="brain" variant="base" className=" text-pink-500" />
             <br />
             Aspiring to become a full-stack developer, I am fueled by the
             dynamic nature of web development and the boundless possibilities it
@@ -26,29 +25,33 @@ const About = () => {
             brainstorm innovative features and discover robust solutions.
           </Text>
           <Text size="medium">
-            <FaCogs className="inline-block text-blue-300" />
+            <Icon name="cog-wheel" variant="base" className=" text-blue-300" />
             <br />I specialize in front-end development, crafting pixel-perfect
             UIs that not only look good but also features that elevate user
             experiences.
           </Text>
           <Text size="medium">
-            <FaTrophy className="inline-block text-yellow-500" />
+            <Icon name="trophy" variant="base" className=" text-yellow-500" />
             <br />
-            Representing <span className="italic"> 'iO'</span> consultancy, I
-            collaborated with JavaScript consultancy{" "}
-            <span className="italic">'Passionate People'</span>. We tackled a
-            complex re brand strategy for ANWB'S multi million user application
-            Traffic Verkeer, which resulted in the team receiving 'Traffic
-            Website Of The Year Award'.
+            Won website of the year award for ANWB's multi-million user web app
+            Traffic Verkeer.
           </Text>
           <Text size="medium">
-            <FaRegAddressCard className="inline-block text-green-500" />
+            <Icon
+              name="reg-address-card"
+              variant="base"
+              className=" text-green-500"
+            />
             <br />I have the legal right to work within the United Kingdom and
             The Netherlands. Opportunities beyond these regions will need a visa
             sponsorship or be 100% remote.
           </Text>
           <Text size="medium">
-            <FaPersonRays className="inline-block text-amber-700" />
+            <Icon
+              name="person-rays"
+              variant="base"
+              className="text-amber-700"
+            />
             <br />
             Beyond coding, I'm a dance and travel enthusiast. Exploring diverse
             cultures fuels my creativity, enriching my approach to web

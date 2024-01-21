@@ -25,11 +25,22 @@ const Hero = () => {
           </Text>
           <Text size="medium">Turning ideas into interactive reality</Text>
           <div className="mt-4 flex items-center gap-x-4">
-            <Link href="https://github.com/jonthedev">
-              <Icon name="github" className="text-slate-50" variant="base" />
+            <Link href="https://github.com/jonthedev" className="link-with-svg">
+              <Icon
+                name="github"
+                className="h-8 w-8 text-slate-50"
+                variant="base"
+              />
             </Link>
-            <Link href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/">
-              <Icon name="linkedIn" className="text-blue-500" variant="base" />
+            <Link
+              href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
+              className="link-with-svg"
+            >
+              <Icon
+                name="linkedIn"
+                className="h-8 w-8 text-blue-500"
+                variant="base"
+              />
             </Link>
           </div>
         </article>
