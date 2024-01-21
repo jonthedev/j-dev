@@ -23,7 +23,7 @@ const Hero = () => {
               🇳🇱
             </span>
           </Text>
-          <Text size="medium">turning ideas into interactive reality</Text>
+          <Text size="medium">Turning ideas into interactive reality</Text>
           <div className="mt-4 flex items-center gap-x-4">
             <Link href="https://github.com/jonthedev">
               <Icon name="github" className="text-slate-50" variant="base" />

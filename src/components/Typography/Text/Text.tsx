@@ -19,7 +19,7 @@ const Text: React.FC<TextProps> = ({
   }
 
   const classNames = twMerge(
-    "mt-4 capitalize tracking-wide text-slate-50",
+    "mt-4 tracking-wide text-slate-50",
     textSizeClasses[size],
     className,
   )
