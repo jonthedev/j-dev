@@ -1,34 +1,46 @@
 import React from "react"
 import { nanoid } from "nanoid"
-import { FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa"
-import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb"
+import Icon from "@src/components/Icons/Icon"
 
-interface TechItem {
+export interface TechStackItem {
   id: string
   title: string
-  icon: React.ReactElement
+  icons?: React.ReactElement[]
+  icon?: React.ReactElement
   text: string
 }
 
-export const techStack: TechItem[] = [
+export const techStack: TechStackItem[] = [
   {
     id: nanoid(),
     title: "HTML & CSS",
-    icon: (
-      <FaHtml5
-        className="h-11 w-11 text-orange-700 md:h-16 md:w-16"
-        title="HTML and CSS"
-      />
-    ),
+    icons: [
+      <Icon
+        className="animate-pulse text-orange-700"
+        name="html"
+        variant="tech-stack"
+      />,
+      <Icon
+        className="mr-2 h-4 w-4 animate-pulse text-slate-50"
+        name="plus"
+        variant="base"
+      />,
+      <Icon
+        className="animate-pulse text-blue-500"
+        name="css"
+        variant="tech-stack"
+      />,
+    ],
     text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
   },
   {
     id: nanoid(),
     title: "JavaScript",
     icon: (
-      <FaJs
-        className="h-11 w-11 animate-bounce text-yellow-500 md:h-16 md:w-16"
-        title="JavaScript"
+      <Icon
+        className="animate-bounce text-yellow-500"
+        name="javascript"
+        variant="tech-stack"
       />
     ),
     text: "Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality.",
@@ -37,9 +49,10 @@ export const techStack: TechItem[] = [
     id: nanoid(),
     title: "React",
     icon: (
-      <FaReact
-        className="h-11 w-11 animate-spin text-cyan-400 md:h-16 md:w-16"
-        title="React"
+      <Icon
+        className="animate-spin text-cyan-400"
+        name="react"
+        variant="tech-stack"
       />
     ),
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
@@ -48,9 +61,10 @@ export const techStack: TechItem[] = [
     id: nanoid(),
     title: "TypeScript",
     icon: (
-      <TbBrandTypescript
-        className="h-11 w-11 animate-pulse text-blue-600 md:h-16 md:w-16"
-        title="TypeScript"
+      <Icon
+        className="animate-pulse text-blue-600"
+        name="typescript"
+        variant="tech-stack"
       />
     ),
     text: "A proficient TypeScript developer, I specialize in building robust and scalable applications, ensuring type safety and enhanced code maintainability.",
@@ -59,9 +73,10 @@ export const techStack: TechItem[] = [
     id: nanoid(),
     title: "Github",
     icon: (
-      <FaGithub
-        className="h-11 w-11 animate-bounce text-slate-50 md:h-16 md:w-16"
-        title="Github"
+      <Icon
+        className="animate-bounce text-slate-50"
+        name="github"
+        variant="tech-stack"
       />
     ),
     text: "Utilizing GitHub as a central hub for seamless collaboration, I leverage its powerful version control features to push forward the evolution of projects.",
@@ -70,9 +85,10 @@ export const techStack: TechItem[] = [
     id: nanoid(),
     title: "CSS Frameworks",
     icon: (
-      <TbBrandTailwind
-        className="h-11 w-11 animate-spin text-cyan-400 md:h-16 md:w-16"
-        title="Tailwind CSS"
+      <Icon
+        className="animate-spin text-cyan-400"
+        name="tailwind"
+        variant="tech-stack"
       />
     ),
     text: "I use CSS frameworks like Tailwind to quickly deploy things like responsive grids, themes, styled forms, buttons, or other important UI elements on web pages and apps.",
