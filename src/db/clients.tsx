@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid"
 import React from "react"
 
-import LogoANWB from "~assets/anwb.svg"
-import LogoVanLanschot from "~assets/van-lanschot-kempen.svg"
+import LogoANWB from "@assets/anwb.svg"
+import LogoVanLanschot from "@assets/van-lanschot-kempen.svg"
 
 interface Client {
   id: string
