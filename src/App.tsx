@@ -2,6 +2,7 @@ import Navbar from "@components/ui/Navbar"
 import Hero from "./components/ui/Hero"
 
 import TechStack from "./components/ui/TechStack"
+import About from "@components/ui/About"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <TechStack />
+      <About />
     </div>
   )
 }
