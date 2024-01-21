@@ -8,9 +8,7 @@ const About = () => {
   return (
     <section className="py-28" id="about">
       <div className="align-element grid items-center gap-16 text-lg md:grid-cols-2 md:text-2xl">
-        <div>
-          <img src={J2} alt="Jonathan looking at a mountain" />
-        </div>
+        <img src={J2} alt="Jonathan looking at a mountain" />
         <article>
           <SectionTitle title="About" />
           <Text size="medium">
