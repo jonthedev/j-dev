@@ -1,7 +1,7 @@
 import { type TechStackItem } from "@db/TechStack"
 import React from "react"
-import Heading from "../Typography/Heading/Heading"
-import Text from "../Typography/Text/Text"
+import Heading from "@components/Typography/Heading/Heading"
+import Text from "@components/Typography/Text/Text"
 
 const TechStackCard: React.FC<TechStackItem> = ({
   icons,
@@ -10,7 +10,7 @@ const TechStackCard: React.FC<TechStackItem> = ({
   text,
 }) => {
   const renderContent = () => {
-    const commonContent = (
+    const baseContent = (
       <>
         <Heading variant="h5" className="mt-6 font-bold italic text-amber-600">
           {title}
@@ -27,14 +27,14 @@ const TechStackCard: React.FC<TechStackItem> = ({
               <React.Fragment key={index}>{i}</React.Fragment>
             ))}
           </div>
-          {commonContent}
+          {baseContent}
         </>
       )
     }
     return (
       <>
         <span>{icon}</span>
-        {commonContent}
+        {baseContent}
       </>
     )
   }

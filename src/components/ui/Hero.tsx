@@ -18,7 +18,7 @@ const Hero = () => {
             <span role="img" aria-label="Union Jack Flag">
               🇬🇧{" "}
             </span>
-            {""}/ Amsterdam{" "}
+            {""}| Amsterdam{" "}
             <span role="img" aria-label="Netherlands Flag">
               🇳🇱
             </span>
