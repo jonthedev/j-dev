@@ -3,6 +3,7 @@ import SectionTitle from "@components/Typography/Title/SectionTitle"
 
 import { FaBrain, FaCogs, FaRegAddressCard, FaTrophy } from "react-icons/fa"
 import { FaPersonRays } from "react-icons/fa6"
+import Text from "../Typography/Text/Text"
 
 const About = () => {
   return (
@@ -13,24 +14,24 @@ const About = () => {
         </div>
         <article>
           <SectionTitle title="About" />
-          <p className="text-md mt-8 leading-loose text-slate-50 md:text-xl">
+          <Text size="medium" className="text-slate-50">
             <FaBrain className="inline-block text-pink-500" />
             <br />
             Aspiring to become a full-stack developer, I am fueled by the
             dynamic nature of web development and the boundless possibilities it
             offers.
-          </p>
-          <p className="text-md mt-8 leading-loose text-slate-50 md:text-xl">
+          </Text>
+          <Text size="medium" className="text-slate-50">
             I thrive on collaborating with like-minded professionals to
             brainstorm innovative features and discover robust solutions.
-          </p>
-          <p className="text-md mt-8 leading-loose text-slate-50 md:text-xl">
+          </Text>
+          <Text size="medium" className="text-slate-50">
             <FaCogs className="inline-block text-blue-300" />
             <br />I specialize in front-end development, crafting pixel-perfect
             UIs that not only look good but also features that elevate user
             experiences.
-          </p>
-          <p className="text-md mt-8 leading-loose text-slate-50 md:text-xl">
+          </Text>
+          <Text size="medium" className="text-slate-50">
             <FaTrophy className="inline-block text-yellow-500" />
             <br />
             Representing <span className="italic"> 'iO'</span> consultancy, I
@@ -39,20 +40,20 @@ const About = () => {
             complex re brand strategy for ANWB'S multi million user application
             Traffic Verkeer, which resulted in the team receiving 'Traffic
             Website Of The Year Award'.
-          </p>
-          <p className="text-md mt-8 leading-loose text-slate-50 md:text-xl">
+          </Text>
+          <Text size="medium" className="text-slate-50">
             <FaRegAddressCard className="inline-block text-green-500" />
             <br />I have the legal right to work within the United Kingdom and
             The Netherlands. Opportunities beyond these regions will need a visa
             sponsorship or be 100% remote.
-          </p>
-          <p className="text-md mt-8 leading-loose text-slate-50 md:text-xl">
+          </Text>
+          <Text size="medium" className="text-slate-50">
             <FaPersonRays className="inline-block text-amber-700" />
             <br />
             Beyond coding, I'm a dance and travel enthusiast. Exploring diverse
             cultures fuels my creativity, enriching my approach to web
             development.
-          </p>
+          </Text>
         </article>
       </div>
     </section>
