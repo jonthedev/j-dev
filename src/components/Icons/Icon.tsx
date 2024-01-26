@@ -13,7 +13,7 @@ import {
   FaTrophy,
 } from "react-icons/fa"
 import { FaPersonRays } from "react-icons/fa6"
-import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb"
+import { TbBrandTailwind, TbBrandTypescript, TbWorldWww } from "react-icons/tb"
 import { twMerge } from "tailwind-merge"
 
 interface IconSVGComponentsProps extends React.SVGProps<SVGSVGElement> {
@@ -36,6 +36,7 @@ interface IconProps {
     | "trophy"
     | "person-rays"
     | "plus"
+    | "www"
   className?: string
   variant: "base" | "tech-stack"
 }
@@ -55,6 +56,7 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   trophy: FaTrophy,
   "person-rays": FaPersonRays,
   plus: FaPlus,
+  www: TbWorldWww,
 }
 
 const Icon: React.FC<IconProps> = ({
