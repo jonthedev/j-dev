@@ -1,14 +1,14 @@
 import { nanoid } from "nanoid"
 import React from "react"
-import { SiChakraui, SiStorybook, SiStyledcomponents } from "react-icons/si"
-import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb"
 
 import ProjectVanlanschot from "@assets/project-vanlanschot.png"
 import ProjectANWB from "@assets/project-anwb-traffic-verkeer.png"
+import { IconProps } from "@src/components/Icons/Icon"
 
 interface TechItem {
   id: string
-  icon: React.ReactElement
+  icon: IconProps["name"]
+  classname: string
 }
 
 export interface ProjectItem {
@@ -38,27 +38,18 @@ export const projects: ProjectItem[] = [
     tech: [
       {
         id: nanoid(),
-        icon: (
-          <TbBrandTypescript
-            className="h-7 w-7 text-blue-600"
-            title="TypeScript"
-          />
-        ),
+        icon: "typescript",
+        classname: "text-blue-600",
       },
       {
         id: nanoid(),
-        icon: (
-          <TbBrandNextjs className="h-7 w-7 text-slate-50" title="Next JS" />
-        ),
+        icon: "nextjs",
+        classname: "text-slate-50",
       },
       {
         id: nanoid(),
-        icon: (
-          <SiStyledcomponents
-            className="h-7 w-7 text-pink-300"
-            title="Styled Components"
-          />
-        ),
+        icon: "styled-comp",
+        classname: "text-pink-300",
       },
     ],
   },
@@ -78,28 +69,23 @@ export const projects: ProjectItem[] = [
     tech: [
       {
         id: nanoid(),
-        icon: (
-          <TbBrandTypescript
-            className="h-7 w-7 text-blue-600"
-            title="TypeScript"
-          />
-        ),
+        icon: "typescript",
+        classname: "text-blue-600",
       },
       {
         id: nanoid(),
-        icon: (
-          <TbBrandNextjs className="h-7 w-7 text-slate-50" title="Next JS" />
-        ),
+        icon: "nextjs",
+        classname: "text-slate-50",
       },
       {
         id: nanoid(),
-        icon: <SiChakraui className="h-7 w-7 text-sky-300" title="Chakra UI" />,
+        icon: "chakra-ui",
+        classname: "text-sky-300",
       },
       {
         id: nanoid(),
-        icon: (
-          <SiStorybook className="h-7 w-7 text-pink-500" title="Story Book" />
-        ),
+        icon: "storybook",
+        classname: "text-pink-500",
       },
     ],
   },

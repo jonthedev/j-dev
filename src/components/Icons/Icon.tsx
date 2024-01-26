@@ -13,32 +13,23 @@ import {
   FaTrophy,
 } from "react-icons/fa"
 import { FaPersonRays } from "react-icons/fa6"
-import { TbBrandTailwind, TbBrandTypescript, TbWorldWww } from "react-icons/tb"
+import { SiChakraui, SiStyledcomponents, SiStorybook } from "react-icons/si"
+import {
+  TbBrandTailwind,
+  TbBrandTypescript,
+  TbWorldWww,
+  TbBrandNextjs,
+} from "react-icons/tb"
 import { twMerge } from "tailwind-merge"
 
 interface IconSVGComponentsProps extends React.SVGProps<SVGSVGElement> {
   title?: string
 }
 
-interface IconProps {
-  name:
-    | "github"
-    | "linkedIn"
-    | "html"
-    | "css"
-    | "javascript"
-    | "react"
-    | "typescript"
-    | "tailwind"
-    | "brain"
-    | "cog-wheel"
-    | "reg-address-card"
-    | "trophy"
-    | "person-rays"
-    | "plus"
-    | "www"
+export interface IconProps {
+  name: keyof typeof iconSVGComponents
   className?: string
-  variant: "base" | "tech-stack"
+  variant: "base" | "tech-stack" | "project-card"
 }
 
 const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
@@ -57,6 +48,10 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   "person-rays": FaPersonRays,
   plus: FaPlus,
   www: TbWorldWww,
+  nextjs: TbBrandNextjs,
+  "styled-comp": SiStyledcomponents,
+  "chakra-ui": SiChakraui,
+  storybook: SiStorybook,
 }
 
 const Icon: React.FC<IconProps> = ({
@@ -74,6 +69,8 @@ const Icon: React.FC<IconProps> = ({
 
   const techStackIconStyles = twMerge("h-11 w-11 md:h-16 md:w-16", className)
 
+  const projectCardIconStyles = twMerge("h-6 w-6 md:h-8 md:w-8", className)
+
   if (variant === "tech-stack") {
     return (
       <SelectedIcon
@@ -82,6 +79,10 @@ const Icon: React.FC<IconProps> = ({
         aria-label={name}
       />
     )
+  }
+
+  if (variant === "project-card") {
+    return <SelectedIcon title="name" className={projectCardIconStyles} />
   }
 
   return <SelectedIcon className={baseIconStyles} title={name} />
