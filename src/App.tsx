@@ -4,6 +4,7 @@ import Hero from "./components/ui/Hero"
 import TechStack from "./components/ui/TechStack"
 import About from "@components/ui/About"
 import Clients from "@components/ui/Clients"
+import Projects from "@components/ui/Projects"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <TechStack />
       <About />
       <Clients />
+      <Projects />
     </div>
   )
 }

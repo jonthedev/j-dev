@@ -11,7 +11,7 @@ interface TechItem {
   icon: React.ReactElement
 }
 
-interface ProjectItem {
+export interface ProjectItem {
   id: string
   img: React.ReactElement
   url: string
