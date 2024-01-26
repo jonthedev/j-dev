@@ -13,10 +13,8 @@ const About = () => {
           <SectionTitle title="About" />
           <Text size="medium">
             <Icon name="brain" variant="base" className=" text-pink-500" />
-            <br />
-            Aspiring to become a full-stack developer, I am fueled by the
-            dynamic nature of web development and the boundless possibilities it
-            offers.
+            <br />I am fueled by the dynamic nature of web development and the
+            boundless possibilities it offers.
           </Text>
           <Text size="medium">
             I thrive on collaborating with like-minded professionals to
@@ -25,8 +23,7 @@ const About = () => {
           <Text size="medium">
             <Icon name="cog-wheel" variant="base" className=" text-blue-300" />
             <br />I specialize in front-end development, crafting pixel-perfect
-            UIs that not only look good but also features that elevate user
-            experiences.
+            UI's that elevate user experiences.
           </Text>
           <Text size="medium">
             <Icon name="trophy" variant="base" className=" text-yellow-500" />
@@ -40,9 +37,10 @@ const About = () => {
               variant="base"
               className=" text-green-500"
             />
-            <br />I have the legal right to work within the United Kingdom and
-            The Netherlands. Opportunities beyond these regions will need a visa
-            sponsorship or be 100% remote.
+            <br />
+            Legal right to work within the United Kingdom and The Netherlands.
+            Opportunities beyond these regions will need a visa sponsorship or
+            be 100% remote.
           </Text>
           <Text size="medium">
             <Icon
