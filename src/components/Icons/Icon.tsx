@@ -11,6 +11,7 @@ import {
   FaCogs,
   FaRegAddressCard,
   FaTrophy,
+  FaCopyright,
 } from "react-icons/fa"
 import { FaPersonRays } from "react-icons/fa6"
 import { SiChakraui, SiStyledcomponents, SiStorybook } from "react-icons/si"
@@ -52,6 +53,7 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   "styled-comp": SiStyledcomponents,
   "chakra-ui": SiChakraui,
   storybook: SiStorybook,
+  copyright: FaCopyright,
 }
 
 const Icon: React.FC<IconProps> = ({
@@ -65,7 +67,7 @@ const Icon: React.FC<IconProps> = ({
     return null
   }
 
-  const baseIconStyles = twMerge("inline-block", className)
+  const baseIconStyles = twMerge("inline-block text-slate-50", className)
 
   const techStackIconStyles = twMerge("h-11 w-11 md:h-16 md:w-16", className)
 
