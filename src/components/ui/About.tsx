@@ -3,11 +3,12 @@ import SectionTitle from "@components/Typography/Title/SectionTitle"
 
 import Text from "@components/Typography/Text/Text"
 import Icon from "@components/Icons/Icon"
+import Section from "../Common/Section"
 
 const About = () => {
   return (
-    <section className="py-28" id="about">
-      <div className="align-element grid items-center gap-16 text-lg md:grid-cols-2 md:text-2xl">
+    <Section id="about">
+      <div className="grid items-center gap-16 text-lg md:grid-cols-2 md:text-2xl">
         <img src={J2} alt="Jonathan looking at a mountain" />
         <article>
           <SectionTitle title="About" />
@@ -55,7 +56,7 @@ const About = () => {
           </Text>
         </article>
       </div>
-    </section>
+    </Section>
   )
 }
 export default About

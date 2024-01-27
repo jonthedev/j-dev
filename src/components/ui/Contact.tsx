@@ -3,11 +3,12 @@ import Link from "@components/Common/Link"
 import Icon from "@components/Icons/Icon"
 import PhoneNumber from "@components/ui/PhoneNumber"
 import Text from "@components/Typography/Text/Text"
+import Section from "@components/Common/Section"
 
 const Contact = () => {
   return (
     <footer>
-      <section className="align-element pb-5 pt-20" id="contact">
+      <Section className="pb-5" id="contact">
         <SectionTitle title="Contact" />
         <div className="mt-4 flex flex-col items-start">
           <PhoneNumber countryFlag="🇬🇧" phoneNumber="447729268750" />
@@ -30,7 +31,7 @@ const Contact = () => {
           <span className="ml-2 italic text-amber-600">J</span>
           <span className="italic">Dev.</span>
         </Text>
-      </section>
+      </Section>
     </footer>
   )
 }
