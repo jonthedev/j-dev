@@ -11,6 +11,12 @@ const TechStack = () => {
           return <TechStackCard key={techStackItem.id} {...techStackItem} />
         })}
       </div>
+      <SectionTitle title="Back End" />
+      <div className="grid gap-8 py-16 md:grid-cols-2 lg:grid-cols-3">
+        {techStack.map((techStackItem) => {
+          return <TechStackCard key={techStackItem.id} {...techStackItem} />
+        })}
+      </div>
     </section>
   )
 }
