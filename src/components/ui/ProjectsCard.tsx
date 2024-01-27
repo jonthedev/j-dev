@@ -1,5 +1,5 @@
 import Icon from "@components/Icons/Icon"
-import Link from "../Common/Link"
+import Link from "@components/Common/Link"
 import { ProjectItem } from "@src/db/projects"
 import Text from "@components/Typography/Text/Text"
 import Heading from "@components/Typography/Heading/Heading"

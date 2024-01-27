@@ -1,11 +1,11 @@
 import Navbar from "@components/ui/Navbar"
-import Hero from "./components/ui/Hero"
+import Hero from "@components/ui/Hero"
 
-import TechStack from "./components/ui/TechStack"
+import TechStack from "@components/ui/TechStack"
 import About from "@components/ui/About"
 import Clients from "@components/ui/Clients"
 import Projects from "@components/ui/Projects"
-import Contact from "./components/ui/Contact"
+import Contact from "@components/ui/Contact"
 
 function App() {
   return (

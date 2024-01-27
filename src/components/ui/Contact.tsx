@@ -1,7 +1,7 @@
 import { FaCopyright } from "react-icons/fa"
 import SectionTitle from "@components/Typography/Title/SectionTitle"
-import Link from "../Common/Link"
-import Icon from "../Icons/Icon"
+import Link from "@components/Common/Link"
+import Icon from "@components/Icons/Icon"
 
 const Contact = () => {
   return (
