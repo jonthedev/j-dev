@@ -8,7 +8,7 @@ export interface NavigationItem {
 
 const navigationLinks: NavigationItem[] = [
   { id: nanoid(), href: "#home", text: "home" },
-  { id: nanoid(), href: "#skills", text: "skills" },
+  { id: nanoid(), href: "#tech", text: "tech" },
   { id: nanoid(), href: "#about", text: "about" },
   { id: nanoid(), href: "#projects", text: "projects" },
   { id: nanoid(), href: "#contact", text: "contact" },

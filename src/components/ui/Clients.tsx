@@ -1,10 +1,11 @@
 import clients from "@db/clients"
 
 import SectionTitle from "@components/Typography/Title/SectionTitle"
+import Section from "@components/Common/Section"
 
 const Clients = () => {
   return (
-    <section className="align-element" id="skills">
+    <Section>
       <SectionTitle title="Clients" />
       <div className="grid grid-cols-2 gap-8 py-16 md:grid-cols-2">
         {clients.map((client) => {
@@ -18,7 +19,7 @@ const Clients = () => {
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 

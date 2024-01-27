@@ -1,13 +1,16 @@
 import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface SectionProps {
-  id: string
+  id?: string
   children: ReactNode
+  className?: string
 }
 
-const Section: React.FC<SectionProps> = ({ id, children }) => {
+const Section: React.FC<SectionProps> = ({ id, className, children }) => {
+  const baseStylesSection = twMerge("align-element py-28", className)
   return (
-    <section className="align-element py-28" id={id}>
+    <section className={baseStylesSection} id={id}>
       {children}
     </section>
   )
