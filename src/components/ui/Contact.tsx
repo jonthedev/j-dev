@@ -2,7 +2,7 @@ import SectionTitle from "@components/Typography/Title/SectionTitle"
 import Link from "@components/Common/Link"
 import Icon from "@components/Icons/Icon"
 import PhoneNumber from "@components/ui/PhoneNumber"
-import Text from "../Typography/Text/Text"
+import Text from "@components/Typography/Text/Text"
 
 const Contact = () => {
   return (
@@ -14,8 +14,7 @@ const Contact = () => {
           <PhoneNumber countryFlag="🇳🇱" phoneNumber="31645170103" />
           <Link
             href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
-            target="_blank"
-            rel="noreferrer"
+            isExternal={true}
             className="link-with-svg"
           >
             <Icon
@@ -25,11 +24,10 @@ const Contact = () => {
             />
           </Link>
         </div>
-
         <Text className="ml-2 flex items-center justify-center" size="medium">
           <Icon variant="base" name="copyright" className="mr-1" />
           {new Date().getFullYear()}{" "}
-          <span className="ml-2 text-amber-600">J</span>
+          <span className="ml-2 italic text-amber-600">J</span>
           <span className="italic">Dev.</span>
         </Text>
       </section>

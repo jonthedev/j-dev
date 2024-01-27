@@ -20,6 +20,7 @@ const Navbar = () => {
               <Link
                 key={id}
                 href={href}
+                isExternal={false}
                 className="text-md capitalize duration-300 md:text-lg"
               >
                 {text}

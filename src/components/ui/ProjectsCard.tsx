@@ -32,8 +32,7 @@ const ProjectsCard = ({ url, img, github, title, text, tech }: ProjectItem) => {
         <div className="my-4 flex gap-x-4 px-4">
           <Link
             href={url}
-            target="_blank"
-            rel="noreferrer"
+            isExternal={true}
             className="link-with-svg animate-pulse"
           >
             <Icon variant="base" name="www" className="h-8 w-8 " />
@@ -41,8 +40,7 @@ const ProjectsCard = ({ url, img, github, title, text, tech }: ProjectItem) => {
           {github && (
             <Link
               href={github}
-              target="_blank"
-              rel="noreferrer"
+              isExternal={true}
               className="link-with-svg animate-pulse"
             >
               <Icon variant="base" name="github" className="h-8 w-8" />
