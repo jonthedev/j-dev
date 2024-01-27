@@ -1,8 +1,8 @@
-import { FaCopyright } from "react-icons/fa"
 import SectionTitle from "@components/Typography/Title/SectionTitle"
 import Link from "@components/Common/Link"
 import Icon from "@components/Icons/Icon"
 import PhoneNumber from "@components/ui/PhoneNumber"
+import Text from "../Typography/Text/Text"
 
 const Contact = () => {
   return (
@@ -25,13 +25,13 @@ const Contact = () => {
             />
           </Link>
         </div>
-        <div className="md:text-md flex items-center justify-center pt-4 text-sm tracking-wide text-slate-50">
-          <FaCopyright />{" "}
-          <span className="ml-2 italic">
-            {new Date().getFullYear()} <span className="text-amber-600">J</span>
-            <span className="italic">Dev.</span>
-          </span>
-        </div>
+
+        <Text className="ml-2 flex items-center justify-center" size="medium">
+          <Icon variant="base" name="copyright" className="mr-1" />
+          {new Date().getFullYear()}{" "}
+          <span className="ml-2 text-amber-600">J</span>
+          <span className="italic">Dev.</span>
+        </Text>
       </section>
     </footer>
   )
