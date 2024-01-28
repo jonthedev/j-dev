@@ -14,18 +14,6 @@
 
 ## About J Dev
 
-This project is an update of the original [jdev](https://github.com/jonthedev/jdev) repo to include TypeScript.
+Web Developer Portfolio space for Jonathan D Kaonga
 
 I used my [vite-r-ts-starter-pack](https://github.com/jonthedev/vite-r-ts-starter-pack) for the base of this project.
-
-
-
-
-
-
-
-
-
-
-
-
