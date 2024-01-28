@@ -4,6 +4,7 @@ import SectionTitle from "@components/Typography/Title/SectionTitle"
 import Text from "@components/Typography/Text/Text"
 import Icon from "@components/Icons/Icon"
 import Section from "../Common/Section"
+import Spacer from "@components/Common/Spacer"
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
         <img src={J2} alt="Jonathan looking at a mountain" />
         <article>
           <SectionTitle title="About" />
+          <Spacer size="large" />
           <Text size="medium">
             <Icon name="brain" variant="base" className=" text-pink-500" />
             <br />I am fueled by the dynamic nature of web development and the

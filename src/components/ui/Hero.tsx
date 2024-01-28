@@ -3,7 +3,7 @@ import Heading from "@components/Typography/Heading/Heading"
 import Text from "@components/Typography/Text/Text"
 import Link from "@components/Common/Link"
 import Icon from "@components/Icons/Icon"
-import Section from "../Common/Section"
+import Section from "@components/Common/Section"
 
 const Hero = () => {
   return (
