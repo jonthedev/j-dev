@@ -9,7 +9,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
     <>
       <Heading
         variant="h3"
-        className="border-b border-gray-200 pb-5 font-medium tracking-wide md:pb-9 "
+        className="border-b border-gray-200 pb-5 font-medium tracking-wide md:pb-6 "
       >
         {title}.
       </Heading>
