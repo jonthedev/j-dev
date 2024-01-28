@@ -1,4 +1,4 @@
-import Heading from "../Heading/Heading"
+import Heading from "@components/Typography/Heading/Heading"
 
 interface SectionTitleProps {
   title: string
@@ -6,12 +6,14 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
   return (
-    <Heading
-      variant="h3"
-      className="border-b border-gray-200 pb-5 font-medium tracking-wider"
-    >
-      {title}.
-    </Heading>
+    <>
+      <Heading
+        variant="h3"
+        className="border-b border-gray-200 pb-5 font-medium tracking-wide md:pb-6 "
+      >
+        {title}.
+      </Heading>
+    </>
   )
 }
 

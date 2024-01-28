@@ -4,13 +4,15 @@ import Icon from "@components/Icons/Icon"
 import PhoneNumber from "@components/ui/PhoneNumber"
 import Text from "@components/Typography/Text/Text"
 import Section from "@components/Common/Section"
+import Spacer from "@components/Common/Spacer"
 
 const Contact = () => {
   return (
     <footer>
-      <Section className="pb-5" id="contact">
+      <Section id="contact" className="pb-4">
         <SectionTitle title="Contact" />
-        <div className="mt-4 flex flex-col items-start">
+        <Spacer size="small" />
+        <div className="flex flex-col items-start">
           <PhoneNumber countryFlag="🇬🇧" phoneNumber="447729268750" />
           <PhoneNumber countryFlag="🇳🇱" phoneNumber="31645170103" />
           <Link

@@ -12,7 +12,7 @@ const Text: React.FC<TextProps> = ({
   size = "medium",
   className = "",
 }) => {
-  const textSizeClasses = {
+  const textSizeStyles = {
     small: "text-xs md:text-sm",
     medium: "text-base md:text-lg",
     large: "text-xl md:text-2xl",
@@ -20,7 +20,7 @@ const Text: React.FC<TextProps> = ({
 
   const classNames = twMerge(
     "mt-4 tracking-wide text-slate-50",
-    textSizeClasses[size],
+    textSizeStyles[size],
     className,
   )
 
