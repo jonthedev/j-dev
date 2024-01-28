@@ -8,7 +8,7 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ id, className, children }) => {
-  const baseStylesSection = twMerge("align-element py-28", className)
+  const baseStylesSection = twMerge("align-element", className)
   return (
     <section className={baseStylesSection} id={id}>
       {children}

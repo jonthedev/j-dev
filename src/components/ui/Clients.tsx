@@ -7,7 +7,7 @@ const Clients = () => {
   return (
     <Section>
       <SectionTitle title="Clients" />
-      <div className="grid grid-cols-2 gap-8 py-16 md:grid-cols-2">
+      <div className="grid grid-cols-2 gap-8 md:grid-cols-2">
         {clients.map((client) => {
           return (
             <article

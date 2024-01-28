@@ -7,7 +7,7 @@ const TechStack = () => {
   return (
     <Section id="tech">
       <SectionTitle title="Tech Stack" />
-      <div className="grid gap-8 py-16 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {techStack.map((techStackItem) => {
           return <TechStackCard key={techStackItem.id} {...techStackItem} />
         })}

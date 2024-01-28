@@ -8,9 +8,9 @@ import Section from "@components/Common/Section"
 const Contact = () => {
   return (
     <footer>
-      <Section className="pb-5" id="contact">
+      <Section id="contact">
         <SectionTitle title="Contact" />
-        <div className="mt-4 flex flex-col items-start">
+        <div className="flex flex-col items-start">
           <PhoneNumber countryFlag="🇬🇧" phoneNumber="447729268750" />
           <PhoneNumber countryFlag="🇳🇱" phoneNumber="31645170103" />
           <Link

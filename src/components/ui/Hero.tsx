@@ -3,11 +3,12 @@ import Heading from "@components/Typography/Heading/Heading"
 import Text from "@components/Typography/Text/Text"
 import Link from "@components/Common/Link"
 import Icon from "@components/Icons/Icon"
+import Section from "../Common/Section"
 
 const Hero = () => {
   return (
-    <div className="py-24">
-      <div className="align-element grid items-center gap-8 md:grid-cols-2">
+    <Section id="hero">
+      <div className="grid items-center gap-8 md:grid-cols-2">
         <article>
           <Heading variant="h2" className="font-bold tracking-wider">
             I'm Jonathan
@@ -53,7 +54,7 @@ const Hero = () => {
           <Hacker />
         </article>
       </div>
-    </div>
+    </Section>
   )
 }
 export default Hero

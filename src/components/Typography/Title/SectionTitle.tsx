@@ -5,10 +5,11 @@ interface SectionTitleProps {
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
+  //pb-5
   return (
     <Heading
       variant="h3"
-      className="border-b border-gray-200 pb-5 font-medium tracking-wider"
+      className=" border-b border-gray-200 font-medium tracking-wider"
     >
       {title}.
     </Heading>
