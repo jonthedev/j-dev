@@ -5,7 +5,7 @@ import Section from "@components/Common/Section"
 
 const Clients = () => {
   return (
-    <Section>
+    <Section id="client">
       <SectionTitle title="Clients" />
       <div className="grid grid-cols-2 gap-8 md:grid-cols-2">
         {clients.map((client) => {

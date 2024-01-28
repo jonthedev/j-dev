@@ -8,7 +8,7 @@ import Section from "@components/Common/Section"
 const Contact = () => {
   return (
     <footer>
-      <Section id="contact">
+      <Section id="contact" className="pb-4">
         <SectionTitle title="Contact" />
         <div className="flex flex-col items-start">
           <PhoneNumber countryFlag="🇬🇧" phoneNumber="447729268750" />
