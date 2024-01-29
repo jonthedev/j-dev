@@ -1,14 +1,14 @@
-## Introduction
+# Introduction
 
 🥷 Jonathan Kaonga
 
-🚀 Web / Creative Developer
+🚀 Web Developer | Front End Specialist
 
-📍 London 🇬🇧 / Amsterdam 🇳🇱
+📍 London 🇬🇧 | Amsterdam 🇳🇱
 
 🌐 https://j-dev.online/
 
-📋 [My Github Profile](https://github.com/jonthedev/jonthedev)
+[![LinkedIn](https://img.shields.io/badge/linkedin-f0f0f0?&style=for-the-badge&logo=linkedin&logoColor=white&color=0e76a8)](https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/)
 
 ---
 
