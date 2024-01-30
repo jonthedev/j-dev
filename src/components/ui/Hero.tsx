@@ -48,6 +48,13 @@ const Hero = () => {
                 variant="base"
               />
             </Link>
+            <Link
+              isExternal={true}
+              href="https://www.j-dev.online"
+              className="text-amber-600"
+            >
+              www.j-dev.online
+            </Link>
           </div>
         </article>
         <article className="hidden md:block">
