@@ -11,7 +11,7 @@ const ProjectsCard = ({ url, img, github, title, text, tech }: ProjectItem) => {
         {img}
         <div className="my-4 flex items-center justify-between px-4">
           <Heading variant="h5" className="tracking-wide text-amber-600">
-            {title}yo
+            {title}
           </Heading>
           <div className="flex">
             {tech.map(({ id, icon, classname }) => {
