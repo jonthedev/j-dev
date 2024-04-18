@@ -14,7 +14,12 @@ import {
   FaCopyright,
 } from "react-icons/fa"
 import { FaPersonRays } from "react-icons/fa6"
-import { SiChakraui, SiStyledcomponents, SiStorybook } from "react-icons/si"
+import {
+  SiChakraui,
+  SiStyledcomponents,
+  SiStorybook,
+  SiGraphql,
+} from "react-icons/si"
 import {
   TbBrandTailwind,
   TbBrandTypescript,
@@ -43,6 +48,7 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   typescript: TbBrandTypescript,
   tailwind: TbBrandTailwind,
   brain: FaBrain,
+  graphql: SiGraphql,
   "cog-wheel": FaCogs,
   "reg-address-card": FaRegAddressCard,
   trophy: FaTrophy,

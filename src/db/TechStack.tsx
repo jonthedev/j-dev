@@ -93,4 +93,16 @@ export const techStack: TechStackItem[] = [
     ),
     text: "I use CSS frameworks like Tailwind to quickly deploy things like responsive grids, themes, styled forms, buttons, or other important UI elements on web pages and apps.",
   },
+  {
+    id: nanoid(),
+    title: "GraphQL",
+    icon: (
+      <Icon
+        className="animate-pulse text-pink-650"
+        name="graphql"
+        variant="tech-stack"
+      />
+    ),
+    text: "Experienced in utilizing GraphQL within React/Next.js applications for efficient client-side data fetching.",
+  },
 ]
