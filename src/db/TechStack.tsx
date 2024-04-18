@@ -1,6 +1,7 @@
 import React from "react"
 import { nanoid } from "nanoid"
 import Icon from "@src/components/Icons/Icon"
+import { twMerge } from "tailwind-merge"
 
 export interface TechStackItem {
   id: string
@@ -92,5 +93,17 @@ export const techStack: TechStackItem[] = [
       />
     ),
     text: "I use CSS frameworks like Tailwind to quickly deploy things like responsive grids, themes, styled forms, buttons, or other important UI elements on web pages and apps.",
+  },
+  {
+    id: nanoid(),
+    title: "GraphQL",
+    icon:
+      //prettier-ignore
+      <Icon
+        className={twMerge("animate-pulse text-pink-650")}
+        name="graphql"
+        variant="tech-stack"
+      />,
+    text: "Experienced in utilizing GraphQL within React/Next.js applications for efficient client-side data fetching.",
   },
 ]
