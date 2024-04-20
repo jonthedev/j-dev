@@ -14,16 +14,6 @@ const Hero = () => {
             I'm Jonathan
           </Heading>
           <Text size="medium">Web Developer | Front End Specialist</Text>
-          <Text size="medium">
-            London{" "}
-            <span role="img" aria-label="Union Jack Flag">
-              🇬🇧{" "}
-            </span>
-            {""}&harr; Amsterdam{" "}
-            <span role="img" aria-label="Netherlands Flag">
-              🇳🇱
-            </span>
-          </Text>
           <Text size="medium">Turning ideas into interactive reality</Text>
           <div className="mt-4 flex items-center gap-x-4">
             <Link
