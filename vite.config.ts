@@ -30,6 +30,7 @@ export default defineConfig({
       : undefined,
     splitVendorChunkPlugin(),
   ],
+  envPrefix: "APP_",
   resolve: {
     alias: {
       "@src": path.resolve(__dirname, "./src"),
