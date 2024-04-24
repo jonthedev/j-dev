@@ -13,7 +13,7 @@ function App() {
       id="home"
       data-testid="app"
     >
-      <Navbar />
+      <Navbar />d
       <Hero />
       <TechStack />
       <About />
