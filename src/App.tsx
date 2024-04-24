@@ -8,9 +8,8 @@ import Contact from "@components/ui/Contact"
 import ReactGA from "react-ga4"
 
 ReactGA.initialize(`${import.meta.env.APP_GOOGLE_ANALYTICS_ID}`)
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
+
+ReactGA._gaCommandSendPageview(window.location.pathname, {
   title: "Hit homepage",
 })
 
