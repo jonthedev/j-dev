@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         kanit: ["Kanit", "sans-serif"],
       },
+
       colors: {
         pink: {
           650: "#e10098",

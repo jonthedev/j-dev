@@ -14,7 +14,7 @@ const About = () => {
         <article>
           <SectionTitle title="About" />
           <Spacer size="large" />
-          <Text size="medium">
+          <Text size="mediume">
             <Icon name="brain" variant="base" className=" text-pink-500" />
             <br />I am fueled by the dynamic nature of web development and the
             boundless possibilities it offers.
