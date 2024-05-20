@@ -21,6 +21,9 @@ const Contact = () => {
             />
             jonathan@j-dev.online
           </span>
+          <Text size="medium" className="my-2">
+            KVK : 93792670
+          </Text>
         </div>
         <Text className="ml-2 flex items-center justify-center" size="medium">
           <Icon variant="base" name="copyright" className="mr-1" />
