@@ -5,12 +5,11 @@ import About from "@components/ui/About"
 import Clients from "@components/ui/Clients"
 import Projects from "@components/ui/Projects"
 import Contact from "@components/ui/Contact"
-import ReactGA from "react-ga4"
 
-ReactGA.initialize(`${import.meta.env.APP_GOOGLE_ANALYTICS_ID}`)
+import posthog from "posthog-js"
 
-ReactGA._gaCommandSendPageview(window.location.pathname, {
-  title: "Hit homepage",
+posthog.init("phc_HY79FSclgMXgsPdtQMzsfIBnLTCe8P0WBN6gwiJZn0P", {
+  api_host: "https://eu.i.posthog.com",
 })
 
 function App() {

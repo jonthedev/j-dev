@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "nanoid": "^5.0.4",
+    "posthog-js": "^1.128.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
