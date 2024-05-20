@@ -12,7 +12,6 @@ const Contact = () => {
         <SectionTitle title="Contact" />
         <Spacer size="small" />
         <div className="flex flex-col items-start">
-          <PhoneNumber countryFlag="🇬🇧" phoneNumber="447729268750" />
           <PhoneNumber countryFlag="🇳🇱" phoneNumber="31645170103" />
           <span className="text-lg text-slate-50">
             <Icon
