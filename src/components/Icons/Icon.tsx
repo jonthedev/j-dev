@@ -13,6 +13,7 @@ import {
   FaTrophy,
   FaCopyright,
 } from "react-icons/fa"
+import { MdOutlineMail } from "react-icons/md"
 import { FaPersonRays } from "react-icons/fa6"
 import {
   SiChakraui,
@@ -60,6 +61,7 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   "chakra-ui": SiChakraui,
   storybook: SiStorybook,
   copyright: FaCopyright,
+  email: MdOutlineMail,
 }
 
 const Icon: React.FC<IconProps> = ({
