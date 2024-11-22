@@ -3,6 +3,7 @@ import React from "react"
 
 import LogoANWB from "@assets/anwb.svg"
 import LogoVanLanschot from "@assets/van-lanschot-kempen.svg"
+import LogoDPGMedia from "@assets/dpg-media.svg"
 
 interface Client {
   id: string
@@ -19,6 +20,17 @@ const clients: Client[] = [
     img: (
       <img
         src={LogoVanLanschot}
+        alt="van lanschot kempen logo"
+        width={200}
+        height={200}
+      />
+    ),
+  },
+  {
+    id: nanoid(),
+    img: (
+      <img
+        src={LogoDPGMedia}
         alt="van lanschot kempen logo"
         width={200}
         height={200}

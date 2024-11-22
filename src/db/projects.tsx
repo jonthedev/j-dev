@@ -3,6 +3,7 @@ import React from "react"
 
 import ProjectVanlanschot from "@assets/project-vanlanschot.png"
 import ProjectANWB from "@assets/project-anwb-traffic-verkeer.png"
+import ProjectVacaturebank from "@assets/project-vacaturebank.png"
 import { IconProps } from "@src/components/Icons/Icon"
 
 interface TechItem {
@@ -86,6 +87,42 @@ export const projects: ProjectItem[] = [
         id: nanoid(),
         icon: "storybook",
         classname: "text-pink-500",
+      },
+    ],
+  },
+  {
+    id: nanoid(),
+    img: (
+      <img
+        src={ProjectVacaturebank}
+        alt="screenshot of homepage for national vacature bank"
+        className="h-64 w-full rounded-t-lg object-cover"
+      />
+    ),
+    url: "https://www.nationalevacaturebank.nl/",
+    github: null,
+    title: "National Vacaturebank",
+    text: "The National Vacature Bank is one of the largest job platforms in the Netherlands, connecting job seekers with employers across various industries.",
+    tech: [
+      {
+        id: nanoid(),
+        icon: "typescript",
+        classname: "text-blue-600",
+      },
+      {
+        id: nanoid(),
+        icon: "nextjs",
+        classname: "text-slate-50",
+      },
+      {
+        id: nanoid(),
+        icon: "sass",
+        classname: "text-pink-500",
+      },
+      {
+        id: nanoid(),
+        icon: "aws",
+        classname: "text-orange-600",
       },
     ],
   },

@@ -12,6 +12,8 @@ import {
   FaRegAddressCard,
   FaTrophy,
   FaCopyright,
+  FaSass,
+  FaAws,
 } from "react-icons/fa"
 import { MdOutlineMail } from "react-icons/md"
 import { FaPersonRays } from "react-icons/fa6"
@@ -59,6 +61,8 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   nextjs: TbBrandNextjs,
   "styled-comp": SiStyledcomponents,
   "chakra-ui": SiChakraui,
+  sass: FaSass,
+  aws: FaAws,
   storybook: SiStorybook,
   copyright: FaCopyright,
   email: MdOutlineMail,
@@ -92,7 +96,7 @@ const Icon: React.FC<IconProps> = ({
   }
 
   if (variant === "project-card") {
-    return <SelectedIcon title="name" className={projectCardIconStyles} />
+    return <SelectedIcon title={name} className={projectCardIconStyles} />
   }
 
   return <SelectedIcon className={baseIconStyles} title={name} />
