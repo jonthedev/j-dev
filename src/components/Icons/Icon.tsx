@@ -40,7 +40,6 @@ export interface IconProps {
   className?: string
   variant: "base" | "tech-stack" | "project-card"
   title?: string
-  title?: string
 }
 
 const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
