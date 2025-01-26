@@ -13,9 +13,9 @@ const Projects = () => {
         <Link
           href="http://github.com/jonthedev"
           isExternal={true}
-          className="mt-4 animate-pulse text-xl text-amber-500"
+          className="mt-4 animate-pulse text-2xl text-amber-500"
         >
-          Click here for my github
+          Github
         </Link>
       </div>
       <Spacer size="large" />

@@ -39,6 +39,7 @@ export interface IconProps {
   name: keyof typeof iconSVGComponents
   className?: string
   variant: "base" | "tech-stack" | "project-card"
+  title?: string
 }
 
 const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
@@ -72,6 +73,7 @@ const Icon: React.FC<IconProps> = ({
   name,
   variant = "base",
   className = "",
+  title,
 }) => {
   const SelectedIcon = iconSVGComponents[name]
 
@@ -99,7 +101,7 @@ const Icon: React.FC<IconProps> = ({
     return <SelectedIcon title={name} className={projectCardIconStyles} />
   }
 
-  return <SelectedIcon className={baseIconStyles} title={name} />
+  return <SelectedIcon className={baseIconStyles} title={title || name} />
 }
 
 export default Icon

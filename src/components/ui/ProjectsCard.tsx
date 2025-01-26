@@ -34,8 +34,9 @@ const ProjectsCard = ({ url, img, github, title, text, tech }: ProjectItem) => {
             href={url}
             isExternal={true}
             className="link-with-svg animate-pulse"
+            aria-label={url}
           >
-            <Icon variant="base" name="www" className="h-8 w-8 " />
+            <Icon variant="base" name="www" title={url} className="h-8 w-8 " />
           </Link>
           {github && (
             <Link
