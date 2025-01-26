@@ -1,6 +1,5 @@
 import SectionTitle from "@components/Typography/Title/SectionTitle"
 import Icon from "@components/Icons/Icon"
-import PhoneNumber from "@components/ui/PhoneNumber"
 import Text from "@components/Typography/Text/Text"
 import Section from "@components/Common/Section"
 import Spacer from "@components/Common/Spacer"
@@ -12,7 +11,6 @@ const Contact = () => {
         <SectionTitle title="Contact" />
         <Spacer size="small" />
         <div className="flex flex-col items-start">
-          <PhoneNumber countryFlag="🇳🇱" phoneNumber="31645170103" />
           <span className="text-lg text-slate-50">
             <Icon
               className="mr-2 h-3 w-3 md:h-5 md:w-5"
