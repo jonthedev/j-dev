@@ -27,7 +27,7 @@ const Contact = () => {
           <Icon variant="base" name="copyright" className="mr-1" />
           {new Date().getFullYear()}{" "}
           <span className="ml-2 italic text-amber-600">J</span>
-          <span className="italic">Dev.</span>
+          <span className="italic">-Dev.</span>
           <span className="italic text-amber-600">Online</span>
         </Text>
       </Section>
