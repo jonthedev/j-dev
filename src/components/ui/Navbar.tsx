@@ -11,7 +11,7 @@ const Navbar = () => {
     >
       <div className="align-element flex flex-col py-4 sm:flex-row sm:items-center sm:gap-x-16 sm:py-8">
         <Heading variant="h3" className="italic text-amber-600">
-          J<span className="text-slate-50">Dev.</span>
+          J<span className="text-slate-50">-Dev.</span>
           <span>Online</span>
         </Heading>
         <div className="flex gap-x-3">
