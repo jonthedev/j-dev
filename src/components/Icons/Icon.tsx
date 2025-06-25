@@ -14,6 +14,8 @@ import {
   FaCopyright,
   FaSass,
   FaAws,
+  FaVuejs,
+  FaGitlab,
 } from "react-icons/fa"
 import { MdOutlineMail } from "react-icons/md"
 import { FaPersonRays } from "react-icons/fa6"
@@ -21,13 +23,15 @@ import {
   SiChakraui,
   SiStyledcomponents,
   SiStorybook,
-  SiGraphql,
+  SiCypress,
+  SiVitest,
 } from "react-icons/si"
 import {
   TbBrandTailwind,
   TbBrandTypescript,
   TbWorldWww,
   TbBrandNextjs,
+  TbBrandNuxt,
 } from "react-icons/tb"
 import { twMerge } from "tailwind-merge"
 
@@ -52,7 +56,6 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   typescript: TbBrandTypescript,
   tailwind: TbBrandTailwind,
   brain: FaBrain,
-  graphql: SiGraphql,
   "cog-wheel": FaCogs,
   "reg-address-card": FaRegAddressCard,
   trophy: FaTrophy,
@@ -62,11 +65,16 @@ const iconSVGComponents: Record<string, React.FC<IconSVGComponentsProps>> = {
   nextjs: TbBrandNextjs,
   "styled-comp": SiStyledcomponents,
   "chakra-ui": SiChakraui,
+  nuxt: TbBrandNuxt,
   sass: FaSass,
   aws: FaAws,
   storybook: SiStorybook,
   copyright: FaCopyright,
   email: MdOutlineMail,
+  vue: FaVuejs,
+  gitlab: FaGitlab,
+  cypress: SiCypress,
+  vitest: SiVitest,
 }
 
 const Icon: React.FC<IconProps> = ({

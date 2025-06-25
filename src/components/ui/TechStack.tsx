@@ -9,7 +9,7 @@ const TechStack = () => {
     <Section id="tech">
       <SectionTitle title="Tech Stack" />
       <Spacer size="large" />
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 justify-items-center gap-8 lg:grid-cols-4">
         {techStack.map((techStackItem) => {
           return <TechStackCard key={techStackItem.id} {...techStackItem} />
         })}

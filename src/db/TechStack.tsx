@@ -8,7 +8,6 @@ export interface TechStackItem {
   title: string
   icons?: React.ReactElement[]
   icon?: React.ReactElement
-  text: string
 }
 
 export const techStack: TechStackItem[] = [
@@ -32,31 +31,17 @@ export const techStack: TechStackItem[] = [
         variant="tech-stack"
       />,
     ],
-    text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
   },
   {
     id: nanoid(),
     title: "JavaScript",
     icon: (
       <Icon
-        className="animate-bounce text-yellow-500"
+        className="animate-pulse text-yellow-500"
         name="javascript"
         variant="tech-stack"
       />
     ),
-    text: "Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality.",
-  },
-  {
-    id: nanoid(),
-    title: "React",
-    icon: (
-      <Icon
-        className="animate-spin text-cyan-400"
-        name="react"
-        variant="tech-stack"
-      />
-    ),
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
   {
     id: nanoid(),
@@ -68,42 +53,105 @@ export const techStack: TechStackItem[] = [
         variant="tech-stack"
       />
     ),
-    text: "A proficient TypeScript developer, I specialize in building robust and scalable applications, ensuring type safety and enhanced code maintainability.",
+  },
+  {
+    id: nanoid(),
+    title: "React",
+    icon: (
+      <Icon
+        className="animate-pulse text-cyan-400"
+        name="react"
+        variant="tech-stack"
+      />
+    ),
+  },
+  {
+    id: nanoid(),
+    title: "NextJs",
+    icon: (
+      <Icon
+        className="animate-pulse text-slate-50"
+        name="nextjs"
+        variant="tech-stack"
+      />
+    ),
+  },
+
+  {
+    id: nanoid(),
+    title: "NuxtJs",
+    icon: (
+      <Icon
+        className="animate-pulse text-green-700"
+        name="nuxt"
+        variant="tech-stack"
+      />
+    ),
+  },
+  {
+    id: nanoid(),
+    title: "Cypress",
+    icon: (
+      <Icon
+        className="animate-pulse text-cyan-200"
+        name="cypress"
+        variant="tech-stack"
+      />
+    ),
   },
   {
     id: nanoid(),
     title: "Github",
     icon: (
       <Icon
-        className="animate-bounce text-slate-50"
+        className="animate-pulse text-slate-50"
         name="github"
         variant="tech-stack"
       />
     ),
-    text: "Utilizing GitHub as a central hub for seamless collaboration, I leverage its powerful version control features to push forward the evolution of projects.",
   },
   {
     id: nanoid(),
-    title: "CSS Frameworks",
+    title: "Gitlab",
     icon: (
       <Icon
-        className="animate-spin text-cyan-400"
+        className="animate-pulse text-orange-700"
+        name="gitlab"
+        variant="tech-stack"
+      />
+    ),
+  },
+  {
+    id: nanoid(),
+    title: "Tailwind",
+    icon: (
+      <Icon
+        className="animate-pulse text-cyan-400"
         name="tailwind"
         variant="tech-stack"
       />
     ),
-    text: "I use CSS frameworks like Tailwind to quickly deploy things like responsive grids, themes, styled forms, buttons, or other important UI elements on web pages and apps.",
   },
   {
     id: nanoid(),
-    title: "GraphQL",
+    title: "VueJs",
     icon:
       //prettier-ignore
       <Icon
-        className={twMerge("animate-pulse text-pink-650")}
-        name="graphql"
+        className={twMerge("animate-pulse text-green-400")}
+        name="vue"
         variant="tech-stack"
       />,
-    text: "Experienced in utilizing GraphQL within React/Next.js applications for efficient client-side data fetching.",
+  },
+  {
+    id: nanoid(),
+    title: "Vitest",
+    icon: (
+      <Icon
+        className="animate-pulse text-yellow-400"
+        name="vitest"
+        variant="tech-stack"
+      />
+    ),
   },
 ]
