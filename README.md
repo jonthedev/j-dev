@@ -1,7 +1,9 @@
-![i](https://github.com/jonthedev/jonthedev/blob/main/JDEV-HERO-IMG.png?raw=true)
+![i](https://github.com/jonthedev/jonthedev/blob/main/JDEV-ONLINE-LOGO.png?raw=true)
 
-## Jonathan Kaonga Web Dev Portfolio
+## Portfolio Website
 
-[www.j-dev.online](https://j-dev.online)
+Personal portfolio website showcasing my work and projects.
 
-I used my [vite-r-ts-starter-pack](https://github.com/jonthedev/vite-r-ts-starter-pack) for the base of this project.
+**Live:** [www.j-dev.online](https://j-dev.online)
+
+> Note: This site is scheduled for a rebrand in 2026 with Vue/Nuxt and creative coding enhancements.
