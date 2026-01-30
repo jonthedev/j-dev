@@ -1,7 +1,7 @@
 <template>
   <section
     id="projects"
-    class="py-20 bg-gray-50 dark:bg-gray-800"
+    class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -17,10 +17,10 @@
         <div
           v-for="project in projects"
           :key="project.id"
-          class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-700"
+          class="group bg-white dark:bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-800"
         >
           <!-- Project image -->
-          <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+          <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900">
             <img
               :src="project.img"
               :alt="project.title"
@@ -43,7 +43,7 @@
               <div
                 v-for="tech in project.tech"
                 :key="tech.id"
-                class="flex items-center space-x-1.5 bg-gray-100 dark:bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300"
+                class="flex items-center space-x-1.5 bg-gray-100 dark:bg-gray-900 rounded-full px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300"
               >
                 <Icon
                   :icon="tech.icon"
@@ -62,7 +62,7 @@
                 :href="project.url"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 rounded-md transition-colors"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-vue-600 hover:bg-vue-700 rounded-md transition-colors"
               >
                 <Icon
                   icon="lucide:eye"
@@ -95,16 +95,16 @@
 
       <!-- Call to action -->
       <div class="mt-16 text-center">
-        <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-8">
-          <h3 class="text-xl font-semibold text-amber-900 dark:text-amber-100 mb-4">
+        <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-vue-900 dark:text-vue-100 mb-4">
             Interested in collaborating?
           </h3>
-          <p class="text-amber-800 dark:text-amber-200 mb-6 max-w-2xl mx-auto">
+          <p class="text-vue-800 dark:text-vue-200 mb-6 max-w-2xl mx-auto">
             I'm always excited to work on challenging projects that push the boundaries of what's possible with modern web technologies.
           </p>
           <a
             href="#contact"
-            class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-amber-600 hover:bg-amber-700 rounded-lg transition-colors"
+            class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-600 hover:bg-vue-700 rounded-lg transition-colors"
           >
             Start a conversation
             <Icon

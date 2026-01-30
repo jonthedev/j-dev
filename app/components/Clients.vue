@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white dark:bg-gray-900">
+  <section class="py-20 bg-white dark:bg-black">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -14,7 +14,7 @@
         <div
           v-for="client in clients"
           :key="client.id"
-          class="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group"
+          class="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
         >
           <img
             :src="client.img"
@@ -28,24 +28,24 @@
 
       <!-- Client testimonials or highlights -->
       <div class="mt-16 grid md:grid-cols-3 gap-8">
-        <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6">
+        <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6">
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:trophy"
               width="1.5rem"
               height="1.5rem"
-              class="text-amber-600 dark:text-amber-400 mr-2 shrink-0"
+              class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
             />
-            <h3 class="font-semibold text-amber-900 dark:text-amber-100">
+            <h3 class="font-semibold text-vue-900 dark:text-vue-100">
               Award Recognition
             </h3>
           </div>
-          <p class="text-amber-800 dark:text-amber-200 text-sm">
+          <p class="text-vue-800 dark:text-vue-200 text-sm">
             Received innovation award for ANWB Traffic application, recognized for exceptional user experience and technical excellence.
           </p>
         </div>
 
-        <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+        <div class="bg-blue-50 dark:bg-blue-950/20 dark:border-blue-800 border border-blue-200 rounded-lg p-6">
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:bar-chart-2"
@@ -62,7 +62,7 @@
           </p>
         </div>
 
-        <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
+        <div class="bg-green-50 dark:bg-green-950/20 dark:border-green-800 border border-green-200 rounded-lg p-6">
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:rocket"

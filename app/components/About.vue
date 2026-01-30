@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="py-20 bg-gray-50 dark:bg-gray-800"
+    class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -44,16 +44,16 @@
         <div class="space-y-6">
           <!-- Experience stats -->
           <div class="grid grid-cols-2 gap-4">
-            <div class="bg-white dark:bg-gray-900 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-700">
-              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">
+            <div class="bg-white dark:bg-black rounded-lg p-6 text-center border border-gray-200 dark:border-gray-800">
+              <div class="text-3xl font-bold text-vue-600 dark:text-vue-400 mb-2">
                 6+
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400">
                 Years Experience
               </div>
             </div>
-            <div class="bg-white dark:bg-gray-900 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-700">
-              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">
+            <div class="bg-white dark:bg-black rounded-lg p-6 text-center border border-gray-200 dark:border-gray-800">
+              <div class="text-3xl font-bold text-vue-600 dark:text-vue-400 mb-2">
                 50+
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400">
@@ -63,23 +63,23 @@
           </div>
 
           <!-- Key focus areas -->
-          <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6">
-            <h3 class="font-semibold text-amber-900 dark:text-amber-100 mb-4 flex items-center">
+          <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6">
+            <h3 class="font-semibold text-vue-900 dark:text-vue-100 mb-4 flex items-center">
               <Icon
                 icon="lucide:star"
                 width="1.25rem"
                 height="1.25rem"
-                class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
               />
               Key Focus Areas
             </h3>
-            <ul class="space-y-2 text-sm text-amber-800 dark:text-amber-200">
+            <ul class="space-y-2 text-sm text-vue-800 dark:text-vue-200">
               <li class="flex items-center">
                 <Icon
                   icon="lucide:check"
                   width="1rem"
                   height="1rem"
-                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                  class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
                 />
                 Vue 3 & Nuxt applications
               </li>
@@ -88,7 +88,7 @@
                   icon="lucide:check"
                   width="1rem"
                   height="1rem"
-                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                  class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
                 />
                 Performance optimization
               </li>
@@ -97,7 +97,7 @@
                   icon="lucide:check"
                   width="1rem"
                   height="1rem"
-                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                  class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
                 />
                 Component library development
               </li>
@@ -106,7 +106,7 @@
                   icon="lucide:check"
                   width="1rem"
                   height="1rem"
-                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                  class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
                 />
                 Legacy app migrations
               </li>
@@ -114,7 +114,7 @@
           </div>
 
           <!-- Personal touch -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+          <div class="bg-white dark:bg-black rounded-lg p-6 border border-gray-200 dark:border-gray-800">
             <p class="text-gray-600 dark:text-gray-400 text-sm italic">
               "Beyond coding, I enjoy exploring new technologies, contributing to open source,
               and continuous learning. Based in the Netherlands and available for remote work worldwide."

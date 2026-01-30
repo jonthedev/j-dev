@@ -1,7 +1,7 @@
 <template>
   <section
     id="tech-stack"
-    class="py-20 bg-white dark:bg-gray-900"
+    class="py-20 bg-white dark:bg-black"
   >
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -22,7 +22,7 @@
           <div
             v-for="tech in primaryTech"
             :key="tech.id"
-            class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group"
+            class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
           >
             <span
               :class="`inline-flex items-center justify-center gap-1 text-3xl mb-2 ${tech.iconClass} group-hover:scale-110 transition-transform`"
@@ -61,7 +61,7 @@
           <div
             v-for="tech in secondaryTech"
             :key="tech.id"
-            class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group opacity-75"
+            class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group opacity-75"
           >
             <span
               :class="`inline-flex items-center justify-center gap-1 text-2xl mb-2 ${tech.iconClass} group-hover:scale-110 transition-transform group-hover:opacity-100`"
@@ -92,17 +92,17 @@
       </div>
 
       <!-- Development Philosophy -->
-      <div class="mt-16 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-8">
-        <h3 class="text-lg font-semibold text-amber-900 dark:text-amber-100 mb-4">
+      <div class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8">
+        <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
           Development Philosophy
         </h3>
-        <div class="grid md:grid-cols-3 gap-6 text-sm text-amber-800 dark:text-amber-200">
+        <div class="grid md:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
           <div class="flex items-start space-x-3">
             <Icon
               icon="lucide:zap"
               width="1.25rem"
               height="1.25rem"
-              class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0"
+              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
               <strong>Performance First:</strong> Optimized for speed, accessibility, and user experience.
@@ -113,7 +113,7 @@
               icon="lucide:puzzle"
               width="1.25rem"
               height="1.25rem"
-              class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0"
+              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
               <strong>Component Architecture:</strong> Reusable, maintainable, and well-tested components.
@@ -124,7 +124,7 @@
               icon="lucide:code-2"
               width="1.25rem"
               height="1.25rem"
-              class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0"
+              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
               <strong>Modern Tooling:</strong> Vite, TypeScript, and the latest Vue ecosystem.

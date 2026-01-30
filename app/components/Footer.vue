@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+  <footer class="bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Contact Info -->
@@ -13,7 +13,7 @@
           <div class="space-y-2">
             <a
               href="mailto:jonathan@j-dev.online"
-              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
             >
               <Icon
                 icon="lucide:mail"
@@ -45,7 +45,7 @@
               v-for="link in quickLinks"
               :key="link.name"
               :to="link.href"
-              class="text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+              class="text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
             >
               {{ link.name }}
             </NuxtLink>
@@ -54,7 +54,7 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-600">
+      <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-500 dark:text-gray-400 text-sm">
             © {{ new Date().getFullYear() }} J-Dev.Online. All rights reserved.
@@ -65,7 +65,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              class="text-gray-500 hover:text-amber-600 dark:text-gray-400 dark:hover:text-amber-400 transition-colors"
+              class="text-gray-500 hover:text-vue-600 dark:text-gray-400 dark:hover:text-vue-400 transition-colors"
             >
               <Icon
                 icon="simple-icons:github"
@@ -79,7 +79,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              class="text-gray-500 hover:text-amber-600 dark:text-gray-400 dark:hover:text-amber-400 transition-colors"
+              class="text-gray-500 hover:text-vue-600 dark:text-gray-400 dark:hover:text-vue-400 transition-colors"
             >
               <Icon
                 icon="simple-icons:linkedin"
