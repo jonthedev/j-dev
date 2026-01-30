@@ -4,7 +4,10 @@
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Name -->
         <div class="flex-shrink-0">
-          <NuxtLink to="/" class="text-xl font-bold text-gray-900 dark:text-white hover:text-amber-600 dark:hover:text-amber-400 transition-colors">
+          <NuxtLink
+            to="/"
+            class="text-xl font-bold text-gray-900 dark:text-white hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+          >
             J-Dev.Online
           </NuxtLink>
         </div>
@@ -28,8 +31,12 @@
               aria-label="Toggle light/dark mode"
               @click="toggleColorMode"
             >
-              <span v-if="colorMode.value === 'dark'">☀️</span>
-              <span v-else>🌙</span>
+              <Icon
+                :icon="colorMode.value === 'dark' ? 'lucide:sun' : 'lucide:moon'"
+                width="1.25rem"
+                height="1.25rem"
+                class="inline-block"
+              />
             </button>
           </div>
         </div>
@@ -44,12 +51,16 @@
             aria-label="Toggle light/dark mode"
             @click="toggleColorMode"
           >
-            <span v-if="colorMode.value === 'dark'">☀️</span>
-            <span v-else>🌙</span>
+            <Icon
+              :icon="colorMode.value === 'dark' ? 'lucide:sun' : 'lucide:moon'"
+              width="1.25rem"
+              height="1.25rem"
+              class="inline-block"
+            />
           </button>
           <button
-            @click="isMobileMenuOpen = !isMobileMenuOpen"
             class="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            @click="isMobileMenuOpen = !isMobileMenuOpen"
           >
             <span>{{ isMobileMenuOpen ? '✕' : '☰' }}</span>
           </button>
@@ -58,7 +69,10 @@
     </div>
 
     <!-- Mobile menu -->
-    <div v-if="isMobileMenuOpen" class="md:hidden">
+    <div
+      v-if="isMobileMenuOpen"
+      class="md:hidden"
+    >
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
         <NuxtLink
           v-for="link in navigationLinks"
@@ -75,6 +89,10 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
+defineOptions({ name: 'AppNavbar' })
+
 const colorMode = useColorMode()
 
 function toggleColorMode() {
