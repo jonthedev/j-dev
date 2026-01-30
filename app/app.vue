@@ -4,7 +4,11 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/favicon.ico' },
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Kanit&display=swap',
+      rel: 'stylesheet'
+    }
   ],
   htmlAttrs: {
     lang: 'en'
