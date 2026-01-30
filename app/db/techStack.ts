@@ -62,7 +62,7 @@ export const techStack: TechStackItem[] = [
     title: 'Playwright',
     icon: 'simple-icons:playwright',
     iconClass: 'text-blue-500',
-    category: 'primary'
+    category: 'secondary'
   },
   {
     id: 'vitest',
@@ -72,18 +72,25 @@ export const techStack: TechStackItem[] = [
     category: 'primary'
   },
   {
-    id: 'html-css',
-    title: 'HTML & CSS',
-    icons: ['simple-icons:html5', 'simple-icons:css3'],
+    id: 'html',
+    title: 'HTML',
+    icon: 'simple-icons:html5',
     iconClass: 'text-orange-600',
-    category: 'secondary'
+    category: 'primary'
+  },
+  {
+    id: 'css',
+    title: 'CSS',
+    icon: 'simple-icons:css3',
+    iconClass: 'text-blue-600',
+    category: 'primary'
   },
   {
     id: 'javascript',
     title: 'JavaScript',
     icon: 'simple-icons:javascript',
     iconClass: 'text-yellow-500',
-    category: 'secondary'
+    category: 'primary'
   },
   {
     id: 'react',

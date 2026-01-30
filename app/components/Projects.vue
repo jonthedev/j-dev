@@ -1,5 +1,8 @@
 <template>
-  <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <section
+    id="projects"
+    class="py-20 bg-gray-50 dark:bg-gray-800"
+  >
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -22,7 +25,7 @@
               :src="project.img"
               :alt="project.title"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
+            >
           </div>
 
           <!-- Project content -->
@@ -40,9 +43,15 @@
               <div
                 v-for="tech in project.tech"
                 :key="tech.id"
-                class="flex items-center space-x-1 bg-gray-100 dark:bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300"
+                class="flex items-center space-x-1.5 bg-gray-100 dark:bg-gray-800 rounded-full px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300"
               >
-                <span :class="tech.classname">{{ getTechEmoji(tech.icon) }}</span>
+                <Icon
+                  :icon="tech.icon"
+                  width="1em"
+                  height="1em"
+                  :class="tech.classname"
+                  class="inline-block shrink-0"
+                />
                 <span>{{ getTechName(tech.icon) }}</span>
               </div>
             </div>
@@ -97,7 +106,10 @@
 </template>
 
 <script setup lang="ts">
-import { projects, type ProjectItem } from '~/db/projects'
+import { Icon } from '@iconify/vue'
+import { projects } from '~/db/projects'
+
+defineOptions({ name: 'ProjectsSection' })
 
 // Helper function to extract clean tech names from icon names
 const getTechName = (iconName: string): string => {
@@ -115,24 +127,6 @@ const getTechName = (iconName: string): string => {
     'simple-icons:amazonaws': 'AWS'
   }
   return nameMap[iconName] || iconName.split(':').pop() || iconName
-}
-
-// Helper function to get emoji for tech icons
-const getTechEmoji = (iconName: string): string => {
-  const emojiMap: Record<string, string> = {
-    'simple-icons:vuedotjs': '💚',
-    'simple-icons:nuxtdotjs': '🟢',
-    'simple-icons:typescript': '📘',
-    'simple-icons:vite': '⚡',
-    'simple-icons:tradingview': '📈',
-    'simple-icons:nextdotjs': '▲',
-    'simple-icons:styledcomponents': '🎨',
-    'simple-icons:chakraui': '🔷',
-    'simple-icons:storybook': '📖',
-    'simple-icons:sass': '🌸',
-    'simple-icons:amazonaws': '☁️'
-  }
-  return emojiMap[iconName] || '🔧'
 }
 
 useHead({
