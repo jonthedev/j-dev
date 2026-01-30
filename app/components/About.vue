@@ -54,10 +54,10 @@
             </div>
             <div class="bg-white dark:bg-black rounded-lg p-6 text-center border border-gray-200 dark:border-gray-800">
               <div class="text-3xl font-bold text-vue-600 dark:text-vue-400 mb-2">
-                50+
+                4+
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400">
-                Projects Delivered
+                Enterprise clients
               </div>
             </div>
           </div>
