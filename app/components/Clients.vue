@@ -22,7 +22,7 @@
             :width="client.width || 150"
             :height="client.height || 150"
             class="max-h-16 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
-          />
+          >
         </div>
       </div>
 
@@ -30,8 +30,15 @@
       <div class="mt-16 grid md:grid-cols-3 gap-8">
         <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6">
           <div class="flex items-center mb-4">
-            <span class="text-amber-600 dark:text-amber-400 mr-2">🏆</span>
-            <h3 class="font-semibold text-amber-900 dark:text-amber-100">Award Recognition</h3>
+            <Icon
+              icon="lucide:trophy"
+              width="1.5rem"
+              height="1.5rem"
+              class="text-amber-600 dark:text-amber-400 mr-2 shrink-0"
+            />
+            <h3 class="font-semibold text-amber-900 dark:text-amber-100">
+              Award Recognition
+            </h3>
           </div>
           <p class="text-amber-800 dark:text-amber-200 text-sm">
             Received innovation award for ANWB Traffic application, recognized for exceptional user experience and technical excellence.
@@ -40,8 +47,15 @@
 
         <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
           <div class="flex items-center mb-4">
-            <span class="text-blue-600 dark:text-blue-400 mr-2">📊</span>
-            <h3 class="font-semibold text-blue-900 dark:text-blue-100">Millions of Users</h3>
+            <Icon
+              icon="lucide:bar-chart-2"
+              width="1.5rem"
+              height="1.5rem"
+              class="text-blue-600 dark:text-blue-400 mr-2 shrink-0"
+            />
+            <h3 class="font-semibold text-blue-900 dark:text-blue-100">
+              Millions of Users
+            </h3>
           </div>
           <p class="text-blue-800 dark:text-blue-200 text-sm">
             Applications I've built serve millions of users across the Netherlands, including critical traffic and job-seeking platforms.
@@ -50,8 +64,15 @@
 
         <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
           <div class="flex items-center mb-4">
-            <span class="text-green-600 dark:text-green-400 mr-2">🚀</span>
-            <h3 class="font-semibold text-green-900 dark:text-green-100">Enterprise Scale</h3>
+            <Icon
+              icon="lucide:rocket"
+              width="1.5rem"
+              height="1.5rem"
+              class="text-green-600 dark:text-green-400 mr-2 shrink-0"
+            />
+            <h3 class="font-semibold text-green-900 dark:text-green-100">
+              Enterprise Scale
+            </h3>
           </div>
           <p class="text-green-800 dark:text-green-200 text-sm">
             Experience with enterprise-level requirements including accessibility, performance, security, and scalability.
@@ -63,7 +84,10 @@
 </template>
 
 <script setup lang="ts">
-import clients from '~/db/clients'
+import { Icon } from '@iconify/vue'
+import clients from '~/data/clients'
+
+defineOptions({ name: 'AppClients' })
 
 useHead({
   title: 'Clients - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'

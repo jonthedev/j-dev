@@ -98,19 +98,34 @@
         </h3>
         <div class="grid md:grid-cols-3 gap-6 text-sm text-amber-800 dark:text-amber-200">
           <div class="flex items-start space-x-3">
-            <span class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0">⚡</span>
+            <Icon
+              icon="lucide:zap"
+              width="1.25rem"
+              height="1.25rem"
+              class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0"
+            />
             <div>
               <strong>Performance First:</strong> Optimized for speed, accessibility, and user experience.
             </div>
           </div>
           <div class="flex items-start space-x-3">
-            <span class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0">🧩</span>
+            <Icon
+              icon="lucide:puzzle"
+              width="1.25rem"
+              height="1.25rem"
+              class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0"
+            />
             <div>
               <strong>Component Architecture:</strong> Reusable, maintainable, and well-tested components.
             </div>
           </div>
           <div class="flex items-start space-x-3">
-            <span class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0">&lt;/&gt;</span>
+            <Icon
+              icon="lucide:code-2"
+              width="1.25rem"
+              height="1.25rem"
+              class="text-amber-600 dark:text-amber-400 mt-0.5 shrink-0"
+            />
             <div>
               <strong>Modern Tooling:</strong> Vite, TypeScript, and the latest Vue ecosystem.
             </div>
@@ -123,7 +138,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { techStack } from '~/db/techStack'
+import { techStack } from '~/data/techStack'
 
 const primaryTech = computed(() => techStack.filter(item => item.category === 'primary'))
 const secondaryTech = computed(() => techStack.filter(item => item.category === 'secondary'))

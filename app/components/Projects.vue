@@ -64,7 +64,12 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 rounded-md transition-colors"
               >
-                <span class="mr-2">👁️</span>
+                <Icon
+                  icon="lucide:eye"
+                  width="1.125rem"
+                  height="1.125rem"
+                  class="mr-2 shrink-0"
+                />
                 View Live
               </a>
 
@@ -75,7 +80,12 @@
                 rel="noopener noreferrer"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
               >
-                <span class="mr-2">💻</span>
+                <Icon
+                  icon="lucide:code"
+                  width="1.125rem"
+                  height="1.125rem"
+                  class="mr-2 shrink-0"
+                />
                 Code
               </a>
             </div>
@@ -97,7 +107,12 @@
             class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-amber-600 hover:bg-amber-700 rounded-lg transition-colors"
           >
             Start a conversation
-            <span class="ml-2">→</span>
+            <Icon
+              icon="lucide:arrow-right"
+              width="1.25rem"
+              height="1.25rem"
+              class="ml-2 shrink-0 inline-block"
+            />
           </a>
         </div>
       </div>
@@ -107,7 +122,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { projects } from '~/db/projects'
+import { projects } from '~/data/projects'
 
 defineOptions({ name: 'ProjectsSection' })
 

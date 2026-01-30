@@ -1,5 +1,8 @@
 <template>
-  <section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+  <section
+    id="about"
+    class="py-20 bg-gray-50 dark:bg-gray-800"
+  >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -42,36 +45,69 @@
           <!-- Experience stats -->
           <div class="grid grid-cols-2 gap-4">
             <div class="bg-white dark:bg-gray-900 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-700">
-              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">6+</div>
-              <div class="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">
+                6+
+              </div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">
+                Years Experience
+              </div>
             </div>
             <div class="bg-white dark:bg-gray-900 rounded-lg p-6 text-center border border-gray-200 dark:border-gray-700">
-              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">50+</div>
-              <div class="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</div>
+              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">
+                50+
+              </div>
+              <div class="text-sm text-gray-600 dark:text-gray-400">
+                Projects Delivered
+              </div>
             </div>
           </div>
 
           <!-- Key focus areas -->
           <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6">
             <h3 class="font-semibold text-amber-900 dark:text-amber-100 mb-4 flex items-center">
-              <span class="mr-2">⭐</span>
+              <Icon
+                icon="lucide:star"
+                width="1.25rem"
+                height="1.25rem"
+                class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+              />
               Key Focus Areas
             </h3>
             <ul class="space-y-2 text-sm text-amber-800 dark:text-amber-200">
               <li class="flex items-center">
-                <span class="mr-2 text-amber-600 dark:text-amber-400">✓</span>
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                />
                 Vue 3 & Nuxt applications
               </li>
               <li class="flex items-center">
-                <span class="mr-2 text-amber-600 dark:text-amber-400">✓</span>
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                />
                 Performance optimization
               </li>
               <li class="flex items-center">
-                <span class="mr-2 text-amber-600 dark:text-amber-400">✓</span>
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                />
                 Component library development
               </li>
               <li class="flex items-center">
-                <span class="mr-2 text-amber-600 dark:text-amber-400">✓</span>
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-amber-600 dark:text-amber-400"
+                />
                 Legacy app migrations
               </li>
             </ul>
@@ -91,6 +127,10 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
+defineOptions({ name: 'AppAbout' })
+
 useHead({
   title: 'About - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'
 })

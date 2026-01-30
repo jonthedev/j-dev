@@ -60,9 +60,15 @@
           </button>
           <button
             class="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            :aria-label="isMobileMenuOpen ? 'Close menu' : 'Open menu'"
             @click="isMobileMenuOpen = !isMobileMenuOpen"
           >
-            <span>{{ isMobileMenuOpen ? '✕' : '☰' }}</span>
+            <Icon
+              :icon="isMobileMenuOpen ? 'lucide:x' : 'lucide:menu'"
+              width="1.25rem"
+              height="1.25rem"
+              class="inline-block"
+            />
           </button>
         </div>
       </div>

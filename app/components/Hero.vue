@@ -1,7 +1,7 @@
 <template>
   <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
     <!-- Background decoration -->
-    <div class="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10"></div>
+    <div class="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10" />
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="animate-fade-in-up space-y-8">
@@ -25,22 +25,34 @@
             href="#contact"
             class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-amber-600 hover:bg-amber-700 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
           >
-            Work with me →
+            <Icon
+              icon="lucide:arrow-right"
+              width="1.25rem"
+              height="1.25rem"
+              class="mr-2 shrink-0 inline-block"
+            />
+            Work with me
           </a>
 
           <a
             href="#projects"
             class="inline-flex items-center px-8 py-4 text-lg font-semibold text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-200"
           >
-            View projects 👁️
+            <Icon
+              icon="lucide:eye"
+              width="1.25rem"
+              height="1.25rem"
+              class="mr-2 shrink-0 inline-block"
+            />
+            View projects
           </a>
         </div>
 
         <!-- Availability indicator -->
         <div class="flex items-center justify-center pt-6 space-x-2">
-          <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+          <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
           <span class="text-gray-600 dark:text-gray-300 font-medium">
-            Available for projects starting March 2024
+            Available for projects starting March 2026
           </span>
         </div>
       </div>
@@ -48,12 +60,21 @@
 
     <!-- Scroll indicator -->
     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <span class="text-2xl text-gray-400 dark:text-gray-500">↓</span>
+      <Icon
+        icon="lucide:chevron-down"
+        width="2rem"
+        height="2rem"
+        class="text-gray-400 dark:text-gray-500"
+      />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
+defineOptions({ name: 'AppHero' })
+
 useHead({
   title: 'Jonathan Kaonga - Freelance Senior Frontend Engineer | Vue & Nuxt'
 })

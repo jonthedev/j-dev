@@ -12,14 +12,24 @@
           </p>
           <div class="space-y-2">
             <a
-              href="mailto:contact@j-dev.online"
+              href="mailto:jonathan@j-dev.online"
               class="flex items-center text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
             >
-              <span class="mr-2">📧</span>
-              contact@j-dev.online
+              <Icon
+                icon="lucide:mail"
+                width="1.25rem"
+                height="1.25rem"
+                class="mr-2 shrink-0"
+              />
+              jonathan@j-dev.online
             </a>
             <div class="flex items-center text-gray-600 dark:text-gray-300">
-              <span class="mr-2">🏢</span>
+              <Icon
+                icon="lucide:building-2"
+                width="1.25rem"
+                height="1.25rem"
+                class="mr-2 shrink-0"
+              />
               KVK: 82369423
             </div>
           </div>
@@ -51,20 +61,32 @@
           </p>
           <div class="flex space-x-6 mt-4 md:mt-0">
             <a
-              href="https://github.com/jonathankaonga"
+              href="https://github.com/jonthedev"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
               class="text-gray-500 hover:text-amber-600 dark:text-gray-400 dark:hover:text-amber-400 transition-colors"
             >
-              <span>💻</span>
+              <Icon
+                icon="simple-icons:github"
+                width="1.25rem"
+                height="1.25rem"
+                class="inline-block"
+              />
             </a>
             <a
-              href="https://linkedin.com/in/jonathankaonga"
+              href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
               class="text-gray-500 hover:text-amber-600 dark:text-gray-400 dark:hover:text-amber-400 transition-colors"
             >
-              <span>💼</span>
+              <Icon
+                icon="simple-icons:linkedin"
+                width="1.25rem"
+                height="1.25rem"
+                class="inline-block"
+              />
             </a>
           </div>
         </div>
@@ -74,6 +96,10 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
+defineOptions({ name: 'AppFooter' })
+
 const quickLinks = [
   { name: 'About', href: '#about' },
   { name: 'Tech Stack', href: '#tech-stack' },
