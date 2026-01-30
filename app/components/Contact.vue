@@ -47,7 +47,7 @@
           <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
             Business
           </h3>
-          <span class="text-gray-600 dark:text-gray-300">KVK: 82369423</span>
+          <span class="text-gray-600 dark:text-gray-300">KVK: 93792670</span>
         </div>
 
         <div class="text-center group">

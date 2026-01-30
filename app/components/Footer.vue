@@ -30,7 +30,7 @@
                 height="1.25rem"
                 class="mr-2 shrink-0"
               />
-              KVK: 82369423
+              KVK: 93792670
             </div>
           </div>
         </div>
