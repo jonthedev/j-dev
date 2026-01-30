@@ -9,7 +9,7 @@
           Featured Projects
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          A selection of recent work showcasing Vue expertise, performance optimization, and enterprise-scale applications.
+          A selection of recent work across React and Vue—performance optimization, enterprise-scale applications, and modern frontend architecture.
         </p>
       </div>
 
