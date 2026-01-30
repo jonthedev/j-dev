@@ -16,6 +16,19 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
+    id: 'thalex',
+    img: '/project-thalex.png',
+    url: 'https://thalex.com/',
+    github: null,
+    title: 'Thalex',
+    text: 'Derivatives trading platform — options, futures & perpetuals. Built with Vue/Nuxt and real-time data visualization.',
+    tech: [
+      { id: 'vue-thalex', icon: 'simple-icons:vuedotjs', classname: 'text-green-500' },
+      { id: 'nuxt-thalex', icon: 'simple-icons:nuxtdotjs', classname: 'text-green-600' },
+      { id: 'ts-thalex', icon: 'simple-icons:typescript', classname: 'text-blue-600' }
+    ]
+  },
+  {
     id: 'anwb-traffic',
     img: '/project-anwb-traffic-verkeer.png',
     url: 'https://www.anwb.nl/verkeer',
@@ -26,19 +39,19 @@ export const projects: ProjectItem[] = [
       {
         id: 'ts-1',
         icon: 'simple-icons:typescript',
-        classname: 'text-blue-600',
+        classname: 'text-blue-600'
       },
       {
         id: 'nextjs-1',
         icon: 'simple-icons:nextdotjs',
-        classname: 'text-gray-800 dark:text-white',
+        classname: 'text-gray-800 dark:text-white'
       },
       {
         id: 'styled-comp-1',
         icon: 'simple-icons:styledcomponents',
-        classname: 'text-pink-300',
-      },
-    ],
+        classname: 'text-pink-300'
+      }
+    ]
   },
   {
     id: 'van-lanschot',
@@ -51,24 +64,24 @@ export const projects: ProjectItem[] = [
       {
         id: 'ts-2',
         icon: 'simple-icons:typescript',
-        classname: 'text-blue-600',
+        classname: 'text-blue-600'
       },
       {
         id: 'nextjs-2',
         icon: 'simple-icons:nextdotjs',
-        classname: 'text-gray-800 dark:text-white',
+        classname: 'text-gray-800 dark:text-white'
       },
       {
         id: 'chakra-1',
         icon: 'simple-icons:chakraui',
-        classname: 'text-sky-300',
+        classname: 'text-sky-300'
       },
       {
         id: 'storybook-1',
         icon: 'simple-icons:storybook',
-        classname: 'text-pink-500',
-      },
-    ],
+        classname: 'text-pink-500'
+      }
+    ]
   },
   {
     id: 'vacaturebank',
@@ -81,23 +94,23 @@ export const projects: ProjectItem[] = [
       {
         id: 'ts-3',
         icon: 'simple-icons:typescript',
-        classname: 'text-blue-600',
+        classname: 'text-blue-600'
       },
       {
         id: 'nextjs-3',
         icon: 'simple-icons:nextdotjs',
-        classname: 'text-gray-800 dark:text-white',
+        classname: 'text-gray-800 dark:text-white'
       },
       {
         id: 'sass-1',
         icon: 'simple-icons:sass',
-        classname: 'text-pink-500',
+        classname: 'text-pink-500'
       },
       {
         id: 'aws-1',
         icon: 'simple-icons:amazonaws',
-        classname: 'text-orange-600',
-      },
-    ],
-  },
+        classname: 'text-orange-600'
+      }
+    ]
+  }
 ]
