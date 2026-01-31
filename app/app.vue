@@ -1,11 +1,14 @@
 <script setup>
+const { app } = useRuntimeConfig()
+const base = app?.baseURL ?? '/'
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' },
-    { rel: 'manifest', href: '/site.webmanifest' }
+    { rel: 'icon', href: `${base}favicon.ico` },
+    { rel: 'manifest', href: `${base}site.webmanifest` }
   ],
   htmlAttrs: {
     lang: 'en'
