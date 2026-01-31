@@ -13,7 +13,7 @@
           Projects
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          AI and homelab projects coming soon. Still learning and building.
+          AI and homelab projects coming soon.
         </p>
       </div>
     </div>
