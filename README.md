@@ -84,6 +84,17 @@ The site is deployed to **Netlify** from the `main` branch. Build uses:
 
 ---
 
+## Metrics
+
+Rough comparison for the **React → Nuxt 4** refactor (full migration, Vue green theme, dark mode, Iconify icons, scroll/stagger animations, content updates, Netlify deploy):
+
+| Context | Estimate |
+|--------|----------|
+| **Without AI** (experienced frontend dev, same scope) | ~2–4 weeks (80–160 person-hours) |
+| **With AI-assisted dev** (Cursor) | ~6 hours |
+
+---
+
 ## License
 
 Private — © Jonathan Kaonga / J-Dev.Online.
