@@ -25,7 +25,6 @@
             </NuxtLink>
             <!-- Portfolio view: segmented control so both options are visible and clickable -->
             <div class="flex items-center gap-2">
-              <span class="text-xs font-medium text-gray-500 dark:text-gray-400 shrink-0">View</span>
               <div
                 class="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 p-0.5 bg-gray-50/50 dark:bg-gray-900/50"
                 role="tablist"
@@ -83,7 +82,6 @@
         <div class="md:hidden flex items-center space-x-2">
           <!-- Portfolio view: segmented control -->
           <div class="flex items-center gap-1.5">
-            <span class="text-xs font-medium text-gray-500 dark:text-gray-400 shrink-0">View</span>
             <div
               class="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 p-0.5 bg-gray-50/50 dark:bg-gray-900/50"
               role="tablist"
