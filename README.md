@@ -37,18 +37,27 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+### Production images (Nuxt Image + Netlify CDN)
+
+**`pnpm dev`** uses plain `<img>` so project, about, and client images load from `public/` — no Netlify needed.
+
+In **production** (Netlify), the same images use [Nuxt Image](https://image.nuxt.com) with the [Netlify provider](https://image.nuxt.com/providers/netlify) (WebP, resizing). To verify they work, deploy and check the live site.
+
+**Optional:** `pnpm dev:netlify` runs Netlify Dev (proxy + Image CDN locally). It can hang in the browser on some setups; if so, stick with `pnpm dev` and confirm images on deploy.
+
 ---
 
 ## Scripts
 
-| Command        | Description              |
-|----------------|--------------------------|
-| `pnpm dev`     | Start dev server         |
-| `pnpm build`   | Production build         |
-| `pnpm generate`| Static export            |
-| `pnpm preview` | Preview production build |
-| `pnpm lint`    | Run ESLint               |
-| `pnpm test`    | Run Vitest               |
+| Command            | Description                    |
+|--------------------|--------------------------------|
+| `pnpm dev`         | Start dev server (recommended) |
+| `pnpm dev:netlify` | Netlify Dev (optional; can hang) |
+| `pnpm build`       | Production build               |
+| `pnpm generate`    | Static export                  |
+| `pnpm preview`     | Preview production build       |
+| `pnpm lint`        | Run ESLint                     |
+| `pnpm test`        | Run Vitest                     |
 
 ---
 

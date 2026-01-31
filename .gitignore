@@ -34,3 +34,6 @@ dist-ssr
 # Temp scaffold (do not commit)
 jdev-nuxt4-temp
 
+
+# Local Netlify folder
+.netlify

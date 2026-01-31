@@ -5,12 +5,17 @@
   command = "pnpm run build"
   publish = ".output/public"
 
+# Netlify Dev: run Nuxt dev server and proxy (https://docs.netlify.com/api-and-cli-guides/cli-guides/local-development/)
+[dev]
+  framework = "#custom"
+  command = "pnpm run dev"
+  targetPort = 3000
+  port = 8888
+
 [build.environment]
-  # Nuxt Image: use Netlify Image CDN when building on Netlify (optimized images in production)
   NUXT_IMAGE_PROVIDER = "netlify"
 
-# SPA: serve index.html for all routes so client-side routing works
-# https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125
+# SPA: serve index.html for all routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
