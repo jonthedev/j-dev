@@ -8,6 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.nuxt
+.output
 dist
 dist-ssr
 *.local
@@ -28,4 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Temp scaffold (do not commit)
+jdev-nuxt4-temp
 

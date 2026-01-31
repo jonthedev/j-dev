@@ -1,0 +1,38 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@vueuse/motion/nuxt'
+  ],
+
+  // Static profile site: client-only SPA; static preset skips Nitro server bundle (avoids client.precomputed.mjs bug)
+  ssr: false,
+
+  devtools: {
+    enabled: true
+  },
+
+  css: ['~/assets/css/main.css'],
+  srcDir: 'app',
+
+  // Prerender disabled temporarily due to Nuxt 4 client.precomputed.mjs bug (nuxt/nuxt#33579)
+  // routeRules: {
+  //   '/': { prerender: true }
+  // },
+
+  compatibilityDate: '2025-01-15',
+  nitro: {
+    preset: 'static'
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
+})
