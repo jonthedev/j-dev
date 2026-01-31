@@ -22,14 +22,14 @@
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 + index * 80 } }"
-          class="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
+          class="flex items-center justify-center p-6 rounded-lg"
         >
           <img
             :src="client.img"
             :alt="client.alt"
             :width="client.width || 150"
             :height="client.height || 150"
-            class="max-h-16 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
+            class="max-h-16 w-auto object-contain filter grayscale dark:invert dark:opacity-90 transition-colors duration-300 opacity-70"
           >
         </div>
       </div>
