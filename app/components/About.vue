@@ -59,13 +59,15 @@
         >
           <!-- Photo -->
           <div class="flex justify-center">
-            <img
+            <NuxtImg
               src="/jdk-portfolio-2024.jpeg"
               alt="Jonathan Kaonga"
-              width="240"
-              height="240"
+              width="224"
+              height="224"
+              sizes="224px"
+              format="webp"
               class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-gray-200 dark:border-gray-800 shadow-lg"
-            >
+            />
           </div>
           <!-- Experience stats -->
           <div class="grid grid-cols-2 gap-4">

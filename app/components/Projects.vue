@@ -29,11 +29,15 @@
         >
           <!-- Project image -->
           <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900">
-            <img
+            <NuxtImg
               :src="project.img"
               :alt="project.title"
+              width="800"
+              height="450"
+              sizes="(min-width: 1024px) 800px, (min-width: 768px) 50vw, 100vw"
+              format="webp"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            >
+            />
           </div>
 
           <!-- Project content -->
