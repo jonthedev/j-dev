@@ -1,3 +1,10 @@
-# SPA: serve index.html for all routes (client-side routing)
-# https://nuxt.com/deploy/netlify
-/*    /index.html   200
+# Static assets - serve file (first match wins; _redirects is processed before netlify.toml)
+/favicon.ico    /favicon.ico    200
+/favicon-16x16.png    /favicon-16x16.png    200
+/favicon-32x32.png    /favicon-32x32.png    200
+/apple-touch-icon.png    /apple-touch-icon.png    200
+/site.webmanifest    /site.webmanifest    200
+/robots.txt    /robots.txt    200
+/_nuxt/*    /_nuxt/:splat    200
+# SPA: serve index.html for all other routes (client-side routing)
+/*    /index.html    200
