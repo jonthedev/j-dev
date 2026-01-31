@@ -11,10 +11,15 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          AI & Systems Architecture
+          AI in my workflow
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Bridging the gap between High-Performance Frontends and Intelligent Platforms.
+          Integrating AI into my frontend practice—and learning how it all works with <a
+            href="https://bytebyteai.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-vue-600 dark:text-vue-400 hover:underline"
+          >ByteByteAI</a>.
         </p>
       </div>
 
@@ -26,7 +31,12 @@
       >
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            As a <strong>Senior Engineer</strong>, I specialize in the integration of AI-driven workflows into modern web architectures. My focus is moving beyond simple UI to building <strong>sovereign, local-first AI infrastructure</strong> and <strong>Agentic Workflows</strong>.
+            I'm a <strong>Senior Frontend Engineer</strong> bringing AI into my daily workflow—from local inference (Ollama, Qwen) to AI-augmented development (Cursor, OpenCode). I'm also deepening my understanding of how AI systems work through the <a
+              href="https://bytebyteai.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-vue-600 dark:text-vue-400 hover:underline"
+            >ByteByteAI</a> course.
           </p>
         </div>
 
