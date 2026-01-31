@@ -15,7 +15,36 @@
 [build.environment]
   NUXT_IMAGE_PROVIDER = "netlify"
 
-# SPA: serve index.html for all routes
+# Serve static assets (favicon, etc.) so SPA catch-all does not return index.html
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.ico"
+  status = 200
+[[redirects]]
+  from = "/favicon-16x16.png"
+  to = "/favicon-16x16.png"
+  status = 200
+[[redirects]]
+  from = "/favicon-32x32.png"
+  to = "/favicon-32x32.png"
+  status = 200
+[[redirects]]
+  from = "/apple-touch-icon.png"
+  to = "/apple-touch-icon.png"
+  status = 200
+[[redirects]]
+  from = "/site.webmanifest"
+  to = "/site.webmanifest"
+  status = 200
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+[[redirects]]
+  from = "/_nuxt/*"
+  to = "/_nuxt/:splat"
+  status = 200
+# SPA: serve index.html for all other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
