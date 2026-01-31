@@ -10,20 +10,18 @@
         class="space-y-8"
       >
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">Learning</span><br>
+          <span class="text-gray-900 dark:text-white">AI & Frontend</span><br>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
-            AI engineering
+            Architecture
           </span>
         </h1>
 
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          <a
-            href="https://bytebyteai.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-vue-600 dark:text-vue-400 hover:underline"
-          >ByteByteAI</a> · Using AI to help build better frontends<br>
-          <span class="text-vue-600 dark:text-vue-400">LLMs, RAGs, agents — and Ollama, Qwen, OpenCode in my workflow</span>
+          Integrating intelligence into the modern stack.<br>
+          <span class="text-vue-600 dark:text-vue-400">Senior Engineer bridging Vue/Nuxt frontends and sovereign AI infrastructure.</span>
+        </p>
+        <p class="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+          Inference stack: Ollama, Qwen, OpenCode
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -56,12 +54,12 @@
         <div class="flex items-center justify-center pt-6 space-x-2">
           <div class="w-3 h-3 bg-amber-500 rounded-full animate-pulse" />
           <span class="text-gray-600 dark:text-gray-300 font-medium">
-            In progress — <a
+            Current Research: System Design (<a
               href="https://bytebyteai.com/"
               target="_blank"
               rel="noopener noreferrer"
               class="text-vue-600 dark:text-vue-400 hover:underline"
-            >ByteByteAI</a> course
+            >ByteByteAI</a>) 🟡
           </span>
         </div>
       </div>

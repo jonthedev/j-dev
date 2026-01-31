@@ -11,15 +11,10 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          AI & frontend
+          AI & Systems Architecture
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Learning AI engineering via <a
-            href="https://bytebyteai.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-vue-600 dark:text-vue-400 hover:underline"
-          >ByteByteAI</a> — and using AI to build better frontends
+          Bridging the gap between High-Performance Frontends and Intelligent Platforms.
         </p>
       </div>
 
@@ -27,23 +22,11 @@
         v-motion
         :initial="{ opacity: 0, y: 24 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
-        class="space-y-6"
+        class="space-y-8"
       >
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I'm a <strong>Senior Frontend Engineer</strong> with years of experience in Vue, Nuxt, and modern web apps.
-            I'm learning <strong>AI engineering</strong> via <a
-              href="https://bytebyteai.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-vue-600 dark:text-vue-400 hover:underline"
-            >ByteByteAI</a> (LLMs, RAGs, agents) and I like using AI to help me build frontends — better DX, faster iteration, smarter tooling.
-          </p>
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            <strong>In my workflow right now:</strong> Ollama, Qwen, and OpenCode for local AI and coding.
-          </p>
-          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I'm also learning about setting up <strong>homelabs</strong> (e.g. Proxmox) so I can run more of this on my own hardware.
+            As a <strong>Senior Engineer</strong>, I specialize in the integration of AI-driven workflows into modern web architectures. My focus is moving beyond simple UI to building <strong>sovereign, local-first AI infrastructure</strong> and <strong>Agentic Workflows</strong>.
           </p>
         </div>
 
@@ -55,35 +38,49 @@
               height="1.25rem"
               class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
             />
-            Current focus
+            Current Specialization & Research
           </h3>
-          <ul class="space-y-2 text-sm text-vue-800 dark:text-vue-200">
-            <li class="flex items-center">
+          <ul class="space-y-4 text-sm text-vue-800 dark:text-vue-200">
+            <li class="flex items-start gap-3">
               <Icon
                 icon="lucide:check"
                 width="1rem"
                 height="1rem"
-                class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
+                class="mt-0.5 shrink-0 text-vue-600 dark:text-vue-400"
               />
-              ByteByteAI: LLMs, RAGs, agents
+              <span><strong>System Design:</strong> Implementing high-scale patterns (RAG, Load Balancing, Distributed Systems) via the <a
+                href="https://bytebyteai.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-vue-600 dark:text-vue-400 hover:underline"
+              >ByteByteAI</a> curriculum.</span>
             </li>
-            <li class="flex items-center">
+            <li class="flex items-start gap-3">
               <Icon
                 icon="lucide:check"
                 width="1rem"
                 height="1rem"
-                class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
+                class="mt-0.5 shrink-0 text-vue-600 dark:text-vue-400"
               />
-              Using AI (Ollama, Qwen, OpenCode) in my frontend dev workflow
+              <span><strong>Local Inference:</strong> Engineering private AI environments using <strong>Ollama</strong> and <strong>Qwen</strong> to ensure data sovereignty and low-latency execution.</span>
             </li>
-            <li class="flex items-center">
+            <li class="flex items-start gap-3">
               <Icon
                 icon="lucide:check"
                 width="1rem"
                 height="1rem"
-                class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
+                class="mt-0.5 shrink-0 text-vue-600 dark:text-vue-400"
               />
-              Setting up homelabs (Proxmox)
+              <span><strong>Sovereign Infrastructure:</strong> Architecting a dedicated <strong>Homelab (Proxmox)</strong> to host local LLMs, automated CI/CD pipelines, and private documentation agents.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon
+                icon="lucide:check"
+                width="1rem"
+                height="1rem"
+                class="mt-0.5 shrink-0 text-vue-600 dark:text-vue-400"
+              />
+              <span><strong>AI-Augmented DX:</strong> Optimizing the development lifecycle using <strong>Cursor</strong> and <strong>OpenCode</strong> to achieve high-velocity iteration.</span>
             </li>
           </ul>
         </div>
