@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden">
+  <section class="min-h-screen flex items-center justify-center pb-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden">
     <!-- Background decoration -->
     <div class="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10" />
 

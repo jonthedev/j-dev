@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-20">
+  <div>
     <!-- Frontend portfolio -->
     <template v-if="portfolioMode.mode.value === 'frontend'">
       <Hero />
