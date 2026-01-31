@@ -23,43 +23,17 @@
             >
               {{ link.name }}
             </NuxtLink>
-            <!-- Portfolio view: segmented control so both options are visible and clickable -->
-            <div class="flex items-center gap-2">
-              <div
-                class="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 p-0.5 bg-gray-50/50 dark:bg-gray-900/50"
-                role="tablist"
-                aria-label="Portfolio view"
-              >
-                <button
-                  type="button"
-                  role="tab"
-                  :aria-selected="portfolioMode.mode.value === 'frontend'"
-                  :class="[
-                    'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
-                    portfolioMode.mode.value === 'frontend'
-                      ? 'bg-white dark:bg-gray-800 text-vue-700 dark:text-vue-300 shadow-sm'
-                      : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                  ]"
-                  @click="portfolioMode.setMode('frontend')"
-                >
-                  Frontend
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  :aria-selected="portfolioMode.mode.value === 'platform'"
-                  :class="[
-                    'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
-                    portfolioMode.mode.value === 'platform'
-                      ? 'bg-white dark:bg-gray-800 text-vue-700 dark:text-vue-300 shadow-sm'
-                      : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                  ]"
-                  @click="portfolioMode.setMode('platform')"
-                >
-                  AI
-                </button>
-              </div>
-            </div>
+            <!-- Portfolio view: Nuxt UI Tabs (toggle only) -->
+            <UTabs
+              v-model="portfolioTab"
+              :content="false"
+              :items="portfolioTabItems"
+              variant="pill"
+              color="primary"
+              size="sm"
+              class="w-auto"
+              aria-label="Portfolio view"
+            />
             <!-- Theme Toggle -->
             <button
               type="button"
@@ -80,43 +54,17 @@
 
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center space-x-2">
-          <!-- Portfolio view: segmented control -->
-          <div class="flex items-center gap-1.5">
-            <div
-              class="inline-flex rounded-lg border border-gray-200 dark:border-gray-700 p-0.5 bg-gray-50/50 dark:bg-gray-900/50"
-              role="tablist"
-              aria-label="Portfolio view"
-            >
-              <button
-                type="button"
-                role="tab"
-                :aria-selected="portfolioMode.mode.value === 'frontend'"
-                :class="[
-                  'px-2.5 py-1 rounded-md text-xs font-medium transition-colors',
-                  portfolioMode.mode.value === 'frontend'
-                    ? 'bg-white dark:bg-gray-800 text-vue-700 dark:text-vue-300 shadow-sm'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                ]"
-                @click="portfolioMode.setMode('frontend')"
-              >
-                Frontend
-              </button>
-              <button
-                type="button"
-                role="tab"
-                :aria-selected="portfolioMode.mode.value === 'platform'"
-                :class="[
-                  'px-2.5 py-1 rounded-md text-xs font-medium transition-colors',
-                  portfolioMode.mode.value === 'platform'
-                    ? 'bg-white dark:bg-gray-800 text-vue-700 dark:text-vue-300 shadow-sm'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-                ]"
-                @click="portfolioMode.setMode('platform')"
-              >
-                AI
-              </button>
-            </div>
-          </div>
+          <!-- Portfolio view: Nuxt UI Tabs (toggle only) -->
+          <UTabs
+            v-model="portfolioTab"
+            :content="false"
+            :items="portfolioTabItems"
+            variant="pill"
+            color="primary"
+            size="xs"
+            class="w-auto"
+            aria-label="Portfolio view"
+          />
           <!-- Theme Toggle -->
           <button
             type="button"
@@ -175,6 +123,18 @@ defineOptions({ name: 'AppNavbar' })
 
 const colorMode = useColorMode()
 const portfolioMode = usePortfolioMode()
+
+const portfolioTabItems = [
+  { label: 'Frontend', value: 'frontend' },
+  { label: 'AI', value: 'platform' }
+]
+
+const portfolioTab = computed({
+  get: () => portfolioMode.mode.value,
+  set: (v) => {
+    if (v === 'frontend' || v === 'platform') portfolioMode.setMode(v)
+  }
+})
 
 function toggleColorMode() {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
