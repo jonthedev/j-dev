@@ -4,7 +4,12 @@
     class="py-20 bg-white dark:bg-black"
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+        class="text-center mb-16"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Let's Build Something Together
         </h2>
@@ -15,7 +20,12 @@
 
       <!-- Contact methods -->
       <div class="grid md:grid-cols-3 gap-8 mb-16">
-        <div class="text-center group">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 100 } }"
+          class="text-center group"
+        >
           <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
             <Icon
               icon="lucide:mail"
@@ -35,7 +45,12 @@
           </a>
         </div>
 
-        <div class="text-center group">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 180 } }"
+          class="text-center group"
+        >
           <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
             <Icon
               icon="lucide:building-2"
@@ -50,7 +65,12 @@
           <span class="text-gray-600 dark:text-gray-300">KVK: 93792670</span>
         </div>
 
-        <div class="text-center group">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 260 } }"
+          class="text-center group"
+        >
           <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
             <Icon
               icon="lucide:clock"
@@ -67,7 +87,12 @@
       </div>
 
       <!-- Quick contact form or CTA -->
-      <div class="bg-gradient-to-r from-vue-50 to-vue-100 dark:from-vue-950/30 dark:to-vue-900/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 150 } }"
+        class="bg-gradient-to-r from-vue-50 to-vue-100 dark:from-vue-950/30 dark:to-vue-900/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
+      >
         <div class="text-center">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Ready to Start Your Project?

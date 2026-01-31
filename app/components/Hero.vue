@@ -4,7 +4,12 @@
     <div class="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10" />
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="animate-fade-in-up space-y-8">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, ease: 'easeOut' } }"
+        class="space-y-8"
+      >
         <!-- Main headline -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
           <span class="text-gray-900 dark:text-white">Freelance Senior</span><br>

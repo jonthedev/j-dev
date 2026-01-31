@@ -4,7 +4,12 @@
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+        class="text-center mb-16"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           About Me
         </h2>
@@ -15,7 +20,12 @@
 
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <!-- Text content -->
-        <div class="space-y-6">
+        <div
+          v-motion
+          :initial="{ opacity: 0, x: -24 }"
+          :visible-once="{ opacity: 1, x: 0, transition: { duration: 500, delay: 100 } }"
+          class="space-y-6"
+        >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
               I'm a <strong>Senior Frontend Engineer</strong> with 6+ years of experience building web applications.
@@ -41,7 +51,12 @@
         </div>
 
         <!-- Visual/Stats -->
-        <div class="space-y-6">
+        <div
+          v-motion
+          :initial="{ opacity: 0, x: 24 }"
+          :visible-once="{ opacity: 1, x: 0, transition: { duration: 500, delay: 150 } }"
+          class="space-y-6"
+        >
           <!-- Photo -->
           <div class="flex justify-center">
             <img

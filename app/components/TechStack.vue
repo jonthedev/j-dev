@@ -4,7 +4,12 @@
     class="py-20 bg-white dark:bg-black"
   >
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+        class="text-center mb-16"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Tech Stack
         </h2>
@@ -15,13 +20,21 @@
 
       <!-- Primary Technologies -->
       <div class="mb-16">
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
+        <h3
+          v-motion
+          :initial="{ opacity: 0, y: 16 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 } }"
+          class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
+        >
           Core Expertise
         </h3>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div
-            v-for="tech in primaryTech"
+            v-for="(tech, index) in primaryTech"
             :key="tech.id"
+            v-motion
+            :initial="{ opacity: 0, y: 16 }"
+            :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 150 + index * 50 } }"
             class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
           >
             <span
@@ -54,13 +67,21 @@
 
       <!-- Secondary Technologies -->
       <div>
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
+        <h3
+          v-motion
+          :initial="{ opacity: 0, y: 16 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 } }"
+          class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
+        >
           Also Experienced With
         </h3>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div
-            v-for="tech in secondaryTech"
+            v-for="(tech, index) in secondaryTech"
             :key="tech.id"
+            v-motion
+            :initial="{ opacity: 0, y: 16 }"
+            :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 150 + index * 40 } }"
             class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group opacity-75"
           >
             <span
@@ -92,7 +113,12 @@
       </div>
 
       <!-- Development Philosophy -->
-      <div class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
+        class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
+      >
         <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
           Development Philosophy
         </h3>

@@ -1,7 +1,12 @@
 <template>
   <section class="py-20 bg-white dark:bg-black">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+        class="text-center mb-16"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Trusted by Leading Companies
         </h2>
@@ -12,8 +17,11 @@
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
         <div
-          v-for="client in clients"
+          v-for="(client, index) in clients"
           :key="client.id"
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 + index * 80 } }"
           class="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
         >
           <img
@@ -28,7 +36,12 @@
 
       <!-- Client testimonials or highlights -->
       <div class="mt-16 grid md:grid-cols-3 gap-8">
-        <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 200 } }"
+          class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6"
+        >
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:trophy"
@@ -45,7 +58,12 @@
           </p>
         </div>
 
-        <div class="bg-blue-50 dark:bg-blue-950/20 dark:border-blue-800 border border-blue-200 rounded-lg p-6">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 280 } }"
+          class="bg-blue-50 dark:bg-blue-950/20 dark:border-blue-800 border border-blue-200 rounded-lg p-6"
+        >
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:bar-chart-2"
@@ -62,7 +80,12 @@
           </p>
         </div>
 
-        <div class="bg-green-50 dark:bg-green-950/20 dark:border-green-800 border border-green-200 rounded-lg p-6">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 360 } }"
+          class="bg-green-50 dark:bg-green-950/20 dark:border-green-800 border border-green-200 rounded-lg p-6"
+        >
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:rocket"

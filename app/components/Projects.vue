@@ -4,7 +4,12 @@
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 24 }"
+        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
+        class="text-center mb-16"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Featured Projects
         </h2>
@@ -15,8 +20,11 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         <div
-          v-for="project in projects"
+          v-for="(project, index) in projects"
           :key="project.id"
+          v-motion
+          :initial="{ opacity: 0, y: 24 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 + index * 120 } }"
           class="group bg-white dark:bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-800"
         >
           <!-- Project image -->
@@ -95,7 +103,12 @@
 
       <!-- Call to action -->
       <div class="mt-16 text-center">
-        <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 24 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
+          class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
+        >
           <h3 class="text-xl font-semibold text-vue-900 dark:text-vue-100 mb-4">
             Interested in collaborating?
           </h3>
