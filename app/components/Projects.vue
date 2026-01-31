@@ -27,9 +27,20 @@
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 + index * 120 } }"
           class="group bg-white dark:bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-800"
         >
-          <!-- Project image -->
+          <!-- Project image: plain img in dev (IPX/local can show gradient/no request); NuxtImg in prod (Netlify CDN) -->
           <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900">
+            <img
+              v-if="isDev"
+              :src="project.img"
+              :alt="project.title"
+              width="800"
+              height="450"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            >
             <NuxtImg
+              v-else
               :src="project.img"
               :alt="project.title"
               width="800"
@@ -142,6 +153,8 @@ import { Icon } from '@iconify/vue'
 import { projects } from '~/data/projects'
 
 defineOptions({ name: 'ProjectsSection' })
+
+const isDev = import.meta.dev
 
 // Helper function to extract clean tech names from icon names
 const getTechName = (iconName: string): string => {
