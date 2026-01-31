@@ -27,10 +27,9 @@
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 + index * 120 } }"
           class="group bg-white dark:bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-800"
         >
-          <!-- Project image: plain img when not using Netlify CDN; NuxtImg when netlify dev or production -->
+          <!-- Project image: plain img so images work in dev and production -->
           <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900">
             <img
-              v-if="!useNetlifyImage"
               :src="project.img"
               :alt="project.title"
               width="800"
@@ -39,16 +38,6 @@
               decoding="async"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             >
-            <NuxtImg
-              v-else
-              :src="project.img"
-              :alt="project.title"
-              width="800"
-              height="450"
-              sizes="(min-width: 1024px) 800px, (min-width: 768px) 50vw, 100vw"
-              format="webp"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            />
           </div>
 
           <!-- Project content -->
@@ -153,9 +142,6 @@ import { Icon } from '@iconify/vue'
 import { projects } from '~/data/projects'
 
 defineOptions({ name: 'ProjectsSection' })
-
-const { public: publicConfig } = useRuntimeConfig()
-const useNetlifyImage = publicConfig.useNetlifyImage as boolean
 
 // Helper function to extract clean tech names from icon names
 const getTechName = (iconName: string): string => {

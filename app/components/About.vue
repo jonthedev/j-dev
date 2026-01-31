@@ -57,10 +57,9 @@
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 500, delay: 150 } }"
           class="space-y-6"
         >
-          <!-- Photo: plain img when not using Netlify CDN; NuxtImg when netlify dev or production -->
+          <!-- Photo: plain img so images work in dev and production -->
           <div class="flex justify-center">
             <img
-              v-if="!useNetlifyImage"
               src="/jdk-portfolio-2024.jpeg"
               alt="Jonathan Kaonga"
               width="224"
@@ -69,16 +68,6 @@
               decoding="async"
               class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-gray-200 dark:border-gray-800 shadow-lg"
             >
-            <NuxtImg
-              v-else
-              src="/jdk-portfolio-2024.jpeg"
-              alt="Jonathan Kaonga"
-              width="224"
-              height="224"
-              sizes="224px"
-              format="webp"
-              class="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-gray-200 dark:border-gray-800 shadow-lg"
-            />
           </div>
           <!-- Experience stats -->
           <div class="grid grid-cols-2 gap-4">
@@ -167,9 +156,6 @@
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'AppAbout' })
-
-const { public: publicConfig } = useRuntimeConfig()
-const useNetlifyImage = publicConfig.useNetlifyImage as boolean
 
 useHead({
   title: 'About - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'

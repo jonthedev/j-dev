@@ -25,21 +25,12 @@
           class="flex items-center justify-center p-6 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
         >
           <img
-            v-if="!useNetlifyImage"
             :src="client.img"
             :alt="client.alt"
             :width="client.width || 150"
             :height="client.height || 150"
             class="max-h-16 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
           >
-          <NuxtImg
-            v-else
-            :src="client.img"
-            :alt="client.alt"
-            :width="client.width || 150"
-            :height="client.height || 150"
-            class="max-h-16 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
-          />
         </div>
       </div>
 
@@ -120,9 +111,6 @@ import { Icon } from '@iconify/vue'
 import clients from '~/data/clients'
 
 defineOptions({ name: 'AppClients' })
-
-const { public: publicConfig } = useRuntimeConfig()
-const useNetlifyImage = publicConfig.useNetlifyImage as boolean
 
 useHead({
   title: 'Clients - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'
