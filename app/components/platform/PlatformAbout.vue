@@ -11,15 +11,15 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          AI platform focus
+          AI & frontend
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Adding AI platform engineering (<a
+          Learning AI engineering via <a
             href="https://bytebyteai.com/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-vue-600 dark:text-vue-400 hover:underline"
-          >ByteByteAI</a>) and DevOps to a strong frontend base
+          >ByteByteAI</a> — and using AI to build better frontends
         </p>
       </div>
 
@@ -32,20 +32,18 @@
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
             I'm a <strong>Senior Frontend Engineer</strong> with years of experience in Vue, Nuxt, and modern web apps.
-            I'm now <strong>learning AI platform engineering</strong> via <a
+            I'm learning <strong>AI engineering</strong> via <a
               href="https://bytebyteai.com/"
               target="_blank"
               rel="noopener noreferrer"
               class="text-vue-600 dark:text-vue-400 hover:underline"
-            >ByteByteAI</a> in parallel: Python, containers (Docker), orchestration (Kubernetes),
-            IaC (Terraform), CI/CD (GitHub Actions, GitLab CI), and observability.
+            >ByteByteAI</a> (LLMs, RAGs, agents) and I like using AI to help me build frontends — better DX, faster iteration, smarter tooling.
           </p>
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            The goal is to combine <strong>frontend craft</strong> with <strong>AI platform and DevOps skills</strong>—better
-            developer experience, reliable deployments, and infrastructure that supports the products I help build.
+            <strong>In my workflow right now:</strong> Ollama, Qwen, and OpenCode for local AI and coding.
           </p>
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            <strong>Currently using in development:</strong> Ollama, Qwen, and OpenCode for local AI and coding workflows.
+            I'm also learning about setting up <strong>homelabs</strong> (e.g. Proxmox) so I can run more of this on my own hardware.
           </p>
         </div>
 
@@ -57,7 +55,7 @@
               height="1.25rem"
               class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
             />
-            Current learning areas
+            Current focus
           </h3>
           <ul class="space-y-2 text-sm text-vue-800 dark:text-vue-200">
             <li class="flex items-center">
@@ -67,7 +65,7 @@
                 height="1rem"
                 class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
               />
-              Docker & containerization
+              ByteByteAI: LLMs, RAGs, agents
             </li>
             <li class="flex items-center">
               <Icon
@@ -76,7 +74,7 @@
                 height="1rem"
                 class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
               />
-              Kubernetes basics & workloads
+              Using AI (Ollama, Qwen, OpenCode) in my frontend dev workflow
             </li>
             <li class="flex items-center">
               <Icon
@@ -85,16 +83,7 @@
                 height="1rem"
                 class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
               />
-              CI/CD pipelines (GitHub Actions, GitLab CI)
-            </li>
-            <li class="flex items-center">
-              <Icon
-                icon="lucide:check"
-                width="1rem"
-                height="1rem"
-                class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
-              />
-              Terraform & infrastructure as code
+              Setting up homelabs (Proxmox)
             </li>
           </ul>
         </div>

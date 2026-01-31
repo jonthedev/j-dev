@@ -12,7 +12,7 @@
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
           <span class="text-gray-900 dark:text-white">Learning</span><br>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
-            AI Platform Engineering
+            AI engineering
           </span>
         </h1>
 
@@ -22,8 +22,8 @@
             target="_blank"
             rel="noopener noreferrer"
             class="text-vue-600 dark:text-vue-400 hover:underline"
-          >ByteByteAI</a> · Containers, CI/CD, and cloud-native tooling<br>
-          <span class="text-vue-600 dark:text-vue-400">Building toward infrastructure and developer experience</span>
+          >ByteByteAI</a> · Using AI to help build better frontends<br>
+          <span class="text-vue-600 dark:text-vue-400">LLMs, RAGs, agents — and Ollama, Qwen, OpenCode in my workflow</span>
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -61,7 +61,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="text-vue-600 dark:text-vue-400 hover:underline"
-            >ByteByteAI</a> AI Engineering track
+            >ByteByteAI</a> course
           </span>
         </div>
       </div>

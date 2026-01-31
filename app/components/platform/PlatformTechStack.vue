@@ -14,12 +14,12 @@
           Tech & tools
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          AI platform engineering & DevOps stack I'm learning (<a
+          AI tools I'm using with <a
             href="https://bytebyteai.com/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-vue-600 dark:text-vue-400 hover:underline"
-          >ByteByteAI</a>) and using. Mix of core tools and expanding experience.
+          >ByteByteAI</a> and in my frontend workflow.
         </p>
       </div>
 
@@ -102,29 +102,18 @@
         class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
       >
         <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
-          Why AI platform engineering
+          Why AI in my workflow
         </h3>
         <div class="grid md:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
           <div class="flex items-start space-x-3">
             <Icon
-              icon="lucide:box"
+              icon="lucide:sparkles"
               width="1.25rem"
               height="1.25rem"
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Containers & orchestration:</strong> Reliable, repeatable deployments and scaling.
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:git-branch"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>CI/CD:</strong> Automated builds, tests, and releases from code to production.
+              <strong>ByteByteAI:</strong> LLMs, RAGs, agents — understanding how AI systems work.
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -135,7 +124,18 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Developer experience:</strong> Better tooling and workflows for the teams I work with.
+              <strong>Better frontends:</strong> Using AI to ship faster and smarter.
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <Icon
+              icon="lucide:cpu"
+              width="1.25rem"
+              height="1.25rem"
+              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
+            />
+            <div>
+              <strong>Local first:</strong> Ollama, Qwen, OpenCode — no cloud lock-in for my dev workflow.
             </div>
           </div>
         </div>

@@ -29,12 +29,12 @@ const portfolioMode = usePortfolioMode()
 const pageTitle = computed(() =>
   portfolioMode.mode.value === 'frontend'
     ? 'Jonathan Kaonga - Freelance Senior Frontend Engineer | Vue & Nuxt'
-    : 'Jonathan Kaonga - AI Platform Engineering (learning, ByteByteAI)'
+    : 'Jonathan Kaonga - AI engineering (ByteByteAI)'
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === 'frontend'
     ? 'Vue & Nuxt specialist · Contract & project work · Turning ideas into interactive reality'
-    : 'Learning AI platform engineering (ByteByteAI) · Containers, CI/CD, cloud-native tooling'
+    : 'Learning AI engineering via ByteByteAI · Using AI to build better frontends'
 )
 
 useHead(() => ({

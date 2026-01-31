@@ -57,7 +57,7 @@
                   ]"
                   @click="portfolioMode.setMode('platform')"
                 >
-                  AI Platform
+                  AI
                 </button>
               </div>
             </div>
@@ -115,7 +115,7 @@
                 ]"
                 @click="portfolioMode.setMode('platform')"
               >
-                AI Platform
+                AI
               </button>
             </div>
           </div>
