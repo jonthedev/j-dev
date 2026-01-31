@@ -1,0 +1,3 @@
+# SPA: serve index.html for all routes (client-side routing)
+# https://nuxt.com/deploy/netlify
+/*    /index.html   200

@@ -1,0 +1,13 @@
+# Nuxt 4 static site (SPA) – Netlify
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "pnpm run build"
+  publish = ".output/public"
+
+# SPA: serve index.html for all routes so client-side routing works
+# https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
