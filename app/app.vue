@@ -5,11 +5,7 @@ useHead({
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' },
-    { rel: 'manifest', href: '/site.webmanifest' },
-    {
-      href: 'https://fonts.googleapis.com/css2?family=Kanit&display=swap',
-      rel: 'stylesheet'
-    }
+    { rel: 'manifest', href: '/site.webmanifest' }
   ],
   htmlAttrs: {
     lang: 'en'

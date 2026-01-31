@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
+    '@nuxt/fonts',
     '@vueuse/motion/nuxt'
   ],
 
@@ -34,5 +35,11 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  fonts: {
+    families: [
+      { name: 'Kanit', provider: 'google', weights: ['400', '600'] }
+    ]
   }
 })
