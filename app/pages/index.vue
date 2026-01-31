@@ -14,6 +14,7 @@
       <PlatformHero />
       <PlatformAbout />
       <PlatformTechStack />
+      <PlatformProjects />
       <Contact />
     </template>
   </div>
@@ -23,6 +24,7 @@
 import PlatformHero from '~/components/platform/PlatformHero.vue'
 import PlatformAbout from '~/components/platform/PlatformAbout.vue'
 import PlatformTechStack from '~/components/platform/PlatformTechStack.vue'
+import PlatformProjects from '~/components/platform/PlatformProjects.vue'
 
 const portfolioMode = usePortfolioMode()
 
