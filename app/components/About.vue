@@ -141,8 +141,7 @@
           <!-- Personal touch -->
           <div class="bg-white dark:bg-black rounded-lg p-6 border border-gray-200 dark:border-gray-800">
             <p class="text-gray-600 dark:text-gray-400 text-sm italic">
-              "Beyond coding, I enjoy exploring new technologies, contributing to open source,
-              and continuous learning. Based in the Netherlands and available for remote work worldwide."
+              "Beyond coding, I enjoy exploring new technologies and continuous learning—with a growing focus on AI platform engineering and running models locally. Based in the Netherlands and available for remote work worldwide."
             </p>
           </div>
         </div>
