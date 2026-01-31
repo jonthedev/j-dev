@@ -105,7 +105,7 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:jonathan@j-dev.online"
-              class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-600 hover:bg-vue-700 rounded-lg transition-colors"
+              class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-700 hover:bg-vue-800 rounded-lg transition-colors"
             >
               <Icon
                 icon="lucide:send"

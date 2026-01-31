@@ -70,7 +70,7 @@
                 :href="project.url"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-vue-600 hover:bg-vue-700 rounded-md transition-colors"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-vue-700 hover:bg-vue-800 rounded-md transition-colors"
               >
                 <Icon
                   icon="lucide:eye"
@@ -117,7 +117,7 @@
           </p>
           <a
             href="#contact"
-            class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-600 hover:bg-vue-700 rounded-lg transition-colors"
+            class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-700 hover:bg-vue-800 rounded-lg transition-colors"
           >
             Start a conversation
             <Icon

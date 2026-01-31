@@ -27,7 +27,7 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
           <a
             href="#contact"
-            class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-vue-600 hover:bg-vue-700 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+            class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-vue-700 hover:bg-vue-800 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
           >
             <Icon
               icon="lucide:arrow-right"
