@@ -111,8 +111,4 @@ import { Icon } from '@iconify/vue'
 import clients from '~/data/clients'
 
 defineOptions({ name: 'AppClients' })
-
-useHead({
-  title: 'Clients - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'
-})
 </script>

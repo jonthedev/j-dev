@@ -32,11 +32,11 @@
       <span
         v-for="tech in project.tech"
         :key="tech.id"
-        class="flex items-center space-x-1.5 bg-gray-100 dark:bg-gray-900 rounded-full px-3 py-1 text-xs font-medium text-gray-700 dark:text-gray-300"
+        :class="['flex items-center space-x-1.5 rounded-full px-3 py-1 text-xs font-medium', getTechBrandClass(tech.icon)]"
       >
         <Icon
           :icon="tech.icon"
-          class="mr-1"
+          class="mr-1 shrink-0"
         />
         {{ getTechName(tech.icon) }}
       </span>
@@ -81,7 +81,7 @@ const props = defineProps<Props>()
 
 // Use our composables
 const { staggeredAnimation } = useAnimation()
-const { getTechName } = useIcons()
+const { getTechName, getTechBrandClass } = useIcons()
 
 // Optimized animation
 const animation = computed(() =>

@@ -156,8 +156,4 @@
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'AppAbout' })
-
-useHead({
-  title: 'About - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'
-})
 </script>

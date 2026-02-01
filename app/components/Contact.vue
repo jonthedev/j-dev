@@ -159,8 +159,4 @@ const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/jonthedev', icon: 'simple-icons:github' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/', icon: 'simple-icons:linkedin' }
 ]
-
-useHead({
-  title: 'Contact - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'
-})
 </script>

@@ -62,8 +62,4 @@ const { fadeInUp } = useAnimation()
 
 // Section animation
 const sectionRevealAnimation = fadeInUp(500, 0)
-
-useHead({
-  title: 'Projects - Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer'
-})
 </script>

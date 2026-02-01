@@ -1,8 +1,32 @@
 /**
  * Icon management composable
- * Provides icon utilities and tech name mapping
+ * Provides icon utilities, tech name mapping, and official brand colors
  */
 export function useIcons() {
+  // Official brand colors for tech badges (Tailwind: bg tint + text)
+  const techBrandColorMap: Record<string, string> = {
+    'simple-icons:vuedotjs': 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400',
+    'simple-icons:nuxtdotjs': 'bg-green-500/15 text-green-700 dark:text-green-400',
+    'simple-icons:typescript': 'bg-blue-600/15 text-blue-700 dark:text-blue-300',
+    'simple-icons:tailwindcss': 'bg-cyan-500/15 text-cyan-700 dark:text-cyan-400',
+    'simple-icons:vitejs': 'bg-purple-500/15 text-purple-700 dark:text-purple-400',
+    'simple-icons:pinia': 'bg-amber-500/15 text-amber-700 dark:text-amber-400',
+    'simple-icons:javascript': 'bg-yellow-400/20 text-yellow-800 dark:text-yellow-300',
+    'simple-icons:react': 'bg-cyan-400/15 text-cyan-700 dark:text-cyan-300',
+    'simple-icons:nextdotjs': 'bg-gray-800/15 text-gray-800 dark:bg-white/15 dark:text-white',
+    'simple-icons:styledcomponents': 'bg-pink-400/15 text-pink-700 dark:text-pink-300',
+    'simple-icons:chakraui': 'bg-teal-500/15 text-teal-700 dark:text-teal-400',
+    'simple-icons:storybook': 'bg-pink-500/15 text-pink-700 dark:text-pink-400',
+    'simple-icons:sass': 'bg-pink-500/15 text-pink-700 dark:text-pink-400',
+    'simple-icons:amazonaws': 'bg-orange-500/15 text-orange-700 dark:text-orange-400',
+    'simple-icons:html5': 'bg-orange-500/15 text-orange-700 dark:text-orange-400',
+    'simple-icons:css3': 'bg-blue-600/15 text-blue-700 dark:text-blue-300',
+    'simple-icons:github': 'bg-gray-800/15 text-gray-800 dark:bg-white/10 dark:text-white',
+    'simple-icons:docker': 'bg-blue-600/15 text-blue-700 dark:text-blue-300',
+    'simple-icons:netlify': 'bg-teal-500/15 text-teal-700 dark:text-teal-400',
+    'simple-icons:vercel': 'bg-gray-800/15 text-gray-800 dark:bg-white/10 dark:text-white'
+  }
+
   // Tech name mapping for better display
   const techNameMap: Record<string, string> = {
     'simple-icons:vuedotjs': 'Vue',
@@ -96,6 +120,14 @@ export function useIcons() {
   }
 
   /**
+   * Get official brand color classes for tech badge (bg + text)
+   * Falls back to neutral if icon not in map
+   */
+  const getTechBrandClass = (iconName: string): string => {
+    return techBrandColorMap[iconName] ?? 'bg-gray-500/10 text-gray-700 dark:text-gray-300'
+  }
+
+  /**
    * Get icon category/type
    */
   const getIconCategory = (iconName: string): string => {
@@ -134,7 +166,9 @@ export function useIcons() {
 
   return {
     techNameMap,
+    techBrandColorMap,
     getTechName,
+    getTechBrandClass,
     getIconCategory,
     isIconCategory,
     iconSizes,
