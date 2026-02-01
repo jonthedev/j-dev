@@ -161,7 +161,7 @@
                 <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">NUXT 4</span>
                 <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">OLLAMA</span>
               </div>
-            </div>la
+            </div>
           </div>
         </div>
       </div>
