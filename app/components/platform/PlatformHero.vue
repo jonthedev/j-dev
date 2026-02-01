@@ -25,7 +25,7 @@
           Architecting intelligence into the modern stack.
           <br>
           <span class="text-vue-600 dark:text-vue-400">
-            Senior Engineer bridging Vue/Nuxt systems and sovereign AI
+            Senior Frontend Engineer expanding into platform engineering and sovereign AI
             infrastructure.
           </span>
         </p>

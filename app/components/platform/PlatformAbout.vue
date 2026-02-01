@@ -32,7 +32,7 @@
       >
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-center">
-            I am a <strong>Senior Engineer</strong> bridging the gap between high-performance frontends and sovereign AI infrastructure. By moving beyond the public cloud, I engineer private, local-first environments that prioritize <strong>data sovereignty</strong> and <strong>high-velocity iteration</strong>.
+            I am a <strong>Senior Frontend Engineer</strong> expanding into sovereign AI and platform infrastructure. By moving beyond the public cloud, I'm building private, local-first environments that prioritize <strong>data sovereignty</strong> and <strong>high-velocity iteration</strong>.
           </p>
         </div>
 
