@@ -10,14 +10,14 @@ export interface TechStackItem {
 export const techStack: TechStackItem[] = [
   {
     id: 'vue-3',
-    title: 'Vue 3',
+    title: 'Vue.js',
     icon: 'simple-icons:vuedotjs',
     iconClass: 'text-green-500',
     category: 'primary'
   },
   {
     id: 'nuxt-3',
-    title: 'Nuxt 3',
+    title: 'Nuxt.js',
     icon: 'simple-icons:nuxtdotjs',
     iconClass: 'text-green-600',
     category: 'primary'
