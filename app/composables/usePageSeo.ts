@@ -7,7 +7,8 @@ export function usePageSeo(title: string, description?: string, image?: string, 
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : 'https://j-dev.online')
-  const siteImage = image || '/jdk-portfolio-2024.jpeg'
+  const siteImagePath = image || '/jdk-portfolio-2024.jpeg'
+  const siteImageAbsolute = siteImagePath.startsWith('http') ? siteImagePath : `${siteUrl}${siteImagePath.startsWith('/') ? siteImagePath : `/${siteImagePath}`}`
 
   const meta: ({ name?: string, property?: string, content?: string, rel?: string, href?: string })[] = []
 
@@ -16,12 +17,12 @@ export function usePageSeo(title: string, description?: string, image?: string, 
     meta.push({ name: 'description', content: description })
   }
 
-  // Open Graph meta tags
+  // Open Graph meta tags (og:image must be absolute URL)
   meta.push(
     { property: 'og:title', content: fullTitle },
     { property: 'og:site_name', content: 'Jonathan Kaonga Portfolio' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:image', content: siteImage },
+    { property: 'og:image', content: siteImageAbsolute },
     { property: 'og:url', content: siteUrl }
   )
 
@@ -30,13 +31,13 @@ export function usePageSeo(title: string, description?: string, image?: string, 
     meta.push({ property: 'og:description', content: description })
   }
 
-  // Twitter Card meta tags
+  // Twitter Card meta tags (twitter:image must be absolute URL)
   meta.push(
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:site', content: '@jonthedev' },
     { name: 'twitter:creator', content: '@jonthedev' },
     { name: 'twitter:title', content: fullTitle },
-    { name: 'twitter:image', content: siteImage }
+    { name: 'twitter:image', content: siteImageAbsolute }
   )
 
   // Add Twitter description if provided

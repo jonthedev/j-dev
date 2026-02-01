@@ -77,9 +77,6 @@ const { fadeInUp } = useAnimation()
 
 // Apply optimized animation
 const animation = fadeInUp(600, 0)
-
-// Use SEO composable
-usePageSeo('Home', 'Freelance Vue/Nuxt Frontend Engineer specializing in modern web applications, component architecture, and performance optimization.')
 </script>
 
 <style scoped>
