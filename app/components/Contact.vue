@@ -104,7 +104,7 @@
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <UButton
-              to="mailto:jonathan@j-dev.online"
+              :to="`mailto:${contactInfo.email}`"
               size="lg"
               color="primary"
               icon="lucide:send"
@@ -113,7 +113,7 @@
             </UButton>
 
             <UButton
-              to="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
+              :to="contactInfo.linkedin"
               target="_blank"
               rel="noopener noreferrer"
               size="lg"
@@ -127,12 +127,12 @@
         </div>
       </div>
 
-      <!-- Social links -->
+      <!-- Social links (GitHub, LinkedIn from useContact) -->
       <div class="mt-12 flex justify-center space-x-6">
         <a
-          v-for="social in socialLinks"
+          v-for="social in contactMethods.filter(m => m.name !== 'Email')"
           :key="social.name"
-          :href="social.url"
+          :href="social.href"
           :aria-label="social.name"
           target="_blank"
           rel="noopener noreferrer"
@@ -155,8 +155,5 @@ import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'AppContact' })
 
-const socialLinks = [
-  { name: 'GitHub', url: 'https://github.com/jonthedev', icon: 'simple-icons:github' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/', icon: 'simple-icons:linkedin' }
-]
+const { contactInfo, contactMethods } = useContact()
 </script>
