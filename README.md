@@ -37,22 +37,11 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-### Production images (Nuxt Image + Netlify CDN)
-
-**`pnpm dev`** uses plain `<img>` so project, about, and client images load from `public/` — no Netlify needed.
-
-In **production** (Netlify), the same images use [Nuxt Image](https://image.nuxt.com) with the [Netlify provider](https://image.nuxt.com/providers/netlify) (WebP, resizing). To verify they work, deploy and check the live site.
-
-**Optional:** `pnpm dev:netlify` runs Netlify Dev (proxy + Image CDN locally). It can hang in the browser on some setups; if so, stick with `pnpm dev` and confirm images on deploy.
-
----
-
 ## Scripts
 
 | Command            | Description                    |
 |--------------------|--------------------------------|
 | `pnpm dev`         | Start dev server (recommended) |
-| `pnpm dev:netlify` | Netlify Dev (optional; can hang) |
 | `pnpm build`       | Production build               |
 | `pnpm generate`    | Static export                  |
 | `pnpm preview`     | Preview production build       |
@@ -79,7 +68,7 @@ nuxt.config.ts        # Nuxt config (srcDir: app, static preset)
 netlify.toml          # Netlify build + publish + SPA redirect
 ```
 
-Content (projects, tech stack, clients) lives in `app/data/` as TypeScript; no CMS.
+Content (projects, tech stack, clients) lives in `app/data/`
 
 ---
 
@@ -95,9 +84,14 @@ The site is deployed to **Netlify** from the `main` branch. Build uses:
 
 ## Metrics
 
-**Portfolio Refactor and Performance Enhancement**
+**Portfolio refactor: React → Nuxt 4**
 
-Migrated my freelance portfolio from React to Nuxt 4, Nuxt UI, and TypeScript. Implemented features including a Vue green theme, dark mode, Iconify icons, scroll/stagger animations, and Netlify deployment. Completed the project in approximately 6 hours with AI assistance, significantly reducing the estimated manual development time of 2–4 weeks.
+| | |
+|---|---|
+| **Baseline** | ~40–50 manual engineering hours. |
+| **Actual** | ~11 hours total (4h Agentic Refactor + 7h Human Refinement). |
+| **Efficiency gain** | ~75–80% reduction in migration latency. |
+| **Stack** | Ollama, Qwen2.5-Coder 32B, OpenCode. |
 
 ---
 
