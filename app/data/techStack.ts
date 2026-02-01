@@ -44,13 +44,6 @@ export const techStack: TechStackItem[] = [
     category: 'primary'
   },
   {
-    id: 'vueuse',
-    title: 'VueUse',
-    icon: 'simple-icons:vuedotjs',
-    iconClass: 'text-green-400',
-    category: 'primary'
-  },
-  {
     id: 'tailwind',
     title: 'Tailwind CSS',
     icon: 'simple-icons:tailwindcss',
