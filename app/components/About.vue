@@ -31,19 +31,19 @@
               I'm a <strong>Senior Frontend Engineer</strong> with 6+ years of experience building web applications.
               While I have broad experience across the frontend landscape, I now <strong>focus on Vue and its ecosystem</strong>—particularly Vue 3, Nuxt, and modern Vue tooling.
             </p>
-
+            <br>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
               Currently working on <strong>derivatives trading platforms</strong> at Thalex using Vue/Nuxt with real-time data visualization,
               I've also contributed to products at <strong>ANWB, Van Lanschot Kempen, and DPG Media</strong>.
               My work has been recognized with an ANWB award for innovation.
             </p>
-
+            <br>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
               I focus on <strong>performance, accessibility, and maintainable code</strong>.
               Whether building component libraries, migrating legacy applications, or creating new products from scratch,
               I bring strong technical expertise and a user-centered approach to every project.
             </p>
-
+            <br>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
               <em>Available for freelance contracts and project work. Based in the Netherlands with EU/UK work rights.</em>
             </p>
