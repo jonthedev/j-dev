@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex items-center justify-center pb-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden">
+  <section class="min-h-screen flex items-center justify-center pb-20 bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden">
     <div class="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10" />
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -10,15 +10,24 @@
         class="space-y-8"
       >
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">AI & Frontend</span><br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
+          <span class="text-gray-900 dark:text-white">AI Platform & Frontend </span>
+          <br>
+          <span
+            class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
+          >
             Architecture
           </span>
         </h1>
 
-        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Integrating intelligence into the modern stack.<br>
-          <span class="text-vue-600 dark:text-vue-400">Senior Engineer bridging Vue/Nuxt frontends and sovereign AI infrastructure.</span>
+        <p
+          class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
+        >
+          Architecting intelligence into the modern stack.
+          <br>
+          <span class="text-vue-600 dark:text-vue-400">
+            Senior Engineer bridging Vue/Nuxt systems and sovereign AI
+            infrastructure.
+          </span>
         </p>
         <p class="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
           Inference stack: Ollama, Qwen, OpenCode
@@ -54,12 +63,14 @@
         <div class="flex items-center justify-center pt-6 space-x-2">
           <div class="w-3 h-3 bg-amber-500 rounded-full animate-pulse" />
           <span class="text-gray-600 dark:text-gray-300 font-medium">
-            Current Research: System Design (<a
+            System Design: Implementing distributed patterns & RAG architectures
+            (via
+            <a
               href="https://bytebyteai.com/"
               target="_blank"
               rel="noopener noreferrer"
               class="text-vue-600 dark:text-vue-400 hover:underline"
-            >ByteByteAI</a>) 🟡
+            >ByteByteAI</a>) 🟢
           </span>
         </div>
       </div>

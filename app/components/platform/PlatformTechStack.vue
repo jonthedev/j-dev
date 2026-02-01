@@ -11,10 +11,10 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Modern Workflow & Engineering Lab
+          Engineering Lab: Sovereign Infrastructure
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          How I'm leveraging AI and Infrastructure to build scalable software.
+          Architecting private environments for high-performance AI and secure software delivery.
         </p>
       </div>
 
@@ -67,40 +67,40 @@
         class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
       >
         <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
-          Why AI in my workflow
+          Core Methodology
         </h3>
         <div class="grid md:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
           <div class="flex items-start space-x-3">
             <Icon
-              icon="lucide:sparkles"
+              icon="lucide:network"
               width="1.25rem"
               height="1.25rem"
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>ByteByteAI:</strong> LLMs, RAGs, agents — understanding how AI systems work.
+              <strong>System Design:</strong> Implementing distributed patterns, RAG, and agentic workflows to build resilient, AI-native platforms.
             </div>
           </div>
           <div class="flex items-start space-x-3">
             <Icon
-              icon="lucide:code-2"
+              icon="lucide:rocket"
               width="1.25rem"
               height="1.25rem"
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Engineering Velocity:</strong> Using AI-agentic workflows to compress refactoring and migration lifecycles (e.g., legacy React to Nuxt 4).
+              <strong>Engineering Velocity:</strong> Using AI-agentic workflows to compress complex refactoring and migration lifecycles (e.g., React to Nuxt 4).
             </div>
           </div>
           <div class="flex items-start space-x-3">
             <Icon
-              icon="lucide:cpu"
+              icon="lucide:lock"
               width="1.25rem"
               height="1.25rem"
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Local first:</strong> Ollama, Qwen, OpenCode — no cloud lock-in for my dev workflow.
+              <strong>Local-First:</strong> Orchestrating Ollama and Qwen locally to ensure total data sovereignty and zero cloud lock-in.
             </div>
           </div>
         </div>
