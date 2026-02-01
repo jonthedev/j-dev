@@ -35,7 +35,7 @@
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
               Currently working on <strong>derivatives trading platforms</strong> at Thalex using Vue/Nuxt with real-time data visualization,
               I've also contributed to products at <strong>ANWB, Van Lanschot Kempen, and DPG Media</strong>.
-              My work has been recognized with an ANWB award for innovation.
+              My work has been recognized with an ANWB Website van het Jaar award—Populairste Website (Most Popular Website), 2022.
             </p>
             <br>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed">

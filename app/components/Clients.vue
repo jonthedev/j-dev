@@ -54,7 +54,7 @@
             </h3>
           </div>
           <p class="text-vue-800 dark:text-vue-200 text-sm">
-            Received innovation award for ANWB Traffic application, recognized for exceptional user experience and technical excellence.
+            ANWB Traffic won Website van het Jaar 2022 – Populairste Website (Most Popular Website), recognized for exceptional reach and user engagement.
           </p>
         </div>
 

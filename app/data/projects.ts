@@ -33,8 +33,8 @@ export const projects: ProjectItem[] = [
     img: '/project-anwb-traffic-verkeer.png',
     url: 'https://www.anwb.nl/verkeer',
     github: null,
-    title: 'Traffic Verkeer',
-    text: 'Award-winning web application for ANWB that displays live traffic information to millions of users.',
+    title: 'ANWB Traffic Verkeer',
+    text: 'Web application for ANWB that displays live traffic information to millions of users. Won Website van het Jaar 2022 – Populairste Website (Most Popular Website).',
     tech: [
       {
         id: 'ts-1',
