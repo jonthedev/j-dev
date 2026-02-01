@@ -40,23 +40,19 @@ interface Props {
   index?: number
   isPrimary?: boolean
   iconClass?: string
+  badgeColor?: 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'error' | 'neutral'
 }
 
 const props = withDefaults(defineProps<Props>(), {
   isPrimary: true,
-  index: 0
+  index: 0,
+  badgeColor: 'neutral'
 })
 
 // Use our animation composable
 const { staggeredAnimation } = useAnimation()
 
-// Optimized animation
 const animation = computed(() =>
-  staggeredAnimation(150, 50)(props.index)
-)
-
-// Use default values without unused computed
-const defaultAnimation = computed(() =>
   staggeredAnimation(150, 50)(props.index)
 )
 </script>

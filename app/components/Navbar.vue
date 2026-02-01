@@ -3,7 +3,7 @@
     <UContainer>
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Name -->
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <NuxtLink
             to="/"
             class="text-xl font-bold text-gray-900 dark:text-white hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
