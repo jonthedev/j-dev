@@ -139,7 +139,7 @@
                   Orchestration Phase
                 </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Developed an agentic pipeline using <strong>OpenCode</strong> and <strong>Qwen2.5-Coder (32B)</strong>. Automated structural conversion of legacy React hooks into <strong>Nuxt 4 Composables</strong> while maintaining 1:1 functional parity.
+                  Built an agentic pipeline with <strong>OpenCode</strong> and <strong>Qwen2.5-Coder (32B)</strong> and drove the full migration of <strong>j-dev</strong> from React to <strong>Nuxt 4</strong>. Delivered a completely new design, reusable Vue components and composables, the AI/Platform tab switch, verified badges and brand icons (Iconify), and a clean data layer—all with functional parity.
                 </p>
               </div>
               <div>
@@ -148,7 +148,7 @@
                   Refinement Phase
                 </h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Engineered custom performance optimizations for the <strong>Vite</strong> build engine. Manually refined reactivity patterns and asset delivery to reach the 90+ Mobile Performance threshold.
+                  Custom <strong>Vite</strong> optimizations, reactivity and asset tuning, copy and SEO polish, and performance work to hit 90+ Mobile Lighthouse. End result: a production-ready Nuxt site with a full front-end and a dedicated AI Platform experience.
                 </p>
               </div>
             </div>
