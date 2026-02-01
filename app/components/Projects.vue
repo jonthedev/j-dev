@@ -3,7 +3,7 @@
     id="projects"
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <UContainer>
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
@@ -70,36 +70,29 @@
 
             <!-- Action buttons -->
             <div class="flex space-x-3">
-              <a
-                :href="project.url"
+              <UButton
+                :to="project.url"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-vue-700 hover:bg-vue-800 rounded-md transition-colors"
+                size="sm"
+                color="primary"
+                icon="lucide:eye"
               >
-                <Icon
-                  icon="lucide:eye"
-                  width="1.125rem"
-                  height="1.125rem"
-                  class="mr-2 shrink-0"
-                />
                 View Live
-              </a>
+              </UButton>
 
-              <a
+              <UButton
                 v-if="project.github"
-                :href="project.github"
+                :to="project.github"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                size="sm"
+                variant="outline"
+                color="neutral"
+                icon="lucide:code"
               >
-                <Icon
-                  icon="lucide:code"
-                  width="1.125rem"
-                  height="1.125rem"
-                  class="mr-2 shrink-0"
-                />
                 Code
-              </a>
+              </UButton>
             </div>
           </div>
         </div>
@@ -119,21 +112,18 @@
           <p class="text-vue-800 dark:text-vue-200 mb-6 max-w-2xl mx-auto">
             I'm always excited to work on challenging projects that push the boundaries of what's possible with modern web technologies.
           </p>
-          <a
-            href="#contact"
-            class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-700 hover:bg-vue-800 rounded-lg transition-colors"
+          <UButton
+            to="#contact"
+            size="lg"
+            color="primary"
+            icon="lucide:arrow-right"
+            trailing
           >
             Start a conversation
-            <Icon
-              icon="lucide:arrow-right"
-              width="1.25rem"
-              height="1.25rem"
-              class="ml-2 shrink-0 inline-block"
-            />
-          </a>
+          </UButton>
         </div>
       </div>
-    </div>
+    </UContainer>
   </section>
 </template>
 

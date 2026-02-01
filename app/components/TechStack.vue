@@ -3,7 +3,7 @@
     id="tech-stack"
     class="py-20 bg-white dark:bg-black"
   >
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <UContainer>
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
@@ -158,7 +158,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </UContainer>
   </section>
 </template>
 

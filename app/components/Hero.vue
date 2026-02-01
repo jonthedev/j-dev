@@ -5,9 +5,7 @@
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :enter="{ opacity: 1, y: 0, transition: { duration: 600, ease: 'easeOut' } }"
+        v-motion="animation"
         class="space-y-8"
       >
         <!-- Main headline -->
@@ -26,31 +24,25 @@
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-          <a
-            href="#contact"
-            class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-vue-700 hover:bg-vue-800 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          <UButton
+            to="#contact"
+            size="lg"
+            color="primary"
+            icon="lucide:arrow-right"
+            class="shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            <Icon
-              icon="lucide:arrow-right"
-              width="1.25rem"
-              height="1.25rem"
-              class="mr-2 shrink-0 inline-block"
-            />
             Work with me
-          </a>
+          </UButton>
 
-          <a
-            href="#projects"
-            class="inline-flex items-center px-8 py-4 text-lg font-semibold text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-lg transition-all duration-200"
+          <UButton
+            to="#projects"
+            size="lg"
+            variant="outline"
+            color="neutral"
+            icon="lucide:eye"
           >
-            <Icon
-              icon="lucide:eye"
-              width="1.25rem"
-              height="1.25rem"
-              class="mr-2 shrink-0 inline-block"
-            />
             View projects
-          </a>
+          </UButton>
         </div>
 
         <!-- Availability indicator -->
@@ -80,9 +72,14 @@ import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'AppHero' })
 
-useHead({
-  title: 'Jonathan Kaonga - Freelance Senior Frontend Engineer | Vue & Nuxt'
-})
+// Use our new composables
+const { fadeInUp } = useAnimation()
+
+// Apply optimized animation
+const animation = fadeInUp(600, 0)
+
+// Use SEO composable
+usePageSeo('Home', 'Freelance Vue/Nuxt Frontend Engineer specializing in modern web applications, component architecture, and performance optimization.')
 </script>
 
 <style scoped>

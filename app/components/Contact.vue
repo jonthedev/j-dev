@@ -103,33 +103,26 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:jonathan@j-dev.online"
-              class="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-vue-700 hover:bg-vue-800 rounded-lg transition-colors"
+            <UButton
+              to="mailto:jonathan@j-dev.online"
+              size="lg"
+              color="primary"
+              icon="lucide:send"
             >
-              <Icon
-                icon="lucide:send"
-                width="1.25rem"
-                height="1.25rem"
-                class="mr-2 shrink-0"
-              />
               Send Email
-            </a>
+            </UButton>
 
-            <a
-              href="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
+            <UButton
+              to="https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center px-8 py-3 text-lg font-medium text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              size="lg"
+              variant="outline"
+              color="neutral"
+              icon="lucide:briefcase"
             >
-              <Icon
-                icon="lucide:briefcase"
-                width="1.25rem"
-                height="1.25rem"
-                class="mr-2 shrink-0"
-              />
               LinkedIn
-            </a>
+            </UButton>
           </div>
         </div>
       </div>

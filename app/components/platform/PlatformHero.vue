@@ -34,30 +34,24 @@
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-          <a
-            href="#contact"
-            class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-vue-700 hover:bg-vue-800 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+          <UButton
+            to="#contact"
+            size="lg"
+            color="primary"
+            icon="lucide:arrow-right"
+            class="shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            <Icon
-              icon="lucide:arrow-right"
-              width="1.25rem"
-              height="1.25rem"
-              class="mr-2 shrink-0 inline-block"
-            />
             Get in touch
-          </a>
-          <a
-            href="#tech-stack"
-            class="inline-flex items-center px-8 py-4 text-lg font-semibold text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-lg transition-all duration-200"
+          </UButton>
+          <UButton
+            to="#tech-stack"
+            size="lg"
+            variant="outline"
+            color="neutral"
+            icon="lucide:layers"
           >
-            <Icon
-              icon="lucide:layers"
-              width="1.25rem"
-              height="1.25rem"
-              class="mr-2 shrink-0 inline-block"
-            />
             Tech & tools
-          </a>
+          </UButton>
         </div>
 
         <div class="flex items-center justify-center pt-6 space-x-2">
@@ -91,6 +85,12 @@
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'PlatformHero' })
+
+// Use animation composable
+const { fadeInUp } = useAnimation()
+
+// Apply optimized animation
+const _animation = fadeInUp(600, 0)
 </script>
 
 <style scoped>
