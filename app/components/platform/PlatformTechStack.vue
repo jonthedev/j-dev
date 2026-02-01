@@ -116,12 +116,13 @@ import type { PlatformTechCategory } from '~/data/platformTechStack'
 
 const groupConfig: Record<PlatformTechCategory, string> = {
   orchestration: 'AI Orchestration',
-  development: 'Development Stack',
-  infrastructure: 'Infrastructure & Virtualization'
+  languages: 'Platform Languages',
+  infrastructure: 'Infrastructure & Virtualization',
+  dx: 'Agentic Developer Experience'
 }
 
 const techGroups = computed(() =>
-  (['orchestration', 'development', 'infrastructure'] as const).map(key => ({
+  (['orchestration', 'languages', 'infrastructure', 'dx'] as const).map(key => ({
     key,
     title: groupConfig[key],
     items: platformTechStack.filter(item => item.category === key)
