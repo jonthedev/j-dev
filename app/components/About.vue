@@ -164,7 +164,7 @@
                   height="1rem"
                   class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
                 />
-                UK & EU rights • Dutch entity (KVK).
+                UK-born, Amsterdam-based • UK & EU rights • Dutch entity (KVK).
               </li>
               <li class="flex items-center">
                 <Icon
