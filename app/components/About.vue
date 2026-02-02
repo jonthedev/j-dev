@@ -43,10 +43,6 @@
               Whether building component libraries, migrating legacy applications, or creating new products from scratch,
               I bring strong technical expertise and a user-centered approach to every project.
             </p>
-            <br>
-            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-              <em>Available for freelance contracts and project work. Based in the Netherlands with EU/UK work rights.</em>
-            </p>
           </div>
         </div>
 
@@ -136,6 +132,48 @@
                   class="mr-2 shrink-0 text-vue-600 dark:text-vue-400"
                 />
                 Legacy app migrations
+              </li>
+            </ul>
+          </div>
+
+          <!-- Availability -->
+          <div class="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-lg p-6">
+            <h3 class="font-semibold text-emerald-900 dark:text-emerald-100 mb-3 flex items-center">
+              <Icon
+                icon="lucide:calendar-check"
+                width="1.25rem"
+                height="1.25rem"
+                class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
+              />
+              Available for Work
+            </h3>
+            <ul class="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
+              <li class="flex items-center">
+                <Icon
+                  icon="lucide:briefcase"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                Remote B2B contracts and project work.
+              </li>
+              <li class="flex items-center">
+                <Icon
+                  icon="lucide:globe"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                UK & EU rights • Dutch entity (KVK).
+              </li>
+              <li class="flex items-center">
+                <Icon
+                  icon="lucide:receipt"
+                  width="1rem"
+                  height="1rem"
+                  class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                Cross-border billing—no visa or admin overhead.
               </li>
             </ul>
           </div>
