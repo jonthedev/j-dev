@@ -145,7 +145,7 @@
                 height="1.25rem"
                 class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
               />
-              Available for Work
+              Availability
             </h3>
             <ul class="space-y-2 text-sm text-emerald-800 dark:text-emerald-200">
               <li class="flex items-center">
