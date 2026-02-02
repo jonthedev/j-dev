@@ -108,7 +108,7 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    ~75% Velocity Increase
+                    ~72% Velocity Increase
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
                     40+ manual hours to 11 orchestrated hours.

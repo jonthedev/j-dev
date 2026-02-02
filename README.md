@@ -90,7 +90,7 @@ The site is deployed to **Netlify** from the `main` branch. Build uses:
 |---|---|
 | **Baseline** | ~40–50 manual engineering hours. |
 | **Actual** | ~11 hours total (4h Agentic Refactor + 7h Human Refinement). |
-| **Efficiency gain** | ~75–80% reduction in migration latency. |
+| **Efficiency gain** | ~72–80% reduction in migration latency. |
 | **Stack** | Ollama, Qwen2.5-Coder 32B, OpenCode. |
 
 ---
