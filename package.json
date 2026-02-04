@@ -29,7 +29,6 @@
     "*.{js,ts,vue,mjs,cjs}": "eslint --fix"
   },
   "devDependencies": {
-    "netlify-cli": "^22.0.0",
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@nuxt/eslint": "^1.13.0",
@@ -38,6 +37,7 @@
     "eslint": "^9.39.2",
     "happy-dom": "^15.11.7",
     "lint-staged": "^15.2.10",
+    "netlify-cli": "^22.0.0",
     "playwright-core": "^1.58.1",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
