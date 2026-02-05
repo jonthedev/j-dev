@@ -11,7 +11,7 @@ export function useContact() {
     portfolio: 'https://j-dev.online',
     kvk: '93792670', // Dutch business registration
     availability: 'Available from March 2026',
-    location: 'Netherlands',
+    location: 'Amsterdam, Netherlands',
     status: 'Freelance'
   }
 

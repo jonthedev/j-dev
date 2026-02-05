@@ -34,9 +34,9 @@
           :delay="180"
         />
         <SharedContactCard
-          icon="lucide:clock"
-          title="Availability"
-          :content="contactInfo.availability"
+          icon="lucide:map-pin"
+          title="Location"
+          :content="contactInfo.location"
           :delay="260"
         />
       </div>
