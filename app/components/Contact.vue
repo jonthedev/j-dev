@@ -11,10 +11,10 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Let's Build Something Together
+          Book a Consultation
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Available for Vue/Nuxt freelance projects, contract work, and consulting. Let's discuss how I can help bring your ideas to life.
+          Available for Vue/Nuxt projects, contract work, and consulting. Let's discuss how JDev Online can help build, scale, and modernize your web applications.
         </p>
       </div>
 
@@ -106,9 +106,9 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue"
 
-defineOptions({ name: 'AppContact' })
+defineOptions({ name: "AppContact" })
 
 const { contactInfo, contactMethods } = useContact()
 </script>
