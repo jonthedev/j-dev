@@ -44,14 +44,6 @@
             View projects
           </UButton>
         </div>
-
-        <!-- Availability indicator -->
-        <div class="flex items-center justify-center pt-6 space-x-2">
-          <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-          <span class="text-gray-600 dark:text-gray-300 font-medium">
-            Available for projects starting March 2026
-          </span>
-        </div>
       </div>
     </div>
 

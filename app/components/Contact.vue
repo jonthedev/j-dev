@@ -20,70 +20,25 @@
 
       <!-- Contact methods -->
       <div class="grid md:grid-cols-3 gap-8 mb-16">
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 100 } }"
-          class="text-center group"
-        >
-          <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-            <Icon
-              icon="lucide:mail"
-              width="1.75rem"
-              height="1.75rem"
-              class="text-vue-600 dark:text-vue-400"
-            />
-          </div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
-            Email
-          </h3>
-          <a
-            href="mailto:jonathan@j-dev.online"
-            class="text-vue-600 dark:text-vue-400 hover:text-vue-700 dark:hover:text-vue-300 transition-colors"
-          >
-            jonathan@j-dev.online
-          </a>
-        </div>
-
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 180 } }"
-          class="text-center group"
-        >
-          <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-            <Icon
-              icon="lucide:building-2"
-              width="1.75rem"
-              height="1.75rem"
-              class="text-vue-600 dark:text-vue-400"
-            />
-          </div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
-            Business
-          </h3>
-          <span class="text-gray-600 dark:text-gray-300">KVK: 93792670</span>
-        </div>
-
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 260 } }"
-          class="text-center group"
-        >
-          <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-            <Icon
-              icon="lucide:clock"
-              width="1.75rem"
-              height="1.75rem"
-              class="text-vue-600 dark:text-vue-400"
-            />
-          </div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
-            Availability
-          </h3>
-          <span class="text-gray-600 dark:text-gray-300">Available from March 2026</span>
-        </div>
+        <SharedContactCard
+          icon="lucide:mail"
+          title="Email"
+          :content="contactInfo.email"
+          :href="`mailto:${contactInfo.email}`"
+          :delay="100"
+        />
+        <SharedContactCard
+          icon="lucide:building-2"
+          title="Business"
+          :content="`KVK: ${contactInfo.kvk}`"
+          :delay="180"
+        />
+        <SharedContactCard
+          icon="lucide:clock"
+          title="Availability"
+          :content="contactInfo.availability"
+          :delay="260"
+        />
       </div>
 
       <!-- Quick contact form or CTA -->
