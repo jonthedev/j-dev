@@ -13,10 +13,10 @@
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          About JDev Online
+          Engineering High-Performance Web Systems
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Lead Frontend Specialist · Vue & Nuxt Engineering
+          Lead Frontend Engineer · Vue & Nuxt Engineering
         </p>
       </div>
 
@@ -34,11 +34,10 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I am a <strong>Senior Frontend Engineer</strong> and the Lead at
-              JDev Online. With 6+ years of experience in the frontend
-              landscape, I specialize in the Vue ecosystem—architecting
-              resilient, high-performance systems using Vue 3, Nuxt, and
-              TypeScript.
+              As the Lead Frontend Engineer at JDev Online, I bring over 6 years
+              of experience in architecting resilient, enterprise-scale
+              applications. I specialize in the Vue ecosystem, specifically
+              building with Vue 3, Nuxt, and TypeScript.
             </p>
 
             <h3
@@ -47,25 +46,23 @@
               The JDev Advantage
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I don't just write code; I engineer velocity. By leveraging a
+              I don't just write code, I engineer velocity. By leveraging a
               sovereign AI-augmented workflow, I compress development lifecycles
-              and handle complex refactors with a speed that traditional
-              workflows can't match—all while ensuring your data remains private
-              and secure.
+              and handle complex refactors with speed—all while ensuring your
+              data remains private and secure within a local infrastructure.
             </p>
 
             <h3
               class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
             >
-              Proven Track Record
+              Proven Expertise
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              Currently, I am engineering real-time data visualizations for
-              Thalex (a derivatives trading platform). My previous work includes
-              scaling products for major Dutch enterprises such as
-              <strong>ANWB, Van Lanschot Kempen, and DPG Media</strong>. In
-              2022, my contributions at ANWB were recognized with the Website
-              van het Jaar (Most Popular Website) award.
+              Currently engineering real-time data visualizations at Thalex, I
+              have a track record of scaling products for major Dutch
+              enterprises like ANWB, Van Lanschot Kempen, and DPG Media. My work
+              at ANWB was recognized with the Website van het Jaar (Most Popular
+              Website) award in 2022.
             </p>
           </div>
         </div>
