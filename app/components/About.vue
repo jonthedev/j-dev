@@ -13,11 +13,10 @@
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          About Me
+          About JDev Online
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Vue-focused frontend engineer with a passion for exceptional user
-          experiences
+          Lead Frontend Specialist · Vue & Nuxt Engineering
         </p>
       </div>
 
@@ -35,29 +34,38 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I'm a <strong>Senior Frontend Engineer</strong> with 6+ years of
-              experience building web applications. While I have broad
-              experience across the frontend landscape, I now
-              <strong>focus on Vue and its ecosystem</strong>—particularly Vue
-              3, Nuxt, and modern Vue tooling.
+              I am a <strong>Senior Frontend Engineer</strong> and the Lead at
+              JDev Online. With 6+ years of experience in the frontend
+              landscape, I specialize in the Vue ecosystem—architecting
+              resilient, high-performance systems using Vue 3, Nuxt, and
+              TypeScript.
             </p>
-            <br>
+
+            <h3
+              class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
+            >
+              The JDev Advantage
+            </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              Currently working on
-              <strong> derivatives trading platforms</strong> at Thalex using
-              Vue/Nuxt with real-time data visualization, I've also contributed
-              to products at
-              <strong>ANWB, Van Lanschot Kempen, and DPG Media</strong>. My work
-              has been recognized with an ANWB Website van het Jaar
-              award—Populairste Website (Most Popular Website), 2022.
+              I don't just write code; I engineer velocity. By leveraging a
+              sovereign AI-augmented workflow, I compress development lifecycles
+              and handle complex refactors with a speed that traditional
+              workflows can't match—all while ensuring your data remains private
+              and secure.
             </p>
-            <br>
+
+            <h3
+              class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
+            >
+              Proven Track Record
+            </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I focus on
-              <strong>performance, accessibility, and maintainable code </strong>. Whether building component libraries, migrating legacy
-              applications, or creating new products from scratch, I bring
-              strong technical expertise and a user-centered approach to every
-              project.
+              Currently, I am engineering real-time data visualizations for
+              Thalex (a derivatives trading platform). My previous work includes
+              scaling products for major Dutch enterprises such as
+              <strong>ANWB, Van Lanschot Kempen, and DPG Media</strong>. In
+              2022, my contributions at ANWB were recognized with the Website
+              van het Jaar (Most Popular Website) award.
             </p>
           </div>
         </div>
@@ -113,7 +121,7 @@
             </div>
           </div>
 
-          <!-- Key focus areas -->
+          <!-- Core Services -->
           <div
             class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border-vue-200 rounded-lg border p-6"
           >
@@ -121,59 +129,51 @@
               class="text-vue-900 dark:text-vue-100 mb-4 flex items-center font-semibold"
             >
               <Icon
-                icon="lucide:star"
+                icon="lucide:briefcase"
                 width="1.25rem"
                 height="1.25rem"
                 class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
               />
-              Key Focus Areas
+              Core Services
             </h3>
-            <ul class="text-vue-800 dark:text-vue-200 space-y-2 text-sm">
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:check"
-                  width="1rem"
-                  height="1rem"
-                  class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
-                />
-                Vue 3 & Nuxt applications
-              </li>
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:check"
-                  width="1rem"
-                  height="1rem"
-                  class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
-                />
-                Performance optimization
-              </li>
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:check"
-                  width="1rem"
-                  height="1rem"
-                  class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
-                />
-                Component library development
-              </li>
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:check"
-                  width="1rem"
-                  height="1rem"
-                  class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
-                />
-                Legacy app migrations
-              </li>
-            </ul>
+            <div class="text-vue-800 dark:text-vue-200 space-y-4 text-sm">
+              <div>
+                <div class="font-semibold text-vue-900 dark:text-vue-100">
+                  Enterprise Modernization
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Leading the transition from legacy architectures to resilient
+                  Nuxt 4 systems using an AI-augmented refactoring workflow.
+                </p>
+              </div>
+              <div>
+                <div class="font-semibold text-vue-900 dark:text-vue-100">
+                  Performance Engineering
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Optimizing real-time data streaming and high-traffic
+                  interfaces for speed, accessibility, and sub-second
+                  reactivity.
+                </p>
+              </div>
+              <div>
+                <div class="font-semibold text-vue-900 dark:text-vue-100">
+                  Scalable Architecture
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Engineering "source of truth" component libraries and scaling
+                  products from MVP to enterprise-grade production.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <!-- Availability -->
+          <!-- Availability & Logistics -->
           <div
             class="rounded-lg border border-emerald-200 bg-emerald-50 p-6 dark:border-emerald-800 dark:bg-emerald-950/30"
           >
             <h3
-              class="mb-3 flex items-center font-semibold text-emerald-900 dark:text-emerald-100"
+              class="mb-2 flex items-center font-semibold text-emerald-900 dark:text-emerald-100"
             >
               <Icon
                 icon="lucide:calendar-check"
@@ -181,50 +181,50 @@
                 height="1.25rem"
                 class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
               />
-              Availability
+              Availability & Logistics
             </h3>
-            <ul
-              class="space-y-2 text-sm text-emerald-800 dark:text-emerald-200"
+            <p
+              class="mb-4 text-sm font-medium text-emerald-800 dark:text-emerald-200"
             >
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:briefcase"
-                  width="1rem"
-                  height="1rem"
-                  class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
-                />
-                Remote B2B contracts and project work.
-              </li>
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:globe"
-                  width="1rem"
-                  height="1rem"
-                  class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
-                />
-                UK-born, Amsterdam-based • UK & EU rights • Dutch entity (KVK).
-              </li>
-              <li class="flex items-center">
-                <Icon
-                  icon="lucide:receipt"
-                  width="1rem"
-                  height="1rem"
-                  class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
-                />
-                Cross-border billing—no visa or admin overhead.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Personal touch -->
-          <div
-            class="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-black"
-          >
-            <p class="text-sm text-gray-600 italic dark:text-gray-400">
-              "Beyond coding, I enjoy exploring new technologies and continuous
-              learning—with a growing focus on AI platform engineering and
-              running models locally."
+              Strategic Partnership
             </p>
+            <div
+              class="space-y-4 text-sm text-emerald-800 dark:text-emerald-200"
+            >
+              <div>
+                <div
+                  class="font-semibold text-emerald-900 dark:text-emerald-100"
+                >
+                  Global Reach
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Remote B2B contracts for UK, EU, and International markets
+                  (Dubai, US, Asia).
+                </p>
+              </div>
+              <div>
+                <div
+                  class="font-semibold text-emerald-900 dark:text-emerald-100"
+                >
+                  Zero Friction
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  UK-born, Amsterdam-based with full UK/EU residency and work
+                  rights.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="font-semibold text-emerald-900 dark:text-emerald-100"
+                >
+                  Professional Entity
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Operating via a Dutch KVK (ZZP) with cross-border billing—no
+                  visa sponsorship or administrative overhead required.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue"
 
-defineOptions({ name: 'AppAbout' })
+defineOptions({ name: "AppAbout" })
 </script>
