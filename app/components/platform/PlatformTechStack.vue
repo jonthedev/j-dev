@@ -11,10 +11,10 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Engineering Lab: Sovereign Infrastructure
+          The Lab Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Architecting private environments for high-performance AI and secure software delivery.
+          The tools behind the velocity.
         </p>
       </div>
 
@@ -59,70 +59,22 @@
           </div>
         </div>
       </div>
-
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
-        class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
-      >
-        <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
-          Core Methodology
-        </h3>
-        <div class="grid md:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:network"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>System Design:</strong> Implementing distributed patterns, RAG, and agentic workflows to build resilient, AI-native platforms.
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:rocket"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>Engineering Velocity:</strong> Using AI-agentic workflows to compress complex refactoring and migration lifecycles (e.g., React to Nuxt 4).
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:lock"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>Local-First:</strong> Orchestrating Ollama and Qwen locally to ensure total data sovereignty and zero cloud lock-in.
-            </div>
-          </div>
-        </div>
-      </div>
     </UContainer>
   </section>
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
-import { platformTechStack } from '~/data/platformTechStack'
-import type { PlatformTechCategory } from '~/data/platformTechStack'
+import { Icon } from "@iconify/vue"
+import { platformTechStack } from "~/data/platformTechStack"
+import type { PlatformTechCategory } from "~/data/platformTechStack"
 
 const groupConfig: Record<PlatformTechCategory, string> = {
-  orchestration: 'AI Orchestration',
-  languages: 'Platform Languages',
-  infrastructure: 'Infrastructure & Virtualization',
-  dx: 'Agentic Developer Experience'
+  currentLab: "Current Lab (Mac-Native)",
+  roadmap: "Infrastructure Roadmap"
 }
 
 const techGroups = computed(() =>
-  (['orchestration', 'languages', 'infrastructure', 'dx'] as const).map(key => ({
+  (["currentLab", "roadmap"] as const).map(key => ({
     key,
     title: groupConfig[key],
     items: platformTechStack.filter(item => item.category === key)

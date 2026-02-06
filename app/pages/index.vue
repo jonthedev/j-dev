@@ -31,12 +31,12 @@ const portfolioMode = usePortfolioMode()
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
     ? "JDev Online - High-Performance Vue & Nuxt Engineering | Lead Frontend Specialist"
-    : "Jonathan Kaonga - AI engineering (ByteByteAI)"
+    : "JDev Online - The Engineering Lab | AI-Augmented Development"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
     ? "Lead Frontend Specialist at JDev Online. I help businesses build, scale, and modernize web applications with AI-augmented velocity."
-    : "Learning AI engineering via ByteByteAI · Using AI to build better frontends"
+    : "Local-first AI stack for engineering velocity and data privacy. How a Senior Vue Engineer uses Ollama, Cursor, and Proxmox to build faster."
 )
 
 useHead(() => ({
