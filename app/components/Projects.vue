@@ -12,7 +12,7 @@
           Services & Case Studies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          A selection of recent work across React and Vue—performance optimization, enterprise-scale applications, and modern frontend architecture.
+          A selection of recent work across the web ecosystem—specializing in high-performance Vue/Nuxt architectures, enterprise-scale migrations, and design system engineering.
         </p>
       </div>
 
