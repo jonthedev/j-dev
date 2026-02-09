@@ -10,11 +10,15 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
         class="text-center mb-16"
       >
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+        >
           Book a Consultation
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Available for Vue/Nuxt projects, contract work, and consulting. Let's discuss how JDev Online can help build, scale, and modernize your web applications.
+          Available for Vue/Nuxt projects, contract work, and consulting. Let's
+          discuss how JDev Online can help build, scale, and modernize your web
+          applications.
         </p>
       </div>
 
@@ -45,16 +49,21 @@
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 150 } }"
-        class="bg-gradient-to-r from-vue-50 to-vue-100 dark:from-vue-950/30 dark:to-vue-900/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
+        :visible-once="{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 500, delay: 150 }
+        }"
+        class="bg-linear-to-r from-vue-50 to-vue-100 dark:from-vue-950/30 dark:to-vue-900/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
       >
         <div class="text-center">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Ready to Start Your Project?
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Whether you need a Vue/Nuxt application built from scratch, performance optimization,
-            or expert frontend consultation, I'm here to help deliver exceptional results.
+            Whether you need a Vue/Nuxt application built from scratch,
+            performance optimization, or expert frontend consultation, I'm here
+            to help deliver exceptional results.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -85,7 +94,7 @@
       <!-- Social links (GitHub, LinkedIn from useContact) -->
       <div class="mt-12 flex justify-center space-x-6">
         <a
-          v-for="social in contactMethods.filter(m => m.name !== 'Email')"
+          v-for="social in contactMethods.filter((m) => m.name !== 'Email')"
           :key="social.name"
           :href="social.href"
           :aria-label="social.name"

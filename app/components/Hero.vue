@@ -26,8 +26,8 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Lead Frontend Developer at JDev Online. I help businesses build,
-          scale, and modernize web applications with AI-augmented velocity.
+          Lead Frontend Engineer at JDev Online. I help businesses build, scale,
+          and modernize web applications with AI-augmented velocity.
         </p>
 
         <!-- CTA Buttons -->
