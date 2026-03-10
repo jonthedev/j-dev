@@ -2,26 +2,25 @@ export interface ServicePillar {
   icon: string
   headline: string
   body: string
+  metric?: string
   tags: string[]
+  featured?: boolean
 }
 
 export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:zap",
-    headline: "AI-Augmented Development",
-    body: "High-velocity development across the Vue ecosystem. Architecting Nuxt 4 platforms, engineering complex features, and delivering enterprise-grade results in a fraction of the standard time.",
-    tags: ["Nuxt 4", "Vue 3", "Velocity"]
+    headline: "Full-Lifecycle Modernization & Feature Engineering",
+    body: "I engineer high-performance Vue systems with a 72% velocity increase. Whether architecting new Nuxt platforms or refactoring legacy debt into modern standards, I deliver months of manual roadmap progress in weeks.",
+    metric: "🚀 40+ hours compressed to 11",
+    tags: ["Nuxt", "Feature Engineering", "Architecture"],
+    featured: true
   },
   {
     icon: "lucide:shield",
-    headline: "Secure Legacy Modernization",
-    body: "Automate migrations from legacy stacks (React/Vue 2) to Nuxt 4. Refactored a legacy architecture in 11 hours (estimated 40+ manual) using an orchestrated AI pipeline.",
-    tags: ["Migrations", "Refactoring", "Logic Translation"]
-  },
-  {
-    icon: "lucide:server",
-    headline: "100% Data Sovereignty",
-    body: "Your codebase never leaves my local infrastructure. Air-gapped LLMs (Ollama) and secure virtualization (Proxmox/Tailscale) ensure total GDPR and IP compliance on-site or remotely.",
-    tags: ["Ollama", "Proxmox", "Tailscale"]
+    headline: "100% Data Sovereignty & Private Inference",
+    body: "Your codebase never leaves my local infrastructure. Using air-gapped LLMs (Ollama) and secure virtualization (Proxmox), I ensure total GDPR and IP compliance while orchestrating complex, agentic refactors.",
+    metric: "🔒 0% Cloud Exposure / Private GPU Node",
+    tags: ["Ollama", "Proxmox", "Security"]
   }
 ]

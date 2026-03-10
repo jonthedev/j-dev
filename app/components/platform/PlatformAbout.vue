@@ -19,8 +19,8 @@
         </p>
       </div>
 
-      <!-- Three pillars grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Two-card power layout: What + How -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <SharedServicePillarCard
           v-for="(pillar, index) in platformPillars"
           :key="pillar.headline"
