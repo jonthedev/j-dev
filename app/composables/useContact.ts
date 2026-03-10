@@ -10,6 +10,7 @@ export function useContact() {
     linkedin: "https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/",
     portfolio: "https://j-dev.online",
     kvk: "93792670",
+    kvkUrl: "https://www.kvk.nl/zoeken/?source=all&q=93792670",
     availability: "Available from March 2026",
     location: "Amsterdam, Netherlands",
     status: "Freelance",

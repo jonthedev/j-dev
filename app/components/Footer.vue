@@ -12,8 +12,8 @@
           </p>
           <div class="space-y-2">
             <a
-              href="mailto:jonathan@j-dev.online"
-              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
+              :href="`mailto:${contactInfo.email}`"
+              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
             >
               <Icon
                 icon="lucide:mail"
@@ -21,17 +21,22 @@
                 height="1.25rem"
                 class="mr-2 shrink-0"
               />
-              jonathan@j-dev.online
+              {{ contactInfo.email }}
             </a>
-            <div class="flex items-center text-gray-600 dark:text-gray-300">
+            <a
+              :href="contactInfo.kvkUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+            >
               <Icon
                 icon="lucide:building-2"
                 width="1.25rem"
                 height="1.25rem"
                 class="mr-2 shrink-0"
               />
-              KVK: 93792670
-            </div>
+              KVK: {{ contactInfo.kvk }}
+            </a>
           </div>
         </div>
 
@@ -45,7 +50,7 @@
               v-for="link in quickLinks"
               :key="link.name"
               :to="link.href"
-              class="text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
+              class="text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
             >
               {{ link.name }}
             </NuxtLink>
@@ -96,14 +101,16 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue"
 
-defineOptions({ name: 'AppFooter' })
+defineOptions({ name: "AppFooter" })
+
+const { contactInfo } = useContact()
 
 const quickLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Tech Stack', href: '#tech-stack' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' }
+  { name: "About", href: "#about" },
+  { name: "Tech Stack", href: "#tech-stack" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" }
 ]
 </script>

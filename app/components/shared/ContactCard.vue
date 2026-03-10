@@ -19,7 +19,9 @@
     <a
       v-if="href"
       :href="href"
-      class="text-vue-600 dark:text-vue-400 hover:text-vue-700 dark:hover:text-vue-300 transition-colors"
+      :target="isExternal ? '_blank' : undefined"
+      :rel="isExternal ? 'noopener noreferrer' : undefined"
+      class="text-vue-600 dark:text-vue-400 hover:text-vue-700 dark:hover:text-vue-300 underline underline-offset-2 transition-colors"
     >
       {{ content }}
     </a>
@@ -33,9 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue"
 
-defineOptions({ name: 'ContactCard' })
+defineOptions({ name: "ContactCard" })
 
 interface Props {
   icon: string
@@ -48,6 +50,8 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   delay: 0
 })
+
+const isExternal = computed(() => props.href?.startsWith("http") ?? false)
 
 const visibleOnce = computed(() => ({
   opacity: 1,

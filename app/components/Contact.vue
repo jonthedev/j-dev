@@ -35,6 +35,7 @@
           icon="lucide:building-2"
           title="Business"
           :content="`KVK: ${contactInfo.kvk}`"
+          :href="contactInfo.kvkUrl"
           :delay="180"
         />
         <SharedContactCard
@@ -61,9 +62,8 @@
             Ready to Start Your Project?
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Whether you need a Vue/Nuxt application built from scratch,
-            performance optimization, or expert frontend consultation, I'm here
-            to help deliver exceptional results.
+            Whether you need a Nuxt 4 migration strategy, performance optimization,
+            or an AI-augmented frontend architect, I'm here to deliver enterprise-grade results.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -74,6 +74,7 @@
               size="lg"
               color="primary"
               icon="lucide:calendar"
+              class="shadow-lg shadow-vue-500/20"
             >
               Book a Call
             </UButton>
