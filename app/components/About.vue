@@ -34,8 +34,8 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              As a Senior Vue & Nuxt Consultant at JDev Online, I bring over 6 years
-              of experience in architecting resilient, enterprise-scale
+              As a Senior Vue & Nuxt Consultant at JDev Online, I bring over 6
+              years of experience in architecting resilient, enterprise-scale
               applications. I specialize in the Vue ecosystem, specifically
               building with Vue 3, Nuxt, and TypeScript.
             </p>
@@ -46,10 +46,11 @@
               The JDev Advantage
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I don't just write code, I engineer velocity. By leveraging a
-              sovereign AI-augmented workflow, I compress development lifecycles
-              and handle complex refactors with speed—all while ensuring your
-              data remains private and secure within a local infrastructure.
+              I combine deep architectural experience with a sovereign AI stack.
+              I don't just 'generate code'. I use agentic pipelines to handle
+              the heavy lifting of refactoring and boilerplate, leaving me to
+              focus on the high-level logic, security, and performance that your
+              enterprise requires.
             </p>
 
             <h3
@@ -183,7 +184,8 @@
             <p
               class="mb-4 text-sm font-medium text-emerald-800 dark:text-emerald-200"
             >
-              I am as easy to hire as a local employee, with the velocity of an elite consultant.
+              I am as easy to hire as a local employee, with the velocity of an
+              elite consultant.
             </p>
             <ul
               class="space-y-3 text-sm text-emerald-800 dark:text-emerald-200"

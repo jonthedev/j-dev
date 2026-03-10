@@ -31,7 +31,12 @@
         <p
           class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
         >
-          Remote-first with on-site availability for Randstad (Amsterdam, Rotterdam, Den Haag) and UK (London/Hybrid).
+          Based in Amsterdam with a global remote reach.
+        </p>
+        <p
+          class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
+        >
+          I provide on-site availability for partners in the Randstad and London-hybrid engagements.
         </p>
 
         <!-- Website van het Jaar badge -->
