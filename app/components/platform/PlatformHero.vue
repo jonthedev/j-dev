@@ -31,7 +31,9 @@
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
           <UButton
-            to="#contact"
+            :to="contactInfo.bookingUrl"
+            target="_blank"
+            rel="noopener noreferrer"
             size="lg"
             color="primary"
             icon="lucide:arrow-right"
@@ -58,6 +60,8 @@
 import { Icon } from "@iconify/vue"
 
 defineOptions({ name: "PlatformHero" })
+
+const { contactInfo } = useContact()
 
 // Use animation composable
 const { fadeInUp } = useAnimation()

@@ -68,9 +68,21 @@
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <UButton
-              :to="`mailto:${contactInfo.email}`"
+              :to="contactInfo.bookingUrl"
+              target="_blank"
+              rel="noopener noreferrer"
               size="lg"
               color="primary"
+              icon="lucide:calendar"
+            >
+              Book a Call
+            </UButton>
+
+            <UButton
+              :to="`mailto:${contactInfo.email}`"
+              size="lg"
+              variant="outline"
+              color="neutral"
               icon="lucide:send"
             >
               Send Email

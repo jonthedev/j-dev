@@ -5,65 +5,66 @@
 export function useContact() {
   // Contact information
   const contactInfo = {
-    email: 'jonathan@j-dev.online',
-    github: 'https://github.com/jonthedev',
-    linkedin: 'https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/',
-    portfolio: 'https://j-dev.online',
-    kvk: '93792670', // Dutch business registration
-    availability: 'Available from March 2026',
-    location: 'Amsterdam, Netherlands',
-    status: 'Freelance'
+    email: "jonathan@j-dev.online",
+    github: "https://github.com/jonthedev",
+    linkedin: "https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/",
+    portfolio: "https://j-dev.online",
+    kvk: "93792670",
+    availability: "Available from March 2026",
+    location: "Amsterdam, Netherlands",
+    status: "Freelance",
+    bookingUrl: "https://calendly.com/jdev-online/new-meeting"
   }
 
   // Contact methods with descriptions
   const contactMethods = [
     {
-      name: 'Email',
+      name: "Email",
       value: contactInfo.email,
       href: `mailto:${contactInfo.email}`,
-      icon: 'lucide:mail',
-      description: 'Send me an email for inquiries',
-      color: 'blue'
+      icon: "lucide:mail",
+      description: "Send me an email for inquiries",
+      color: "blue"
     },
     {
-      name: 'GitHub',
-      value: 'jonthedev',
+      name: "GitHub",
+      value: "jonthedev",
       href: contactInfo.github,
-      icon: 'simple-icons:github',
-      description: 'View my code and projects',
-      color: 'gray'
+      icon: "simple-icons:github",
+      description: "View my code and projects",
+      color: "gray"
     },
     {
-      name: 'LinkedIn',
-      value: 'jonathan-kaonga',
+      name: "LinkedIn",
+      value: "jonathan-kaonga",
       href: contactInfo.linkedin,
-      icon: 'simple-icons:linkedin',
-      description: 'Connect with me professionally',
-      color: 'blue'
+      icon: "simple-icons:linkedin",
+      description: "Connect with me professionally",
+      color: "blue"
     }
   ]
 
   // Professional information
   const professionalInfo = {
-    title: 'Freelance Vue/Nuxt Frontend Engineer',
-    experience: '5+ years',
-    specialization: 'Vue.js, Nuxt.js, TypeScript, Component Architecture',
+    title: "Freelance Vue/Nuxt Frontend Engineer",
+    experience: "5+ years",
+    specialization: "Vue.js, Nuxt.js, TypeScript, Component Architecture",
     services: [
-      'Frontend Development',
-      'Component Architecture',
-      'Performance Optimization',
-      'Code Review & Refactoring',
-      'Technical Consulting',
-      'Mentoring & Training'
+      "Frontend Development",
+      "Component Architecture",
+      "Performance Optimization",
+      "Code Review & Refactoring",
+      "Technical Consulting",
+      "Mentoring & Training"
     ],
     techFocus: [
-      'Vue 3',
-      'Nuxt 4',
-      'TypeScript',
-      'Tailwind CSS',
-      'Vite',
-      'Pinia',
-      'Vue Router'
+      "Vue 3",
+      "Nuxt 4",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Pinia",
+      "Vue Router"
     ]
   }
 
@@ -73,48 +74,48 @@ export function useContact() {
       required: true,
       minLength: 2,
       maxLength: 100,
-      message: 'Name must be between 2 and 100 characters'
+      message: "Name must be between 2 and 100 characters"
     },
     email: {
       required: true,
       pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-      message: 'Please enter a valid email address'
+      message: "Please enter a valid email address"
     },
     subject: {
       required: true,
       minLength: 5,
       maxLength: 200,
-      message: 'Subject must be between 5 and 200 characters'
+      message: "Subject must be between 5 and 200 characters"
     },
     message: {
       required: true,
       minLength: 10,
       maxLength: 2000,
-      message: 'Message must be between 10 and 2000 characters'
+      message: "Message must be between 10 and 2000 characters"
     }
   }
 
   // Contact form reactive state
   const contactForm = reactive({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
   })
 
   // Form validation state
   const formErrors = reactive({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
   })
 
   // Form submission state
   const formState = reactive({
     isSubmitting: false,
     isSubmitted: false,
-    error: ''
+    error: ""
   })
 
   // Validate single field
@@ -123,24 +124,34 @@ export function useContact() {
     const value = contactForm[field]
 
     // Reset error
-    formErrors[field] = ''
+    formErrors[field] = ""
 
     if (rules.required && !value) {
-      formErrors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`
+      formErrors[field] = `${
+        field.charAt(0).toUpperCase() + field.slice(1)
+      } is required`
       return false
     }
 
-    if ('minLength' in rules && rules.minLength && value.length < rules.minLength) {
+    if (
+      "minLength" in rules
+      && rules.minLength
+      && value.length < rules.minLength
+    ) {
       formErrors[field] = rules.message
       return false
     }
 
-    if ('maxLength' in rules && rules.maxLength && value.length > rules.maxLength) {
+    if (
+      "maxLength" in rules
+      && rules.maxLength
+      && value.length > rules.maxLength
+    ) {
       formErrors[field] = rules.message
       return false
     }
 
-    if ('pattern' in rules && rules.pattern && !rules.pattern.test(value)) {
+    if ("pattern" in rules && rules.pattern && !rules.pattern.test(value)) {
       formErrors[field] = rules.message
       return false
     }
@@ -159,21 +170,21 @@ export function useContact() {
   // Reset form
   const resetForm = () => {
     Object.assign(contactForm, {
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
     })
     Object.assign(formErrors, {
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
     })
     Object.assign(formState, {
       isSubmitting: false,
       isSubmitted: false,
-      error: ''
+      error: ""
     })
   }
 
@@ -184,7 +195,7 @@ export function useContact() {
     }
 
     formState.isSubmitting = true
-    formState.error = ''
+    formState.error = ""
 
     try {
       // Simulate API call - replace with actual implementation
@@ -193,7 +204,7 @@ export function useContact() {
       formState.isSubmitted = true
       resetForm()
     } catch {
-      formState.error = 'Failed to send message. Please try again.'
+      formState.error = "Failed to send message. Please try again."
     } finally {
       formState.isSubmitting = false
     }

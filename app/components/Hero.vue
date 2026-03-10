@@ -62,7 +62,9 @@
           </UButton>
 
           <UButton
-            to="#contact"
+            :to="contactInfo.bookingUrl"
+            target="_blank"
+            rel="noopener noreferrer"
             size="lg"
             variant="outline"
             color="neutral"
@@ -92,6 +94,8 @@
 import { Icon } from "@iconify/vue"
 
 defineOptions({ name: "AppHero" })
+
+const { contactInfo } = useContact()
 
 // Use our new composables
 const { fadeInUp } = useAnimation()
