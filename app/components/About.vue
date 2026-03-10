@@ -16,7 +16,7 @@
           Engineering High-Performance Web Systems
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Lead Frontend Engineer · Vue & Nuxt Engineering
+          Senior Vue & Nuxt Consultant | Randstad & UK-Ready
         </p>
       </div>
 
@@ -34,7 +34,7 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              As the Lead Frontend Engineer at JDev Online, I bring over 6 years
+              As a Senior Vue & Nuxt Consultant at JDev Online, I bring over 6 years
               of experience in architecting resilient, enterprise-scale
               applications. I specialize in the Vue ecosystem, specifically
               building with Vue 3, Nuxt, and TypeScript.
@@ -165,7 +165,7 @@
             </div>
           </div>
 
-          <!-- Availability & Logistics -->
+          <!-- Contracting Readiness -->
           <div
             class="rounded-lg border border-emerald-200 bg-emerald-50 p-6 dark:border-emerald-800 dark:bg-emerald-950/30"
           >
@@ -173,55 +173,58 @@
               class="mb-2 flex items-center font-semibold text-emerald-900 dark:text-emerald-100"
             >
               <Icon
-                icon="lucide:calendar-check"
+                icon="lucide:file-check"
                 width="1.25rem"
                 height="1.25rem"
                 class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
               />
-              Availability & Logistics
+              Contracting Readiness
             </h3>
             <p
               class="mb-4 text-sm font-medium text-emerald-800 dark:text-emerald-200"
             >
-              Strategic Partnership
+              I am as easy to hire as a local employee, with the velocity of an elite consultant.
             </p>
-            <div
-              class="space-y-4 text-sm text-emerald-800 dark:text-emerald-200"
+            <ul
+              class="space-y-3 text-sm text-emerald-800 dark:text-emerald-200"
             >
-              <div>
-                <div
-                  class="font-semibold text-emerald-900 dark:text-emerald-100"
-                >
-                  Global Reach
-                </div>
-                <p class="mt-1 leading-relaxed">
-                  Remote B2B contracts for UK, EU, and International markets
-                  (Dubai, US, Asia).
-                </p>
-              </div>
-              <div>
-                <div
-                  class="font-semibold text-emerald-900 dark:text-emerald-100"
-                >
-                  Zero Friction
-                </div>
-                <p class="mt-1 leading-relaxed">
-                  UK-born, Amsterdam-based with full UK/EU residency and work
-                  rights.
-                </p>
-              </div>
-              <div>
-                <div
-                  class="font-semibold text-emerald-900 dark:text-emerald-100"
-                >
-                  Professional Entity
-                </div>
-                <p class="mt-1 leading-relaxed">
-                  Operating via a Dutch KVK (ZZP) with cross-border billing—no
-                  visa sponsorship or administrative overhead required.
-                </p>
-              </div>
-            </div>
+              <li class="flex items-start gap-2">
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                Kamer van Koophandel | KVK Registered
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                A1 Certificate available for on-site UK/EU sprints
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                Fully compliant for "Outside IR35" engagements
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon
+                  icon="lucide:check"
+                  width="1rem"
+                  height="1rem"
+                  class="mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400"
+                />
+                W-8BEN-E documented for zero-withholding US contracts
+              </li>
+            </ul>
           </div>
         </div>
       </div>

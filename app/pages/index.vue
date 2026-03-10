@@ -30,13 +30,13 @@ const portfolioMode = usePortfolioMode()
 
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "JDev Online - High-Performance Vue & Nuxt Engineering | Lead Frontend Specialist"
-    : "JDev Online - The Engineering Lab | AI-Augmented Development"
+    ? "JDev Online - Senior Vue & Nuxt Consultant | UK-Native | Dutch B2B | Randstad & UK-Ready"
+    : "JDev Online - 100% Data Sovereignty | AI-Augmented Development without Cloud Risk"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Lead Frontend Specialist at JDev Online. I help businesses build, scale, and modernize web applications with AI-augmented velocity."
-    : "Local-first AI stack for engineering velocity and data privacy. How a Senior Vue Engineer uses Ollama, Cursor, and Proxmox to build faster."
+    ? "Senior Vue & Nuxt Consultant. Remote-first with on-site availability for Randstad (Amsterdam, Rotterdam, Den Haag) and UK (London/Hybrid). KVK registered, Outside IR35 compliant."
+    : "Your enterprise codebase never leaves my local infrastructure. Air-gapped Ollama LLMs for 100% GDPR and IP compliance. Up to 72% faster migrations to Nuxt 4."
 )
 
 useHead(() => ({

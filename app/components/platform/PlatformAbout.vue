@@ -10,14 +10,31 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
         class="space-y-12"
       >
-        <!-- Current AI Workflow (Mac-Native) -->
+        <!-- Nuxt 4 Migration Value Proposition -->
         <div class="space-y-4">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-            Current AI Workflow (Mac-Native)
+            Sovereign Migration Engine
           </h2>
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I currently leverage a local-first AI stack to amplify engineering
-            velocity while ensuring total code privacy.
+            I specialize in automating the migration of legacy React/Vue 2 stacks to Nuxt 4, compressing multi-month project timelines into sprint-sized deliveries.
+          </p>
+          <div class="rounded-lg border border-amber-200 bg-amber-50 p-6 dark:border-amber-800 dark:bg-amber-950/30">
+            <p class="text-sm font-medium text-amber-900 dark:text-amber-100">
+              Case study:
+            </p>
+            <p class="mt-1 text-sm text-amber-800 dark:text-amber-200">
+              Migrated a legacy React architecture to Nuxt 4 in 11 hours (estimated 40+ manual hours) by leveraging an AI-orchestrated refactoring pipeline.
+            </p>
+          </div>
+        </div>
+
+        <!-- Current AI Workflow -->
+        <div class="space-y-4">
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+            Local-First AI Stack
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            I leverage a local-first AI stack to amplify engineering velocity while ensuring total code privacy.
           </p>
           <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6">
             <ul class="space-y-4 text-sm text-vue-800 dark:text-vue-200">
@@ -43,14 +60,13 @@
           </div>
         </div>
 
-        <!-- Infrastructure Roadmap (Sovereign Lab) -->
+        <!-- Enterprise-Grade Remote Infrastructure -->
         <div class="space-y-4">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-            Infrastructure Roadmap (Sovereign Lab)
+            Enterprise-Grade Remote Infrastructure
           </h2>
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I am currently architecting a dedicated hardware node to migrate my
-            local inference off-device, focusing on:
+            Proxmox and Tailscale enable secure collaboration on sensitive client systems from anywhere—your code stays on my local infrastructure while I work remotely or on-site.
           </p>
           <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6">
             <ul class="space-y-4 text-sm text-vue-800 dark:text-vue-200">
@@ -70,7 +86,7 @@
                   height="1rem"
                   class="mt-0.5 shrink-0 text-vue-600 dark:text-vue-400"
                 />
-                <span><strong>Networking:</strong> Tailscale for secure, encrypted remote access to my local LLM stack while on-site with clients.</span>
+                <span><strong>Secure Networking:</strong> Tailscale for encrypted remote access to my local LLM stack while on-site with clients.</span>
               </li>
               <li class="flex items-start gap-3">
                 <Icon
@@ -79,7 +95,7 @@
                   height="1rem"
                   class="mt-0.5 shrink-0 text-vue-600 dark:text-vue-400"
                 />
-                <span><strong>System Design:</strong> Implementing distributed patterns to bridge my frontend expertise with AI-native backend infrastructure.</span>
+                <span><strong>System Design:</strong> Distributed patterns to bridge frontend expertise with AI-native backend infrastructure.</span>
               </li>
             </ul>
           </div>

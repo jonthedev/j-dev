@@ -44,17 +44,17 @@
         >
           <div class="flex items-center mb-4">
             <Icon
-              icon="lucide:trophy"
+              icon="lucide:scale"
               width="1.5rem"
               height="1.5rem"
               class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
             />
             <h3 class="font-semibold text-vue-900 dark:text-vue-100">
-              Award Recognition
+              Proven at Scale
             </h3>
           </div>
           <p class="text-vue-800 dark:text-vue-200 text-sm">
-            ANWB Traffic won Website van het Jaar 2022 – Populairste Website (Most Popular Website), recognized for exceptional reach and user engagement.
+            Applications built for ANWB, DPG Media, and Van Lanschot Kempen serve millions of users across the Netherlands—with Lighthouse scores 90+ in all categories.
           </p>
         </div>
 
@@ -107,8 +107,8 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
-import clients from '~/data/clients'
+import { Icon } from "@iconify/vue"
+import clients from "~/data/clients"
 
-defineOptions({ name: 'AppClients' })
+defineOptions({ name: "AppClients" })
 </script>
