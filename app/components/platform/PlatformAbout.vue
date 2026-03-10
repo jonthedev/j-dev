@@ -10,13 +10,13 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
         class="space-y-12"
       >
-        <!-- Nuxt 4 Migration Value Proposition -->
+        <!-- AI-Augmented Vue Engineering -->
         <div class="space-y-4">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-            Sovereign Migration Engine
+            AI-Augmented Vue Engineering
           </h2>
           <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-            I specialize in automating the migration of legacy React/Vue 2 stacks to Nuxt 4, compressing multi-month project timelines into sprint-sized deliveries.
+            I specialize in high-velocity development across the entire Vue ecosystem. Whether architecting new Nuxt 4 platforms, engineering complex features, or modernizing legacy stacks, I use a private AI-augmented workflow to deliver enterprise-grade results in a fraction of the standard time.
           </p>
           <div class="rounded-lg border border-amber-200 bg-amber-50 p-6 dark:border-amber-800 dark:bg-amber-950/30">
             <p class="text-sm font-medium text-amber-900 dark:text-amber-100">
