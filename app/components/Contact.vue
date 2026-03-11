@@ -22,7 +22,6 @@
         </p>
       </div>
 
-      <!-- Contact methods -->
       <div class="grid md:grid-cols-3 gap-8 mb-16">
         <SharedContactCard
           icon="lucide:mail"
@@ -46,7 +45,6 @@
         />
       </div>
 
-      <!-- Quick contact form or CTA -->
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
@@ -62,8 +60,9 @@
             Ready to Start Your Project?
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Whether you need a Nuxt 4 migration strategy, performance optimization,
-            or an AI-augmented frontend architect, I'm here to deliver enterprise-grade results.
+            Whether you need a Nuxt 4 migration strategy, performance
+            optimization, or an AI-augmented frontend architect, I'm here to
+            deliver enterprise-grade results.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -104,7 +103,6 @@
         </div>
       </div>
 
-      <!-- Social links (GitHub, LinkedIn from useContact) -->
       <div class="mt-12 flex justify-center space-x-6">
         <a
           v-for="social in contactMethods.filter((m) => m.name !== 'Email')"

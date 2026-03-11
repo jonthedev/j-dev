@@ -1,5 +1,7 @@
 <template>
-  <footer class="bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-gray-800">
+  <footer
+    class="bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-gray-800"
+  >
     <UContainer class="py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Contact Info -->
@@ -8,12 +10,13 @@
             Let's Work Together
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Available for Vue/Nuxt freelance projects, contract work, and consulting.
+            Available for Vue/Nuxt freelance projects, contract work, and
+            consulting.
           </p>
-          <div class="space-y-2">
+          <div class="space-y-2 flex flex-col">
             <a
               :href="`mailto:${contactInfo.email}`"
-              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+              class="inline-flex items-center w-fit text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
             >
               <Icon
                 icon="lucide:mail"
@@ -27,7 +30,7 @@
               :href="contactInfo.kvkUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+              class="inline-flex items-center w-fit text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
             >
               <Icon
                 icon="lucide:building-2"
@@ -50,7 +53,7 @@
               v-for="link in quickLinks"
               :key="link.name"
               :to="link.href"
-              class="text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+              class="inline-block w-fit text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
             >
               {{ link.name }}
             </NuxtLink>
