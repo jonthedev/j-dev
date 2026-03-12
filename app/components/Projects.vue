@@ -16,12 +16,13 @@
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-8">
         <SharedProjectCard
           v-for="(project, index) in projects"
           :key="project.id"
           :project="project"
           :index="index"
+          class="md:col-span-2"
         />
       </div>
 
