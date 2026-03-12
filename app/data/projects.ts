@@ -7,6 +7,8 @@ interface TechItem {
 export interface ProjectItem {
   id: string
   img: string
+  /** Optional dark-mode image; shown when site theme is dark */
+  imgDark?: string
   url: string
   github: string | null
   title: string
@@ -32,8 +34,9 @@ export interface ArchitecturePlaceholder {
 export const projects: ProjectItem[] = [
   {
     id: "thalex",
-    img: "/project-thalex.png",
-    url: "https://thalex.com/",
+    img: "/project-tlx-light.png",
+    imgDark: "/project-tlx-dark.png",
+    url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
     github: null,
     title: "Thalex",
     text: "Derivatives trading platform — options, futures & perpetuals. Built with Vue/Nuxt and real-time data visualization.",

@@ -7,16 +7,18 @@
     }"
   >
     <template #header>
-      <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900">
-        <img
-          :src="project.img"
-          :alt="project.title"
-          width="800"
-          height="450"
-          loading="lazy"
-          decoding="async"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        >
+      <div class="p-4">
+        <div class="aspect-video overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-900">
+          <img
+            :src="projectImageSrc"
+            :alt="project.title"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          >
+        </div>
       </div>
     </template>
 
@@ -69,8 +71,8 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
-import type { ProjectItem } from '~/data/projects'
+import { Icon } from "@iconify/vue"
+import type { ProjectItem } from "~/data/projects"
 
 interface Props {
   project: ProjectItem
@@ -79,11 +81,16 @@ interface Props {
 
 const props = defineProps<Props>()
 
-// Use our composables
+const colorMode = useColorMode()
 const { staggeredAnimation } = useAnimation()
 const { getTechName, getTechBrandClass } = useIcons()
 
-// Optimized animation
+const projectImageSrc = computed(() => {
+  const isDark = colorMode.value === "dark"
+  if (isDark && props.project.imgDark) return props.project.imgDark
+  return props.project.img
+})
+
 const animation = computed(() =>
   staggeredAnimation(100, 50)(props.index)
 )

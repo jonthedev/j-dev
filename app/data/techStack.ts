@@ -170,8 +170,7 @@ export const strategicTooling: StrategicToolingGroup[] = [
   {
     title: "Cloud & Infrastructure",
     items: [
-      { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-600" },
-      { id: "aws", title: "AWS (S3/CloudFront/Amplify)", icon: "simple-icons:amazonaws", iconClass: "text-orange-600" }
+      { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-600" }
     ]
   },
   {
