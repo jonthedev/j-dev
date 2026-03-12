@@ -62,6 +62,7 @@
 
 <script setup lang="ts">
 import { projects, architecturePlaceholders } from "~/data/projects"
+import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitecturePlaceholderCard.vue"
 
 defineOptions({ name: "ProjectsSection" })
 
