@@ -14,6 +14,14 @@ export interface ProjectItem {
   tech: TechItem[]
 }
 
+export interface ArchitecturePlaceholder {
+  id: string
+  title: string
+  status: "inProgress"
+  description: string
+  tech: string[]
+}
+
 export const projects: ProjectItem[] = [
   {
     id: "thalex",
@@ -28,5 +36,15 @@ export const projects: ProjectItem[] = [
       { id: "ts-thalex", icon: "simple-icons:typescript", classname: "text-blue-600" },
       { id: "realtime-thalex", icon: "lucide:activity", classname: "text-cyan-600" }
     ]
+  }
+]
+
+export const architecturePlaceholders: ArchitecturePlaceholder[] = [
+  {
+    id: "nestjs-system",
+    title: "NestJS System Architecture",
+    status: "inProgress",
+    description: "Modular backend architecture with type-safe DTOs, Swagger/OpenAPI documentation, and PostgreSQL persistence. Built for scalability and maintainability.",
+    tech: ["Type-safe DTOs", "Swagger", "Modular Architecture", "NestJS", "PostgreSQL"]
   }
 ]

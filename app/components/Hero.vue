@@ -14,11 +14,11 @@
       >
         <!-- Main headline -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">High-Performance</span><br>
+          <span class="text-gray-900 dark:text-white">Full-Stack</span><br>
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Vue & Nuxt Engineering
+            Web Systems Architecture
           </span>
         </h1>
 
@@ -26,33 +26,13 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Senior Vue & Nuxt Consultant | UK-Native | Dutch B2B Entity
+          Senior Full-Stack Engineer | Vue 3 / Nuxt 4 | NestJS | End-to-End Type Safety
         </p>
         <p
           class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
         >
-          Based in Amsterdam with a global remote reach.
+          UK-Native | Dutch B2B Entity | Based in Amsterdam
         </p>
-        <p
-          class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
-        >
-          I provide on-site availability for partners in the Randstad and London-hybrid engagements.
-        </p>
-
-        <!-- Website van het Jaar badge -->
-        <div
-          class="inline-flex items-center gap-2 rounded-full border border-vue-200 bg-vue-50 px-4 py-2 dark:border-vue-800 dark:bg-vue-950/30"
-        >
-          <Icon
-            icon="lucide:trophy"
-            width="1.25rem"
-            height="1.25rem"
-            class="text-vue-600 dark:text-vue-400 shrink-0"
-          />
-          <span class="text-sm font-medium text-vue-800 dark:text-vue-200">
-            Website van het Jaar 2022 · ANWB Traffic (Populairste Website)
-          </span>
-        </div>
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

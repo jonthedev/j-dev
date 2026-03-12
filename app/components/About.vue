@@ -16,7 +16,7 @@
           Engineering High-Performance Web Systems
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Senior Vue & Nuxt Consultant | Randstad & UK-Ready
+          Senior Full-Stack Engineer | Randstad & UK-Ready
         </p>
       </div>
 
@@ -34,10 +34,11 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              As a Senior Vue & Nuxt Consultant at JDev Online, I bring over 6
+              As a Senior Full-Stack Engineer at JDev Online, I bring over 6
               years of experience in architecting resilient, enterprise-scale
-              applications. I specialize in the Vue ecosystem, specifically
-              building with Vue 3, Nuxt, and TypeScript.
+              web systems. I focus on scalability, maintainability, and
+              architectural standards—with end-to-end type safety from API to UI.
+              Vue 3, Nuxt 4, and NestJS form the core of my stack.
             </p>
 
             <h3
@@ -61,9 +62,8 @@
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
               Currently engineering real-time data visualizations at Thalex, I
               have a track record of scaling products for major Dutch
-              enterprises like ANWB, Van Lanschot Kempen, and DPG Media. My work
-              at ANWB was recognized with the Website van het Jaar (Most Popular
-              Website) award in 2022.
+              enterprises. My work at ANWB was recognized with the &quot;Website van het Jaar&quot; (Most Popular
+              Website) award in 2022, serving millions of users with critical real-time traffic data.
             </p>
           </div>
         </div>
@@ -137,6 +137,15 @@
             <div class="text-vue-800 dark:text-vue-200 space-y-4 text-sm">
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
+                  System Architecture & API Design
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Modular NestJS backends with type-safe DTOs, Swagger documentation,
+                  and PostgreSQL persistence. Built for scalability and maintainability.
+                </p>
+              </div>
+              <div>
+                <div class="font-semibold text-vue-900 dark:text-vue-100">
                   Enterprise Modernization
                 </div>
                 <p class="mt-1 leading-relaxed">
@@ -152,15 +161,6 @@
                   Optimizing real-time data streaming and high-traffic
                   interfaces for speed, accessibility, and sub-second
                   reactivity.
-                </p>
-              </div>
-              <div>
-                <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Scalable Architecture
-                </div>
-                <p class="mt-1 leading-relaxed">
-                  Engineering "source of truth" component libraries and scaling
-                  products from MVP to enterprise-grade production.
                 </p>
               </div>
             </div>

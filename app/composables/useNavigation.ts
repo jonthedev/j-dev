@@ -6,24 +6,24 @@ export function useNavigation() {
   // Main navigation links
   const navigationLinks = [
     {
-      name: 'About',
-      href: '#about',
-      description: 'Learn more about my background and expertise'
+      name: "About",
+      href: "#about",
+      description: "Learn more about my background and expertise"
     },
     {
-      name: 'Tech Stack',
-      href: '#tech-stack',
-      description: 'Technologies and tools I work with'
+      name: "Web Systems",
+      href: "#tech-stack",
+      description: "Frontend and backend technologies I work with"
     },
     {
-      name: 'Projects',
-      href: '#projects',
-      description: 'Portfolio of my recent work'
+      name: "Projects",
+      href: "#projects",
+      description: "Portfolio of my recent work"
     },
     {
-      name: 'Contact',
-      href: '#contact',
-      description: 'Get in touch for collaborations'
+      name: "Contact",
+      href: "#contact",
+      description: "Get in touch for collaborations"
     }
   ]
 
@@ -33,16 +33,16 @@ export function useNavigation() {
   // Social links
   const socialLinks = [
     {
-      name: 'GitHub',
-      url: 'https://github.com/jonthedev',
-      icon: 'simple-icons:github',
-      description: 'View my code repositories'
+      name: "GitHub",
+      url: "https://github.com/jonthedev",
+      icon: "simple-icons:github",
+      description: "View my code repositories"
     },
     {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/',
-      icon: 'simple-icons:linkedin',
-      description: 'Connect with me professionally'
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/",
+      icon: "simple-icons:linkedin",
+      description: "Connect with me professionally"
     }
   ]
 
@@ -60,8 +60,8 @@ export function useNavigation() {
       const element = document.querySelector(href)
       if (element) {
         element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+          behavior: "smooth",
+          block: "start"
         })
       }
     }

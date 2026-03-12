@@ -30,12 +30,12 @@ const portfolioMode = usePortfolioMode()
 
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "JDev Online - Senior Vue & Nuxt Consultant | UK-Native | Dutch B2B | Randstad & UK-Ready"
+    ? "JDev Online - Senior Full-Stack Engineer | Web Systems | Vue 3 / Nuxt 4 | NestJS | Randstad & UK-Ready"
     : "JDev Online - 100% Data Sovereignty | AI-Augmented Development without Cloud Risk"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Senior Vue & Nuxt Consultant. Remote-first with on-site availability for Randstad (Amsterdam, Rotterdam, Den Haag) and UK (London/Hybrid). KVK registered, Outside IR35 compliant."
+    ? "Senior Full-Stack Engineer. Vue 3, Nuxt 4, NestJS. End-to-end type safety. Remote-first with on-site availability for Randstad and UK. KVK registered, Outside IR35 compliant."
     : "Your enterprise codebase never leaves my local infrastructure. Air-gapped Ollama LLMs for 100% GDPR and IP compliance. Up to 72% faster migrations to Nuxt 4."
 )
 

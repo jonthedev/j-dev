@@ -12,7 +12,7 @@
           Services & Case Studies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          A selection of recent work across the web ecosystem—specializing in high-performance Vue/Nuxt architectures, enterprise-scale migrations, and design system engineering.
+          Full-stack web systems—Vue/Nuxt frontends, NestJS backends, and production-grade architecture. Live projects and work in progress.
         </p>
       </div>
 
@@ -23,6 +23,13 @@
           :project="project"
           :index="index"
           class="md:col-span-2"
+        />
+        <SharedArchitecturePlaceholderCard
+          v-for="(placeholder, index) in architecturePlaceholders"
+          :key="placeholder.id"
+          :placeholder="placeholder"
+          :index="projects.length + index"
+          class="md:col-span-1"
         />
       </div>
 
@@ -54,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import { projects } from "~/data/projects"
+import { projects, architecturePlaceholders } from "~/data/projects"
 
 defineOptions({ name: "ProjectsSection" })
 

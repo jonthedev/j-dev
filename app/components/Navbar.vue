@@ -117,27 +117,27 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue"
 
-defineOptions({ name: 'AppNavbar' })
+defineOptions({ name: "AppNavbar" })
 
 const colorMode = useColorMode()
 const portfolioMode = usePortfolioMode()
 
 const portfolioTabItems = [
-  { label: 'Frontend', value: 'frontend' },
-  { label: 'AI', value: 'platform' }
+  { label: "Web Systems", value: "frontend" },
+  { label: "AI", value: "platform" }
 ]
 
 const portfolioTab = computed({
   get: () => portfolioMode.mode.value,
   set: (v) => {
-    if (v === 'frontend' || v === 'platform') portfolioMode.setMode(v)
+    if (v === "frontend" || v === "platform") portfolioMode.setMode(v)
   }
 })
 
 function toggleColorMode() {
-  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  colorMode.preference = colorMode.value === "dark" ? "light" : "dark"
 }
 
 const isMobileMenuOpen = ref(false)
