@@ -55,7 +55,7 @@
             color="neutral"
             icon="lucide:calendar"
           >
-            Book a Consultation
+            Book a Free Discovery Call
           </UButton>
         </div>
       </div>
