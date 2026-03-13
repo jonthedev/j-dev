@@ -10,8 +10,8 @@
             Let's Work Together
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Available for Vue/Nuxt and full-stack web systems—freelance projects,
-            contract work, and consulting.
+            Available for Vue/Nuxt and full-stack web applications—freelance
+            projects, contract work, and consulting.
           </p>
           <div class="space-y-2 flex flex-col">
             <a
@@ -112,7 +112,7 @@ const { contactInfo } = useContact()
 
 const quickLinks = [
   { name: "About", href: "#about" },
-  { name: "Web Systems", href: "#tech-stack" },
+  { name: "Web Applications", href: "#tech-stack" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" }
 ]

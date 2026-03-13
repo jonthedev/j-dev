@@ -18,7 +18,7 @@
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Web Systems Architecture
+            Web Applications
           </span>
         </h1>
 
@@ -26,7 +26,7 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Senior Full-Stack Engineer | Vue 3 / Nuxt 4 | NestJS | End-to-End Type Safety
+          Senior Full-Stack Engineer | Vue 3 · Nuxt 4 · NestJS | End-to-End Type Safety
         </p>
         <p
           class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"

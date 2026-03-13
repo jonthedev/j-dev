@@ -52,7 +52,7 @@ export const projects: ProjectItem[] = [
 export const architecturePlaceholders: ArchitecturePlaceholder[] = [
   {
     id: "nestjs-system",
-    title: "Modular B2B API Architecture",
+    title: "Technical Blueprint: Modular B2B API Architecture",
     status: "inProgress",
     badge: "Live Technical Demo",
     description: "A production-ready NestJS implementation demonstrating modular design, strict type-safety, and automated OpenAPI documentation. Built as a reference foundation for high-performance Vue/Nuxt ecosystems.",

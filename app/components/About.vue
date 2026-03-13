@@ -13,7 +13,7 @@
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          Engineering High-Performance Web Systems
+          Engineering High-Performance Web Applications
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
           Senior Full-Stack Engineer | Randstad & UK-Ready
@@ -35,8 +35,8 @@
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
               As a Senior Full-Stack Engineer at JDev Online, I bring over 6
-              years of experience in architecting resilient, enterprise-scale
-              web systems. I focus on scalability, maintainability, and
+              years of experience in architecting resilient, high-performance
+              web applications. I focus on scalability, maintainability, and
               architectural standards—with end-to-end type safety from API to UI.
               Vue 3, Nuxt 4, and NestJS form the core of my stack.
             </p>
@@ -48,10 +48,8 @@
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
               I combine deep architectural experience with a sovereign AI stack.
-              I don't just 'generate code'. I use agentic pipelines to handle
-              the heavy lifting of refactoring and boilerplate, leaving me to
-              focus on the high-level logic, security, and performance that your
-              enterprise requires.
+              I don't just 'generate code'—I use agentic pipelines to accelerate
+              the delivery of high-performance web applications.
             </p>
 
             <h3
@@ -60,10 +58,10 @@
               Proven Expertise
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              Currently engineering real-time data visualizations at Thalex, I
-              have a track record of scaling products for major Dutch
-              enterprises. My work at ANWB was recognized with the &quot;Website van het Jaar&quot; (Most Popular
-              Website) award in 2022, serving millions of users with critical real-time traffic data.
+              Award-winning scale: Member of the core engineering team for
+              ANWB.nl/verkeer, recognized as both &quot;Best Website&quot; and &quot;Most Popular Website&quot;
+              of the year (2022). Currently engineering real-time data visualizations
+              at Thalex, with a track record of scaling products for major Dutch clients.
             </p>
           </div>
         </div>
