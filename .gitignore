@@ -37,3 +37,8 @@ jdev-nuxt4-temp
 
 # Local Netlify folder
 .netlify
+
+# Playwright
+test-results
+playwright-report
+blob-report
