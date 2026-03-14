@@ -9,43 +9,78 @@
         :initial="{ opacity: 0, y: 24 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
       >
-        <div class="text-center max-w-3xl mx-auto mb-10">
+        <!-- The Lab Stack -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
           <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Lab Stack & Tooling
+            The Lab Stack
           </h2>
-          <p class="text-gray-600 dark:text-gray-300 mb-6">
-            Private, high-performance AI development tools:
+          <p class="text-gray-600 dark:text-gray-300">
+            The tools behind the velocity.
           </p>
-          <ul class="space-y-3 text-gray-700 dark:text-gray-300 list-none">
-            <li>Ollama, Qwen 32B, OpenCode, Cursor (local inference)</li>
-            <li>Infrastructure: Proxmox VE, Tailscale</li>
-            <li>Secure, agentic pipelines for orchestrated full-stack development</li>
-          </ul>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Current Local AI Stack + Infrastructure Roadmap: side by side on desktop, stacked on mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <!-- Current Local AI Stack -->
           <div
-            v-for="(tech, index) in platformTechStack"
-            :key="tech.id"
-            v-motion
-            :initial="{ opacity: 0, y: 12 }"
-            :visible-once="{ opacity: 1, y: 0, transition: { duration: 350, delay: 80 + index * 40 } }"
-            class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
+            class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm text-left md:text-center"
           >
-            <span
-              :class="`inline-flex items-center justify-center gap-1 text-2xl mb-2 ${tech.iconClass}`"
-            >
-              <Icon
-                v-if="tech.icon"
-                :icon="tech.icon"
-                width="1.5em"
-                height="1.5em"
-                class="inline-block"
-              />
-            </span>
-            <span class="text-sm font-medium text-gray-700 dark:text-gray-300 text-center">
-              {{ tech.title }}
-            </span>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Current Local AI Stack
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
+              Tools powering my private AI-augmented development workflow.
+            </p>
+            <ul class="space-y-3 text-gray-700 dark:text-gray-300 md:flex md:flex-col md:items-center md:space-y-3">
+              <li
+                v-for="item in currentStack"
+                :key="item.id"
+                class="flex items-center gap-3"
+              >
+                <span
+                  :class="`inline-flex shrink-0 ${item.iconClass}`"
+                >
+                  <Icon
+                    v-if="item.icon"
+                    :icon="item.icon"
+                    width="1.25em"
+                    height="1.25em"
+                  />
+                </span>
+                {{ item.title }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- Infrastructure Roadmap -->
+          <div
+            class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm text-left md:text-center"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              Infrastructure Roadmap
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
+              Planned sovereign AI infrastructure for larger orchestration workloads.
+            </p>
+            <ul class="space-y-3 text-gray-700 dark:text-gray-300 md:flex md:flex-col md:items-center md:space-y-3">
+              <li
+                v-for="item in roadmapStack"
+                :key="item.id"
+                class="flex items-center gap-3"
+              >
+                <span
+                  :class="`inline-flex shrink-0 ${item.iconClass}`"
+                >
+                  <Icon
+                    v-if="item.icon"
+                    :icon="item.icon"
+                    width="1.25em"
+                    height="1.25em"
+                  />
+                </span>
+                {{ item.title }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -58,4 +93,11 @@ import { Icon } from "@iconify/vue"
 import { platformTechStack } from "~/data/platformTechStack"
 
 defineOptions({ name: "PlatformTechStack" })
+
+const currentStack = computed(() =>
+  platformTechStack.filter(item => item.category === "currentLab")
+)
+const roadmapStack = computed(() =>
+  platformTechStack.filter(item => item.category === "roadmap")
+)
 </script>

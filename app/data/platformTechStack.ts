@@ -9,11 +9,18 @@ export interface PlatformTechStackItem {
 }
 
 export const platformTechStack: PlatformTechStackItem[] = [
-  // Current Lab (Mac-Native)
+  // Current Local AI Stack
   {
     id: "ollama",
     title: "Ollama",
     icon: "simple-icons:ollama",
+    iconClass: "text-gray-700 dark:text-gray-300",
+    category: "currentLab"
+  },
+  {
+    id: "qwen-coder",
+    title: "Qwen2.5-Coder",
+    icon: "lucide:code",
     iconClass: "text-gray-700 dark:text-gray-300",
     category: "currentLab"
   },
@@ -47,9 +54,9 @@ export const platformTechStack: PlatformTechStackItem[] = [
     category: "roadmap"
   },
   {
-    id: "system-design",
-    title: "System Design",
-    icon: "lucide:network",
+    id: "gpu-node",
+    title: "Private GPU Node",
+    icon: "lucide:server",
     iconClass: "text-vue-600 dark:text-vue-400",
     category: "roadmap"
   }
