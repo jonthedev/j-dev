@@ -37,3 +37,7 @@ useSeoMeta({
     </NuxtLayout>
   </UApp>
 </template>
+
+<style lang="postcss">
+@import "~/assets/css/main.css";
+</style>
