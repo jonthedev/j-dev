@@ -22,7 +22,7 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Enterprise-grade Vue development accelerated with private AI workflows. Your code never leaves local infrastructure—air-gapped LLMs (Ollama) and secure virtualization (Proxmox) ensure GDPR/IP compliance while delivering up to <strong>72% faster development</strong>.
+          Enterprise-grade Vue development accelerated with private AI workflows. Sensitive codebases can run entirely on local inference using Ollama, ensuring GDPR and IP compliance, while privacy-mode AI tooling maintains strict data protection—delivering up to <strong>72% faster development</strong>.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
