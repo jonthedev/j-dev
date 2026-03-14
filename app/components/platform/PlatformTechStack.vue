@@ -23,7 +23,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <!-- Current Local AI Stack -->
           <div
-            class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm text-left md:text-center"
+            class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)] text-left md:text-center"
           >
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               Current Local AI Stack
@@ -54,7 +54,7 @@
 
           <!-- Infrastructure Roadmap -->
           <div
-            class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm text-left md:text-center"
+            class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)] text-left md:text-center"
           >
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               Infrastructure Roadmap

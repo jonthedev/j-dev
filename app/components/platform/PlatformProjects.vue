@@ -10,7 +10,7 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
       >
         <div
-          class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-sm"
+          class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
           <!-- Card header -->
           <div class="p-6 lg:p-8 border-b border-gray-100 dark:border-gray-800">

@@ -25,7 +25,7 @@
           v-motion
           :initial="{ opacity: 0, y: 16 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 } }"
-          class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30"
+          class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
             Frontend (Core Expertise)
@@ -76,7 +76,7 @@
           v-motion
           :initial="{ opacity: 0, y: 16 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 150 } }"
-          class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30"
+          class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
             Backend (Architecture & Data)
