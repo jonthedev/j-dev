@@ -12,7 +12,7 @@
           Services & Case Studies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Full-stack web systems—Vue/Nuxt frontends, NestJS backends, and production-grade architecture. Live projects and work in progress.
+          Production-grade web applications—live work and work in progress.
         </p>
       </div>
 

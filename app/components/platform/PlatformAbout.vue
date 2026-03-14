@@ -3,37 +3,37 @@
     id="about"
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Full-width intro -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-        class="text-center mb-16"
       >
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          AI-Augmented Vue Engineering
+          Full-Lifecycle Modernization & Feature Engineering
         </h2>
-        <p class="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
-          I specialize in high-velocity development across the entire Vue ecosystem. Whether architecting new Nuxt 4 platforms, engineering complex features, or modernizing legacy stacks, I use a private AI-augmented workflow to deliver enterprise-grade results in a fraction of the standard time.
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+          High-performance Nuxt 4 and Vue 3 systems delivered with AI-augmented workflows:
         </p>
-      </div>
-
-      <!-- Two-card power layout: What + How -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <SharedServicePillarCard
-          v-for="(pillar, index) in platformPillars"
-          :key="pillar.headline"
-          :pillar="pillar"
-          :index="index"
-        />
+        <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+          <li class="flex gap-3">
+            <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
+            <span><strong>Legacy Modernization:</strong> Refactor and migrate legacy stacks to Nuxt 4 with reusable components and composables.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
+            <span><strong>Feature Engineering:</strong> Rapidly build complex modules with type-safe integration.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
+            <span><strong>Velocity Gains:</strong> 40+ manual hours compressed to 11 orchestrated hours.</span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { platformPillars } from "~/data/platformPillars"
-
 defineOptions({ name: "PlatformAbout" })
 </script>

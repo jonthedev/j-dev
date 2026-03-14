@@ -16,12 +16,22 @@
           Project Discovery
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          A free introductory call to explore your goals—no obligation. Available for
-          Vue/Nuxt projects, contract work, and consulting. Let's discuss how JDev
-          Online can help build, scale, and modernize your web applications.
+          <template v-if="isPlatformMode">
+            Free introductory call to explore your goals. Vue 3, Nuxt 4, NestJS: contract work, consulting, migrations, and new builds. Let's align on scope and fit.
+          </template>
+          <template v-else>
+            A free introductory call to explore your goals—no obligation. Vue 3, Nuxt 4, NestJS:
+            contract work, consulting, migrations, and new builds. Let's align on scope and fit.
+          </template>
         </p>
       </div>
 
+      <h3
+        v-if="isPlatformMode"
+        class="text-xl font-semibold text-gray-900 dark:text-white mb-6 text-center"
+      >
+        Contact & Engagement
+      </h3>
       <div class="grid md:grid-cols-3 gap-8 mb-16">
         <SharedContactCard
           icon="lucide:mail"
@@ -60,9 +70,8 @@
             Ready to Start Your Project?
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4 max-w-2xl mx-auto">
-            Whether you need a Nuxt 4 migration, a type-safe NestJS backbone, or an
-            AI-augmented architect to scale your web systems, I'm here to deliver
-            enterprise-grade results.
+            Nuxt 4 migrations, NestJS backends, or full-stack web applications—I deliver
+            scalable, maintainable, enterprise-ready results.
           </p>
           <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 max-w-xl mx-auto">
             No-obligation intro—we'll align on scope and fit before any commitment.
@@ -134,4 +143,6 @@ import { Icon } from "@iconify/vue"
 defineOptions({ name: "AppContact" })
 
 const { contactInfo, contactMethods } = useContact()
+const portfolioMode = usePortfolioMode()
+const isPlatformMode = computed(() => portfolioMode.mode.value !== "frontend")
 </script>

@@ -14,7 +14,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto italic">
-          A Frontend-first approach to Full-Stack development, ensuring that the Backend is architected specifically to support high-performance, type-safe user experiences.
+          Enterprise-ready full stack—built for performance, clarity, and long-term maintainability.
         </p>
       </div>
 
@@ -31,7 +31,7 @@
             Frontend (Core Expertise)
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            High-performance UIs, design systems, and real-time interfaces
+            Fast, accessible UIs with reusable, scalable components that grow with your users.
           </p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div
@@ -82,7 +82,7 @@
             Backend (Architecture & Data)
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            Modular systems, type-safe DTOs, and RESTful API design
+            Modular APIs, clear contracts, and robust data handling for predictable performance.
           </p>
           <div class="space-y-4">
             <div
@@ -130,15 +130,18 @@
         </div>
       </div>
 
-      <!-- End-to-End Type Safety Bridge -->
+      <!-- Contract & Integration Pipeline -->
       <div
         v-motion
         :initial="{ opacity: 0, y: 12 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 250 } }"
-        class="text-center py-4 mb-12 rounded-lg border border-vue-200 dark:border-vue-800 bg-vue-50/50 dark:bg-vue-950/20"
+        class="text-center py-5 mb-12 rounded-lg border border-vue-200 dark:border-vue-800 bg-vue-50/50 dark:bg-vue-950/20"
       >
+        <p class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400 mb-1">
+          Contract & Integration Pipeline
+        </p>
         <span class="text-sm font-medium text-vue-800 dark:text-vue-200">
-          End-to-End Type Safety: Shared types from API to UI
+          Seamless type-safe flow from API to UI for consistent, maintainable applications.
         </span>
       </div>
 
@@ -217,7 +220,7 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Component Architecture:</strong> Reusable, maintainable, and well-tested components.
+              <strong>Component Architecture:</strong> Reusable, testable, maintainable.
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -228,7 +231,7 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Modern Tooling:</strong> Vite, TypeScript, and the latest Vue ecosystem.
+              <strong>Modern Tooling:</strong> Vue ecosystem and modern workflows.
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -239,7 +242,7 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Quality-first:</strong> Vitest, Playwright, and Lighthouse audits ensure production-grade reliability.
+              <strong>Quality-first:</strong> Vitest, Playwright, Lighthouse audits for production-ready reliability.
             </div>
           </div>
         </div>

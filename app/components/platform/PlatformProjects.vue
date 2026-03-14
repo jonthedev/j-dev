@@ -8,36 +8,22 @@
         v-motion
         :initial="{ opacity: 0, y: 24 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-        class="text-center mb-16"
-      >
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Engineering R&D & Case Studies
-        </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300">
-          Battle-testing agentic workflows and sovereign infrastructure.
-        </p>
-      </div>
-
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
       >
         <div
           class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-sm"
         >
-          <!-- Header Section -->
+          <!-- Card header -->
           <div class="p-6 lg:p-8 border-b border-gray-100 dark:border-gray-800">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
-                <h3 class="font-bold text-gray-900 dark:text-white text-2xl mb-1">
-                  Agentic Platform Migration: React to Nuxt 4
-                </h3>
-                <p class="text-vue-600 dark:text-vue-400 font-medium">
-                  Project: J Dev Online Portfolio Refactor
+                <h2 class="font-bold text-gray-900 dark:text-white text-2xl mb-1">
+                  Case Study: React → Nuxt 4 Migration & AI-Augmented Refactor
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                  My former portfolio site, migrated to Nuxt 4 using agentic AI workflows—demonstrating innovation, delivery speed, and 100% data sovereignty (no code or prompts left local infrastructure).
                 </p>
               </div>
-              <div class="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-lg border border-green-100 dark:border-green-800/30">
+              <div class="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-lg border border-green-100 dark:border-green-800/30 shrink-0">
                 <Icon
                   icon="lucide:check-circle"
                   class="shrink-0"
@@ -47,12 +33,12 @@
             </div>
           </div>
 
-          <!-- Metrics Grid (Direct Sync with PageSpeed Insights & CV) -->
+          <!-- Metrics grid -->
           <div class="grid grid-cols-2 md:grid-cols-4 border-b border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 relative group">
-            <!-- Live Verification Overlay -->
             <a
               href="https://pagespeed.web.dev"
               target="_blank"
+              rel="noopener noreferrer"
               class="absolute inset-0 z-10 flex items-center justify-center bg-white/95 dark:bg-gray-950/95 opacity-0 group-hover:opacity-100 transition-all duration-300"
             >
               <div class="flex items-center gap-2 text-vue-600 dark:text-vue-400 font-bold text-xs uppercase tracking-tighter">
@@ -63,7 +49,6 @@
                 Verify via Google PageSpeed Insights
               </div>
             </a>
-
             <div class="p-4 text-center border-r border-gray-100 dark:border-gray-800">
               <div class="text-2xl font-bold text-green-600 dark:text-green-400">
                 91+
@@ -99,7 +84,7 @@
           </div>
 
           <div class="p-6 lg:p-8 space-y-8">
-            <!-- Velocity & Sovereignty Stats -->
+            <!-- Velocity & Sovereignty -->
             <div class="grid md:grid-cols-2 gap-4">
               <div class="flex items-center gap-4 p-4 bg-vue-50 dark:bg-vue-950/30 rounded-lg border border-vue-100 dark:border-vue-800">
                 <Icon
@@ -111,7 +96,7 @@
                     ~72% Velocity Increase
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    40+ manual hours to 11 orchestrated hours.
+                    40+ manual hours → 11 AI-orchestrated hours on this project.
                   </div>
                 </div>
               </div>
@@ -122,49 +107,55 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    Total Data Sovereignty
+                    Data Sovereignty
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    Zero cloud exposure via local inference (Ollama).
+                    0% cloud exposure—fully private (local inference, Ollama).
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Detailed Roadmap Breakdown -->
-            <div class="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                  <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs">1</span>
-                  Orchestration Phase
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Built an agentic pipeline with OpenCode and Qwen2.5-Coder (32B) and drove the full migration of j-dev from React to Nuxt 4.
-                  <br>
-                  Delivered a completely new design, reusable Vue components and composables, the AI/Platform tab switch, verified badges and brand icons (Iconify), and a clean data layer—all with functional parity.
-                </p>
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                  <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs">2</span>
-                  Refinement Phase
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Custom Vite optimizations, reactivity and asset tuning, copy and SEO polish, and performance work to hit 90+ Mobile Lighthouse—all refined in Cursor.
-                  <br>
-                  End result: a production-ready Nuxt site with a full front-end.
-                </p>
+            <!-- Project Phases -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">
+                Project Phases (this migration)
+              </h3>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                    <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs">1</span>
+                    Orchestration Phase
+                  </h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Drove the full React → Nuxt 4 migration with an agentic pipeline; delivered reusable Vue components and composables, AI-assisted refactors, and full functional parity with the previous site.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                    <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs">2</span>
+                    Refinement Phase
+                  </h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Applied custom Vite optimizations, reactivity tuning, copy and SEO polish, and performance audits—achieving Lighthouse 90+ on this project.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <!-- Technology Stack -->
-            <div class="pt-6 border-t border-gray-100 dark:border-gray-800 flex flex-wrap items-center justify-between gap-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">QWEN-32B</span>
-                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">OPENCODE</span>
-                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">NUXT 4</span>
-                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">OLLAMA</span>
-              </div>
+            <!-- Optional note -->
+            <div class="rounded-lg border border-vue-200 dark:border-vue-800 bg-vue-50/50 dark:bg-vue-950/20 p-4">
+              <p class="text-sm text-vue-800 dark:text-vue-200">
+                While this case study was a full migration, the same R&D workflows can be applied to adding features, writing tests, or enhancing existing Vue/Nuxt applications.
+              </p>
+            </div>
+
+            <!-- Tech stack tags -->
+            <div class="pt-4 border-t border-gray-100 dark:border-gray-800 flex flex-wrap items-center gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">QWEN-32B</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">OPENCODE</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">NUXT 4</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">OLLAMA</span>
             </div>
           </div>
         </div>
@@ -174,7 +165,7 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@iconify/vue'
+import { Icon } from "@iconify/vue"
 
-defineOptions({ name: 'PlatformProjects' })
+defineOptions({ name: "PlatformProjects" })
 </script>

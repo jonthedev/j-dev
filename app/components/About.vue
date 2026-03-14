@@ -13,10 +13,10 @@
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          Engineering High-Performance Web Applications
+          High-Performance Web Applications
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Senior Full-Stack Engineer | Randstad & UK-Ready
+          Senior Full-Stack Engineer · Vue 3 · Nuxt 4 · NestJS · UK & EU-Ready
         </p>
       </div>
 
@@ -34,11 +34,8 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              As a Senior Full-Stack Engineer at JDev Online, I bring over 6
-              years of experience in architecting resilient, high-performance
-              web applications. I focus on scalability, maintainability, and
-              architectural standards—with end-to-end type safety from API to UI.
-              Vue 3, Nuxt 4, and NestJS form the core of my stack.
+              6+ years building scalable, maintainable web applications with Vue 3,
+              Nuxt 4, and NestJS. Focus on high performance, clear architecture, and enterprise readiness.
             </p>
 
             <h3
@@ -47,9 +44,8 @@
               The JDev Advantage
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I combine deep architectural experience with a sovereign AI stack.
-              I don't just 'generate code'—I use agentic pipelines to accelerate
-              the delivery of high-performance web applications.
+              Deep full-stack experience and a sovereign AI stack. Agentic pipelines
+              accelerate delivery so I can focus on performance, reliability, and maintainability.
             </p>
 
             <h3
@@ -58,10 +54,8 @@
               Proven Expertise
             </h3>
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              Award-winning scale: Member of the core engineering team for
-              ANWB.nl/verkeer, recognized as both &quot;Best Website&quot; and &quot;Most Popular Website&quot;
-              of the year (2022). Currently engineering real-time data visualizations
-              at Thalex, with a track record of scaling products for major Dutch clients.
+              ANWB.nl/verkeer — Best Website & Most Popular Website (2022). Thalex — real-time
+              trading dashboards. DPG Media, Van Lanschot Kempen — high-traffic enterprise applications.
             </p>
           </div>
         </div>
@@ -138,8 +132,7 @@
                   System Architecture & API Design
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Modular NestJS backends with type-safe DTOs, Swagger documentation,
-                  and PostgreSQL persistence. Built for scalability and maintainability.
+                  Modular backends, clear contracts, documented APIs.
                 </p>
               </div>
               <div>
@@ -147,8 +140,7 @@
                   Enterprise Modernization
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Leading the transition from legacy architectures to resilient
-                  Nuxt 4 systems using an AI-augmented refactoring workflow.
+                  Legacy to Nuxt 4 migrations with AI-augmented refactoring.
                 </p>
               </div>
               <div>
@@ -156,9 +148,15 @@
                   Performance Engineering
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Optimizing real-time data streaming and high-traffic
-                  interfaces for speed, accessibility, and sub-second
-                  reactivity.
+                  Optimizing high-traffic UIs for speed, accessibility, and sub-second reactivity.
+                </p>
+              </div>
+              <div>
+                <div class="font-semibold text-vue-900 dark:text-vue-100">
+                  Contracting Readiness
+                </div>
+                <p class="mt-1 leading-relaxed">
+                  Ready for UK/EU/remote engagements with elite consultant velocity.
                 </p>
               </div>
             </div>
@@ -182,8 +180,7 @@
             <p
               class="mb-4 text-sm font-medium text-emerald-800 dark:text-emerald-200"
             >
-              I am as easy to hire as a local employee, with the velocity of an
-              elite consultant.
+              As easy to hire as a local employee—with the velocity of an elite consultant.
             </p>
             <ul
               class="space-y-3 text-sm text-emerald-800 dark:text-emerald-200"

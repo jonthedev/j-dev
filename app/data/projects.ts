@@ -39,7 +39,7 @@ export const projects: ProjectItem[] = [
     url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
     github: null,
     title: "Thalex",
-    text: "Derivatives trading platform — options, futures & perpetuals. Built with Vue/Nuxt and real-time data visualization.",
+    text: "Vue/Nuxt real-time data visualization for derivatives trading—options, futures & perpetuals.",
     tech: [
       { id: "vue-thalex", icon: "simple-icons:vuedotjs", classname: "text-green-500" },
       { id: "nuxt-thalex", icon: "simple-icons:nuxtdotjs", classname: "text-green-600" },
@@ -55,12 +55,12 @@ export const architecturePlaceholders: ArchitecturePlaceholder[] = [
     title: "Technical Blueprint: Modular B2B API Architecture",
     status: "inProgress",
     badge: "Live Technical Demo",
-    description: "A production-ready NestJS implementation demonstrating modular design, strict type-safety, and automated OpenAPI documentation. Built as a reference foundation for high-performance Vue/Nuxt ecosystems.",
+    description: "Modular NestJS API architecture with type-safe DTOs and Swagger/OpenAPI documentation. Production-ready foundation for Vue 3 and Nuxt 4 applications.",
     keyFeatures: [
       "Modular Domain Design (Clean Architecture)",
       "Contract-First Documentation (Swagger/OpenAPI)",
       "Persistence Layer (PostgreSQL & TypeORM)",
-      "The Type-Safe Bridge (Shared DTOs for Vue 3/Nuxt 4)"
+      "Type-Safe DTOs for Vue 3 / Nuxt 4"
     ],
     swaggerUrl: null,
     githubUrl: null

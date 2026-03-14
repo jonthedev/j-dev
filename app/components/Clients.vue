@@ -11,7 +11,7 @@
           Trusted by Leading Companies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          I've had the privilege of working with innovative organizations across finance, media, and automotive industries.
+          Trusted by leading organizations in finance, media, and automotive for high-performance web applications.
         </p>
       </div>
 
@@ -54,7 +54,7 @@
             </h3>
           </div>
           <p class="text-vue-800 dark:text-vue-200 text-sm">
-            Applications built for ANWB, DPG Media, and Van Lanschot Kempen serve millions of users across the Netherlands—with Lighthouse scores 90+ in all categories.
+            ANWB.nl/verkeer (Best Website & Most Popular Website 2022), Thalex real-time trading, DPG Media and Van Lanschot Kempen—Lighthouse 90+ across performance, accessibility, best practices.
           </p>
         </div>
 
@@ -76,7 +76,7 @@
             </h3>
           </div>
           <p class="text-blue-800 dark:text-blue-200 text-sm">
-            Applications I've built serve millions of users across the Netherlands, including critical traffic and job-seeking platforms.
+            High-traffic applications serving millions of users—traffic, trading, media, and financial platforms across the Netherlands.
           </p>
         </div>
 
@@ -98,7 +98,7 @@
             </h3>
           </div>
           <p class="text-green-800 dark:text-green-200 text-sm">
-            Experience with enterprise-level requirements including accessibility, performance, security, and scalability.
+            Enterprise-scale requirements: accessibility, performance, security, and scalability—built to maintain and extend.
           </p>
         </div>
       </div>
