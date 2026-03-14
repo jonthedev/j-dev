@@ -1,4 +1,4 @@
-import type { RouterConfig } from '@nuxt/schema'
+import type { RouterConfig } from "@nuxt/schema"
 
 export default <RouterConfig>{
   scrollBehavior(to, _from, _savedPosition) {
@@ -9,7 +9,7 @@ export default <RouterConfig>{
         const tryScroll = () => {
           const el = document.querySelector(to.hash)
           if (el) {
-            resolve({ el: to.hash, behavior: 'smooth' })
+            resolve({ el: to.hash, behavior: "smooth" })
           } else if (Date.now() - start < maxWait) {
             requestAnimationFrame(tryScroll)
           } else {

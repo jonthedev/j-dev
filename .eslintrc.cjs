@@ -2,35 +2,37 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended',
-    'prettier'
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
   ],
-  plugins: ['react-refresh', '@typescript-eslint', 'prettier', 'jsx-a11y'],
-  ignorePatterns: ['dist', '.eslintrc.cjs', '*.config.*', '.css'],
-  parser: '@typescript-eslint/parser',
+  plugins: ["react-refresh", "@typescript-eslint", "prettier", "jsx-a11y"],
+  ignorePatterns: ["dist", ".eslintrc.cjs", "*.config.*", ".css"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: './tsconfig.json',
+    project: "./tsconfig.json",
     tsconfigRootDir: __dirname
   },
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
+    "quotes": ["error", "single"],
+    "@stylistic/quotes": ["error", "single"],
+    "react-refresh/only-export-components": [
+      "warn",
       { allowConstantExport: true }
     ],
-    'no-unused-vars': 'off',
-    'no-console': 'warn',
-    '@typescript-eslint/no-unused-vars': 'error',
-    'prettier/prettier': [
-      'error',
+    "no-unused-vars": "off",
+    "no-console": "warn",
+    "@typescript-eslint/no-unused-vars": "error",
+    "prettier/prettier": [
+      "error",
       {
-        singleQuote: false,
+        singleQuote: true,
         semi: false,
         useTabs: false,
         tabWidth: 2,
-        trailingComma: 'all',
+        trailingComma: "all",
         printWidth: 80
       }
     ]

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { useAnimation } from '~/composables/useAnimation'
+import { useAnimation } from "~/composables/useAnimation"
 
 interface Props {
   id?: string

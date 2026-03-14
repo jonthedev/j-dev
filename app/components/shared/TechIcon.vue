@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { useAnimation } from '~/composables/useAnimation'
+import { useAnimation } from "~/composables/useAnimation"
 
 interface Props {
   icon?: string
@@ -40,13 +40,13 @@ interface Props {
   index?: number
   isPrimary?: boolean
   iconClass?: string
-  badgeColor?: 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'error' | 'neutral'
+  badgeColor?: "primary" | "secondary" | "success" | "info" | "warning" | "error" | "neutral"
 }
 
 const props = withDefaults(defineProps<Props>(), {
   isPrimary: true,
   index: 0,
-  badgeColor: 'neutral'
+  badgeColor: "neutral"
 })
 
 // Use our animation composable

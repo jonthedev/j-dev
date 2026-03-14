@@ -1,8 +1,8 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      primary: 'vue',
-      neutral: 'slate'
+      primary: "vue",
+      neutral: "slate"
     }
   }
 })

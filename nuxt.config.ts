@@ -2,11 +2,11 @@
 export default defineNuxtConfig({
 
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/fonts',
-    '@nuxt/image',
-    '@vueuse/motion/nuxt'
+    "@nuxt/eslint",
+    "@nuxt/ui",
+    "@nuxt/fonts",
+    "@nuxt/image",
+    "@vueuse/motion/nuxt"
   ],
 
   // Static profile site: client-only SPA; static preset skips Nitro server bundle (avoids client.precomputed.mjs bug)
@@ -16,37 +16,37 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
 
-  srcDir: 'app',
+  srcDir: "app",
 
   // Prerender disabled temporarily due to Nuxt 4 client.precomputed.mjs bug (nuxt/nuxt#33579)
   // routeRules: {
   //   '/': { prerender: true }
   // },
 
-  compatibilityDate: '2025-01-15',
+  compatibilityDate: "2025-01-15",
   nitro: {
-    preset: 'static'
+    preset: "static"
   },
 
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
+        commaDangle: "never",
+        braceStyle: "1tbs"
       }
     }
   },
 
   fonts: {
     families: [
-      { name: 'Kanit', provider: 'google', weights: ['400', '600'] }
+      { name: "Kanit", provider: "google", weights: ["400", "600"] }
     ]
   },
 
   // Nuxt Image: explicit Netlify provider so production uses Netlify Image CDN (https://image.nuxt.com/providers/netlify)
   image: {
-    provider: 'netlify'
+    provider: "netlify"
   }
 })

@@ -8,23 +8,23 @@ interface Client {
 
 const clients: Client[] = [
   {
-    id: 'anwb',
-    img: '/anwb.svg',
-    alt: 'ANWB logo',
+    id: "anwb",
+    img: "/anwb.svg",
+    alt: "ANWB logo",
     width: 200,
     height: 200
   },
   {
-    id: 'van-lanschot',
-    img: '/van-lanschot-kempen.svg',
-    alt: 'Van Lanschot Kempen logo',
+    id: "van-lanschot",
+    img: "/van-lanschot-kempen.svg",
+    alt: "Van Lanschot Kempen logo",
     width: 200,
     height: 200
   },
   {
-    id: 'dpg-media',
-    img: '/dpg-media.svg',
-    alt: 'DPG Media logo',
+    id: "dpg-media",
+    img: "/dpg-media.svg",
+    alt: "DPG Media logo",
     width: 200,
     height: 200
   }

@@ -1,17 +1,17 @@
-const STORAGE_KEY = 'portfolio-mode'
+const STORAGE_KEY = "portfolio-mode"
 
-export type PortfolioMode = 'frontend' | 'platform'
+export type PortfolioMode = "frontend" | "platform"
 
 export function usePortfolioMode() {
-  const mode = useState<PortfolioMode>('portfolio-mode', () => 'frontend')
+  const mode = useState<PortfolioMode>("portfolio-mode", () => "frontend")
 
   onMounted(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as PortfolioMode | null
-    if (stored === 'frontend' || stored === 'platform') mode.value = stored
+    if (stored === "frontend" || stored === "platform") mode.value = stored
   })
 
   function toggleMode() {
-    mode.value = mode.value === 'frontend' ? 'platform' : 'frontend'
+    mode.value = mode.value === "frontend" ? "platform" : "frontend"
     if (import.meta.client) {
       localStorage.setItem(STORAGE_KEY, mode.value)
     }

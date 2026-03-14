@@ -116,10 +116,10 @@ export function useAnimation() {
    * These are combined with CSS transitions for smooth hover effects
    */
   const hoverAnimations = {
-    scale: 'transform scale-110',
-    lift: 'transform -translate-y-2',
-    glow: 'shadow-2xl',
-    bright: 'brightness-110'
+    scale: "transform scale-110",
+    lift: "transform -translate-y-2",
+    glow: "shadow-2xl",
+    bright: "brightness-110"
   }
 
   /**

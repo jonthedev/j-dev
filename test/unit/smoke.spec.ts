@@ -1,8 +1,8 @@
 // @vitest-environment node
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from "vitest"
 
-describe('smoke', () => {
-  it('passes', () => {
+describe("smoke", () => {
+  it("passes", () => {
     expect(true).toBe(true)
   })
 })
