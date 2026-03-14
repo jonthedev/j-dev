@@ -74,7 +74,7 @@
           <!-- Photo: plain img so images work in dev and production -->
           <div class="flex justify-center">
             <img
-              src="/jdk-portfolio-2024.jpeg"
+              src="/jdk-portfolio-comp.webp"
               alt="Jonathan Kaonga"
               width="224"
               height="224"
