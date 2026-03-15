@@ -1,9 +1,16 @@
 <template>
   <section
     id="about"
-    class="bg-gray-50 py-20 dark:bg-gray-950"
+    class="bg-gray-50 py-20 dark:bg-gray-950 relative overflow-hidden"
   >
-    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <!-- Background: line grid (matches frontend hero) -->
+    <div
+      class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.05] dark:opacity-[0.07]"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0 about-section-grid" />
+    </div>
+    <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
@@ -234,3 +241,12 @@ import { Icon } from "@iconify/vue"
 
 defineOptions({ name: "AppAbout" })
 </script>
+
+<style scoped>
+.about-section-grid {
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
+    linear-gradient(to bottom, currentColor 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+</style>

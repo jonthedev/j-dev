@@ -1,9 +1,24 @@
 <template>
   <section
     id="contact"
-    class="py-20 bg-white dark:bg-black"
+    class="py-20 bg-white dark:bg-black relative overflow-hidden"
   >
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Background: line grid (frontend) or dot grid (platform), theme-aware -->
+    <div
+      v-if="!isPlatformMode"
+      class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.05] dark:opacity-[0.07]"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0 contact-section-grid" />
+    </div>
+    <div
+      v-else
+      class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.06] dark:opacity-[0.09]"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0 contact-section-dots" />
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
@@ -146,3 +161,20 @@ const { contactInfo, contactMethods } = useContact()
 const portfolioMode = usePortfolioMode()
 const isPlatformMode = computed(() => portfolioMode.mode.value !== "frontend")
 </script>
+
+<style scoped>
+.contact-section-grid {
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
+    linear-gradient(to bottom, currentColor 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.contact-section-dots {
+  background-image: radial-gradient(
+    circle,
+    currentColor 1.5px,
+    transparent 1.5px
+  );
+  background-size: 28px 28px;
+}
+</style>

@@ -1,9 +1,16 @@
 <template>
   <section
     id="tech-stack"
-    class="py-20 bg-white dark:bg-black"
+    class="py-20 bg-white dark:bg-black relative overflow-hidden"
   >
-    <UContainer>
+    <!-- Background: dot grid (matches AI hero) -->
+    <div
+      class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.06] dark:opacity-[0.09]"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0 lab-stack-dots" />
+    </div>
+    <UContainer class="relative z-10">
       <div
         v-motion
         :initial="{ opacity: 0, y: 24 }"
@@ -101,3 +108,14 @@ const roadmapStack = computed(() =>
   platformTechStack.filter(item => item.category === "roadmap")
 )
 </script>
+
+<style scoped>
+.lab-stack-dots {
+  background-image: radial-gradient(
+    circle,
+    currentColor 1.5px,
+    transparent 1.5px
+  );
+  background-size: 28px 28px;
+}
+</style>
