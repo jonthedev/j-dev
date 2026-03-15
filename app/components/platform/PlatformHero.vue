@@ -1,6 +1,12 @@
 <template>
   <section class="min-h-screen flex items-center justify-center pb-20 bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden">
-    <div class="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10" />
+    <!-- Background: grid of circles, theme-aware -->
+    <div
+      class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.07] dark:opacity-[0.1]"
+      aria-hidden="true"
+    >
+      <div class="absolute inset-0 platform-hero-dots" />
+    </div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div
@@ -67,10 +73,12 @@ const _animation = fadeInUp(600, 0)
 </script>
 
 <style scoped>
-.bg-grid-pattern {
-  background-image:
-    linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
+.platform-hero-dots {
+  background-image: radial-gradient(
+    circle,
+    currentColor 1.5px,
+    transparent 1.5px
+  );
+  background-size: 28px 28px;
 }
 </style>
