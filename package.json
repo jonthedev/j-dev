@@ -49,5 +49,10 @@
     "vitest": "^3.2.4",
     "vue-tsc": "^3.2.4"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.28.2",
+  "pnpm": {
+    "overrides": {
+      "simple-git": ">=3.32.3"
+    }
+  }
 }
