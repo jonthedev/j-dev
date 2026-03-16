@@ -134,7 +134,7 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:nestjs",
     iconClass: "text-red-600",
     category: "backend",
-    sublabel: "Application logic & modular service architecture"
+    sublabel: "Application logic and modular service architecture"
   },
   {
     id: "postgresql-prisma",
@@ -142,7 +142,7 @@ export const techStack: TechStackItem[] = [
     icons: ["simple-icons:postgresql", "simple-icons:prisma"],
     iconClass: "text-blue-700",
     category: "backend",
-    sublabel: "Type-safe persistence and schema management"
+    sublabel: "Type-safe persistence and schema-driven database access"
   },
   {
     id: "swagger",
@@ -150,7 +150,7 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:swagger",
     iconClass: "text-green-600",
     category: "backend",
-    sublabel: "API contract documentation"
+    sublabel: "API contract documentation and integration support"
   }
 ]
 
@@ -176,8 +176,8 @@ export const strategicTooling: StrategicToolingGroup[] = [
   {
     title: "Quality & Performance",
     items: [
-      { id: "lighthouse", title: "Google Lighthouse (Audits)", icon: "lucide:gauge", iconClass: "text-blue-600" },
-      { id: "wcag", title: "WCAG (Accessibility)", icon: "lucide:accessibility", iconClass: "text-emerald-600" }
+      { id: "lighthouse", title: "Google Lighthouse (performance audits)", icon: "lucide:gauge", iconClass: "text-blue-600" },
+      { id: "wcag", title: "WCAG (accessibility standards)", icon: "lucide:accessibility", iconClass: "text-emerald-600" }
     ]
   },
   {

@@ -13,8 +13,8 @@
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Tech Stack
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto italic">
-          Enterprise-ready full stack—built for performance, clarity, and long-term maintainability.
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Modern full-stack tooling focused on performance, clarity, and long-term maintainability.
         </p>
       </div>
 
@@ -31,7 +31,7 @@
             Frontend (Core Expertise)
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            Fast, accessible UIs with reusable, scalable components that grow with your users.
+            Fast, accessible user interfaces built with reusable and scalable components.
           </p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div
@@ -82,7 +82,7 @@
             Backend (Architecture & Data)
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            Modular APIs, clear contracts, and robust data handling for predictable performance.
+            Modular APIs, clear contracts, and reliable data handling for modern web applications.
           </p>
           <div class="space-y-4">
             <div
@@ -141,7 +141,7 @@
           Contract & Integration Pipeline
         </p>
         <span class="text-sm font-medium text-vue-800 dark:text-vue-200">
-          Seamless type-safe flow from API to UI for consistent, maintainable applications.
+          Seamless type-safe flow from API to client applications for consistent and maintainable integrations.
         </span>
       </div>
 
@@ -200,7 +200,7 @@
         <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
           Development Philosophy
         </h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm text-vue-800 dark:text-vue-200">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
           <div class="flex items-start space-x-3">
             <Icon
               icon="lucide:zap"
@@ -209,7 +209,8 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Performance First:</strong> Optimized for speed, accessibility, and user experience.
+              <strong>Performance First</strong><br>
+              <span class="text-vue-700 dark:text-vue-300">Optimized for speed, accessibility, and user experience.</span>
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -220,18 +221,8 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Component Architecture:</strong> Reusable, testable, maintainable.
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:code-2"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>Modern Tooling:</strong> Vue ecosystem and modern workflows.
+              <strong>Component Architecture</strong><br>
+              <span class="text-vue-700 dark:text-vue-300">Reusable, testable, and maintainable frontend architecture.</span>
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -242,7 +233,8 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Quality-first:</strong> Vitest, Playwright, Lighthouse audits for production-ready reliability.
+              <strong>Quality First</strong><br>
+              <span class="text-vue-700 dark:text-vue-300">Testing and auditing with Vitest, Playwright, and Lighthouse for production-ready reliability.</span>
             </div>
           </div>
         </div>
