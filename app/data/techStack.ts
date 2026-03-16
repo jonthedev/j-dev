@@ -134,15 +134,15 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:nestjs",
     iconClass: "text-red-600",
     category: "backend",
-    sublabel: "Application Logic"
+    sublabel: "Application logic & modular service architecture"
   },
   {
-    id: "postgresql-typeorm",
-    title: "PostgreSQL / TypeORM",
-    icons: ["simple-icons:postgresql", "simple-icons:typeorm"],
+    id: "postgresql-prisma",
+    title: "PostgreSQL + Prisma",
+    icons: ["simple-icons:postgresql", "simple-icons:prisma"],
     iconClass: "text-blue-700",
     category: "backend",
-    sublabel: "Persistence"
+    sublabel: "Type-safe persistence and schema management"
   },
   {
     id: "swagger",
@@ -150,7 +150,7 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:swagger",
     iconClass: "text-green-600",
     category: "backend",
-    sublabel: "Contract Documentation"
+    sublabel: "API contract documentation"
   }
 ]
 
