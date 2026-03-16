@@ -11,7 +11,7 @@
           Trusted by Leading Companies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Trusted by leading organizations in finance, media, and automotive for high-performance web applications.
+          ANWB, Thalex, DPG Media, and Van Lanschot Kempen — contributing to high-traffic web applications across traffic, trading, media, and financial platforms in the Netherlands.
         </p>
       </div>
 
@@ -34,8 +34,8 @@
         </div>
       </div>
 
-      <!-- Client testimonials or highlights -->
-      <div class="mt-16 grid md:grid-cols-3 gap-8">
+      <!-- Client highlights -->
+      <div class="mt-16 grid md:grid-cols-2 gap-8">
         <div
           v-motion
           :initial="{ opacity: 0, y: 20 }"
@@ -44,17 +44,17 @@
         >
           <div class="flex items-center mb-4">
             <Icon
-              icon="lucide:scale"
+              icon="lucide:bar-chart-2"
               width="1.5rem"
               height="1.5rem"
               class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
             />
             <h3 class="font-semibold text-vue-900 dark:text-vue-100">
-              Proven at Scale
+              High-Traffic Applications
             </h3>
           </div>
           <p class="text-vue-800 dark:text-vue-200 text-sm">
-            ANWB.nl/verkeer (Best Website & Most Popular Website 2022), Thalex real-time trading, DPG Media and Van Lanschot Kempen—Lighthouse 90+ across performance, accessibility, best practices.
+            Experience working on platforms serving large user bases with strong focus on performance, accessibility, and reliability.
           </p>
         </div>
 
@@ -66,40 +66,24 @@
         >
           <div class="flex items-center mb-4">
             <Icon
-              icon="lucide:bar-chart-2"
+              icon="lucide:shield-check"
               width="1.5rem"
               height="1.5rem"
               class="text-blue-600 dark:text-blue-400 mr-2 shrink-0"
             />
             <h3 class="font-semibold text-blue-900 dark:text-blue-100">
-              Millions of Users
+              Production-Grade Standards
             </h3>
           </div>
-          <p class="text-blue-800 dark:text-blue-200 text-sm">
-            High-traffic applications serving millions of users—traffic, trading, media, and financial platforms across the Netherlands.
+          <p class="text-blue-800 dark:text-blue-200 text-sm mb-3">
+            Professional environments with strict requirements for:
           </p>
-        </div>
-
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 360 } }"
-          class="bg-green-50 dark:bg-green-950/20 dark:border-green-800 border border-green-200 rounded-lg p-6"
-        >
-          <div class="flex items-center mb-4">
-            <Icon
-              icon="lucide:rocket"
-              width="1.5rem"
-              height="1.5rem"
-              class="text-green-600 dark:text-green-400 mr-2 shrink-0"
-            />
-            <h3 class="font-semibold text-green-900 dark:text-green-100">
-              Enterprise Scale
-            </h3>
-          </div>
-          <p class="text-green-800 dark:text-green-200 text-sm">
-            Enterprise-scale requirements: accessibility, performance, security, and scalability—built to maintain and extend.
-          </p>
+          <ul class="text-blue-800 dark:text-blue-200 text-sm list-none space-y-1">
+            <li>• accessibility</li>
+            <li>• performance</li>
+            <li>• security</li>
+            <li>• maintainability</li>
+          </ul>
         </div>
       </div>
     </UContainer>
