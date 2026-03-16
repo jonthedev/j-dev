@@ -66,16 +66,16 @@ export const projects: ProjectItem[] = [
 export const architecturePlaceholders: ArchitecturePlaceholder[] = [
   {
     id: "nestjs-system",
-    title: "Technical Blueprint: Modular B2B API Architecture",
+    title: "Technical Blueprint: Type-Safe Modular API",
     status: "inProgress",
     badge: "Live Technical Demo",
     description:
-      "Modular NestJS API architecture with type-safe DTOs and Swagger/OpenAPI documentation. Production-ready foundation for Vue 3 and Nuxt 4 applications.",
+      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Production-ready, integration-ready foundation for any frontend.",
     keyFeatures: [
       "Modular Domain Design (Clean Architecture)",
-      "Contract-First Documentation (Swagger/OpenAPI)",
-      "Persistence Layer (PostgreSQL & TypeORM)",
-      "Type-Safe DTOs for Vue 3 / Nuxt 4"
+      "Contract-First API Documentation (Swagger/OpenAPI)",
+      "Type-Safe Persistence Layer (Prisma & PostgreSQL)",
+      "Type-Safe DTOs for reliable API → client integration"
     ],
     swaggerUrl: null,
     githubUrl: null
