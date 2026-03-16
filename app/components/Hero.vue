@@ -2,7 +2,6 @@
   <section
     class="min-h-screen flex items-center justify-center pb-20 bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden"
   >
-    <!-- Background grid: theme-aware (dark lines in light mode, light lines in dark) -->
     <div
       class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.06] dark:opacity-[0.08]"
       aria-hidden="true"
@@ -39,7 +38,6 @@
           UK-Native | Dutch B2B Entity | Based in Amsterdam
         </p>
 
-        <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
           <UButton
             to="#projects"
@@ -65,8 +63,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Scroll indicator -->
     <div
       class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
     >

@@ -56,6 +56,26 @@
           </UButton>
         </div>
       </div>
+
+      <!-- AI & Platform plug: discover after seeing full frontend -->
+      <div class="mt-12 text-center">
+        <div
+          v-motion="sectionRevealAnimation"
+          class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 p-6"
+        >
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Also: AI & Platform Engineering — 100% data sovereignty, air-gapped LLMs, GDPR-compliant.
+          </p>
+          <UButton
+            variant="outline"
+            size="md"
+            icon="lucide:sparkles"
+            @click="portfolioMode.setMode('platform')"
+          >
+            Explore AI portfolio
+          </UButton>
+        </div>
+      </div>
     </UContainer>
   </section>
 </template>
@@ -66,7 +86,7 @@ import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitectureP
 
 defineOptions({ name: "ProjectsSection" })
 
-// Use our composables
+const portfolioMode = usePortfolioMode()
 const { fadeInUp } = useAnimation()
 
 // Section animation

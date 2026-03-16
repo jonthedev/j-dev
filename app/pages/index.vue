@@ -1,22 +1,29 @@
 <template>
   <div>
-    <!-- Frontend portfolio -->
-    <template v-if="portfolioMode.mode.value === 'frontend'">
-      <Hero />
-      <TechStack />
-      <About />
-      <Clients />
-      <Projects />
-      <Contact />
-    </template>
-    <!-- Platform engineering view -->
-    <template v-else>
-      <PlatformHero />
-      <PlatformAbout />
-      <PlatformTechStack />
-      <PlatformProjects />
-      <Contact />
-    </template>
+    <Transition
+      name="fade"
+      mode="out-in"
+    >
+      <div :key="portfolioMode.mode.value">
+        <!-- Frontend portfolio -->
+        <template v-if="portfolioMode.mode.value === 'frontend'">
+          <Hero />
+          <TechStack />
+          <About />
+          <Clients />
+          <Projects />
+          <Contact />
+        </template>
+        <!-- Platform engineering view -->
+        <template v-else>
+          <PlatformHero />
+          <PlatformAbout />
+          <PlatformTechStack />
+          <PlatformProjects />
+          <Contact />
+        </template>
+      </div>
+    </Transition>
   </div>
 </template>
 
@@ -46,3 +53,14 @@ useHead(() => ({
   ]
 }))
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
