@@ -31,13 +31,7 @@
           Project Discovery
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          <template v-if="isPlatformMode">
-            Free introductory call to explore your goals. Vue 3, Nuxt 4, NestJS: contract work, consulting, migrations, and new builds. Let's align on scope and fit.
-          </template>
-          <template v-else>
-            A free introductory call to explore your goals—no obligation. Vue 3, Nuxt 4, NestJS:
-            contract work, consulting, migrations, and new builds. Let's align on scope and fit.
-          </template>
+          {{ contactMetadata.projectDiscovery }}
         </p>
       </div>
 
@@ -84,12 +78,8 @@
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Ready to Start Your Project?
           </h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4 max-w-2xl mx-auto">
-            Nuxt 4 migrations, NestJS backends, or full-stack web applications—I deliver
-            scalable, maintainable, enterprise-ready results.
-          </p>
           <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 max-w-xl mx-auto">
-            No-obligation intro—we'll align on scope and fit before any commitment.
+            {{ contactMetadata.readyToStartNoObligation }}
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -154,6 +144,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
+import { contactMetadata } from "~/data/contact"
 
 defineOptions({ name: "AppContact" })
 

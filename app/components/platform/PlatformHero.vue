@@ -21,14 +21,17 @@
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            100% Data Sovereignty
+            Private AI Workflows<br>Full Codebase Control
           </span>
         </h1>
 
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Enterprise-grade Vue development accelerated with private AI workflows. Sensitive codebases can run entirely on local inference using Ollama, ensuring GDPR and IP compliance, while privacy-mode AI tooling maintains strict data protection—delivering up to <strong>72% faster development</strong>.
+          Modern web development accelerated with AI-assisted workflows and local inference. Sensitive codebases can run entirely through local models using Ollama, helping protect proprietary code and support GDPR-aware development practices.
+        </p>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4">
+          This approach enables faster iteration, safer workflows, and high-quality delivery for modern web applications.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

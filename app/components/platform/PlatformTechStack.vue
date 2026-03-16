@@ -67,7 +67,7 @@
               Infrastructure Roadmap
             </h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
-              Planned sovereign AI infrastructure for larger orchestration workloads.
+              Planned local AI infrastructure for larger development and automation workloads.
             </p>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300 md:flex md:flex-col md:items-center md:space-y-3">
               <li

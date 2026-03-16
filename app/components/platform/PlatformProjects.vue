@@ -20,7 +20,7 @@
                   Case Study: React → Nuxt 4 Migration & AI-Augmented Refactor
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  My former portfolio site, migrated to Nuxt 4 using agentic AI workflows—demonstrating innovation, delivery speed, and 100% data sovereignty (no code or prompts left local infrastructure).
+                  My former portfolio site migrated from React to Nuxt 4 using AI-assisted development workflows. This project demonstrates modern Vue architecture, practical AI tooling in development, and a privacy-first workflow where code remained within local infrastructure.
                 </p>
               </div>
               <div class="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-lg border border-green-100 dark:border-green-800/30 shrink-0">
@@ -93,10 +93,10 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    ~72% Velocity Increase
+                    Development Efficiency
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    40+ manual hours → 11 AI-orchestrated hours on this project.
+                    AI-assisted workflows significantly reduced manual refactoring and migration time during this project.
                   </div>
                 </div>
               </div>
@@ -107,10 +107,10 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    Data Sovereignty
+                    Private Development Workflow
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    0% cloud exposure—fully private (local inference, Ollama).
+                    Local inference with Ollama allowed the project to be developed without sending source code to external AI services.
                   </div>
                 </div>
               </div>
