@@ -16,26 +16,26 @@
         v-motion="animation"
         class="space-y-8"
       >
-        <!-- Main headline -->
+        <!-- Main headline: professional title -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">Full-Stack</span><br>
+          <span class="text-gray-900 dark:text-white">Senior AI &amp; Vue</span><br>
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Web Applications
+            Ecosystem Architect
           </span>
         </h1>
 
-        <!-- Subtitle -->
+        <!-- Subheader (fragments) — Web portfolio -->
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Senior Full-Stack Engineer | Scalable, Maintainable Applications ✅
+          AI-Native Orchestration · Agentic UX · RAG &amp; NestJS · Vue 3 Composition API · Nuxt 4 · UK &amp; EU B2B-ready
         </p>
         <p
           class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
         >
-          UK-Native | Dutch B2B Entity | Based in Amsterdam
+          Private-first LLMs · Amsterdam · Dutch B2B (KVK) · Remote CET
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

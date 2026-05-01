@@ -14,10 +14,10 @@ useHead({
 })
 
 const title
-  = "Jonathan Kaonga | Senior Full-Stack Engineer | Vue 3 · Nuxt 4 · NestJS | Web Applications"
+  = "Jonathan Kaonga | Senior AI & Vue Ecosystem Architect | Sovereign AI · Vue · Nuxt 4"
 
 const description
-  = "Senior Full-Stack Engineer building scalable, maintainable web applications with Vue 3, Nuxt 4, and NestJS. B2B engagements, UK/EU/remote. High performance, enterprise-ready. KVK registered, Outside IR35."
+  = "Sovereign AI and the Vue ecosystem: RAG, NestJS, PostgreSQL, hybrid Claude + Ollama. Website of the Year 2022 · Thalex trading dashboards. KVK B2B, UK/EU."
 
 useSeoMeta({
   title,

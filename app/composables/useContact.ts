@@ -47,25 +47,27 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Freelance Vue/Nuxt Frontend Engineer",
-    experience: "5+ years",
-    specialization: "Vue.js, Nuxt.js, TypeScript, Component Architecture",
+    title: "Senior AI & Vue Ecosystem Architect",
+    experience: "6+ years",
+    specialization:
+      "Sovereign AI & RAG, Vue ecosystem (Vue 3, Nuxt 4, Pinia), NestJS, PostgreSQL",
     services: [
-      "Frontend Development",
-      "Component Architecture",
-      "Performance Optimization",
-      "Code Review & Refactoring",
-      "Technical Consulting",
-      "Mentoring & Training"
+      "Sovereign AI & RAG (NestJS & PostgreSQL)",
+      "Agentic UX & AI-native UI",
+      "Vue ecosystem & Nuxt 4 modernization",
+      "Performance audits · Lighthouse 90+",
+      "EU/UK B2B compliance (KVK, IR35, W-8BEN-E)",
+      "Technical architecture & consulting"
     ],
     techFocus: [
       "Vue 3",
       "Nuxt 4",
       "TypeScript",
+      "NestJS",
+      "PostgreSQL",
       "Tailwind CSS",
-      "Vite",
       "Pinia",
-      "Vue Router"
+      "Claude & Ollama"
     ]
   }
 

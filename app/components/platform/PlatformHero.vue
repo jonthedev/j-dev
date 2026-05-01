@@ -16,22 +16,22 @@
         class="space-y-8"
       >
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">AI-Augmented Development</span>
+          <span class="text-gray-900 dark:text-white">Senior AI &amp; Vue</span>
           <br>
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Private AI Workflows<br>Full Codebase Control
+            Ecosystem Architect
           </span>
         </h1>
 
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Modern web development accelerated with AI-assisted workflows and local inference. Sensitive codebases can run entirely through local models using Ollama, helping protect proprietary code and support GDPR-aware development practices.
+          Production-Grade Vue/Nuxt Integration · Sovereign AI workflows · Local inference (Ollama) · GDPR-aware delivery for sensitive codebases.
         </p>
         <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4">
-          This approach enables faster iteration, safer workflows, and high-quality delivery for modern web applications.
+          Faster iteration, safer workflows, and interfaces that stay predictable when AI augments the stack—not replaces your architecture.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

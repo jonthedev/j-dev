@@ -1,6 +1,5 @@
 /**
  * Contact section metadata — Project Discovery and CTA content.
- * Used by both Web Applications and AI portfolio modes.
  */
 export const contactMetadata = {
   projectDiscovery:

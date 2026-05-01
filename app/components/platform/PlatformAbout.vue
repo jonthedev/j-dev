@@ -23,6 +23,18 @@
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
+            <span><strong>NestJS AI foundation:</strong> Architecting type-safe NestJS/PostgreSQL backends as the foundation for private RAG and Agentic systems—the same delivery pattern as the
+              <button
+                type="button"
+                class="font-semibold text-vue-600 underline decoration-vue-600/40 underline-offset-2 hover:text-vue-500 dark:text-vue-400 dark:hover:text-vue-300"
+                @click="goToTechnicalBlueprint"
+              >
+                Technical Blueprint
+              </button>
+              project on the Web portfolio.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
             <span><strong>Accelerated Delivery:</strong> AI-assisted workflows reduce repetitive work so more time can be spent on architecture, performance, and code quality.</span>
           </li>
         </ul>
@@ -33,4 +45,13 @@
 
 <script setup lang="ts">
 defineOptions({ name: "PlatformAbout" })
+
+const { setMode } = usePortfolioMode()
+
+function goToTechnicalBlueprint() {
+  setMode("frontend")
+  nextTick(() => {
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+  })
+}
 </script>

@@ -37,12 +37,12 @@ const portfolioMode = usePortfolioMode()
 
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "JDev Online | Senior Full-Stack Engineer | Vue 3 · Nuxt 4 · NestJS | Scalable Web Applications"
+    ? "JDev Online | Senior AI & Vue Ecosystem Architect | Sovereign AI · Vue · Nuxt 4"
     : "JDev Online - 100% Data Sovereignty | AI-Augmented Development without Cloud Risk"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Senior Full-Stack Engineer. Vue 3, Nuxt 4, NestJS. Scalable, maintainable web applications. UK/EU/remote. KVK registered, Outside IR35."
+    ? "Sovereign AI (privacy & local LLMs) and the Vue ecosystem. RAG on PostgreSQL, Claude + Ollama, NestJS. Website of the Year 2022 · Thalex trading dashboards. KVK B2B, UK/EU."
     : "Your enterprise codebase never leaves my local infrastructure. Air-gapped Ollama LLMs for 100% GDPR and IP compliance. Up to 72% faster migrations to Nuxt 4."
 )
 

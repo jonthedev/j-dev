@@ -20,10 +20,10 @@
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          High-Performance Web Applications
+          Senior AI &amp; Vue Ecosystem Architect
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Senior Full-Stack Engineer · Vue 3 · Nuxt 4 · NestJS · UK & EU-Ready
+          Agentic UX · RAG &amp; NestJS · Vue 3 Composition API · Nuxt 4 · UK &amp; EU B2B-ready
         </p>
       </div>
 
@@ -41,29 +41,66 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              6+ years building scalable, maintainable web applications with Vue 3,
-              Nuxt 4, and NestJS. Focus on high performance, clear architecture, and enterprise readiness.
+              6+ years shipping high-traffic platforms (ANWB, Thalex, DPG Media). Specialized in AI-native orchestration since 2024: RAG on PostgreSQL, hybrid Claude + Ollama stacks, and Vue architectures that stay fast, accessible, and yours.
             </p>
 
             <h3
               class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
             >
-              The JDev Advantage
+              The J-Dev Advantage
             </h3>
-            <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              Deep full-stack experience and a sovereign AI stack. Agentic pipelines
-              accelerate delivery so I can focus on performance, reliability, and maintainability.
-            </p>
+            <ul class="mt-3 list-none space-y-2 text-gray-700 dark:text-gray-300">
+              <li class="flex gap-2">
+                <span
+                  class="text-vue-600 dark:text-vue-400 shrink-0"
+                  aria-hidden="true"
+                >→</span>
+                <span>One architect, full loop: RAG → Vue ecosystem → shipped UI.</span>
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="text-vue-600 dark:text-vue-400 shrink-0"
+                  aria-hidden="true"
+                >→</span>
+                <span>Unlearn-style agentic pipelines. Nuxt 4 &amp; Vue 3 migrations toward Lighthouse 90+.</span>
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="text-vue-600 dark:text-vue-400 shrink-0"
+                  aria-hidden="true"
+                >→</span>
+                <span>Output sanitization—AI-generated components meet production bar.</span>
+              </li>
+            </ul>
 
             <h3
               class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
             >
               Proven Expertise
             </h3>
-            <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              ANWB.nl/verkeer — Best Website & Most Popular Website (2022). Thalex — real-time
-              trading dashboards. DPG Media, Van Lanschot Kempen — high-traffic enterprise applications.
-            </p>
+            <ul class="mt-3 list-none space-y-2 text-gray-700 dark:text-gray-300">
+              <li class="flex gap-2">
+                <span
+                  class="text-vue-600 dark:text-vue-400 shrink-0"
+                  aria-hidden="true"
+                >→</span>
+                <span><strong class="font-semibold text-gray-900 dark:text-white">ANWB</strong> — <strong class="font-semibold text-gray-900 dark:text-white">Website of the Year 2022</strong> · anwb.nl/verkeer.</span>
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="text-vue-600 dark:text-vue-400 shrink-0"
+                  aria-hidden="true"
+                >→</span>
+                <span><strong class="font-semibold text-gray-900 dark:text-white">Thalex</strong> — <strong class="font-semibold text-gray-900 dark:text-white">Trading dashboards</strong> · Vue 3 / Nuxt, real-time derivatives (D3, TradingView).</span>
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="text-vue-600 dark:text-vue-400 shrink-0"
+                  aria-hidden="true"
+                >→</span>
+                <span><strong class="font-semibold text-gray-900 dark:text-white">DPG Media</strong> — national traffic, centralized Tailwind UI. <strong class="font-semibold text-gray-900 dark:text-white">iO</strong> — Van Lanschot Kempen.</span>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -136,34 +173,34 @@
             <div class="text-vue-800 dark:text-vue-200 space-y-4 text-sm">
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  System Architecture & API Design
+                  Sovereign AI &amp; RAG
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Modular backends, clear contracts, documented APIs.
+                  Production RAG with NestJS &amp; PostgreSQL—context-aware features that stay air-gapped and GDPR-aligned.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Enterprise Modernization
+                  Agentic UX &amp; AI-native UI
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Legacy to Nuxt 4 migrations with AI-augmented refactoring.
+                  Autonomous agent workflows and systematic pipelines—interfaces that stay predictable under load.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Performance Engineering
+                  Vue Ecosystem &amp; Nuxt 4
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Optimizing high-traffic UIs for speed, accessibility, and sub-second reactivity.
+                  Large-scale migrations, Pinia/Composition API patterns, and performance audits targeting Lighthouse 90+.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Contracting Readiness
+                  B2B Compliance
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Ready for UK/EU/remote engagements with elite consultant velocity.
+                  KVK Registered | Outside IR35 | W-8BEN-E documented—Structured for seamless EU/UK engagements.
                 </p>
               </div>
             </div>

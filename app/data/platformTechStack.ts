@@ -11,17 +11,24 @@ export interface PlatformTechStackItem {
 export const platformTechStack: PlatformTechStackItem[] = [
   // Current Local AI Stack
   {
-    id: "ollama",
-    title: "Ollama",
+    id: "claude",
+    title: "Claude (Anthropic)",
+    icon: "simple-icons:anthropic",
+    iconClass: "text-gray-700 dark:text-gray-300",
+    category: "currentLab"
+  },
+  {
+    id: "ollama-qwen",
+    title: "Ollama · Qwen2.5-Coder",
     icon: "simple-icons:ollama",
     iconClass: "text-gray-700 dark:text-gray-300",
     category: "currentLab"
   },
   {
-    id: "qwen-coder",
-    title: "Qwen2.5-Coder",
-    icon: "lucide:code",
-    iconClass: "text-gray-700 dark:text-gray-300",
+    id: "linux-neovim",
+    title: "Linux · Neovim",
+    icon: "simple-icons:neovim",
+    iconClass: "text-green-600 dark:text-green-400",
     category: "currentLab"
   },
   {
@@ -29,13 +36,6 @@ export const platformTechStack: PlatformTechStackItem[] = [
     title: "Cursor",
     icon: "simple-icons:cursor",
     iconClass: "text-gray-700 dark:text-gray-300",
-    category: "currentLab"
-  },
-  {
-    id: "private-inference",
-    title: "Private Local Inference",
-    icon: "lucide:brain-circuit",
-    iconClass: "text-orange-500",
     category: "currentLab"
   },
   // Infrastructure Roadmap

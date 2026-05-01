@@ -12,7 +12,7 @@
           Services & Case Studies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Production-grade web applications—live work and work in progress.
+          Sovereign AI patterns, Nuxt 4 delivery, and enterprise traffic—selected engagements and architecture explorations.
         </p>
       </div>
 

@@ -22,7 +22,7 @@
             The Lab Stack
           </h2>
           <p class="text-gray-600 dark:text-gray-300">
-            The tools behind the velocity.
+            Hybrid stack for sovereign AI—cloud reasoning where it helps, local inference where it matters, terminal-first velocity.
           </p>
         </div>
 
@@ -32,12 +32,9 @@
           <div
             class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)] text-left md:text-center"
           >
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">
               Current Local AI Stack
             </h3>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
-              Tools powering my private AI-augmented development workflow.
-            </p>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300 md:flex md:flex-col md:items-center md:space-y-3">
               <li
                 v-for="item in currentStack"
@@ -67,7 +64,7 @@
               Infrastructure Roadmap
             </h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
-              Planned local AI infrastructure for larger development and automation workloads.
+              Homelab scale-out when workloads outgrow a single workstation.
             </p>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300 md:flex md:flex-col md:items-center md:space-y-3">
               <li
