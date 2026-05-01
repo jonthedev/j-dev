@@ -30,9 +30,6 @@
         >
           Project Discovery
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          {{ contactMetadata.projectDiscovery }}
-        </p>
       </div>
 
       <h3
@@ -76,7 +73,7 @@
       >
         <div class="text-center">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Ready to Start Your Project?
+            Let's Talk
           </h3>
           <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 max-w-xl mx-auto">
             {{ contactMetadata.readyToStartNoObligation }}
@@ -92,7 +89,7 @@
               icon="lucide:calendar"
               class="shadow-lg shadow-vue-500/20"
             >
-              Book a Free Discovery Call
+              Book a Call
             </UButton>
 
             <UButton

@@ -12,7 +12,7 @@
           Services & Case Studies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Sovereign AI patterns, Nuxt 4 delivery, and enterprise traffic—selected engagements and architecture explorations.
+          RAG patterns, Nuxt 4 migrations, and high-traffic frontends. Here is what I've built.
         </p>
       </div>
 
@@ -40,10 +40,10 @@
           class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
         >
           <h3 class="text-xl font-semibold text-vue-900 dark:text-vue-100 mb-4">
-            Interested in collaborating?
+            Have a project in mind?
           </h3>
           <p class="text-vue-800 dark:text-vue-200 mb-6 max-w-2xl mx-auto">
-            I'm always excited to work on challenging projects that push the boundaries of what's possible with modern web technologies.
+            Tell me what you're building. I'll tell you if I can help.
           </p>
           <UButton
             to="#contact"
@@ -52,7 +52,7 @@
             icon="lucide:arrow-right"
             trailing
           >
-            Start a conversation
+            Start a Conversation
           </UButton>
         </div>
       </div>
@@ -64,7 +64,7 @@
           class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 p-6"
         >
           <p class="text-gray-600 dark:text-gray-400 mb-4">
-            Also: AI & Platform Engineering — 100% data sovereignty, air-gapped LLMs, GDPR-compliant.
+            AI and platform engineering work runs on local infrastructure. No cloud exposure. Full GDPR compliance.
           </p>
           <UButton
             variant="outline"

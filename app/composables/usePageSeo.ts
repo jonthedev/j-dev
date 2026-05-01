@@ -3,7 +3,7 @@
  * Consolidates 7+ useHead patterns throughout the application
  */
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
-  const baseTitle = "Jonathan Kaonga | Freelance Vue/Nuxt Frontend Engineer"
+  const baseTitle = "Jonathan Kaonga | Vue & AI Engineer"
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : "https://j-dev.online")
@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "Freelance Vue/Nuxt Frontend Engineer specializing in modern web applications, component architecture, and performance optimization.",
+    "Vue and Nuxt engineer. RAG systems, local LLMs, and high-traffic frontends. Based in Amsterdam.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "Learn about Jonathan Kaonga - a passionate Vue/Nuxt developer with expertise in modern frontend development and component architecture.",
+    "Six years building production platforms. ANWB, Thalex, DPG Media. Vue, Nuxt, and private AI systems.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -87,7 +87,7 @@ export const seoPresets = {
   // Projects page
   projects: () => usePageSeo(
     "Projects",
-    "Explore portfolio projects showcasing Vue.js, Nuxt.js, and modern web development expertise with real-world applications.",
+    "Case studies in Vue.js, Nuxt.js, and AI-augmented development. Real production systems with measured results.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#projects"
   ),
@@ -95,7 +95,7 @@ export const seoPresets = {
   // Tech Stack page
   techStack: () => usePageSeo(
     "Tech Stack",
-    "Discover the technologies and tools I work with - Vue.js, Nuxt.js, TypeScript, Tailwind CSS, and modern frontend development stack.",
+    "Vue 3, Nuxt 4, TypeScript, NestJS, PostgreSQL. Tools used in production, not tutorials.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#tech-stack"
   ),
@@ -103,15 +103,15 @@ export const seoPresets = {
   // Contact page
   contact: () => usePageSeo(
     "Contact",
-    "Get in touch with Jonathan Kaonga for Vue/Nuxt development projects, collaborations, or freelance opportunities.",
+    "Available for Vue, Nuxt, and full-stack contract work. KVK registered in Amsterdam.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#contact"
   ),
 
   // Platform (AI) page
   platform: () => usePageSeo(
-    "AI Platform Projects",
-    "Explore AI and machine learning projects built with modern web technologies, showcasing innovative applications and solutions.",
+    "AI & Platform Engineering",
+    "Local LLM inference with Ollama. Private RAG pipelines. No cloud exposure. GDPR compliant by architecture.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )

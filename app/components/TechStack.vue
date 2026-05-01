@@ -14,7 +14,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Modern full-stack tooling focused on performance, clarity, and long-term maintainability.
+          Tools I use daily. Nothing here is theoretical.
         </p>
       </div>
 
@@ -31,7 +31,7 @@
             Frontend (Core Expertise)
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            Fast, accessible user interfaces built with reusable and scalable components.
+            Interfaces that load fast and work for everyone.
           </p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div
@@ -82,7 +82,7 @@
             Backend (Architecture & Data)
           </h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            Modular APIs, clear contracts, and reliable data handling for modern web applications.
+            APIs with clear contracts. Data that doesn't leak between domains.
           </p>
           <div class="space-y-4">
             <div
@@ -141,7 +141,7 @@
           Contract & Integration Pipeline
         </p>
         <span class="text-sm font-medium text-vue-800 dark:text-vue-200">
-          Seamless type-safe flow from API to client applications for consistent and maintainable integrations.
+          Type-safe flow from NestJS API to Vue client. One codebase generates both ends.
         </span>
       </div>
 
@@ -153,7 +153,7 @@
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 } }"
           class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
         >
-          Strategic Tooling & Delivery
+          Strategic Tooling
         </h3>
         <div class="grid md:grid-cols-3 gap-8">
           <div
@@ -198,7 +198,7 @@
         class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
       >
         <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
-          Development Philosophy
+          How I Build
         </h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
           <div class="flex items-start space-x-3">
@@ -209,8 +209,8 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Performance First</strong><br>
-              <span class="text-vue-700 dark:text-vue-300">Optimized for speed, accessibility, and user experience.</span>
+              <strong>Performance</strong><br>
+              <span class="text-vue-700 dark:text-vue-300">Lighthouse scores are a baseline, not a target. I optimize for real network conditions.</span>
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -221,8 +221,8 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Component Architecture</strong><br>
-              <span class="text-vue-700 dark:text-vue-300">Reusable, testable, and maintainable frontend architecture.</span>
+              <strong>Composable Architecture</strong><br>
+              <span class="text-vue-700 dark:text-vue-300">Small components. Clear interfaces. Testable in isolation.</span>
             </div>
           </div>
           <div class="flex items-start space-x-3">
@@ -233,8 +233,8 @@
               class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
             />
             <div>
-              <strong>Quality First</strong><br>
-              <span class="text-vue-700 dark:text-vue-300">Testing and auditing with Vitest, Playwright, and Lighthouse for production-ready reliability.</span>
+              <strong>Testing</strong><br>
+              <span class="text-vue-700 dark:text-vue-300">Vitest for units. Playwright for E2E. Lighthouse in CI. Ship when it passes.</span>
             </div>
           </div>
         </div>

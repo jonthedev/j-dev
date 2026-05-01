@@ -37,13 +37,13 @@ const portfolioMode = usePortfolioMode()
 
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "JDev Online | Senior AI & Vue Ecosystem Architect | Sovereign AI · Vue · Nuxt 4"
-    : "JDev Online - 100% Data Sovereignty | AI-Augmented Development without Cloud Risk"
+    ? "Jonathan Kaonga | AI & Vue Engineer | RAG, Nuxt 4, Local LLMs"
+    : "Jonathan Kaonga | Private AI Development | Local LLMs, No Cloud Exposure"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Sovereign AI (privacy & local LLMs) and the Vue ecosystem. RAG on PostgreSQL, Claude + Ollama, NestJS. Website of the Year 2022 · Thalex trading dashboards. KVK B2B, UK/EU."
-    : "Your enterprise codebase never leaves my local infrastructure. Air-gapped Ollama LLMs for 100% GDPR and IP compliance. Up to 72% faster migrations to Nuxt 4."
+    ? "Vue, Nuxt 4, and RAG systems. PostgreSQL, Claude, Ollama, NestJS. Built for ANWB, Thalex, DPG Media. KVK registered."
+    : "Code stays on local infrastructure. Ollama for inference. GDPR and IP compliance by architecture. Nuxt 4 migrations that ship fast."
 )
 
 useHead(() => ({

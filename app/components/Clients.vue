@@ -8,10 +8,10 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Trusted by Leading Companies
+          Where I've Worked
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          ANWB, Thalex, DPG Media, and Van Lanschot Kempen — contributing to high-traffic web applications across traffic, trading, media, and financial platforms in the Netherlands.
+          ANWB, Thalex, DPG Media, and Van Lanschot Kempen. Traffic, trading, media, and finance. All production systems with real users.
         </p>
       </div>
 
@@ -50,11 +50,11 @@
               class="text-vue-600 dark:text-vue-400 mr-2 shrink-0"
             />
             <h3 class="font-semibold text-vue-900 dark:text-vue-100">
-              High-Traffic Applications
+              Scale
             </h3>
           </div>
           <p class="text-vue-800 dark:text-vue-200 text-sm">
-            Experience working on platforms serving large user bases with strong focus on performance, accessibility, and reliability.
+            These platforms serve large user bases. Performance and uptime are not optional.
           </p>
         </div>
 
@@ -72,11 +72,11 @@
               class="text-blue-600 dark:text-blue-400 mr-2 shrink-0"
             />
             <h3 class="font-semibold text-blue-900 dark:text-blue-100">
-              Production-Grade Standards
+              Standards
             </h3>
           </div>
           <p class="text-blue-800 dark:text-blue-200 text-sm mb-3">
-            Professional environments with strict requirements for:
+            These environments enforced strict requirements for:
           </p>
           <ul class="text-blue-800 dark:text-blue-200 text-sm list-none space-y-1">
             <li>• accessibility</li>

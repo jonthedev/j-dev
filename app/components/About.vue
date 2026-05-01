@@ -23,7 +23,7 @@
           Senior AI &amp; Vue Ecosystem Architect
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Agentic UX · RAG &amp; NestJS · Vue 3 Composition API · Nuxt 4 · UK &amp; EU B2B-ready
+          RAG on PostgreSQL. Hybrid Claude and Ollama stacks. Vue 3 Composition API and Nuxt 4.
         </p>
       </div>
 
@@ -41,13 +41,13 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              6+ years shipping high-traffic platforms (ANWB, Thalex, DPG Media). Specialized in AI-native orchestration since 2024: RAG on PostgreSQL, hybrid Claude + Ollama stacks, and Vue architectures that stay fast, accessible, and yours.
+              I've spent six years building platforms that handle real traffic. ANWB, Thalex, DPG Media. Since 2024 I've focused on RAG systems, local LLM inference, and Vue architectures that don't fall apart under load.
             </p>
 
             <h3
               class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
             >
-              The J-Dev Advantage
+              How I Work
             </h3>
             <ul class="mt-3 list-none space-y-2 text-gray-700 dark:text-gray-300">
               <li class="flex gap-2">
@@ -55,28 +55,28 @@
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span>One architect, full loop: RAG → Vue ecosystem → shipped UI.</span>
+                <span>I handle the full stack. RAG pipeline to shipped UI. No handoffs.</span>
               </li>
               <li class="flex gap-2">
                 <span
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span>Unlearn-style agentic pipelines. Nuxt 4 &amp; Vue 3 migrations toward Lighthouse 90+.</span>
+                <span>Nuxt 4 and Vue 3 migrations target Lighthouse 90+. I measure before and after.</span>
               </li>
               <li class="flex gap-2">
                 <span
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span>Output sanitization—AI-generated components meet production bar.</span>
+                <span>AI-generated components go through the same review as hand-written code. Same bar.</span>
               </li>
             </ul>
 
             <h3
               class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
             >
-              Proven Expertise
+              Selected Work
             </h3>
             <ul class="mt-3 list-none space-y-2 text-gray-700 dark:text-gray-300">
               <li class="flex gap-2">
@@ -84,21 +84,21 @@
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span><strong class="font-semibold text-gray-900 dark:text-white">ANWB</strong> — <strong class="font-semibold text-gray-900 dark:text-white">Website of the Year 2022</strong> · anwb.nl/verkeer.</span>
+                <span><strong class="font-semibold text-gray-900 dark:text-white">ANWB</strong> — anwb.nl/verkeer. Won Website van het Jaar 2022.</span>
               </li>
               <li class="flex gap-2">
                 <span
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span><strong class="font-semibold text-gray-900 dark:text-white">Thalex</strong> — <strong class="font-semibold text-gray-900 dark:text-white">Trading dashboards</strong> · Vue 3 / Nuxt, real-time derivatives (D3, TradingView).</span>
+                <span><strong class="font-semibold text-gray-900 dark:text-white">Thalex</strong> — derivatives trading dashboards. Vue 3 and Nuxt with real-time data via D3 and TradingView.</span>
               </li>
               <li class="flex gap-2">
                 <span
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span><strong class="font-semibold text-gray-900 dark:text-white">DPG Media</strong> — national traffic, centralized Tailwind UI. <strong class="font-semibold text-gray-900 dark:text-white">iO</strong> — Van Lanschot Kempen.</span>
+                <span><strong class="font-semibold text-gray-900 dark:text-white">DPG Media</strong> — national-scale traffic with a centralized Tailwind design system. <strong class="font-semibold text-gray-900 dark:text-white">iO</strong> — Van Lanschot Kempen platform work.</span>
               </li>
             </ul>
           </div>
@@ -150,7 +150,7 @@
                 4+
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400">
-                Enterprise clients
+                Enterprise Clients
               </div>
             </div>
           </div>
@@ -173,18 +173,18 @@
             <div class="text-vue-800 dark:text-vue-200 space-y-4 text-sm">
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Sovereign AI &amp; RAG
+                  RAG &amp; Private AI
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Production RAG with NestJS &amp; PostgreSQL—context-aware features that stay air-gapped and GDPR-aligned.
+                  NestJS and PostgreSQL for retrieval-augmented generation. Code stays on local infrastructure. GDPR compliant by default.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Agentic UX &amp; AI-native UI
+                  AI-Augmented Interfaces
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Autonomous agent workflows and systematic pipelines—interfaces that stay predictable under load.
+                  Agent-driven workflows with deterministic output. The UI stays predictable when the backend uses LLMs.
                 </p>
               </div>
               <div>
@@ -192,15 +192,15 @@
                   Vue Ecosystem &amp; Nuxt 4
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Large-scale migrations, Pinia/Composition API patterns, and performance audits targeting Lighthouse 90+.
+                  Large-scale migrations, Pinia and Composition API patterns. Performance audits targeting Lighthouse 90+.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  B2B Compliance
+                  Contracting
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  KVK Registered | Outside IR35 | W-8BEN-E documented—Structured for seamless EU/UK engagements.
+                  KVK registered. Outside IR35. W-8BEN-E on file. Built for EU and UK engagements.
                 </p>
               </div>
             </div>
@@ -219,12 +219,12 @@
                 height="1.25rem"
                 class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
               />
-              Contracting Readiness
+              Contracting
             </h3>
             <p
               class="mb-4 text-sm font-medium text-emerald-800 dark:text-emerald-200"
             >
-              As easy to hire as a local employee—with the velocity of an elite consultant.
+              Standard freelance setup. No procurement friction.
             </p>
             <ul
               class="space-y-3 text-sm text-emerald-800 dark:text-emerald-200"

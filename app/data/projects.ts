@@ -37,7 +37,7 @@ export const projects: ProjectItem[] = [
     url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
     github: null,
     title: "Thalex",
-    text: "Vue/Nuxt real-time data visualization for derivatives trading—options, futures & perpetuals.",
+    text: "Real-time derivatives trading dashboards. Options, futures, and perpetuals built with Vue and Nuxt.",
     tech: [
       {
         id: "vue-thalex",

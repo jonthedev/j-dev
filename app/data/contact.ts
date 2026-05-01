@@ -3,7 +3,7 @@
  */
 export const contactMetadata = {
   projectDiscovery:
-    "Free introductory call to explore your goals and technical needs—no obligation. Let's align on scope, timeline, and fit.",
+    "Introductory call to discuss your project. We'll cover scope, timeline, and whether I'm the right fit.",
   readyToStartNoObligation:
-    "No-obligation intro — we'll align on scope and fit before any commitment."
+    "No commitment upfront. We'll figure out scope and fit first."
 } as const

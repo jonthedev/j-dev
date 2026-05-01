@@ -17,10 +17,10 @@
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h2 class="font-bold text-gray-900 dark:text-white text-2xl mb-1">
-                  Case Study: React → Nuxt 4 Migration & AI-Augmented Refactor
+                  Case Study: React to Nuxt 4 Migration
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  My former portfolio site migrated from React to Nuxt 4 using AI-assisted development workflows. This project demonstrates modern Vue architecture, practical AI tooling in development, and a privacy-first workflow where code remained within local infrastructure.
+                  My previous portfolio site. Migrated from React to Nuxt 4 with AI-assisted development. Code stayed on local infrastructure the entire time.
                 </p>
               </div>
               <div class="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-lg border border-green-100 dark:border-green-800/30 shrink-0">
@@ -28,7 +28,7 @@
                   icon="lucide:check-circle"
                   class="shrink-0"
                 />
-                <span class="text-sm font-bold tracking-tight">Verified Production Result</span>
+                <span class="text-sm font-bold tracking-tight">Production Result</span>
               </div>
             </div>
           </div>
@@ -93,10 +93,10 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    Development Efficiency
+                    Development Speed
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    AI-assisted workflows significantly reduced manual refactoring and migration time during this project.
+                    AI tooling cut refactoring time significantly. The migration shipped in a fraction of the estimated timeline.
                   </div>
                 </div>
               </div>
@@ -107,10 +107,10 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    Private Development Workflow
+                    Local-Only Workflow
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    Local inference with Ollama allowed the project to be developed without sending source code to external AI services.
+                    Ollama ran locally. No source code was sent to external AI services at any point.
                   </div>
                 </div>
               </div>
@@ -119,25 +119,25 @@
             <!-- Project Phases -->
             <div>
               <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">
-                Project Phases (this migration)
+                Project Phases
               </h3>
               <div class="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                     <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs">1</span>
-                    Orchestration Phase
+                    Migration
                   </h4>
                   <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Drove the full React → Nuxt 4 migration with an agentic pipeline; delivered reusable Vue components and composables, AI-assisted refactors, and full functional parity with the previous site.
+                    Full React to Nuxt 4 conversion. Reusable Vue components and composables replaced the old React patterns. Functional parity with the original site.
                   </p>
                 </div>
                 <div>
                   <h4 class="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                     <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs">2</span>
-                    Refinement Phase
+                    Optimization
                   </h4>
                   <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Applied custom Vite optimizations, reactivity tuning, copy and SEO polish, and performance audits—achieving Lighthouse 90+ on this project.
+                    Vite bundle optimizations. Reactivity tuning. SEO and copy review. Lighthouse 90+ across all categories.
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@
             <!-- Optional note -->
             <div class="rounded-lg border border-vue-200 dark:border-vue-800 bg-vue-50/50 dark:bg-vue-950/20 p-4">
               <p class="text-sm text-vue-800 dark:text-vue-200">
-                While this case study was a full migration, the same R&D workflows can be applied to adding features, writing tests, or enhancing existing Vue/Nuxt applications.
+                This was a full migration. The same approach works for feature additions, test coverage, or performance improvements on existing Vue and Nuxt applications.
               </p>
             </div>
 

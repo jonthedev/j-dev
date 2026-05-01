@@ -14,10 +14,10 @@ useHead({
 })
 
 const title
-  = "Jonathan Kaonga | Senior AI & Vue Ecosystem Architect | Sovereign AI · Vue · Nuxt 4"
+  = "Jonathan Kaonga | AI & Vue Engineer | RAG, Nuxt 4, Local LLMs"
 
 const description
-  = "Sovereign AI and the Vue ecosystem: RAG, NestJS, PostgreSQL, hybrid Claude + Ollama. Website of the Year 2022 · Thalex trading dashboards. KVK B2B, UK/EU."
+  = "RAG on PostgreSQL. Hybrid Claude and Ollama. Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered, Amsterdam."
 
 useSeoMeta({
   title,

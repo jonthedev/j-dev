@@ -28,10 +28,10 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Production-Grade Vue/Nuxt Integration · Sovereign AI workflows · Local inference (Ollama) · GDPR-aware delivery for sensitive codebases.
+          Vue and Nuxt integration. Local LLM inference with Ollama. GDPR-aware workflows for codebases that can't leave the building.
         </p>
         <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4">
-          Faster iteration, safer workflows, and interfaces that stay predictable when AI augments the stack—not replaces your architecture.
+          AI augments the stack. It doesn't replace the architecture. That distinction matters.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -44,7 +44,7 @@
             icon="lucide:arrow-right"
             class="shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            Get in touch
+            Get in Touch
           </UButton>
         </div>
       </div>

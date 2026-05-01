@@ -10,17 +10,17 @@ export interface ServicePillar {
 export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:zap",
-    headline: "Full-Lifecycle Modernization & Feature Engineering",
-    body: "I engineer high-performance Vue systems with a 72% velocity increase. Whether architecting new Nuxt platforms or refactoring legacy debt into modern standards, I deliver months of manual roadmap progress in weeks.",
-    metric: "🚀 40+ hours compressed to 11",
+    headline: "Migration & Feature Development",
+    body: "I build Vue systems fast. A recent Nuxt 4 migration took 11 hours instead of the estimated 40+. I refactor legacy code into modern patterns and ship features that work.",
+    metric: "40+ hours compressed to 11",
     tags: ["Nuxt", "Feature Engineering", "Architecture"],
     featured: true
   },
   {
     icon: "lucide:shield",
-    headline: "100% Data Sovereignty & Private Inference",
-    body: "Your codebase never leaves my local infrastructure. Using air-gapped LLMs (Ollama) and secure virtualization (Proxmox), I ensure total GDPR and IP compliance while orchestrating complex, agentic refactors.",
-    metric: "🔒 0% Cloud Exposure / Private GPU Node",
+    headline: "Private Infrastructure",
+    body: "Code never leaves my machines. Ollama runs locally. Proxmox handles virtualization. GDPR and IP compliance comes from the architecture, not a policy document.",
+    metric: "0% Cloud Exposure",
     tags: ["Ollama", "Proxmox", "Security"]
   }
 ]

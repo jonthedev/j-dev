@@ -30,12 +30,12 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          AI-Native Orchestration · Agentic UX · RAG &amp; NestJS · Vue 3 Composition API · Nuxt 4 · UK &amp; EU B2B-ready
+          RAG pipelines on PostgreSQL. Hybrid Claude and Ollama stacks. Vue 3 Composition API and Nuxt 4.
         </p>
         <p
           class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
         >
-          Private-first LLMs · Amsterdam · Dutch B2B (KVK) · Remote CET
+          Amsterdam-based. KVK registered. Remote within CET.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
@@ -46,7 +46,7 @@
             icon="lucide:arrow-right"
             class="shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            View Services / Case Studies
+            View Case Studies
           </UButton>
 
           <UButton
@@ -58,7 +58,7 @@
             color="neutral"
             icon="lucide:calendar"
           >
-            Book a Free Discovery Call
+            Book a Call
           </UButton>
         </div>
       </div>

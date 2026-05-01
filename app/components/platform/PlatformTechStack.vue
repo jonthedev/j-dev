@@ -22,7 +22,7 @@
             The Lab Stack
           </h2>
           <p class="text-gray-600 dark:text-gray-300">
-            Hybrid stack for sovereign AI—cloud reasoning where it helps, local inference where it matters, terminal-first velocity.
+            Cloud for heavy reasoning. Local inference for code. Terminal-first workflow.
           </p>
         </div>
 

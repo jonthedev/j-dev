@@ -47,17 +47,17 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Senior AI & Vue Ecosystem Architect",
+    title: "AI & Vue Engineer",
     experience: "6+ years",
     specialization:
-      "Sovereign AI & RAG, Vue ecosystem (Vue 3, Nuxt 4, Pinia), NestJS, PostgreSQL",
+      "RAG systems, Vue 3, Nuxt 4, NestJS, PostgreSQL, local LLM inference",
     services: [
-      "Sovereign AI & RAG (NestJS & PostgreSQL)",
-      "Agentic UX & AI-native UI",
-      "Vue ecosystem & Nuxt 4 modernization",
-      "Performance audits · Lighthouse 90+",
-      "EU/UK B2B compliance (KVK, IR35, W-8BEN-E)",
-      "Technical architecture & consulting"
+      "RAG pipelines (NestJS and PostgreSQL)",
+      "AI-augmented interfaces",
+      "Vue and Nuxt 4 modernization",
+      "Performance audits targeting Lighthouse 90+",
+      "EU and UK contracting (KVK, IR35, W-8BEN-E)",
+      "Technical architecture"
     ],
     techFocus: [
       "Vue 3",

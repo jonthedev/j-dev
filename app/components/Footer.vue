@@ -7,11 +7,10 @@
         <!-- Contact Info -->
         <div>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            Let's Work Together
+            Get in Touch
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Available for Vue/Nuxt and full-stack web applications—freelance
-            projects, contract work, and consulting.
+            Available for Vue, Nuxt, and full-stack work. Freelance or contract.
           </p>
           <div class="space-y-2 flex flex-col">
             <a
