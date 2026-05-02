@@ -93,7 +93,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
-    text: "Nationale Vacaturebank — The country's largest job board with millions of monthly visits. Built a centralized Tailwind design system adopted across multiple national brands.",
+    text: "Nationale Vacaturebank, the country's largest job board with millions of monthly visits. Built a centralized Tailwind design system adopted across multiple national brands.",
     tech: [
       {
         id: "next-dpg",
@@ -150,7 +150,7 @@ export const architecturePlaceholders: ArchitecturePlaceholder[] = [
     title: "Technical Blueprint: Type-Safe Modular API",
     status: "inProgress",
     description:
-      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Active learning project — building toward production-ready patterns.",
+      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Active learning project building toward production-ready patterns.",
     keyFeatures: [
       "Modular Domain Design (Clean Architecture)",
       "Contract-First API Documentation (Swagger/OpenAPI)",

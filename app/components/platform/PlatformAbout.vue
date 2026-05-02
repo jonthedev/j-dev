@@ -15,7 +15,7 @@
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>NestJS and PostgreSQL.</strong> Building type-safe backend APIs with Prisma. Still in the lab phase — not yet part of client work.</span>
+            <span><strong>NestJS and PostgreSQL.</strong> Building type-safe backend APIs with Prisma. Still in the lab phase, not yet part of client work.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
@@ -33,13 +33,4 @@
 
 <script setup lang="ts">
 defineOptions({ name: "PlatformAbout" })
-
-const { setMode } = usePortfolioMode()
-
-function _goToTechnicalBlueprint() {
-  setMode("frontend")
-  nextTick(() => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
-  })
-}
 </script>

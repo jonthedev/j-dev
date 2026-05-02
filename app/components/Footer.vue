@@ -10,7 +10,7 @@
             Get in Touch
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Available for Vue and Nuxt contract work. Six years of frontend experience, five with React, one with Vue. Building toward full-stack.
+            Available for Vue and Nuxt contract work. Six years of frontend engineering across traffic, trading, media, and finance.
           </p>
           <div class="space-y-2 flex flex-col">
             <a

@@ -18,7 +18,7 @@
           Vue Frontend Engineer
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Vue 3 & Nuxt 4. Building toward full-stack.
+          Vue 3 & Nuxt 4.
         </p>
       </SharedReveal>
 

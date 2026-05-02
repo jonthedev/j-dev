@@ -11,7 +11,7 @@ export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:zap",
     headline: "Vue Delivery Speed",
-    body: "I build Vue systems fast. A recent Nuxt 4 migration took 11 hours instead of the estimated 40+. That was my own portfolio site, but the same approach applies to client migrations. Five years of React before switching to Vue — I know what good frontend looks like.",
+    body: "I build Vue systems fast. A recent Nuxt 4 migration took 11 hours instead of the estimated 40+. That was my own portfolio site, but the same approach applies to client migrations. Five years of React before switching to Vue. I know what good frontend looks like.",
     metric: "40+ hours compressed to 11",
     tags: ["Nuxt", "Vue 3", "Migration"],
     featured: true
@@ -19,7 +19,7 @@ export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:shield",
     headline: "Private Development",
-    body: "I run Ollama locally. Code doesn't leave my machines. This isn't a service I sell yet — it's how I build. Working through Unlearn.dev courses on workflows, RAG, and AI testing. The infrastructure path is: local Ollama now, private GPU node later via Proxmox.",
+    body: "I run Ollama locally. Code doesn't leave my machines. This isn't a service I sell yet. It's how I build. Working through Unlearn.dev courses on workflows, RAG, and AI testing. The infrastructure path is: local Ollama now, private GPU node later via Proxmox.",
     metric: "0% Cloud Exposure",
     tags: ["Ollama", "Proxmox", "Privacy"]
   }

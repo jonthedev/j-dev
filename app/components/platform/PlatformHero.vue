@@ -19,7 +19,7 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Local LLMs, agentic refactors, and type-safe backend patterns. Active development — not production services.
+          Local LLMs, agentic refactors, and type-safe backend patterns. Active development, not production services.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

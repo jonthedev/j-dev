@@ -34,12 +34,12 @@ const portfolioMode = usePortfolioMode()
 
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Jonathan Kaonga | Vue & React Frontend Engineer | Amsterdam"
-    : "Jonathan Kaonga | Lab — AI Workflows, NestJS, PostgreSQL (In Development)"
+    ? "Jonathan Kaonga | Vue Frontend Engineer | Amsterdam"
+    : "Jonathan Kaonga | Lab: AI Workflows, NestJS, PostgreSQL (In Development)"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Six years of frontend engineering. Five years with React, now Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered."
+    ? "Six years of frontend engineering across traffic, trading, media, and finance. Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered."
     : "My active learning environment. Local AI workflows, NestJS, PostgreSQL. Working through Unlearn.dev courses. Not production services yet."
 )
 

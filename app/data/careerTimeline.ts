@@ -28,7 +28,7 @@ export const careerTimeline: CareerTimelineItem[] = [
     title: "Frontend Engineer",
     company: "DPG Media",
     description:
-      "Next.js performance at national job-board scale; Tailwind design system across brands.",
+      "Next.js performance at national job-board scale and Tailwind design systems adopted across multiple brands.",
     icon: "i-lucide-newspaper"
   },
   {
