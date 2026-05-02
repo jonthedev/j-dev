@@ -4,12 +4,8 @@
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <UContainer>
-      <Motion
-        as="div"
-        :initial="{ opacity: 0, y: 24 }"
-        :while-in-view="{ opacity: 1, y: 0 }"
-        :transition="{ duration: 0.5, delay: 0.1 }"
-        :in-view-options="{ once: true }"
+      <div
+        v-motion="sectionRevealAnimation"
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -18,7 +14,7 @@
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           High-traffic frontends across traffic, trading, media, and finance. Here is what I've shipped.
         </p>
-      </Motion>
+      </div>
 
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Featured project: Thalex -->
@@ -47,12 +43,8 @@
 
       <!-- Call to action -->
       <div class="mt-16 text-center">
-        <Motion
-          as="div"
-          :initial="{ opacity: 0, y: 24 }"
-          :while-in-view="{ opacity: 1, y: 0 }"
-          :transition="{ duration: 0.5, delay: 0.2 }"
-          :in-view-options="{ once: true }"
+        <div
+          v-motion="sectionRevealAnimation"
           class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
         >
           <h3 class="text-xl font-semibold text-vue-900 dark:text-vue-100 mb-4">
@@ -70,17 +62,13 @@
           >
             Start a Conversation
           </UButton>
-        </Motion>
+        </div>
       </div>
 
       <!-- AI & Platform plug: discover after seeing full frontend -->
       <div class="mt-12 text-center">
-        <Motion
-          as="div"
-          :initial="{ opacity: 0, y: 24 }"
-          :while-in-view="{ opacity: 1, y: 0 }"
-          :transition="{ duration: 0.5, delay: 0.3 }"
-          :in-view-options="{ once: true }"
+        <div
+          v-motion="sectionRevealAnimation"
           class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 p-6"
         >
           <p class="text-gray-600 dark:text-gray-400 mb-4">
@@ -94,7 +82,7 @@
           >
             See What I'm Building
           </UButton>
-        </Motion>
+        </div>
       </div>
     </UContainer>
   </section>
@@ -107,4 +95,8 @@ import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitectureP
 defineOptions({ name: "ProjectsSection" })
 
 const portfolioMode = usePortfolioMode()
+const { fadeInUp } = useAnimation()
+
+// Section animation
+const sectionRevealAnimation = fadeInUp(500, 0)
 </script>

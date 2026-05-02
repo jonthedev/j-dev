@@ -12,13 +12,16 @@
     <div
       class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
     >
+      <!-- No motion on LCP (h1): initial opacity must stay 1 for Lighthouse LCP -->
       <div class="space-y-8">
+        <!-- Main headline: professional title -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
           <span class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
             Vue Frontend Engineer
           </span>
         </h1>
 
+        <!-- Subheader (fragments) — Web portfolio -->
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
@@ -30,12 +33,8 @@
           Amsterdam-based. KVK registered. Remote within CET.
         </p>
 
-        <Motion
-          :initial="{ opacity: 0, y: 24 }"
-          :while-in-view="{ opacity: 1, y: 0 }"
-          :transition="{ duration: 0.4, delay: 0.08 }"
-          :in-view-options="{ once: true }"
-          as="div"
+        <div
+          v-motion="ctaMotion"
           class="flex flex-col sm:flex-row gap-4 justify-center pt-8"
         >
           <UButton
@@ -59,7 +58,7 @@
           >
             Book a Call
           </UButton>
-        </Motion>
+        </div>
       </div>
     </div>
     <div
@@ -81,6 +80,11 @@ import { Icon } from "@iconify/vue"
 defineOptions({ name: "AppHero" })
 
 const { contactInfo } = useContact()
+
+const { fadeInUp } = useAnimation()
+
+// Motion only below LCP (headline stays immediately visible)
+const ctaMotion = fadeInUp(400, 80)
 </script>
 
 <style scoped>

@@ -1,10 +1,6 @@
 <template>
-  <Motion
-    as="div"
-    :initial="{ opacity: 0, y: 24 }"
-    :while-in-view="{ opacity: 1, y: 0 }"
-    :transition="{ duration: 0.5, delay: delay / 1000 }"
-    :in-view-options="{ once: true }"
+  <div
+    v-motion="animation"
     class="text-center mb-16"
   >
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -16,11 +12,11 @@
     >
       {{ description }}
     </p>
-  </Motion>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { Motion } from "motion-v"
+import { useAnimation } from "~/composables/useAnimation"
 
 interface Props {
   title: string
@@ -28,7 +24,11 @@ interface Props {
   delay?: number
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   delay: 100
 })
+
+// Use fadeInUp animation with configurable delay
+const { fadeInUp } = useAnimation()
+const animation = fadeInUp(500, props.delay)
 </script>

@@ -9,12 +9,10 @@
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <Motion
-        as="div"
+      <div
+        v-motion
         :initial="{ opacity: 0, y: 24 }"
-        :while-in-view="{ opacity: 1, y: 0 }"
-        :transition="{ duration: 0.6, ease: 'easeOut' }"
-        :in-view-options="{ once: true }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 600, ease: 'easeOut' } }"
         class="space-y-8"
       >
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
@@ -42,7 +40,7 @@
             Get in Touch
           </UButton>
         </div>
-      </Motion>
+      </div>
     </div>
 
     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -62,6 +60,12 @@ import { Icon } from "@iconify/vue"
 defineOptions({ name: "PlatformHero" })
 
 const { contactInfo } = useContact()
+
+// Use animation composable
+const { fadeInUp } = useAnimation()
+
+// Apply optimized animation
+const _animation = fadeInUp(600, 0)
 </script>
 
 <style scoped>
