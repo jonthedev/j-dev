@@ -36,7 +36,7 @@ export const featuredProject: ProjectItem = {
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
-  text: "Real-time derivatives trading dashboards. Options, futures, and perpetuals built with Vue and Nuxt.",
+  text: "Real-time derivatives trading dashboards handling live market data. Options, futures, and perpetuals built with Vue and Nuxt for professional traders. Introduced Playwright E2E testing and Maizzle email templates.",
   tech: [
     {
       id: "vue-thalex",
@@ -67,13 +67,13 @@ export const pastProjects: ProjectItem[] = [
     img: "/project-traffic-verkeer.png",
     url: "https://www.anwb.nl/verkeer",
     github: null,
-    title: "ANWB",
-    text: "anwb.nl/verkeer — Dutch motoring association traffic platform. Website van het Jaar 2022. High-traffic React app with real-time data.",
+    title: "Traffic Verkeer",
+    text: "Market-leading traffic platform for millions of daily commuters. Won Website van het Jaar 2022. High-traffic Next.js app with real-time incident reporting and Cypress testing.",
     tech: [
       {
-        id: "react-anwb",
-        icon: "simple-icons:react",
-        classname: "text-cyan-400"
+        id: "next-anwb",
+        icon: "simple-icons:nextdotjs",
+        classname: "text-gray-900 dark:text-white"
       },
       {
         id: "ts-anwb",
@@ -93,12 +93,12 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
-    text: "Nationale Vacaturebank — centralized Tailwind design system adopted across multiple national brands.",
+    text: "Nationale Vacaturebank — The country's largest job board with millions of monthly visits. Built a centralized Tailwind design system adopted across multiple national brands.",
     tech: [
       {
-        id: "react-dpg",
-        icon: "simple-icons:react",
-        classname: "text-cyan-400"
+        id: "next-dpg",
+        icon: "simple-icons:nextdotjs",
+        classname: "text-gray-900 dark:text-white"
       },
       {
         id: "ts-dpg",
@@ -118,7 +118,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
-    text: "Wealth management platform via iO. Next.js frontend for a Dutch financial institution.",
+    text: "Secure, data-intensive wealth management platform for high-net-worth clients. Next.js and React frontend built via iO consultancy, featuring a cross-team Chakra UI library for the rebrand.",
     tech: [
       {
         id: "next-vlk",

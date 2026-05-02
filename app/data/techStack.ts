@@ -57,6 +57,23 @@ export const techStack: TechStackItem[] = [
     iconClass: "text-cyan-400",
     category: "frontend"
   },
+  // Previously used at scale (ANWB, DPG Media, iO)
+  {
+    id: "react",
+    title: "React",
+    icon: "simple-icons:react",
+    iconClass: "text-gray-400 dark:text-gray-600",
+    category: "secondary",
+    sublabel: "Former Expertise"
+  },
+  {
+    id: "nextjs",
+    title: "Next.js",
+    icon: "simple-icons:nextdotjs",
+    iconClass: "text-gray-400 dark:text-gray-600",
+    category: "secondary",
+    sublabel: "Former Expertise"
+  },
   {
     id: "playwright",
     title: "Playwright",

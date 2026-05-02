@@ -14,7 +14,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Tools I use daily for frontend. Backend is under active construction.
+          Vue 3, Nuxt 4, and TypeScript. React and Next.js available from previous experience. Backend under active construction.
         </p>
       </div>
 
@@ -41,6 +41,7 @@
               :initial="{ opacity: 0, y: 8 }"
               :visible-once="{ opacity: 1, y: 0, transition: { duration: 300, delay: 150 + index * 40 } }"
               class="flex flex-col items-center p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
+              :class="{ 'opacity-50': tech.category === 'secondary' }"
             >
               <span
                 :class="`inline-flex items-center justify-center gap-1 text-2xl mb-1 ${tech.iconClass} group-hover:scale-110 transition-transform`"
@@ -55,6 +56,12 @@
               </span>
               <span class="text-xs font-medium text-gray-700 dark:text-gray-300 text-center">
                 {{ tech.title }}
+              </span>
+              <span
+                v-if="tech.sublabel"
+                class="mt-1 inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-800/50 px-2 py-0.5 text-[10px] font-medium text-gray-500 dark:text-gray-400"
+              >
+                {{ tech.sublabel }}
               </span>
               <span
                 v-if="tech.certified"
@@ -247,6 +254,6 @@
 import { Icon } from "@iconify/vue"
 import { techStack, strategicTooling } from "~/data/techStack"
 
-const frontendTech = computed(() => techStack.filter(item => item.category === "frontend"))
+const frontendTech = computed(() => techStack.filter(item => item.category === "frontend" || item.category === "secondary"))
 const backendTech = computed(() => techStack.filter(item => item.category === "backend"))
 </script>

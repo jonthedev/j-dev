@@ -18,11 +18,8 @@
       >
         <!-- Main headline: professional title -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">Vue &amp; React</span><br>
-          <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
-          >
-            Frontend Engineer
+          <span class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
+            Vue Frontend Engineer
           </span>
         </h1>
 
@@ -30,7 +27,7 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Six years of frontend engineering. Recently transitioned from React to Vue 3 and Nuxt 4 — now building exclusively with Vue.
+          Building high-performance applications with Vue 3, Nuxt 4, and TypeScript. Deep React and Next.js experience from previous roles.
         </p>
         <p
           class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
