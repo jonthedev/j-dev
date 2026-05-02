@@ -8,7 +8,7 @@
             to="/"
             class="text-xl font-bold text-gray-900 dark:text-white hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
           >
-            J-Dev.Online
+            JDev Online
           </NuxtLink>
         </div>
 

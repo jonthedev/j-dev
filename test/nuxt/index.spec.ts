@@ -5,7 +5,7 @@ import Navbar from "~/components/Navbar.vue"
 describe("Navbar", () => {
   it("renders site name and navigation links", async () => {
     const wrapper = await mountSuspended(Navbar)
-    expect(wrapper.text()).toContain("J-Dev.Online")
+    expect(wrapper.text()).toContain("JDev Online")
     expect(wrapper.text()).toContain("About")
     expect(wrapper.text()).toContain("Tech Stack")
     expect(wrapper.text()).toContain("Projects")

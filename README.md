@@ -1,4 +1,4 @@
-# J-Dev.Online · Portfolio
+# JDev Online · Portfolio
 
 Personal portfolio and freelance frontend engineer site — **Vue & Nuxt** focused, with a hint of AI platform engineering. Built with Nuxt 4, Nuxt UI, and TypeScript.
 
@@ -97,4 +97,4 @@ The site is deployed to **Netlify** from the `main` branch. Build uses:
 
 ## License
 
-Private — © Jonathan Kaonga / J-Dev.Online.
+Private — © Jonathan Kaonga / JDev Online.

@@ -20,7 +20,7 @@ export function usePageSeo(title: string, description?: string, image?: string, 
   // Open Graph meta tags (og:image must be absolute URL)
   meta.push(
     { property: "og:title", content: fullTitle },
-    { property: "og:site_name", content: "Jonathan Kaonga Portfolio" },
+    { property: "og:site_name", content: "JDev Online" },
     { property: "og:type", content: "website" },
     { property: "og:image", content: siteImageAbsolute },
     { property: "og:url", content: siteUrl }

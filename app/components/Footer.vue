@@ -64,7 +64,7 @@
       <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-500 dark:text-gray-400 text-sm">
-            © {{ new Date().getFullYear() }} J-Dev.Online. All rights reserved.
+            © {{ new Date().getFullYear() }} JDev Online
           </p>
           <div class="flex space-x-6 mt-4 md:mt-0">
             <a
