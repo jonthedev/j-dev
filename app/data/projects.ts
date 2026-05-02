@@ -64,7 +64,7 @@ export const featuredProject: ProjectItem = {
 export const pastProjects: ProjectItem[] = [
   {
     id: "anwb",
-    img: "",
+    img: "/project-traffic-verkeer.png",
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB",
@@ -89,7 +89,7 @@ export const pastProjects: ProjectItem[] = [
   },
   {
     id: "dpg-media",
-    img: "",
+    img: "/project-nationale-vacaturebank.png",
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
@@ -114,7 +114,7 @@ export const pastProjects: ProjectItem[] = [
   },
   {
     id: "van-lanschot",
-    img: "",
+    img: "/project-vlk.png",
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
