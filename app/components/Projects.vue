@@ -95,8 +95,4 @@ import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitectureP
 defineOptions({ name: "ProjectsSection" })
 
 const portfolioMode = usePortfolioMode()
-const { fadeInUp } = useAnimation()
-
-// Section animation
-const sectionRevealAnimation = fadeInUp(500, 0)
 </script>

@@ -1,6 +1,10 @@
 <template>
-  <UCard
-    v-motion="animation"
+  <Motion
+    as="UCard"
+    :initial="{ opacity: 0, y: 24 }"
+    :while-in-view="{ opacity: 1, y: 0 }"
+    :transition="{ duration: 0.5, delay: (100 + index * 50) / 1000 }"
+    :viewport="{ once: true }"
     class="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
     :ui="{
       root: 'border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden'
@@ -83,7 +87,7 @@
         Code
       </UButton>
     </div>
-  </UCard>
+  </Motion>
 </template>
 
 <script setup lang="ts">
@@ -98,7 +102,6 @@ interface Props {
 const props = defineProps<Props>()
 
 const colorMode = useColorMode()
-const { staggeredAnimation } = useAnimation()
 const { getTechName, getTechBrandClass } = useIcons()
 
 const projectImageSrc = computed(() => {
@@ -108,10 +111,6 @@ const projectImageSrc = computed(() => {
 })
 
 const hasImage = computed(() => !!props.project.img)
-
-const animation = computed(() =>
-  staggeredAnimation(100, 50)(props.index)
-)
 </script>
 
 <style scoped>

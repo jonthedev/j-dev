@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/fonts",
     "@nuxt/image",
-    "@vueuse/motion/nuxt"
+    "motion-v/nuxt"
   ],
 
   // Static profile site: client-only SPA; static preset skips Nitro server bundle (avoids client.precomputed.mjs bug)

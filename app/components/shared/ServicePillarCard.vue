@@ -1,6 +1,10 @@
 <template>
-  <UCard
-    v-motion="animation"
+  <Motion
+    as="UCard"
+    :initial="{ opacity: 0, y: 24 }"
+    :while-in-view="{ opacity: 1, y: 0 }"
+    :transition="{ duration: 0.5, delay: (100 + index * 80) / 1000 }"
+    :viewport="{ once: true }"
     class="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative"
     :ui="{
       root: [
@@ -50,7 +54,7 @@
         {{ tag }}
       </span>
     </div>
-  </UCard>
+  </Motion>
 </template>
 
 <script setup lang="ts">
@@ -62,10 +66,5 @@ interface Props {
   index: number
 }
 
-const props = defineProps<Props>()
-
-const { staggeredAnimation } = useAnimation()
-const animation = computed(() =>
-  staggeredAnimation(100, 80)(props.index)
-)
+defineProps<Props>()
 </script>
