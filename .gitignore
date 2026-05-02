@@ -42,3 +42,8 @@ jdev-nuxt4-temp
 test-results
 playwright-report
 blob-report
+
+# Personal drafts (do not commit)
+cv.txt
+linkedin.txt
+employment-history.txt
