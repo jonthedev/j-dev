@@ -125,7 +125,7 @@ const colorMode = useColorMode()
 const portfolioMode = usePortfolioMode()
 
 const portfolioTabItems = [
-  { label: "Web Applications", value: "frontend" },
+  { label: "Portfolio", value: "frontend" },
   { label: "AI", value: "platform" }
 ]
 

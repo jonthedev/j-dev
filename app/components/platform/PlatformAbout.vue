@@ -15,7 +15,7 @@
         <ul class="space-y-4 text-gray-700 dark:text-gray-300">
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>Local AI workflows.</strong> Running Ollama and Claude to assist with migrations and refactors. Code stays on my machines. Working through Unlearn.dev courses covering reusable workflows, RAG patterns, and AI-assisted testing.</span>
+            <span><strong>Hybrid AI workflows.</strong> Ollama runs locally for code-sensitive work. Claude handles reasoning and research tasks. Working through Unlearn.dev courses covering reusable workflows, RAG patterns, and AI-assisted testing.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>

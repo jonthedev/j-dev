@@ -9,10 +9,10 @@
         class="text-center mb-16"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Services & Case Studies
+          Production Work
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          High-traffic frontends across traffic, trading, media, and finance. Vue and Nuxt now — React before. Here is what I've shipped.
+          High-traffic frontends across traffic, trading, media, and finance. Here is what I've shipped.
         </p>
       </div>
 

@@ -123,11 +123,17 @@
             x: 0,
             transition: { duration: 500, delay: 150 }
           }"
+          class="rounded-xl border border-gray-200 bg-white/80 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-950/80"
         >
           <UTimeline
             :items="timelineItems"
             size="sm"
-            color="neutral"
+            :ui="{
+              indicator: 'text-vue-600 dark:text-vue-400',
+              date: 'text-vue-600 dark:text-vue-400 font-semibold',
+              title: 'text-gray-900 dark:text-white font-medium',
+              description: 'text-gray-600 dark:text-gray-400'
+            }"
           />
         </div>
       </div>

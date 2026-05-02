@@ -111,7 +111,7 @@ const { contactInfo } = useContact()
 
 const quickLinks = [
   { name: "About", href: "#about" },
-  { name: "Web Applications", href: "#tech-stack" },
+  { name: "Tech Stack", href: "#tech-stack" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" }
 ]

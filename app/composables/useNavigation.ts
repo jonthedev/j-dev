@@ -11,7 +11,7 @@ export function useNavigation() {
       description: "Learn more about my background and expertise"
     },
     {
-      name: "Web Applications",
+      name: "Tech Stack",
       href: "#tech-stack",
       description: "Frontend and backend technologies I work with"
     },

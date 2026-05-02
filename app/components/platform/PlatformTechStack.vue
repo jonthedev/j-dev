@@ -22,7 +22,7 @@
             The Lab Stack
           </h2>
           <p class="text-gray-600 dark:text-gray-300">
-            This is my active learning environment. Cloud Claude for heavy reasoning. Local Ollama for code work. Building toward NestJS and PostgreSQL for backend. Working through Unlearn.dev courses on workflows, RAG, and AI testing.
+            Claude Code for reasoning. Local Ollama for code. NestJS and PostgreSQL for the backend.
           </p>
         </div>
 
