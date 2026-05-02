@@ -14,10 +14,10 @@ useHead({
 })
 
 const title
-  = "Jonathan Kaonga | AI & Vue Engineer | RAG, Nuxt 4, Local LLMs"
+  = "Jonathan Kaonga | Vue & React Frontend Engineer | Amsterdam"
 
 const description
-  = "RAG on PostgreSQL. Hybrid Claude and Ollama. Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered, Amsterdam."
+  = "Six years of frontend engineering. React for five years, now building exclusively with Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered, Amsterdam."
 
 useSeoMeta({
   title,

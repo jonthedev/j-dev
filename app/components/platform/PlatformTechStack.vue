@@ -22,7 +22,7 @@
             The Lab Stack
           </h2>
           <p class="text-gray-600 dark:text-gray-300">
-            Cloud for heavy reasoning. Local inference for code. Terminal-first workflow.
+            This is my active learning environment. Cloud Claude for heavy reasoning. Local Ollama for code work. Building toward NestJS and PostgreSQL for backend. Working through Unlearn.dev courses on workflows, RAG, and AI testing.
           </p>
         </div>
 

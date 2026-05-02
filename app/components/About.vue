@@ -20,10 +20,10 @@
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          Senior AI &amp; Vue Ecosystem Architect
+          Vue & React Frontend Engineer
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          RAG on PostgreSQL. Hybrid Claude and Ollama stacks. Vue 3 Composition API and Nuxt 4.
+          Vue 3 & Nuxt 4. Previously React. Building toward full-stack.
         </p>
       </div>
 
@@ -41,13 +41,13 @@
         >
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-              I've spent six years building platforms that handle real traffic. ANWB, Thalex, DPG Media. Since 2024 I've focused on RAG systems, local LLM inference, and Vue architectures that don't fall apart under load.
+              Six years of frontend engineering. I spent five years shipping React at scale — ANWB, DPG Media, iO — before switching to Vue at Thalex in 2025. I prefer Vue now and got certified in the ecosystem. I'm actively building out backend skills with NestJS and PostgreSQL, and integrating AI tools into my workflow.
             </p>
 
             <h3
               class="mt-8 text-lg font-semibold text-gray-900 dark:text-white"
             >
-              How I Work
+              What I Deliver
             </h3>
             <ul class="mt-3 list-none space-y-2 text-gray-700 dark:text-gray-300">
               <li class="flex gap-2">
@@ -55,21 +55,21 @@
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span>I handle the full stack. RAG pipeline to shipped UI. No handoffs.</span>
+                <span>Vue 3 and Nuxt 4 applications built from scratch or migrated from legacy frameworks.</span>
               </li>
               <li class="flex gap-2">
                 <span
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span>Nuxt 4 and Vue 3 migrations target Lighthouse 90+. I measure before and after.</span>
+                <span>Performance work that targets Lighthouse 90+. I measure before and after.</span>
               </li>
               <li class="flex gap-2">
                 <span
                   class="text-vue-600 dark:text-vue-400 shrink-0"
                   aria-hidden="true"
                 >→</span>
-                <span>AI-generated components go through the same review as hand-written code. Same bar.</span>
+                <span>Clean component architecture with TypeScript. Testable, maintainable, and documented.</span>
               </li>
             </ul>
 
@@ -173,26 +173,26 @@
             <div class="text-vue-800 dark:text-vue-200 space-y-4 text-sm">
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  RAG &amp; Private AI
+                  Vue 3 &amp; Nuxt 4 Development
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  NestJS and PostgreSQL for retrieval-augmented generation. Code stays on local infrastructure. GDPR compliant by default.
+                  Production applications from scratch or migrated from legacy frameworks. Composition API, Pinia, and clean component architecture.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  AI-Augmented Interfaces
+                  Performance &amp; Accessibility
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Agent-driven workflows with deterministic output. The UI stays predictable when the backend uses LLMs.
+                  Lighthouse optimization, WCAG compliance, and real-world performance audits. I measure before and after every change.
                 </p>
               </div>
               <div>
                 <div class="font-semibold text-vue-900 dark:text-vue-100">
-                  Vue Ecosystem &amp; Nuxt 4
+                  Design Systems &amp; Component Libraries
                 </div>
                 <p class="mt-1 leading-relaxed">
-                  Large-scale migrations, Pinia and Composition API patterns. Performance audits targeting Lighthouse 90+.
+                  Centralized Tailwind design systems and Storybook documentation. Built for teams that need consistency at scale.
                 </p>
               </div>
               <div>

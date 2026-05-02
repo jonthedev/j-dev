@@ -37,13 +37,13 @@ const portfolioMode = usePortfolioMode()
 
 const pageTitle = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Jonathan Kaonga | AI & Vue Engineer | RAG, Nuxt 4, Local LLMs"
-    : "Jonathan Kaonga | Private AI Development | Local LLMs, No Cloud Exposure"
+    ? "Jonathan Kaonga | Vue & React Frontend Engineer | Amsterdam"
+    : "Jonathan Kaonga | Lab — AI Workflows, NestJS, PostgreSQL (In Development)"
 )
 const pageDescription = computed(() =>
   portfolioMode.mode.value === "frontend"
-    ? "Vue, Nuxt 4, and RAG systems. PostgreSQL, Claude, Ollama, NestJS. Built for ANWB, Thalex, DPG Media. KVK registered."
-    : "Code stays on local infrastructure. Ollama for inference. GDPR and IP compliance by architecture. Nuxt 4 migrations that ship fast."
+    ? "Six years of frontend engineering. Five years with React, now Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered."
+    : "My active learning environment. Local AI workflows, NestJS, PostgreSQL. Working through Unlearn.dev courses. Not production services yet."
 )
 
 useHead(() => ({

@@ -47,15 +47,15 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "AI & Vue Engineer",
+    title: "Vue & React Frontend Engineer",
     experience: "6+ years",
     specialization:
-      "RAG systems, Vue 3, Nuxt 4, NestJS, PostgreSQL, local LLM inference",
+      "Vue 3, Nuxt 4, TypeScript, Tailwind CSS. Previously React. Expanding into NestJS and PostgreSQL.",
     services: [
-      "RAG pipelines (NestJS and PostgreSQL)",
-      "AI-augmented interfaces",
-      "Vue and Nuxt 4 modernization",
+      "Vue 3 and Nuxt 4 application development",
+      "Legacy frontend migration to modern frameworks",
       "Performance audits targeting Lighthouse 90+",
+      "Design systems and component libraries",
       "EU and UK contracting (KVK, IR35, W-8BEN-E)",
       "Technical architecture"
     ],
@@ -63,11 +63,11 @@ export function useContact() {
       "Vue 3",
       "Nuxt 4",
       "TypeScript",
-      "NestJS",
-      "PostgreSQL",
       "Tailwind CSS",
       "Pinia",
-      "Claude & Ollama"
+      "Playwright",
+      "NestJS (learning)",
+      "PostgreSQL (learning)"
     ]
   }
 

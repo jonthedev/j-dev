@@ -16,22 +16,22 @@
         class="space-y-8"
       >
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-gray-900 dark:text-white">Senior AI &amp; Vue</span>
+          <span class="text-gray-900 dark:text-white">Vue &amp; React</span>
           <br>
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Ecosystem Architect
+            Frontend Engineer
           </span>
         </h1>
 
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Vue and Nuxt integration. Local LLM inference with Ollama. GDPR-aware workflows for codebases that can't leave the building.
+          This is my lab. I'm building out local AI workflows with Ollama, learning NestJS and PostgreSQL, and working through structured courses at Unlearn.dev. Nothing here is a shipped client service yet.
         </p>
         <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4">
-          AI augments the stack. It doesn't replace the architecture. That distinction matters.
+          AI augments my development workflow. It doesn't replace the architecture. That distinction matters.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

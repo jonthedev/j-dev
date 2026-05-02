@@ -10,32 +10,24 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
       >
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          Migration, Features, and Private AI
+          What I'm Building
         </h2>
         <ul class="space-y-4 text-gray-700 dark:text-gray-300">
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>Legacy migration.</strong> Move old frontends to Nuxt 4. Reusable Vue components and composables replace the tangled code.</span>
+            <span><strong>Local AI workflows.</strong> Running Ollama and Claude to assist with migrations and refactors. Code stays on my machines. Working through Unlearn.dev courses covering reusable workflows, RAG patterns, and AI-assisted testing.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>Feature development.</strong> Complex modules with type-safe connections between frontend and backend. No runtime surprises.</span>
+            <span><strong>NestJS and PostgreSQL.</strong> Building type-safe backend APIs with Prisma. Still in the lab phase — not yet part of client work.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>NestJS backends for RAG.</strong> Type-safe NestJS and PostgreSQL form the foundation for private retrieval-augmented generation. Same pattern as the
-              <button
-                type="button"
-                class="font-semibold text-vue-600 underline decoration-vue-600/40 underline-offset-2 hover:text-vue-500 dark:text-vue-400 dark:hover:text-vue-300"
-                @click="goToTechnicalBlueprint"
-              >
-                Technical Blueprint
-              </button>
-              project on the Web portfolio.</span>
+            <span><strong>RAG exploration.</strong> Understanding retrieval-augmented generation patterns. The goal is to eventually offer this as a service for clients with privacy requirements.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>AI-assisted delivery.</strong> I use local LLMs to cut through boilerplate. That frees up time for architecture decisions and performance tuning.</span>
+            <span><strong>The Technical Blueprint.</strong> A modular NestJS API project on the Web portfolio side. It's the same architecture I'm learning toward for real RAG systems.</span>
           </li>
         </ul>
       </div>

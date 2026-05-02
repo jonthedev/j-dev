@@ -70,12 +70,12 @@ export const architecturePlaceholders: ArchitecturePlaceholder[] = [
     status: "inProgress",
     badge: "Live Technical Demo",
     description:
-      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Production-ready, integration-ready foundation for any frontend.",
+      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Active learning project — building toward production-ready patterns.",
     keyFeatures: [
       "Modular Domain Design (Clean Architecture)",
       "Contract-First API Documentation (Swagger/OpenAPI)",
       "Type-Safe Persistence Layer (Prisma & PostgreSQL)",
-      "Type-Safe DTOs for reliable API → client integration"
+      "Type-Safe DTOs for reliable API to client integration"
     ],
     swaggerUrl: null,
     githubUrl: null

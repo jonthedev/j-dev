@@ -12,7 +12,7 @@
           Services & Case Studies
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          RAG patterns, Nuxt 4 migrations, and high-traffic frontends. Here is what I've built.
+          Nuxt 4 migrations, high-traffic frontends, and production Vue applications. Here is what I've shipped.
         </p>
       </div>
 
@@ -63,8 +63,8 @@
           v-motion="sectionRevealAnimation"
           class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 p-6"
         >
-          <p class="text-gray-600 dark:text-gray-400 mb-4">
-            AI and platform engineering work runs on local infrastructure. No cloud exposure. Full GDPR compliance.
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+            I'm building out AI and full-stack capabilities in my lab. Local LLMs, NestJS, PostgreSQL — active development, not production services yet.
           </p>
           <UButton
             variant="outline"
@@ -72,7 +72,7 @@
             icon="lucide:sparkles"
             @click="portfolioMode.setMode('platform')"
           >
-            Explore AI portfolio
+            See What I'm Building
           </UButton>
         </div>
       </div>
