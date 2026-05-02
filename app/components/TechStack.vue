@@ -14,7 +14,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Vue 3, Nuxt 4, and TypeScript. React and Next.js available from previous experience. Backend under active construction.
+          Vue 3, Nuxt 4, and TypeScript. Backend under active construction.
         </p>
       </div>
 
