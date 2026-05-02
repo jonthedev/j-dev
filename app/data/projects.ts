@@ -67,7 +67,7 @@ export const projects: ProjectItem[] = [
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB — anwb.nl/verkeer",
-    text: "Core engineer for the Dutch motoring association's traffic platform. Won Website van het Jaar 2022. High-traffic React application with real-time traffic data, route planning, and live incident reporting.",
+    text: "Core engineer for the Dutch motoring association's traffic platform via iO consultancy. Won Website van het Jaar 2022. High-traffic React application with real-time traffic data, route planning, and live incident reporting.",
     tech: [
       {
         id: "react-anwb",
@@ -114,11 +114,16 @@ export const projects: ProjectItem[] = [
   {
     id: "van-lanschot",
     img: "",
-    url: "https://www.vanlanschotkempen.com",
+    url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
-    text: "Financial services platform at iO. Enterprise-grade frontend work for a wealth management and banking platform. Focus on design system consistency and code quality.",
+    text: "Wealth management and banking platform via iO consultancy. Next.js frontend for a Dutch financial institution. Focus on design system consistency and code quality.",
     tech: [
+      {
+        id: "next-vlk",
+        icon: "simple-icons:nextdotjs",
+        classname: "text-gray-900 dark:text-white"
+      },
       {
         id: "react-vlk",
         icon: "simple-icons:react",
