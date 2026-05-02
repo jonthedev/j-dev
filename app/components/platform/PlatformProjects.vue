@@ -4,11 +4,7 @@
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-      >
+      <SharedReveal>
         <div
           class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
@@ -159,7 +155,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </SharedReveal>
     </div>
   </section>
 </template>

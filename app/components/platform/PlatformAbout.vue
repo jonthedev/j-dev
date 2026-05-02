@@ -4,11 +4,7 @@
     class="py-20 bg-gray-50 dark:bg-gray-950"
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-      >
+      <SharedReveal>
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
           What I'm Building
         </h2>
@@ -30,7 +26,7 @@
             <span><strong>The Technical Blueprint.</strong> A modular NestJS API project on the Web portfolio side. It's the same architecture I'm learning toward for real RAG systems.</span>
           </li>
         </ul>
-      </div>
+      </SharedReveal>
     </div>
   </section>
 </template>

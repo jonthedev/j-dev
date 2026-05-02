@@ -1,6 +1,6 @@
 <template>
-  <div
-    v-motion="animation"
+  <SharedReveal
+    :delay="delay"
     class="text-center mb-16"
   >
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -12,23 +12,17 @@
     >
       {{ description }}
     </p>
-  </div>
+  </SharedReveal>
 </template>
 
 <script setup lang="ts">
-import { useAnimation } from "~/composables/useAnimation"
-
 interface Props {
   title: string
   description?: string
   delay?: number
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   delay: 100
 })
-
-// Use fadeInUp animation with configurable delay
-const { fadeInUp } = useAnimation()
-const animation = fadeInUp(500, props.delay)
 </script>

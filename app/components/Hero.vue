@@ -33,8 +33,8 @@
           Amsterdam-based. KVK registered. Remote within CET.
         </p>
 
-        <div
-          v-motion="ctaMotion"
+        <SharedReveal
+          :delay="80"
           class="flex flex-col sm:flex-row gap-4 justify-center pt-8"
         >
           <UButton
@@ -58,7 +58,7 @@
           >
             Book a Call
           </UButton>
-        </div>
+        </SharedReveal>
       </div>
     </div>
     <div
@@ -80,11 +80,6 @@ import { Icon } from "@iconify/vue"
 defineOptions({ name: "AppHero" })
 
 const { contactInfo } = useContact()
-
-const { fadeInUp } = useAnimation()
-
-// Motion only below LCP (headline stays immediately visible)
-const ctaMotion = fadeInUp(400, 80)
 </script>
 
 <style scoped>

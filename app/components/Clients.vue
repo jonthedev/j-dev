@@ -1,27 +1,20 @@
 <template>
   <section class="py-20 bg-white dark:bg-black">
     <UContainer>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-        class="text-center mb-16"
-      >
+      <SharedReveal class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Where I've Worked
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           ANWB, Thalex, DPG Media, and Van Lanschot Kempen. Traffic, trading, media, and finance. All production systems with real users.
         </p>
-      </div>
+      </SharedReveal>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-        <div
+        <SharedReveal
           v-for="(client, index) in clients"
           :key="client.id"
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 + index * 80 } }"
+          :delay="100 + index * 80"
           class="flex items-center justify-center p-6 rounded-lg"
         >
           <img
@@ -31,17 +24,15 @@
             :height="client.height || 150"
             class="max-h-16 w-auto object-contain filter grayscale dark:invert dark:opacity-90 transition-colors duration-300 opacity-70"
           >
-        </div>
+        </SharedReveal>
       </div>
 
       <!-- Client highlights -->
-      <div class="mt-16 grid md:grid-cols-2 gap-8">
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 200 } }"
-          class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6"
-        >
+      <SharedReveal
+        :delay="200"
+        class="mt-16 grid md:grid-cols-2 gap-8"
+      >
+        <div class="bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-lg p-6">
           <div class="flex items-center mb-4">
             <Icon
               icon="lucide:bar-chart-2"
@@ -58,10 +49,8 @@
           </p>
         </div>
 
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 450, delay: 280 } }"
+        <SharedReveal
+          :delay="280"
           class="bg-blue-50 dark:bg-blue-950/20 dark:border-blue-800 border border-blue-200 rounded-lg p-6"
         >
           <div class="flex items-center mb-4">
@@ -84,8 +73,8 @@
             <li>• security</li>
             <li>• maintainability</li>
           </ul>
-        </div>
-      </div>
+        </SharedReveal>
+      </SharedReveal>
     </UContainer>
   </section>
 </template>

@@ -11,11 +11,7 @@
       <div class="absolute inset-0 lab-stack-dots" />
     </div>
     <UContainer class="relative z-10">
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-      >
+      <SharedReveal>
         <!-- The Lab Stack -->
         <div class="text-center max-w-3xl mx-auto mb-12">
           <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -87,7 +83,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </SharedReveal>
     </UContainer>
   </section>
 </template>

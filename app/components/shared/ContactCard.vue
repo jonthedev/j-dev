@@ -1,8 +1,6 @@
 <template>
-  <div
-    v-motion
-    :initial="{ opacity: 0, y: 20 }"
-    :visible-once="visibleOnce"
+  <SharedReveal
+    :delay="delay"
     class="text-center group"
   >
     <div class="w-16 h-16 bg-vue-100 dark:bg-vue-950/40 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
@@ -31,7 +29,7 @@
     >
       {{ content }}
     </span>
-  </div>
+  </SharedReveal>
 </template>
 
 <script setup lang="ts">
@@ -52,10 +50,4 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const isExternal = computed(() => props.href?.startsWith("http") ?? false)
-
-const visibleOnce = computed(() => ({
-  opacity: 1,
-  y: 0,
-  transition: { duration: 450, delay: props.delay }
-}))
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <div
-    v-motion="animation"
+  <SharedReveal
+    :delay="150 + index * 50"
     class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
   >
     <UBadge
@@ -27,12 +27,10 @@
     <span class="text-sm font-medium text-gray-700 dark:text-gray-300 text-center mt-2">
       {{ title }}
     </span>
-  </div>
+  </SharedReveal>
 </template>
 
 <script setup lang="ts">
-import { useAnimation } from "~/composables/useAnimation"
-
 interface Props {
   icon?: string
   icons?: string[]
@@ -43,16 +41,9 @@ interface Props {
   badgeColor?: "primary" | "secondary" | "success" | "info" | "warning" | "error" | "neutral"
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   isPrimary: true,
   index: 0,
   badgeColor: "neutral"
 })
-
-// Use our animation composable
-const { staggeredAnimation } = useAnimation()
-
-const animation = computed(() =>
-  staggeredAnimation(150, 50)(props.index)
-)
 </script>

@@ -4,27 +4,20 @@
     class="py-20 bg-white dark:bg-black"
   >
     <UContainer>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-        class="text-center mb-16"
-      >
+      <SharedReveal class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Vue 3, Nuxt 4, and TypeScript. Backend under active construction.
         </p>
-      </div>
+      </SharedReveal>
 
       <!-- Two-column: Frontend (Core Expertise) + Backend (Architecture & Data) -->
       <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">
         <!-- Block A: Frontend (Core Expertise) -->
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 16 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 } }"
+        <SharedReveal
+          :delay="100"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -34,12 +27,10 @@
             Interfaces that load fast and work for everyone.
           </p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <div
+            <SharedReveal
               v-for="(tech, index) in frontendTech"
               :key="tech.id"
-              v-motion
-              :initial="{ opacity: 0, y: 8 }"
-              :visible-once="{ opacity: 1, y: 0, transition: { duration: 300, delay: 150 + index * 40 } }"
+              :delay="150 + index * 40"
               class="flex flex-col items-center p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
               :class="{ 'opacity-50': tech.category === 'secondary' }"
             >
@@ -74,15 +65,13 @@
                 />
                 Certified
               </span>
-            </div>
+            </SharedReveal>
           </div>
-        </div>
+        </SharedReveal>
 
         <!-- Block B: Backend (Architecture & Data) -->
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 16 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 150 } }"
+        <SharedReveal
+          :delay="150"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -92,12 +81,10 @@
             APIs with clear contracts. Data that doesn't leak between domains. Actively building with NestJS and PostgreSQL — still in the lab phase.
           </p>
           <div class="space-y-4">
-            <div
+            <SharedReveal
               v-for="(tech, index) in backendTech"
               :key="tech.id"
-              v-motion
-              :initial="{ opacity: 0, x: -8 }"
-              :visible-once="{ opacity: 1, x: 0, transition: { duration: 300, delay: 200 + index * 50 } }"
+              :delay="200 + index * 50"
               class="flex items-center gap-4 rounded-lg p-3 hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
             >
               <span
@@ -132,16 +119,14 @@
                   {{ tech.sublabel }}
                 </span>
               </div>
-            </div>
+            </SharedReveal>
           </div>
-        </div>
+        </SharedReveal>
       </div>
 
       <!-- Contract & Integration Pipeline -->
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 12 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 250 } }"
+      <SharedReveal
+        :delay="250"
         class="text-center py-5 mb-12 rounded-lg border border-vue-200 dark:border-vue-800 bg-vue-50/50 dark:bg-vue-950/20"
       >
         <p class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400 mb-1">
@@ -150,25 +135,21 @@
         <span class="text-sm font-medium text-vue-800 dark:text-vue-200">
           Currently building type-safe NestJS APIs. The goal: one codebase generates both backend contracts and Vue client types.
         </span>
-      </div>
+      </SharedReveal>
 
       <!-- Strategic Tooling & Delivery -->
       <div>
-        <h3
-          v-motion
-          :initial="{ opacity: 0, y: 16 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 100 } }"
+        <SharedReveal
+          :delay="100"
           class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
         >
           Strategic Tooling
-        </h3>
+        </SharedReveal>
         <div class="grid md:grid-cols-3 gap-8">
-          <div
+          <SharedReveal
             v-for="(group, groupIndex) in strategicTooling"
             :key="group.title"
-            v-motion
-            :initial="{ opacity: 0, y: 16 }"
-            :visible-once="{ opacity: 1, y: 0, transition: { duration: 400, delay: 150 + groupIndex * 60 } }"
+            :delay="150 + groupIndex * 60"
             class="rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
           >
             <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">
@@ -193,15 +174,13 @@
                 </span>
               </div>
             </div>
-          </div>
+          </SharedReveal>
         </div>
       </div>
 
       <!-- Development Philosophy -->
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
+      <SharedReveal
+        :delay="200"
         class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
       >
         <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
@@ -245,7 +224,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </SharedReveal>
     </UContainer>
   </section>
 </template>

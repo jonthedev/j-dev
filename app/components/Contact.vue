@@ -19,18 +19,13 @@
       <div class="absolute inset-0 contact-section-dots" />
     </div>
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-        class="text-center mb-16"
-      >
+      <SharedReveal class="text-center mb-16">
         <h2
           class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
         >
           Project Discovery
         </h2>
-      </div>
+      </SharedReveal>
 
       <h3
         v-if="isPlatformMode"
@@ -61,14 +56,8 @@
         />
       </div>
 
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 500, delay: 150 }
-        }"
+      <SharedReveal
+        :delay="150"
         class="bg-linear-to-r from-vue-50 to-vue-100 dark:from-vue-950/30 dark:to-vue-900/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
       >
         <div class="text-center">
@@ -115,7 +104,7 @@
             </UButton>
           </div>
         </div>
-      </div>
+      </SharedReveal>
 
       <div class="mt-12 flex justify-center space-x-6">
         <a

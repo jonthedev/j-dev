@@ -11,12 +11,7 @@
       <div class="absolute inset-0 about-section-grid" />
     </div>
     <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 24 }"
-        :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-        class="mb-16 text-center"
-      >
+      <SharedReveal class="mb-16 text-center">
         <h2
           class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
@@ -25,18 +20,13 @@
         <p class="text-lg text-gray-600 dark:text-gray-300">
           Vue 3 & Nuxt 4. Building toward full-stack.
         </p>
-      </div>
+      </SharedReveal>
 
       <div class="grid items-start gap-12 md:grid-cols-2">
         <!-- Left: What I Deliver -->
-        <div
-          v-motion
-          :initial="{ opacity: 0, x: -24 }"
-          :visible-once="{
-            opacity: 1,
-            x: 0,
-            transition: { duration: 500, delay: 100 }
-          }"
+        <SharedReveal
+          :delay="100"
+          direction="left"
           class="space-y-6"
         >
           <h3
@@ -112,17 +102,12 @@
               </li>
             </ul>
           </div>
-        </div>
+        </SharedReveal>
 
         <!-- Right: Timeline -->
-        <div
-          v-motion
-          :initial="{ opacity: 0, x: 24 }"
-          :visible-once="{
-            opacity: 1,
-            x: 0,
-            transition: { duration: 500, delay: 150 }
-          }"
+        <SharedReveal
+          :delay="150"
+          direction="right"
           class="rounded-xl border border-gray-200 bg-white/80 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-950/80"
         >
           <UTimeline
@@ -135,7 +120,7 @@
               description: 'text-gray-600 dark:text-gray-400'
             }"
           />
-        </div>
+        </SharedReveal>
       </div>
     </div>
   </section>
