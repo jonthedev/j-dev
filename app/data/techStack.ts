@@ -134,7 +134,7 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:nestjs",
     iconClass: "text-red-600",
     category: "backend",
-    sublabel: "Application logic and modular service architecture"
+    sublabel: "Application logic and modular service architecture — active personal projects"
   },
   {
     id: "postgresql-prisma",
@@ -142,7 +142,7 @@ export const techStack: TechStackItem[] = [
     icons: ["simple-icons:postgresql", "simple-icons:prisma"],
     iconClass: "text-blue-700",
     category: "backend",
-    sublabel: "Type-safe persistence and schema-driven database access"
+    sublabel: "Type-safe persistence and schema-driven database access — active personal projects"
   },
   {
     id: "swagger",

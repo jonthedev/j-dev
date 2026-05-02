@@ -14,7 +14,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Tools I use daily. Nothing here is theoretical.
+          Tools I use daily for frontend. Backend is under active construction.
         </p>
       </div>
 
