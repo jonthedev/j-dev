@@ -14,7 +14,7 @@
         :initial="{ opacity: 0, y: 24 }"
         :while-in-view="{ opacity: 1, y: 0 }"
         :transition="{ duration: 0.6, ease: 'easeOut' }"
-        :viewport="{ once: true }"
+        :in-view-options="{ once: true }"
         class="space-y-8"
       >
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">

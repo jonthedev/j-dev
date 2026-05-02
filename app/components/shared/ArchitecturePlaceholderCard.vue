@@ -4,7 +4,7 @@
     :initial="{ opacity: 0, y: 24 }"
     :while-in-view="{ opacity: 1, y: 0 }"
     :transition="{ duration: 0.5, delay: (100 + index * 50) / 1000 }"
-    :viewport="{ once: true }"
+    :in-view-options="{ once: true }"
   >
     <UCard
       class="group border-dashed border-amber-200 dark:border-amber-800/60 bg-amber-50/30 dark:bg-amber-950/20 hover:border-amber-300 dark:hover:border-amber-700/60 transition-all duration-300 hover:shadow-xl transition-shadow"

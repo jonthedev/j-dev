@@ -4,7 +4,7 @@
     :initial="{ opacity: 0, y: 24 }"
     :while-in-view="{ opacity: 1, y: 0 }"
     :transition="{ duration: 0.5, delay: delay / 1000 }"
-    :viewport="{ once: true }"
+    :in-view-options="{ once: true }"
     class="text-center mb-16"
   >
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">

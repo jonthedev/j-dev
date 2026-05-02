@@ -34,7 +34,7 @@
           :initial="{ opacity: 0, y: 24 }"
           :while-in-view="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.4, delay: 0.08 }"
-          :viewport="{ once: true }"
+          :in-view-options="{ once: true }"
           as="div"
           class="flex flex-col sm:flex-row gap-4 justify-center pt-8"
         >

@@ -4,7 +4,7 @@
     :initial="{ opacity: 0, y: 20 }"
     :while-in-view="{ opacity: 1, y: 0 }"
     :transition="{ duration: 0.4, delay: (150 + index * 50) / 1000 }"
-    :viewport="{ once: true }"
+    :in-view-options="{ once: true }"
     class="flex flex-col items-center justify-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
   >
     <UBadge
