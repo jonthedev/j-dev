@@ -40,6 +40,9 @@ export default defineNuxtConfig({
   },
 
   fonts: {
+    defaults: {
+      subsets: ["latin"]
+    },
     families: [
       { name: "Kanit", provider: "google", weights: ["400", "600"] }
     ]

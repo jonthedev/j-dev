@@ -23,17 +23,39 @@
             >
               {{ link.name }}
             </NuxtLink>
-            <!-- Portfolio view: Nuxt UI Tabs (toggle only) -->
-            <UTabs
-              v-model="portfolioTab"
-              :content="false"
-              :items="portfolioTabItems"
-              variant="pill"
-              color="primary"
-              size="sm"
-              class="w-auto"
+            <!-- Portfolio view: custom tablist (contrast + no width-animation repaint vs UTabs) -->
+            <div
+              class="inline-flex rounded-lg border border-gray-300 bg-gray-100 p-0.5 dark:border-gray-600 dark:bg-gray-800"
+              role="tablist"
               aria-label="Portfolio view"
-            />
+            >
+              <button
+                type="button"
+                role="tab"
+                tabindex="0"
+                :aria-selected="portfolioTab === 'frontend'"
+                class="rounded-md px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
+                :class="portfolioTab === 'frontend'
+                  ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                  : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
+                @click="portfolioTab = 'frontend'"
+              >
+                Portfolio
+              </button>
+              <button
+                type="button"
+                role="tab"
+                tabindex="0"
+                :aria-selected="portfolioTab === 'platform'"
+                class="rounded-md px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
+                :class="portfolioTab === 'platform'
+                  ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                  : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
+                @click="portfolioTab = 'platform'"
+              >
+                AI
+              </button>
+            </div>
             <!-- Theme Toggle -->
             <button
               type="button"
@@ -54,17 +76,38 @@
 
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center space-x-2">
-          <!-- Portfolio view: Nuxt UI Tabs (toggle only) -->
-          <UTabs
-            v-model="portfolioTab"
-            :content="false"
-            :items="portfolioTabItems"
-            variant="pill"
-            color="primary"
-            size="xs"
-            class="w-auto"
+          <div
+            class="inline-flex rounded-lg border border-gray-300 bg-gray-100 p-0.5 dark:border-gray-600 dark:bg-gray-800"
+            role="tablist"
             aria-label="Portfolio view"
-          />
+          >
+            <button
+              type="button"
+              role="tab"
+              tabindex="0"
+              :aria-selected="portfolioTab === 'frontend'"
+              class="rounded-md px-2.5 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
+              :class="portfolioTab === 'frontend'
+                ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
+              @click="portfolioTab = 'frontend'"
+            >
+              Portfolio
+            </button>
+            <button
+              type="button"
+              role="tab"
+              tabindex="0"
+              :aria-selected="portfolioTab === 'platform'"
+              class="rounded-md px-2.5 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
+              :class="portfolioTab === 'platform'
+                ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
+              @click="portfolioTab = 'platform'"
+            >
+              AI
+            </button>
+          </div>
           <!-- Theme Toggle -->
           <button
             type="button"
@@ -123,11 +166,6 @@ defineOptions({ name: "AppNavbar" })
 
 const colorMode = useColorMode()
 const portfolioMode = usePortfolioMode()
-
-const portfolioTabItems = [
-  { label: "Portfolio", value: "frontend" },
-  { label: "AI", value: "platform" }
-]
 
 const portfolioTab = computed({
   get: () => portfolioMode.mode.value,

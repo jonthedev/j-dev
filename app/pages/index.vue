@@ -5,22 +5,22 @@
       mode="out-in"
     >
       <div :key="portfolioMode.mode.value">
-        <!-- Frontend portfolio -->
+        <!-- Frontend portfolio: Lazy* code-splits below-the-fold to cut main-thread work -->
         <template v-if="portfolioMode.mode.value === 'frontend'">
           <Hero />
-          <TechStack />
-          <About />
-          <Clients />
-          <Projects />
-          <Contact />
+          <LazyTechStack />
+          <LazyAbout />
+          <LazyClients />
+          <LazyProjects />
+          <LazyContact />
         </template>
         <!-- Platform engineering view -->
         <template v-else>
           <PlatformHero />
-          <PlatformAbout />
-          <PlatformTechStack />
-          <PlatformProjects />
-          <Contact />
+          <LazyPlatformAbout />
+          <LazyPlatformTechStack />
+          <LazyPlatformProjects />
+          <LazyContact />
         </template>
       </div>
     </Transition>
@@ -29,9 +29,6 @@
 
 <script setup lang="ts">
 import PlatformHero from "~/components/platform/PlatformHero.vue"
-import PlatformAbout from "~/components/platform/PlatformAbout.vue"
-import PlatformTechStack from "~/components/platform/PlatformTechStack.vue"
-import PlatformProjects from "~/components/platform/PlatformProjects.vue"
 
 const portfolioMode = usePortfolioMode()
 

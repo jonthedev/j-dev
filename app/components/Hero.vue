@@ -12,10 +12,8 @@
     <div
       class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
     >
-      <div
-        v-motion="animation"
-        class="space-y-8"
-      >
+      <!-- No motion on LCP (h1): initial opacity must stay 1 for Lighthouse LCP -->
+      <div class="space-y-8">
         <!-- Main headline: professional title -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
           <span class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
@@ -27,15 +25,18 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Building high-performance applications with Vue 3, Nuxt 4, and TypeScript. Deep React and Next.js experience from previous roles.
+          Building high-performance applications with Vue 3, Nuxt 4, and TypeScript. Primarily Vue-first; React and Next.js from earlier enterprise roles.
         </p>
         <p
-          class="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto"
+          class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
           Amsterdam-based. KVK registered. Remote within CET.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+        <div
+          v-motion="ctaMotion"
+          class="flex flex-col sm:flex-row gap-4 justify-center pt-8"
+        >
           <UButton
             to="#projects"
             size="lg"
@@ -80,11 +81,10 @@ defineOptions({ name: "AppHero" })
 
 const { contactInfo } = useContact()
 
-// Use our new composables
 const { fadeInUp } = useAnimation()
 
-// Apply optimized animation
-const animation = fadeInUp(600, 0)
+// Motion only below LCP (headline stays immediately visible)
+const ctaMotion = fadeInUp(400, 80)
 </script>
 
 <style scoped>
