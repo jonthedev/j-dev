@@ -10,8 +10,11 @@ export function useInView() {
       (entries) => {
         const entry = entries[0]
         if (entry?.isIntersecting) {
-          isVisible.value = true
-          observer.disconnect()
+          // Defer state update to avoid forced reflow during layout
+          requestIdleCallback(() => {
+            isVisible.value = true
+            observer.disconnect()
+          })
         }
       },
       { threshold: 0.1 }

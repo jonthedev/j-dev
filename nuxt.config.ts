@@ -19,6 +19,18 @@ export default defineNuxtConfig({
 
   srcDir: "app",
 
+  // Defer link prefetching until user interaction to reduce initial network contention
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        prefetchOn: {
+          interaction: true,
+          visibility: false
+        }
+      }
+    }
+  },
+
   // Prerender disabled temporarily due to Nuxt 4 client.precomputed.mjs bug (nuxt/nuxt#33579)
   // routeRules: {
   //   '/': { prerender: true }
@@ -40,14 +52,16 @@ export default defineNuxtConfig({
 
   fonts: {
     defaults: {
-      subsets: ["latin"]
+      subsets: ["latin"],
+      preload: true
     },
     families: [
       {
         name: "Kanit",
         provider: "google",
         weights: ["400", "600"],
-        display: "swap"
+        display: "swap",
+        preload: true
       }
     ]
   },

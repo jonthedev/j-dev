@@ -8,19 +8,19 @@
         <!-- Frontend portfolio: Lazy* code-splits below-the-fold to cut main-thread work -->
         <template v-if="portfolioMode.mode.value === 'frontend'">
           <Hero />
-          <LazyTechStack />
-          <LazyAbout />
-          <LazyClients />
-          <LazyProjects />
-          <LazyContact />
+          <LazyTechStack hydrate-on-visible />
+          <LazyAbout hydrate-on-visible />
+          <LazyClients hydrate-on-visible />
+          <LazyProjects hydrate-on-visible />
+          <LazyContact hydrate-on-visible />
         </template>
         <!-- Platform engineering view -->
         <template v-else>
           <PlatformHero />
-          <LazyPlatformAbout />
-          <LazyPlatformTechStack />
-          <LazyPlatformProjects />
-          <LazyContact />
+          <LazyPlatformAbout hydrate-on-visible />
+          <LazyPlatformTechStack hydrate-on-visible />
+          <LazyPlatformProjects hydrate-on-visible />
+          <LazyContact hydrate-on-visible />
         </template>
       </div>
     </Transition>
