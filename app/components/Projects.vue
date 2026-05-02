@@ -16,20 +16,26 @@
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <!-- Featured project: Thalex -->
+      <SharedProjectCard
+        :project="featuredProject"
+        :index="0"
+        class="md:col-span-2"
+      />
+
+      <!-- Past projects + architecture blueprint -->
+      <div class="md:col-span-2 grid md:grid-cols-2 gap-8">
         <SharedProjectCard
-          v-for="(project, index) in projects"
+          v-for="(project, index) in pastProjects"
           :key="project.id"
           :project="project"
           :index="index"
-          class="md:col-span-2"
         />
         <SharedArchitecturePlaceholderCard
           v-for="(placeholder, index) in architecturePlaceholders"
           :key="placeholder.id"
           :placeholder="placeholder"
-          :index="projects.length + index"
-          class="md:col-span-1"
+          :index="pastProjects.length + index"
         />
       </div>
 
@@ -81,7 +87,7 @@
 </template>
 
 <script setup lang="ts">
-import { projects, architecturePlaceholders } from "~/data/projects"
+import { featuredProject, pastProjects, architecturePlaceholders } from "~/data/projects"
 import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitecturePlaceholderCard.vue"
 
 defineOptions({ name: "ProjectsSection" })

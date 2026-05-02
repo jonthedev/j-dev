@@ -29,45 +29,46 @@ export interface ArchitecturePlaceholder {
   githubUrl?: string | null
 }
 
-export const projects: ProjectItem[] = [
-  {
-    id: "thalex",
-    img: "/project-tlx-light.png",
-    imgDark: "/project-tlx-dark.png",
-    url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
-    github: null,
-    title: "Thalex",
-    text: "Real-time derivatives trading dashboards. Options, futures, and perpetuals built with Vue and Nuxt.",
-    tech: [
-      {
-        id: "vue-thalex",
-        icon: "simple-icons:vuedotjs",
-        classname: "text-green-500"
-      },
-      {
-        id: "nuxt-thalex",
-        icon: "simple-icons:nuxtdotjs",
-        classname: "text-green-600"
-      },
-      {
-        id: "ts-thalex",
-        icon: "simple-icons:typescript",
-        classname: "text-blue-600"
-      },
-      {
-        id: "realtime-thalex",
-        icon: "lucide:activity",
-        classname: "text-cyan-600"
-      }
-    ]
-  },
+export const featuredProject: ProjectItem = {
+  id: "thalex",
+  img: "/project-tlx-light.png",
+  imgDark: "/project-tlx-dark.png",
+  url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
+  github: null,
+  title: "Thalex",
+  text: "Real-time derivatives trading dashboards. Options, futures, and perpetuals built with Vue and Nuxt.",
+  tech: [
+    {
+      id: "vue-thalex",
+      icon: "simple-icons:vuedotjs",
+      classname: "text-green-500"
+    },
+    {
+      id: "nuxt-thalex",
+      icon: "simple-icons:nuxtdotjs",
+      classname: "text-green-600"
+    },
+    {
+      id: "ts-thalex",
+      icon: "simple-icons:typescript",
+      classname: "text-blue-600"
+    },
+    {
+      id: "realtime-thalex",
+      icon: "lucide:activity",
+      classname: "text-cyan-600"
+    }
+  ]
+}
+
+export const pastProjects: ProjectItem[] = [
   {
     id: "anwb",
     img: "",
     url: "https://www.anwb.nl/verkeer",
     github: null,
-    title: "ANWB — anwb.nl/verkeer",
-    text: "Core engineer for the Dutch motoring association's traffic platform via iO consultancy. Won Website van het Jaar 2022. High-traffic React application with real-time traffic data, route planning, and live incident reporting.",
+    title: "ANWB",
+    text: "anwb.nl/verkeer — Dutch motoring association traffic platform. Website van het Jaar 2022. High-traffic React app with real-time data.",
     tech: [
       {
         id: "react-anwb",
@@ -91,8 +92,8 @@ export const projects: ProjectItem[] = [
     img: "",
     url: "https://www.nationalevacaturebank.nl",
     github: null,
-    title: "DPG Media — Nationale Vacaturebank",
-    text: "High-traffic job platform under DPG Media. Built a centralized Tailwind design system adopted across multiple national brands. Performance optimization and accessibility improvements.",
+    title: "DPG Media",
+    text: "Nationale Vacaturebank — centralized Tailwind design system adopted across multiple national brands.",
     tech: [
       {
         id: "react-dpg",
@@ -117,7 +118,7 @@ export const projects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
-    text: "Wealth management and banking platform via iO consultancy. Next.js frontend for a Dutch financial institution. Focus on design system consistency and code quality.",
+    text: "Wealth management platform via iO. Next.js frontend for a Dutch financial institution.",
     tech: [
       {
         id: "next-vlk",
