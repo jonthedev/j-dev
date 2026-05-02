@@ -149,7 +149,6 @@ export const architecturePlaceholders: ArchitecturePlaceholder[] = [
     id: "nestjs-system",
     title: "Technical Blueprint: Type-Safe Modular API",
     status: "inProgress",
-    badge: "Live Technical Demo",
     description:
       "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Active learning project — building toward production-ready patterns.",
     keyFeatures: [

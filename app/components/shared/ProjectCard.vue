@@ -1,7 +1,7 @@
 <template>
   <SharedReveal :delay="100 + index * 50">
     <UCard
-      class="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+      class="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full"
       :ui="{
         root: 'border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden'
       }"
