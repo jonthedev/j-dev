@@ -47,10 +47,10 @@
             </a>
             <div class="p-4 text-center border-r border-gray-100 dark:border-gray-800">
               <div class="text-2xl font-bold text-green-600 dark:text-green-400">
-                91+
+                95 / 90
               </div>
               <div class="text-[10px] uppercase tracking-widest text-gray-500 font-semibold">
-                Performance
+                Perf (D / M)
               </div>
             </div>
             <div class="p-4 text-center border-r border-gray-100 dark:border-gray-800">
