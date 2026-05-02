@@ -44,7 +44,12 @@ export default defineNuxtConfig({
       subsets: ["latin"]
     },
     families: [
-      { name: "Kanit", provider: "google", weights: ["400", "600"] }
+      {
+        name: "Kanit",
+        provider: "google",
+        weights: ["400", "600"],
+        display: "swap"
+      }
     ]
   },
 
