@@ -60,6 +60,81 @@ export const projects: ProjectItem[] = [
         classname: "text-cyan-600"
       }
     ]
+  },
+  {
+    id: "anwb",
+    img: "",
+    url: "https://www.anwb.nl/verkeer",
+    github: null,
+    title: "ANWB — anwb.nl/verkeer",
+    text: "Core engineer for the Dutch motoring association's traffic platform. Won Website van het Jaar 2022. High-traffic React application with real-time traffic data, route planning, and live incident reporting.",
+    tech: [
+      {
+        id: "react-anwb",
+        icon: "simple-icons:react",
+        classname: "text-cyan-400"
+      },
+      {
+        id: "ts-anwb",
+        icon: "simple-icons:typescript",
+        classname: "text-blue-600"
+      },
+      {
+        id: "tailwind-anwb",
+        icon: "simple-icons:tailwindcss",
+        classname: "text-cyan-400"
+      }
+    ]
+  },
+  {
+    id: "dpg-media",
+    img: "",
+    url: "https://www.nationalevacaturebank.nl",
+    github: null,
+    title: "DPG Media — Nationale Vacaturebank",
+    text: "High-traffic job platform under DPG Media. Built a centralized Tailwind design system adopted across multiple national brands. Performance optimization and accessibility improvements.",
+    tech: [
+      {
+        id: "react-dpg",
+        icon: "simple-icons:react",
+        classname: "text-cyan-400"
+      },
+      {
+        id: "ts-dpg",
+        icon: "simple-icons:typescript",
+        classname: "text-blue-600"
+      },
+      {
+        id: "tailwind-dpg",
+        icon: "simple-icons:tailwindcss",
+        classname: "text-cyan-400"
+      }
+    ]
+  },
+  {
+    id: "van-lanschot",
+    img: "",
+    url: "https://www.vanlanschotkempen.com",
+    github: null,
+    title: "Van Lanschot Kempen",
+    text: "Financial services platform at iO. Enterprise-grade frontend work for a wealth management and banking platform. Focus on design system consistency and code quality.",
+    tech: [
+      {
+        id: "react-vlk",
+        icon: "simple-icons:react",
+        classname: "text-cyan-400"
+      },
+      {
+        id: "ts-vlk",
+        icon: "simple-icons:typescript",
+        classname: "text-blue-600"
+      },
+      {
+        id: "tailwind-vlk",
+        icon: "simple-icons:tailwindcss",
+        classname: "text-cyan-400"
+      }
+    ]
   }
 ]
 

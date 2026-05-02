@@ -6,7 +6,10 @@
       root: 'border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden'
     }"
   >
-    <template #header>
+    <template
+      v-if="hasImage"
+      #header
+    >
       <div class="p-4">
         <div class="aspect-video overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-900">
           <img
@@ -18,6 +21,19 @@
             decoding="async"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           >
+        </div>
+      </div>
+    </template>
+
+    <template
+      v-else
+      #header
+    >
+      <div class="p-4 pb-0">
+        <div class="aspect-video overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center">
+          <span class="text-5xl font-bold text-gray-300 dark:text-gray-700">
+            {{ project.title.charAt(0) }}
+          </span>
         </div>
       </div>
     </template>
@@ -90,6 +106,8 @@ const projectImageSrc = computed(() => {
   if (isDark && props.project.imgDark) return props.project.imgDark
   return props.project.img
 })
+
+const hasImage = computed(() => !!props.project.img)
 
 const animation = computed(() =>
   staggeredAnimation(100, 50)(props.index)

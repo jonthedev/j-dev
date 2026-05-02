@@ -40,7 +40,7 @@ defineOptions({ name: "PlatformAbout" })
 
 const { setMode } = usePortfolioMode()
 
-function goToTechnicalBlueprint() {
+function _goToTechnicalBlueprint() {
   setMode("frontend")
   nextTick(() => {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
