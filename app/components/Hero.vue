@@ -25,7 +25,7 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Building high-performance applications with Vue 3, Nuxt 4, and TypeScript. Primarily Vue-first; React and Next.js from earlier enterprise roles.
+          Building high-performance applications with Vue 3, Nuxt 4, and TypeScript.
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"

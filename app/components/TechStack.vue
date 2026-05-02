@@ -20,12 +20,9 @@
           :delay="100"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center">
             Frontend (Core Expertise)
           </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            Interfaces that load fast and work for everyone.
-          </p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <SharedReveal
               v-for="(tech, index) in frontendTech"
@@ -74,12 +71,9 @@
           :delay="150"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center">
             Backend (Expanding)
           </h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">
-            APIs with clear contracts. Data that doesn't leak between domains. Actively building with NestJS and PostgreSQL — still in the lab phase.
-          </p>
           <div class="space-y-4">
             <SharedReveal
               v-for="(tech, index) in backendTech"
