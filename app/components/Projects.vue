@@ -16,21 +16,23 @@
         </p>
       </div>
 
-      <!-- Featured project: Thalex -->
-      <SharedProjectCard
-        :project="featuredProject"
-        :index="0"
-        class="md:col-span-2"
-      />
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Featured project: Thalex -->
+        <SharedProjectCard
+          :project="featuredProject"
+          :index="0"
+          class="md:col-span-2"
+        />
 
-      <!-- Past projects + architecture blueprint -->
-      <div class="md:col-span-2 grid md:grid-cols-2 gap-8">
+        <!-- Past projects -->
         <SharedProjectCard
           v-for="(project, index) in pastProjects"
           :key="project.id"
           :project="project"
           :index="index"
         />
+
+        <!-- Architecture blueprint -->
         <SharedArchitecturePlaceholderCard
           v-for="(placeholder, index) in architecturePlaceholders"
           :key="placeholder.id"
