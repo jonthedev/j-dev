@@ -10,7 +10,6 @@
           <Hero />
           <LazyTechStack hydrate-on-visible />
           <LazyAbout hydrate-on-visible />
-          <LazyClients hydrate-on-visible />
           <LazyProjects hydrate-on-visible />
           <LazyContact hydrate-on-visible />
         </template>

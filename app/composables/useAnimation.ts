@@ -45,7 +45,7 @@ export function useAnimation() {
   /**
    * Staggered animation for grid items with optimized delays
    * Optimized from 100-120ms increments to 50ms for smoother flow
-   * Used for: TechStack, Projects, Clients, etc.
+   * Used for: TechStack, Projects, etc.
    */
   const staggeredAnimation = (baseDelay = 150, increment = 50) => {
     return (index: number) => ({
@@ -132,7 +132,7 @@ export function useAnimation() {
     // Section content reveal
     sectionReveal: fadeInUp(600, 100),
 
-    // Grid items (projects, tech stack, clients)
+    // Grid items (projects, tech stack)
     gridItems: staggeredAnimation(150, 50),
 
     // Card hover effects
