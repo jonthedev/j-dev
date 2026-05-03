@@ -1,4 +1,6 @@
 <script setup>
+import { OG_IMAGE, SITE_DESCRIPTION, SITE_TITLE } from "~/data/siteMeta"
+
 const { app } = useRuntimeConfig()
 const base = app?.baseURL ?? "/"
 
@@ -13,19 +15,16 @@ useHead({
   }
 })
 
-const title
-  = "Jonathan Kaonga | Vue Frontend Engineer | Amsterdam"
-
-const description
-  = "Six years of frontend engineering across traffic, trading, media, and finance. Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. KVK registered, Amsterdam."
+const title = SITE_TITLE
+const description = SITE_DESCRIPTION
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: "https://j-dev.online/og-image.png",
-  twitterImage: "https://j-dev.online/og-image.png",
+  ogImage: OG_IMAGE,
+  twitterImage: OG_IMAGE,
   twitterCard: "summary_large_image"
 })
 </script>

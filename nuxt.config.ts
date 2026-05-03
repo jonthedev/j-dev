@@ -1,4 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import {
+  OG_IMAGE,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL
+} from "./app/data/siteMeta"
+
 export default defineNuxtConfig({
 
   modules: [
@@ -13,6 +20,29 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true
+  },
+
+  // Baked into generated index.html so crawlers see title/description without executing JS
+  // (ssr: false SPAs otherwise ship an empty shell → Google may show URL twice instead of a snippet)
+  app: {
+    head: {
+      title: SITE_TITLE,
+      htmlAttrs: { lang: "en" },
+      link: [{ rel: "canonical", href: `${SITE_URL}/` }],
+      meta: [
+        { name: "description", content: SITE_DESCRIPTION },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: `${SITE_URL}/` },
+        { property: "og:title", content: SITE_TITLE },
+        { property: "og:description", content: SITE_DESCRIPTION },
+        { property: "og:image", content: OG_IMAGE },
+        { property: "og:site_name", content: "JDev Online" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: SITE_TITLE },
+        { name: "twitter:description", content: SITE_DESCRIPTION },
+        { name: "twitter:image", content: OG_IMAGE }
+      ]
+    }
   },
 
   css: ["~/assets/css/main.css"],
