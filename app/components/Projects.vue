@@ -62,24 +62,12 @@
         </div>
       </SharedReveal>
 
-      <!-- AI & Platform plug: discover after seeing full frontend -->
+      <!-- Same strip as Tech Stack (triple labels on lg+) — no extra frame to avoid double borders -->
       <SharedReveal
         :delay="200"
         class="mt-12 text-center"
       >
-        <div class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/50 p-6">
-          <p class="text-gray-600 dark:text-gray-400 mb-4">
-            I'm building out AI and full-stack capabilities in my lab. Local LLMs, NestJS, PostgreSQL. Active development, not production services yet.
-          </p>
-          <UButton
-            variant="outline"
-            size="md"
-            icon="lucide:sparkles"
-            @click="portfolioMode.setMode('platform')"
-          >
-            See What I'm Building
-          </UButton>
-        </div>
+        <SharedBrandChannelBar triple-wide />
       </SharedReveal>
     </UContainer>
   </section>
@@ -90,6 +78,4 @@ import { featuredProject, pastProjects, architecturePlaceholders } from "~/data/
 import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitecturePlaceholderCard.vue"
 
 defineOptions({ name: "ProjectsSection" })
-
-const portfolioMode = usePortfolioMode()
 </script>

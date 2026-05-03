@@ -2,6 +2,9 @@
 
 export const SITE_URL = "https://j-dev.online" as const
 
+/** Display brand (Navbar, Footer, OG); keep in sync with social copy */
+export const SITE_BRAND = "JDev Online" as const
+
 export const SITE_TITLE = "Jonathan Kaonga | Vue Frontend Engineer | Amsterdam"
 
 export const SITE_DESCRIPTION

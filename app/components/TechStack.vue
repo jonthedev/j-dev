@@ -118,17 +118,11 @@
         </SharedReveal>
       </div>
 
-      <!-- Contract & Integration Pipeline -->
-      <SharedReveal
-        :delay="250"
-        class="text-center py-5 mb-12 rounded-lg border border-vue-200 dark:border-vue-800 bg-vue-50/50 dark:bg-vue-950/20"
-      >
-        <p class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400 mb-1">
-          Contract & Integration Pipeline
-        </p>
-        <span class="text-sm font-medium text-vue-800 dark:text-vue-200">
-          Currently building type-safe NestJS APIs. The goal: one codebase generates both backend contracts and Vue client types.
-        </span>
+      <SharedReveal :delay="220">
+        <SharedBrandChannelBar
+          triple-wide
+          class="mb-12"
+        />
       </SharedReveal>
 
       <!-- Strategic Tooling & Delivery -->
@@ -171,54 +165,6 @@
           </SharedReveal>
         </div>
       </div>
-
-      <!-- Development Philosophy -->
-      <SharedReveal
-        :delay="200"
-        class="mt-16 bg-vue-50 dark:bg-vue-950/30 dark:border-vue-800 border border-vue-200 rounded-xl p-8"
-      >
-        <h3 class="text-lg font-semibold text-vue-900 dark:text-vue-100 mb-4">
-          How I Build
-        </h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-vue-800 dark:text-vue-200">
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:zap"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>Performance</strong><br>
-              <span class="text-vue-700 dark:text-vue-300">Lighthouse scores are a baseline, not a target. I optimize for real network conditions.</span>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:puzzle"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>Composable Architecture</strong><br>
-              <span class="text-vue-700 dark:text-vue-300">Small components. Clear interfaces. Testable in isolation.</span>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <Icon
-              icon="lucide:shield-check"
-              width="1.25rem"
-              height="1.25rem"
-              class="text-vue-600 dark:text-vue-400 mt-0.5 shrink-0"
-            />
-            <div>
-              <strong>Testing</strong><br>
-              <span class="text-vue-700 dark:text-vue-300">Vitest for units. Playwright for E2E. Lighthouse in CI. Ship when it passes.</span>
-            </div>
-          </div>
-        </div>
-      </SharedReveal>
     </UContainer>
   </section>
 </template>
