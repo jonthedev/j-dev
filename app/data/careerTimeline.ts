@@ -2,6 +2,7 @@ export interface CareerTimelineItem {
   date: string
   title: string
   company: string
+  /** Industry / context — keep short; detailed work lives under Projects */
   description: string
   icon: string
 }
@@ -11,16 +12,14 @@ export const careerTimeline: CareerTimelineItem[] = [
     date: "Mar 2026 – Present",
     title: "Principal Frontend Engineer",
     company: "JDev Online",
-    description:
-      "Vue 3 & Nuxt for B2B clients. Claude + Ollama workflows for refactors and pipelines.",
+    description: "Independent ZZP · B2B frontend contracting",
     icon: "i-lucide-briefcase"
   },
   {
     date: "Feb 2025 – Feb 2026",
     title: "Frontend Engineer",
     company: "TLX Technology",
-    description:
-      "Trading UI with Vue/Nuxt, TradingView and D3, Playwright E2E for derivatives.",
+    description: "Finance · crypto derivatives exchange (Thalex)",
     icon: "i-lucide-chart-line"
   },
   {
@@ -28,7 +27,7 @@ export const careerTimeline: CareerTimelineItem[] = [
     title: "Frontend Engineer",
     company: "DPG Media",
     description:
-      "Next.js performance at national job-board scale and Tailwind design systems adopted across multiple brands.",
+      "Media & recruitment · B2C job platform (Nationale Vacaturebank)",
     icon: "i-lucide-newspaper"
   },
   {
@@ -36,22 +35,21 @@ export const careerTimeline: CareerTimelineItem[] = [
     title: "Frontend Consultant",
     company: "iO Tech Consultancy",
     description:
-      "Traffic Verkeer (Website van het Jaar 2022). Chakra UI library for Van Lanschot Kempen.",
+      "Digital consultancy · ANWB & Van Lanschot Kempen (banking)",
     icon: "i-lucide-users"
   },
   {
     date: "May 2021 – May 2022",
     title: "Freelance Frontend Engineer",
     company: "JDev Online",
-    description:
-      "React/GraphQL integrations and UI foundations for client projects.",
+    description: "ZZP · multi-client frontend delivery",
     icon: "i-lucide-laptop"
   },
   {
     date: "Mar 2020 – May 2021",
     title: "Frontend Engineer",
     company: "Technology Catalogue",
-    description: "Deployment matrix tooling for B2B energy clients.",
+    description: "Startup · B2B gas & energy sector (Delft)",
     icon: "i-lucide-code"
   }
 ]
