@@ -34,8 +34,7 @@ export const careerTimeline: CareerTimelineItem[] = [
     date: "May 2022 – May 2024",
     title: "Frontend Consultant",
     company: "iO Tech Consultancy",
-    description:
-      "Digital consultancy · ANWB & Van Lanschot Kempen (banking)",
+    description: "Digital consultancy · ANWB & Van Lanschot Kempen",
     icon: "i-lucide-users"
   },
   {
@@ -49,7 +48,7 @@ export const careerTimeline: CareerTimelineItem[] = [
     date: "Mar 2020 – May 2021",
     title: "Frontend Engineer",
     company: "Technology Catalogue",
-    description: "Startup · B2B gas & energy sector (Delft)",
+    description: "Startup · B2B gas & energy sector",
     icon: "i-lucide-code"
   }
 ]

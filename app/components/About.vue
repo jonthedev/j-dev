@@ -13,12 +13,24 @@
     <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
       <SharedReveal class="mb-16 text-center">
         <h2
-          class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
+          class="mb-6 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          Vue Frontend Engineer
+          About
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300">
-          Vue 3 & Nuxt 4.
+        <p
+          class="mb-8 flex justify-center font-normal"
+        >
+          <span
+            class="inline-flex items-baseline gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 dark:border-vue-800 dark:bg-vue-950/35"
+          >
+            <span class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300">6+</span>
+            <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">years · frontend</span>
+          </span>
+        </p>
+        <p
+          class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
+        >
+          Vue 3 and Nuxt 4 specialist. Prior years focused on React and Next.js.
         </p>
       </SharedReveal>
 
