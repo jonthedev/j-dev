@@ -31,7 +31,7 @@
           {{ placeholder.title }}
         </h3>
 
-        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-4">
           {{ placeholder.description }}
         </p>
 
@@ -100,10 +100,10 @@ defineProps<Props>()
 </script>
 
 <style scoped>
-.line-clamp-3 {
+.line-clamp-4 {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

@@ -36,7 +36,7 @@ export const featuredProject: ProjectItem = {
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
-  text: "Real-time derivatives trading dashboards handling live market data. Options, futures, and perpetuals built with Vue and Nuxt for professional traders. Introduced Playwright E2E testing and Maizzle email templates.",
+  text: "Real-time derivatives trading dashboards handling live market data with options, futures, and perpetuals for professional traders.",
   tech: [
     {
       id: "vue-thalex",
@@ -67,8 +67,8 @@ export const pastProjects: ProjectItem[] = [
     img: "/project-traffic-verkeer.png",
     url: "https://www.anwb.nl/verkeer",
     github: null,
-    title: "Traffic Verkeer",
-    text: "Market-leading traffic platform for millions of daily commuters. Won Website van het Jaar 2022. High-traffic Next.js app with real-time incident reporting and Cypress testing.",
+    title: "ANWB Traffic Verkeer",
+    text: "Market-leading traffic platform for millions of daily commuters. Won Website van het Jaar 2022.",
     tech: [
       {
         id: "next-anwb",
@@ -93,7 +93,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
-    text: "Nationale Vacaturebank, the country's largest job board with millions of monthly visits. Built a centralized Tailwind design system adopted across multiple national brands.",
+    text: "Nationale Vacaturebank, the Netherlands largest job board with millions of monthly visits.",
     tech: [
       {
         id: "next-dpg",
@@ -118,7 +118,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
-    text: "Secure, data-intensive wealth management platform for high-net-worth clients. Next.js and React frontend built via iO consultancy, featuring a cross-team Chakra UI library for the rebrand.",
+    text: "Secure, data-intensive wealth management platform for high-net-worth clients.",
     tech: [
       {
         id: "next-vlk",
@@ -150,7 +150,7 @@ export const architecturePlaceholders: ArchitecturePlaceholder[] = [
     title: "Technical Blueprint: Type-Safe Modular API",
     status: "inProgress",
     description:
-      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation. Active learning project building toward production-ready patterns.",
+      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation.",
     keyFeatures: [
       "Modular Domain Design (Clean Architecture)",
       "Contract-First API Documentation (Swagger/OpenAPI)",
