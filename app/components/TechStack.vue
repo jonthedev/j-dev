@@ -5,7 +5,9 @@
   >
     <UContainer>
       <SharedReveal class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+        >
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -20,7 +22,9 @@
           :delay="100"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center">
+          <h3
+            class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center"
+          >
             Frontend (Core Expertise)
           </h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -42,7 +46,9 @@
                   class="inline-block"
                 />
               </span>
-              <span class="text-xs font-medium text-gray-700 dark:text-gray-300 text-center">
+              <span
+                class="text-xs font-medium text-gray-700 dark:text-gray-300 text-center"
+              >
                 {{ tech.title }}
               </span>
               <span
@@ -71,7 +77,9 @@
           :delay="150"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center">
+          <h3
+            class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center"
+          >
             Backend (Expanding)
           </h3>
           <div class="space-y-4">
@@ -118,13 +126,6 @@
         </SharedReveal>
       </div>
 
-      <SharedReveal :delay="220">
-        <SharedBrandChannelBar
-          triple-wide
-          class="mb-12"
-        />
-      </SharedReveal>
-
       <!-- Strategic Tooling & Delivery -->
       <div>
         <SharedReveal
@@ -140,7 +141,9 @@
             :delay="150 + groupIndex * 60"
             class="rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
           >
-            <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">
+            <h4
+              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4"
+            >
               {{ group.title }}
             </h4>
             <div class="flex flex-wrap gap-4">
@@ -157,7 +160,9 @@
                     class="inline-block"
                   />
                 </span>
-                <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
+                <span
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
                   {{ item.title }}
                 </span>
               </div>
@@ -165,6 +170,12 @@
           </SharedReveal>
         </div>
       </div>
+      <SharedReveal :delay="220">
+        <SharedBrandChannelBar
+          triple-wide
+          class="mt-12"
+        />
+      </SharedReveal>
     </UContainer>
   </section>
 </template>
@@ -173,6 +184,12 @@
 import { Icon } from "@iconify/vue"
 import { techStack, strategicTooling } from "~/data/techStack"
 
-const frontendTech = computed(() => techStack.filter(item => item.category === "frontend" || item.category === "secondary"))
-const backendTech = computed(() => techStack.filter(item => item.category === "backend"))
+const frontendTech = computed(() =>
+  techStack.filter(
+    item => item.category === "frontend" || item.category === "secondary"
+  )
+)
+const backendTech = computed(() =>
+  techStack.filter(item => item.category === "backend")
+)
 </script>
