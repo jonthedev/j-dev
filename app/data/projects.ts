@@ -57,6 +57,21 @@ export const featuredProject: ProjectItem = {
       id: "realtime-thalex",
       icon: "lucide:activity",
       classname: "text-cyan-600"
+    },
+    {
+      id: "vitest-thalex",
+      icon: "simple-icons:vitest",
+      classname: "text-pink-500"
+    },
+    {
+      id: "pinia-thalex",
+      icon: "simple-icons:pinia",
+      classname: "text-yellow-500"
+    },
+    {
+      id: "playwright-thalex",
+      icon: "simple-icons:playwright",
+      classname: "text-purple-600"
     }
   ]
 }
@@ -84,6 +99,11 @@ export const pastProjects: ProjectItem[] = [
         id: "tailwind-anwb",
         icon: "simple-icons:tailwindcss",
         classname: "text-cyan-400"
+      },
+      {
+        id: "cypress-anwb",
+        icon: "simple-icons:cypress",
+        classname: "text-red-500"
       }
     ]
   },
@@ -139,6 +159,11 @@ export const pastProjects: ProjectItem[] = [
         id: "tailwind-vlk",
         icon: "simple-icons:tailwindcss",
         classname: "text-cyan-400"
+      },
+      {
+        id: "storybook-vlk",
+        icon: "simple-icons:storybook",
+        classname: "text-pink-500"
       }
     ]
   }
