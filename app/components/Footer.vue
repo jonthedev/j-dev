@@ -108,11 +108,5 @@ import { Icon } from "@iconify/vue"
 defineOptions({ name: "AppFooter" })
 
 const { contactInfo } = useContact()
-
-const quickLinks = [
-  { name: "About", href: "#about" },
-  { name: "Tech Stack", href: "#tech-stack" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" }
-]
+const { quickLinks } = useNavigation()
 </script>
