@@ -6,14 +6,14 @@ export function useNavigation() {
   // Main navigation links
   const navigationLinks = [
     {
-      name: "About",
-      href: "#about",
-      description: "Learn more about my background and expertise"
-    },
-    {
       name: "Tech Stack",
       href: "#tech-stack",
       description: "Frontend and backend technologies I work with"
+    },
+    {
+      name: "About",
+      href: "#about",
+      description: "Learn more about my background and expertise"
     },
     {
       name: "Projects",
