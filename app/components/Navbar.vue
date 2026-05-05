@@ -36,7 +36,7 @@
                 :aria-selected="portfolioTab === 'frontend'"
                 class="rounded-md px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
                 :class="portfolioTab === 'frontend'
-                  ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                  ? 'bg-vue-50 text-vue-700 border-vue-200 dark:bg-vue-950/50 dark:text-vue-400 dark:border-vue-800 shadow-sm'
                   : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
                 @click="portfolioTab = 'frontend'"
               >
@@ -49,7 +49,7 @@
                 :aria-selected="portfolioTab === 'platform'"
                 class="rounded-md px-3 py-1.5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
                 :class="portfolioTab === 'platform'
-                  ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                  ? 'bg-vue-50 text-vue-700 border-vue-200 dark:bg-vue-950/50 dark:text-vue-400 dark:border-vue-800 shadow-sm'
                   : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
                 @click="portfolioTab = 'platform'"
               >
@@ -88,7 +88,7 @@
               :aria-selected="portfolioTab === 'frontend'"
               class="rounded-md px-2.5 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
               :class="portfolioTab === 'frontend'
-                ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                ? 'bg-vue-50 text-vue-700 border-vue-200 dark:bg-vue-950/50 dark:text-vue-400 dark:border-vue-800 shadow-sm'
                 : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
               @click="portfolioTab = 'frontend'"
             >
@@ -101,7 +101,7 @@
               :aria-selected="portfolioTab === 'platform'"
               class="rounded-md px-2.5 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
               :class="portfolioTab === 'platform'
-                ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-950 dark:text-white'
+                ? 'bg-vue-50 text-vue-700 border-vue-200 dark:bg-vue-950/50 dark:text-vue-400 dark:border-vue-800 shadow-sm'
                 : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
               @click="portfolioTab = 'platform'"
             >

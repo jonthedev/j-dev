@@ -77,6 +77,29 @@
             </li>
           </ul>
 
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mt-8">
+            Your Advantage
+          </h3>
+          <ul class="list-none space-y-2 text-gray-700 dark:text-gray-300">
+            <li class="flex gap-2">
+              <span
+                class="text-vue-600 dark:text-vue-400 shrink-0"
+                aria-hidden="true"
+              >→</span>
+              <span><strong>Senior intuition cuts AI waste.</strong> 6+ years of architecture experience directs AI to exact solutions, avoiding hallucination loops and ensuring enterprise-grade security, performance, and scalability.</span>
+            </li>
+            <li class="flex gap-2">
+              <span
+                class="text-vue-600 dark:text-vue-400 shrink-0"
+                aria-hidden="true"
+              >→</span>
+              <span><strong>Local-first cost efficiency.</strong> AI homelab and optimized Cursor workflows use a fraction of the tokens less experienced developers require, reducing API costs and keeping client data secure locally. <button
+                class="text-vue-600 dark:text-vue-400 hover:underline font-medium"
+                @click="portfolioMode.setMode('platform')"
+              >Check out my lab →</button></span>
+            </li>
+          </ul>
+
           <!-- Compliance -->
           <div class="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-black">
             <h3 class="mb-3 flex items-center text-sm font-semibold text-gray-900 dark:text-white">
@@ -143,6 +166,8 @@ import type { TimelineItem } from "@nuxt/ui"
 import { careerTimeline } from "~/data/careerTimeline"
 
 defineOptions({ name: "AppAbout" })
+
+const portfolioMode = usePortfolioMode()
 
 const timelineItems = computed<TimelineItem[]>(() =>
   careerTimeline.map(entry => ({
