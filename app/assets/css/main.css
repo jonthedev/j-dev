@@ -28,4 +28,32 @@
   --color-green-800: #016538;
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
+
+  /* Lab brand purple (AI/experimental track) */
+  --color-lab-50: #faf5ff;
+  --color-lab-100: #f3e8ff;
+  --color-lab-200: #e9d5ff;
+  --color-lab-300: #d8b4fe;
+  --color-lab-400: #c084fc;
+  --color-lab-500: #a855f7;
+  --color-lab-600: #9333ea;
+  --color-lab-700: #7e22ce;
+  --color-lab-800: #6b21a8;
+  --color-lab-900: #581c87;
+  --color-lab-950: #3b0764;
+}
+
+/* Lab theme: override primary colors when data-theme="lab" is set */
+[data-theme="lab"] {
+  --color-vue-50: var(--color-lab-50);
+  --color-vue-100: var(--color-lab-100);
+  --color-vue-200: var(--color-lab-200);
+  --color-vue-300: var(--color-lab-300);
+  --color-vue-400: var(--color-lab-400);
+  --color-vue-500: var(--color-lab-500);
+  --color-vue-600: var(--color-lab-600);
+  --color-vue-700: var(--color-lab-700);
+  --color-vue-800: var(--color-lab-800);
+  --color-vue-900: var(--color-lab-900);
+  --color-vue-950: var(--color-lab-950);
 }
