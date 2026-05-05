@@ -19,7 +19,12 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Frontend-first (Nuxt 4) with a lab track for AI workflows, backend experiments, and R&D. Hybrid setup: local LLMs for sensitive code, Claude for reasoning and research.
+          AI workflows, backend/frontend experiments, and R&D.
+        </p>
+        <p
+          class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4"
+        >
+          Hybrid setup: local LLMs for sensitive code, Claude for reasoning and research.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
