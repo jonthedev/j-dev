@@ -1,6 +1,6 @@
-# JDev Online · Portfolio
+# JDev Online · AI Product Engineer
 
-Personal portfolio and freelance frontend engineer site — **Vue & Nuxt** focused, with a hint of AI platform engineering. Built with Nuxt 4, Nuxt UI, and TypeScript.
+Personal portfolio and freelance site — **AI Product Engineer** focused on Nuxt 4, Vue ecosystem, and experimental lab work. Built with Nuxt 4, Nuxt UI, and TypeScript.
 
 **Live:** [j-dev.online](https://j-dev.online)
 
@@ -55,13 +55,17 @@ Open [http://localhost:3000](http://localhost:3000).
 ```
 app/
 ├── app.vue           # Root layout, SEO, favicon
-├── assets/css/       # Global styles (Tailwind, Vue theme)
-├── components/       # Vue components (Hero, About, Projects, Contact, etc.)
-├── data/             # Static content (projects, techStack, clients)
+├── assets/css/       # Global styles (Vue green + Lab yellow themes)
+├── components/
+│   ├── platform/     # Lab view components (AI workflows, backend experiments)
+│   └── shared/       # Reusable UI components
+├── composables/       # Portfolio mode toggle, icons, contact info
+├── data/             # Static content (projects, techStack, careerTimeline)
 ├── layouts/
 │   └── default.vue   # Navbar + main + Footer
-└── pages/
-    └── index.vue     # Home (single-page sections)
+├── pages/
+│   └── index.vue     # Home (Portfolio / Lab view toggle)
+└── plugins/          # Theme switcher (Vue green ↔ Lab yellow)
 
 public/               # Static assets (favicon, images, _redirects)
 nuxt.config.ts        # Nuxt config (srcDir: app, static preset)
@@ -69,6 +73,19 @@ netlify.toml          # Netlify build + publish + SPA redirect
 ```
 
 Content (projects, tech stack, clients) lives in `app/data/`
+
+---
+
+## Dual Portfolio Views
+
+Switch between views using the **Portfolio / Lab** tab in the navbar:
+
+- **Portfolio:** Frontend-first Vue/Nuxt work, client projects, and case studies
+- **Lab:** Experimental track for AI workflows, NestJS/PostgreSQL backend, and R&D
+
+Each view has its own color theme:
+- Portfolio: Vue green (`#42b883`)
+- Lab: Hazard yellow for R&D and experimentation
 
 ---
 
