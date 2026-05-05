@@ -29,18 +29,18 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 
-  /* Lab brand purple (AI/experimental track) */
-  --color-lab-50: #faf5ff;
-  --color-lab-100: #f3e8ff;
-  --color-lab-200: #e9d5ff;
-  --color-lab-300: #d8b4fe;
-  --color-lab-400: #c084fc;
-  --color-lab-500: #a855f7;
-  --color-lab-600: #9333ea;
-  --color-lab-700: #7e22ce;
-  --color-lab-800: #6b21a8;
-  --color-lab-900: #581c87;
-  --color-lab-950: #3b0764;
+  /* Lab brand yellow (AI/experimental track) */
+  --color-lab-50: #fefce8;
+  --color-lab-100: #fef9c3;
+  --color-lab-200: #fef08a;
+  --color-lab-300: #fde047;
+  --color-lab-400: #facc15;
+  --color-lab-500: #eab308;
+  --color-lab-600: #ca8a04;
+  --color-lab-700: #a16207;
+  --color-lab-800: #854d0e;
+  --color-lab-900: #713f12;
+  --color-lab-950: #422006;
 }
 
 /* Lab theme: override primary colors when data-theme="lab" is set */
