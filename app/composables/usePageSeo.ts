@@ -3,7 +3,7 @@
  * Consolidates 7+ useHead patterns throughout the application
  */
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
-  const baseTitle = "Jonathan Kaonga | Vue & React Frontend Engineer"
+  const baseTitle = "Jonathan Kaonga | AI Product Engineer | Vue & Nuxt 4"
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : "https://j-dev.online")
@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "Six years of frontend engineering. React for five years, now building exclusively with Vue 3 and Nuxt 4. ANWB, Thalex, DPG Media. Based in Amsterdam.",
+    "AI Product Engineer building high-performance Vue & Nuxt 4 products with agentic workflows and a hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research. Six years shipping production systems across traffic, trading, media, and finance.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "Six years of frontend engineering. Five years with React, now Vue 3 and Nuxt 4. Building toward full-stack with NestJS and PostgreSQL.",
+    "Frontend-first AI Product Engineer working in Vue & Nuxt 4 with TypeScript. Agentic workflows and a hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -111,7 +111,7 @@ export const seoPresets = {
   // Platform (AI) page
   platform: () => usePageSeo(
     "AI & Platform Engineering",
-    "My lab environment. Local AI workflows, NestJS, PostgreSQL. Working through Unlearn.dev courses. Not production services yet.",
+    "My lab environment for AI workflows and backend foundations. Hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research. NestJS and PostgreSQL are in development.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )

@@ -12,14 +12,14 @@
       <SharedReveal class="space-y-8">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
           <span class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
-            AI-Augmented Development
+            AI Product Engineer
           </span>
         </h1>
 
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Local LLMs, agentic refactors, and type-safe backend patterns. Active development, not production services.
+          Frontend-first (Nuxt 4) with a lab track in AI workflows and type-safe backend systems. Hybrid setup: local LLMs for sensitive code, Claude for reasoning and research.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">

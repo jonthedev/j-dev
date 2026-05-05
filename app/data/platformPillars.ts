@@ -19,8 +19,8 @@ export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:shield",
     headline: "Private Development",
-    body: "I run Ollama locally. Code doesn't leave my machines. This isn't a service I sell yet. It's how I build. Working through Unlearn.dev courses on workflows, RAG, and AI testing. The infrastructure path is: local Ollama now, private GPU node later via Proxmox.",
-    metric: "0% Cloud Exposure",
+    body: "Local-first workflow for code-sensitive work, with Claude used selectively for reasoning and research. This isn't a service I sell yet. It's how I build. Working through Unlearn.dev courses on workflows, RAG, and AI testing. The infrastructure path is: local Ollama now, private GPU node later via Proxmox.",
+    metric: "Local-first, hybrid AI",
     tags: ["Ollama", "Proxmox", "Privacy"]
   }
 ]

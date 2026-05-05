@@ -16,7 +16,7 @@
                   Case Study: React to Nuxt 4 Migration
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  My own portfolio site. Migrated from React to Nuxt 4 using AI tools in my development workflow. Code stayed local the entire time. This is the approach I'm building toward for client projects.
+                  My own portfolio site. Migrated from React to Nuxt 4 using AI tools in my development workflow. Sensitive code stayed local; Claude supported reasoning and research. This is the approach I'm building toward for client projects.
                 </p>
               </div>
               <div class="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 rounded-lg border border-green-100 dark:border-green-800/30 shrink-0">
@@ -103,10 +103,10 @@
                 />
                 <div>
                   <div class="text-gray-900 dark:text-white font-bold text-sm">
-                    Local-Only Workflow
+                    Hybrid Privacy Workflow
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    Ollama ran locally. No source code was sent to external AI services at any point.
+                    Local LLMs handled sensitive code paths; Claude was used selectively for reasoning and research.
                   </div>
                 </div>
               </div>

@@ -47,10 +47,10 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Vue & React Frontend Engineer",
+    title: "AI Product Engineer",
     experience: "6+ years",
     specialization:
-      "Vue 3, Nuxt 4, TypeScript, Tailwind CSS. Previously React. Expanding into NestJS and PostgreSQL.",
+      "Nuxt 4, TypeScript, Tailwind CSS, and privacy-first AI workflows (local LLM orchestration + secure RAG patterns). Previously React. Expanding into NestJS and PostgreSQL.",
     services: [
       "Vue 3 and Nuxt 4 application development",
       "Legacy frontend migration to modern frameworks",

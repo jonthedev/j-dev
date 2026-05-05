@@ -12,12 +12,13 @@
     <div
       class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
     >
-      <!-- No motion on LCP (h1): initial opacity must stay 1 for Lighthouse LCP -->
       <div class="space-y-8">
         <!-- Main headline: professional title -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
-            Vue Frontend Engineer
+          <span
+            class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
+          >
+            AI Product Engineer
           </span>
         </h1>
 
@@ -25,7 +26,13 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          Building high-performance applications with Vue 3, Nuxt 4, and TypeScript.
+          <span class="block">
+            Frontend-first product engineering with Nuxt 4 and Agentic AI.
+          </span>
+          <span class="block">
+            I build secure, intelligence-driven products with a hybrid workflow:
+            local LLMs for sensitive code, Claude for reasoning and research.
+          </span>
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
@@ -84,8 +91,7 @@ const { contactInfo } = useContact()
 
 <style scoped>
 .hero-grid {
-  background-image:
-    linear-gradient(to right, currentColor 1px, transparent 1px),
+  background-image: linear-gradient(to right, currentColor 1px, transparent 1px),
     linear-gradient(to bottom, currentColor 1px, transparent 1px);
   background-size: 40px 40px;
 }
