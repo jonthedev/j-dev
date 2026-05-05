@@ -53,7 +53,7 @@
                   : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
                 @click="portfolioTab = 'platform'"
               >
-                AI
+                Lab
               </button>
             </div>
             <!-- Theme Toggle -->
@@ -105,7 +105,7 @@
                 : 'text-gray-800 hover:bg-gray-200/80 dark:text-gray-100 dark:hover:bg-gray-700/80'"
               @click="portfolioTab = 'platform'"
             >
-              AI
+              Lab
             </button>
           </div>
           <!-- Theme Toggle -->

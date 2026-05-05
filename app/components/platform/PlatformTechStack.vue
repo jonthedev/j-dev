@@ -3,7 +3,7 @@
     id="tech-stack"
     class="py-20 bg-white dark:bg-black relative overflow-hidden"
   >
-    <!-- Background: dot grid (matches AI hero) -->
+    <!-- Background: dot grid (matches Lab hero) -->
     <div
       class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.06] dark:opacity-[0.09]"
       aria-hidden="true"
@@ -18,18 +18,18 @@
             The Lab Stack
           </h2>
           <p class="text-gray-600 dark:text-gray-300">
-            Claude Code for reasoning. Local Ollama for code. NestJS and PostgreSQL for the backend.
+            Evolving toolkit for AI workflows, backend experiments, and R&D. Currently exploring Claude, Ollama, NestJS, and PostgreSQL.
           </p>
         </div>
 
-        <!-- Current Local AI Stack + Infrastructure Roadmap: side by side on desktop, stacked on mobile -->
+        <!-- Current Local Lab Stack + Infrastructure Roadmap: side by side on desktop, stacked on mobile -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <!-- Current Local AI Stack -->
+          <!-- Current Local Lab Stack -->
           <div
             class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)] text-left md:text-center"
           >
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-6">
-              Current Local AI Stack
+              Current Local Lab Stack
             </h3>
             <ul class="space-y-3 text-gray-700 dark:text-gray-300 md:flex md:flex-col md:items-center md:space-y-3">
               <li

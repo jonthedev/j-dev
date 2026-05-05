@@ -6,7 +6,7 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <SharedReveal>
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          What I'm Building
+          What I'm Building in the Lab
         </h2>
         <ul class="space-y-4 text-gray-700 dark:text-gray-300">
           <li class="flex gap-3">
