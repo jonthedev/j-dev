@@ -28,14 +28,6 @@
           :project="project"
           :index="index"
         />
-
-        <!-- Architecture blueprint -->
-        <SharedArchitecturePlaceholderCard
-          v-for="(placeholder, index) in architecturePlaceholders"
-          :key="placeholder.id"
-          :placeholder="placeholder"
-          :index="pastProjects.length + index"
-        />
       </div>
 
       <!-- Call to action -->
