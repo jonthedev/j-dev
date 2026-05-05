@@ -164,9 +164,18 @@
         class="mt-8"
       >
         <div
-          class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
+          class="border-dashed border-amber-200 dark:border-amber-800/60 bg-amber-50/30 dark:bg-amber-950/20 hover:border-amber-300 dark:hover:border-amber-700/60 transition-all duration-300 hover:shadow-xl overflow-hidden rounded-xl relative"
         >
-          <div class="p-6 lg:p-8">
+          <!-- Blueprint grid background -->
+          <div
+            class="absolute inset-0 opacity-[0.07] dark:opacity-[0.12]"
+            aria-hidden="true"
+          >
+            <div class="absolute inset-0 blueprint-grid" />
+          </div>
+
+          <!-- Text content with background layer -->
+          <div class="relative z-10 rounded-xl border border-amber-200 dark:border-amber-800 bg-amber-50/40 dark:bg-amber-950/40 p-6 lg:p-8">
             <div class="flex items-center gap-2 mb-4">
               <span
                 class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-lab-50 text-lab-700 dark:bg-lab-950/50 dark:text-lab-400 border border-lab-200 dark:border-lab-800"
@@ -174,10 +183,10 @@
                 In Progress
               </span>
               <h2 class="font-bold text-gray-900 dark:text-white text-2xl">
-                Technical Blueprint: Type-Safe Modular API
+                Type-Safe Modular API
               </h2>
             </div>
-            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
               Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation.
             </p>
             <div class="grid md:grid-cols-2 gap-4 mb-6">
@@ -188,7 +197,7 @@
               >
                 <Icon
                   icon="lucide:check"
-                  class="text-lab-600 dark:text-lab-400 w-4 h-4 shrink-0"
+                  class="text-amber-500 dark:text-amber-400 w-4 h-4 shrink-0"
                 />
                 {{ feature }}
               </div>
@@ -215,3 +224,12 @@ defineOptions({ name: "PlatformProjects" })
 const blueprint = computed(() => architecturePlaceholders[0])
 const blueprintFeatures = computed(() => blueprint.value?.keyFeatures ?? [])
 </script>
+
+<style scoped>
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
+    linear-gradient(to bottom, currentColor 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+</style>
