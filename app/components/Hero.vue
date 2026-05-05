@@ -22,7 +22,7 @@
           </span>
         </h1>
 
-        <!-- Subheader (fragments) — Web portfolio -->
+        <!-- Subheader -->
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
@@ -30,8 +30,7 @@
             Frontend-first product engineering with Nuxt 4 and Agentic AI.
           </span>
           <span class="block">
-            I build secure, intelligence-driven products with a hybrid workflow:
-            local LLMs for sensitive code, Claude for reasoning and research.
+            Hybrid workflow: local LLMs for sensitive code, Claude for reasoning.
           </span>
         </p>
         <p
@@ -39,35 +38,9 @@
         >
           Amsterdam-based. KVK registered. Remote within CET.
         </p>
-
-        <SharedReveal
-          :delay="80"
-          class="flex flex-col sm:flex-row gap-4 justify-center pt-8"
-        >
-          <UButton
-            to="#projects"
-            size="lg"
-            color="primary"
-            icon="lucide:arrow-right"
-            class="shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            View Case Studies
-          </UButton>
-
-          <UButton
-            :to="contactInfo.bookingUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            size="lg"
-            variant="outline"
-            color="neutral"
-            icon="lucide:calendar"
-          >
-            Book a Call
-          </UButton>
-        </SharedReveal>
       </div>
     </div>
+
     <div
       class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
     >
@@ -85,8 +58,6 @@
 import { Icon } from "@iconify/vue"
 
 defineOptions({ name: "AppHero" })
-
-const { contactInfo } = useContact()
 </script>
 
 <style scoped>
