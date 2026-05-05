@@ -52,8 +52,7 @@
 </template>
 
 <script setup lang="ts">
-import { featuredProject, pastProjects, architecturePlaceholders } from "~/data/projects"
-import SharedArchitecturePlaceholderCard from "~/components/shared/ArchitecturePlaceholderCard.vue"
+import { featuredProject, pastProjects } from "~/data/projects"
 
 defineOptions({ name: "ProjectsSection" })
 </script>

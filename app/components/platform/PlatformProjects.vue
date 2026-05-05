@@ -5,6 +5,7 @@
   >
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <SharedReveal>
+        <!-- Case Study: React to Nuxt 4 Migration -->
         <div
           class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
         >
@@ -156,12 +157,61 @@
           </div>
         </div>
       </SharedReveal>
+
+      <!-- Technical Blueprint -->
+      <SharedReveal
+        :delay="100"
+        class="mt-8"
+      >
+        <div
+          class="bg-white dark:bg-gray-900 dark:border-gray-800 border border-gray-200 rounded-xl overflow-hidden shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
+        >
+          <div class="p-6 lg:p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-lab-50 text-lab-700 dark:bg-lab-950/50 dark:text-lab-400 border border-lab-200 dark:border-lab-800"
+              >
+                In Progress
+              </span>
+              <h2 class="font-bold text-gray-900 dark:text-white text-2xl">
+                Technical Blueprint: Type-Safe Modular API
+              </h2>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+              Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation.
+            </p>
+            <div class="grid md:grid-cols-2 gap-4 mb-6">
+              <div
+                v-for="feature in blueprintFeatures"
+                :key="feature"
+                class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <Icon
+                  icon="lucide:check"
+                  class="text-lab-600 dark:text-lab-400 w-4 h-4 shrink-0"
+                />
+                {{ feature }}
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">NESTJS</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">PRISMA</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">POSTGRESQL</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-[10px] font-mono rounded">SWAGGER</span>
+            </div>
+          </div>
+        </div>
+      </SharedReveal>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
+import { architecturePlaceholders } from "~/data/projects"
 
 defineOptions({ name: "PlatformProjects" })
+
+const blueprint = computed(() => architecturePlaceholders[0])
+const blueprintFeatures = computed(() => blueprint.value?.keyFeatures ?? [])
 </script>
