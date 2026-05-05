@@ -21,7 +21,7 @@
           class="mb-8 flex justify-center font-normal"
         >
           <span
-            class="inline-flex items-baseline gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 dark:border-vue-800 dark:bg-vue-950/35"
+            class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 dark:border-vue-800 dark:bg-vue-950/35"
           >
             <span class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300">6+</span>
             <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">years · frontend-first</span>

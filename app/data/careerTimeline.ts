@@ -17,14 +17,14 @@ export const careerTimeline: CareerTimelineItem[] = [
   },
   {
     date: "Feb 2025 – Feb 2026",
-    title: "Frontend Engineer",
+    title: "Senior Frontend Engineer",
     company: "TLX Technology",
     description: "Finance · crypto derivatives exchange (Thalex)",
     icon: "i-lucide-chart-line"
   },
   {
     date: "Aug 2024 – Feb 2025",
-    title: "Frontend Engineer",
+    title: "Medior Frontend Engineer",
     company: "DPG Media",
     description:
       "Media & recruitment · B2C job platform (Nationale Vacaturebank)",

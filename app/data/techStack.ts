@@ -185,22 +185,19 @@ export interface StrategicToolingGroup {
 
 export const strategicTooling: StrategicToolingGroup[] = [
   {
-    title: "Cloud & Infrastructure",
+    title: "CI/CD",
     items: [
-      { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-600" }
+      { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-600" },
+      { id: "github", title: "GitHub", icon: "simple-icons:github", iconClass: "text-gray-800 dark:text-white" },
+      { id: "gitlab", title: "GitLab", icon: "simple-icons:gitlab", iconClass: "text-orange-600" },
+      { id: "jenkins", title: "Jenkins", icon: "simple-icons:jenkins", iconClass: "text-gray-700 dark:text-gray-300" }
     ]
   },
   {
-    title: "Quality & Performance",
+    title: "Auditing",
     items: [
       { id: "lighthouse", title: "Google Lighthouse (performance audits)", icon: "lucide:gauge", iconClass: "text-blue-600" },
       { id: "wcag", title: "WCAG (accessibility standards)", icon: "lucide:accessibility", iconClass: "text-emerald-600" }
-    ]
-  },
-  {
-    title: "Project Management",
-    items: [
-      { id: "jira", title: "Jira", icon: "simple-icons:jira", iconClass: "text-blue-600" }
     ]
   }
 ]

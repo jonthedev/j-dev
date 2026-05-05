@@ -126,33 +126,33 @@
         </SharedReveal>
       </div>
 
-      <!-- Strategic Tooling & Delivery -->
+      <!-- Strategic DevOps & Quality Assurance -->
       <div>
         <SharedReveal
           :delay="100"
           class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
         >
-          Strategic Tooling
+          DevOps & Quality Assurance
         </SharedReveal>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="flex flex-col md:flex-row justify-center gap-8">
           <SharedReveal
             v-for="(group, groupIndex) in strategicTooling"
             :key="group.title"
             :delay="150 + groupIndex * 60"
-            class="rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
+            class="w-full md:max-w-sm rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
           >
             <h4
-              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4"
+              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4 text-center"
             >
               {{ group.title }}
             </h4>
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-wrap justify-center gap-6">
               <div
                 v-for="item in group.items"
                 :key="item.id"
-                class="flex items-center gap-2"
+                class="flex flex-col items-center text-center gap-2"
               >
-                <span :class="`inline-flex text-xl ${item.iconClass}`">
+                <span :class="`inline-flex text-2xl ${item.iconClass}`">
                   <Icon
                     :icon="item.icon"
                     width="1.25em"
@@ -161,7 +161,7 @@
                   />
                 </span>
                 <span
-                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                  class="text-xs font-semibold text-gray-700 dark:text-gray-300"
                 >
                   {{ item.title }}
                 </span>
