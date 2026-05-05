@@ -11,8 +11,8 @@
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <SharedReveal class="space-y-8">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300">
-            AI Product Engineer
+          <span class="text-transparent bg-clip-text bg-linear-to-r from-lab-600 to-lab-400 dark:from-lab-400 dark:to-lab-300">
+            The Lab
           </span>
         </h1>
 
@@ -24,7 +24,7 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4"
         >
-          Hybrid setup: local LLMs for sensitive code, Claude for reasoning and research.
+          Local LLMs for sensitive code, Claude for reasoning and research.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
