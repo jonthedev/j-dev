@@ -169,6 +169,12 @@ export const pastProjects: ProjectItem[] = [
   }
 ]
 
+/** Public asset paths for the JDev Online migration case study (PlatformProjects). */
+export const jdevOnlineCaseStudyScreenshots = {
+  whenThemeLight: "/jdev-online-dark.png",
+  whenThemeDark: "/jdev-online-light.png"
+} as const
+
 export const architecturePlaceholders: ArchitecturePlaceholder[] = [
   {
     id: "nestjs-system",

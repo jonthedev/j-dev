@@ -18,7 +18,7 @@
           <PlatformHero />
           <LazyPlatformAbout hydrate-on-visible />
           <LazyPlatformTechStack hydrate-on-visible />
-          <LazyPlatformProjects hydrate-on-visible />
+          <LazyPlatformProjects />
           <LazyContact hydrate-on-visible />
         </template>
       </div>
