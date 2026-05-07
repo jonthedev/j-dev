@@ -17,18 +17,6 @@
         >
           About
         </h2>
-        <p class="mb-8 flex justify-center font-normal">
-          <span
-            class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 dark:border-vue-800 dark:bg-vue-950/35"
-          >
-            <span class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300">
-              6+
-            </span>
-            <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">
-              years · frontend-first
-            </span>
-          </span>
-        </p>
         <p
           class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
@@ -43,6 +31,26 @@
           direction="left"
           class="space-y-6"
         >
+          <div class="flex items-center justify-center gap-4">
+            <img
+              src="/jdk-portfolio-comp.webp"
+              alt="Jonathan Kaonga"
+              width="144"
+              height="144"
+              loading="lazy"
+              class="h-28 w-28 rounded-full object-cover ring-2 ring-gray-200 shadow-sm dark:ring-gray-800"
+            >
+            <span
+              class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 font-normal dark:border-vue-800 dark:bg-vue-950/35"
+            >
+              <span class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300">
+                6+
+              </span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">
+                years · frontend-first
+              </span>
+            </span>
+          </div>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
             Your Advantage
           </h3>
