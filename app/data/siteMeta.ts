@@ -8,7 +8,7 @@ export const SITE_BRAND = "JDev Online" as const
 export const SITE_TITLE = "Jonathan Kaonga | British AI Product Engineer | Nuxt 4 | Amsterdam"
 
 export const SITE_DESCRIPTION
-  = "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI workflows: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. KVK registered, IR35 compliant. Six years in traffic, trading, media, finance."
+  = "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI workflows: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. KVK registered, Outside IR35. Six years in traffic, trading, media, finance."
 
 export const PLATFORM_TITLE
   = "Jonathan Kaonga | Lab: AI Workflows, NestJS, PostgreSQL (In Development)"

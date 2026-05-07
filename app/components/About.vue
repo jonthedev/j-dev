@@ -125,7 +125,7 @@
                   class="shrink-0 text-emerald-600 dark:text-emerald-400"
                   size="0.75rem"
                 />
-                Outside IR35 Compliant
+                Outside IR35
               </li>
             </ul>
           </div>

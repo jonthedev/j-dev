@@ -56,7 +56,7 @@ export function useContact() {
       "Legacy frontend migration to modern frameworks",
       "Performance audits targeting Lighthouse 90+",
       "Design systems and component libraries",
-      "EU and UK contracting (KVK, IR35)",
+      "EU and UK contracting (KVK, Outside IR35)",
       "Technical architecture"
     ],
     techFocus: [

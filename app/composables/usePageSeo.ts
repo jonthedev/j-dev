@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI: local LLMs for ALL client code, Claude ONLY for reasoning. KVK registered, IR35 compliant. Six years in traffic, trading, media, finance.",
+    "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI: local LLMs for ALL client code, Claude ONLY for reasoning. KVK registered, Outside IR35. Six years in traffic, trading, media, finance.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "British AI Product Engineer based in Amsterdam. Nuxt 4 and Agentic AI ecosystems. GDPR-compliant: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. IR35 compliant, KVK registered.",
+    "British AI Product Engineer based in Amsterdam. Nuxt 4 and Agentic AI ecosystems. GDPR-compliant: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. Outside IR35, KVK registered.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),

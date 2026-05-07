@@ -36,7 +36,7 @@
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          British National. Amsterdam-based. KVK registered. Remote (UK/CET timezone). IR35 compliant.
+          British National. Amsterdam-based. KVK registered. Remote (UK/CET timezone). Outside IR35.
         </p>
       </div>
     </div>
