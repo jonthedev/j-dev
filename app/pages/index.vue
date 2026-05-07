@@ -8,17 +8,17 @@
         <!-- Frontend portfolio: Lazy* code-splits below-the-fold to cut main-thread work -->
         <template v-if="portfolioMode.mode.value === 'frontend'">
           <Hero />
-          <LazyTechStack hydrate-on-visible />
           <LazyAbout hydrate-on-visible />
           <LazyProjects hydrate-on-visible />
+          <LazyTechStack hydrate-on-visible />
           <LazyContact hydrate-on-visible />
         </template>
         <!-- Platform engineering view -->
         <template v-else>
           <PlatformHero />
           <LazyPlatformAbout hydrate-on-visible />
-          <LazyPlatformTechStack hydrate-on-visible />
           <LazyPlatformProjects />
+          <LazyPlatformTechStack hydrate-on-visible />
           <LazyContact hydrate-on-visible />
         </template>
       </div>
@@ -48,9 +48,7 @@ const pageDescription = computed(() =>
 
 useHead(() => ({
   title: pageTitle.value,
-  meta: [
-    { name: "description", content: pageDescription.value }
-  ]
+  meta: [{ name: "description", content: pageDescription.value }]
 }))
 </script>
 
