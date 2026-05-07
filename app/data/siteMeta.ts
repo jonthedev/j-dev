@@ -11,9 +11,9 @@ export const SITE_DESCRIPTION
   = "British AI Product Engineer delivering modern web systems from Amsterdam. Frontend-first across the Vue ecosystem (and beyond). Agentic AI workflows (local + cloud). KVK registered, Outside IR35. Six years in traffic, trading, media, finance."
 
 export const PLATFORM_TITLE
-  = "Jonathan Kaonga | Lab: AI Workflows & Platform Engineering"
+  = "Jonathan Kaonga | Lab: AI Workflows & Backend Architecture"
 
 export const PLATFORM_DESCRIPTION
-  = "My lab for agentic workflows (local + cloud), platform engineering, backend architecture, and data design."
+  = "My lab for agentic workflows (local + cloud), reusable toolchains, RAG patterns, backend architecture, and data design."
 
 export const OG_IMAGE = `${SITE_URL}/og-image.png`
