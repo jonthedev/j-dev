@@ -10,7 +10,7 @@
             Get in Touch
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            British AI Product Engineer based in Amsterdam. Available for Vue and Nuxt contract work. Six years of frontend engineering across traffic, trading, media, and finance.
+            Available for EU/UK contract work. Amsterdam-based (ZZP). Remote-friendly (UK/CET). Outside IR35.
           </p>
           <div class="space-y-2 flex flex-col">
             <a
