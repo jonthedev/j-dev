@@ -11,19 +11,19 @@
         <ul class="space-y-4 text-gray-700 dark:text-gray-300">
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>GDPR-compliant AI workflows.</strong> Ollama runs locally for ALL client code (never sent to third parties). Claude is used ONLY for reasoning/research tasks — never for proprietary client work. Working through Unlearn.dev courses covering reusable workflows, RAG patterns, and AI-assisted testing.</span>
+            <span><strong>Agentic AI workflows (local + cloud).</strong> Practical systems for research, automation, and product delivery.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>NestJS and PostgreSQL.</strong> Building type-safe backend APIs with Prisma. Still in the lab phase, not yet part of client work.</span>
+            <span><strong>Backend architecture &amp; data.</strong> Type-safe APIs, data modeling, and reliable foundations for real products.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>RAG exploration.</strong> Understanding retrieval-augmented generation patterns. The goal is to eventually offer this as a service for clients with privacy requirements.</span>
+            <span><strong>RAG systems.</strong> Retrieval patterns for search, knowledge bases, and internal tools.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-vue-600 dark:text-vue-400 shrink-0 mt-0.5">•</span>
-            <span><strong>The Technical Blueprint.</strong> A modular NestJS API project on the Web portfolio side. It's the same architecture I'm learning toward for real RAG systems.</span>
+            <span><strong>Blueprints &amp; reuse.</strong> Modular architecture patterns I carry across projects.</span>
           </li>
         </ul>
       </SharedReveal>

@@ -50,25 +50,16 @@ export function useContact() {
     title: "AI Product Engineer",
     experience: "6+ years",
     specialization:
-       "Nuxt 4, TypeScript, Tailwind CSS, and GDPR-compliant AI workflows (local LLMs for ALL client code, Claude ONLY for reasoning tasks). Previously React. Expanding into NestJS and PostgreSQL.",
+       "Frontend-first product engineering in the Vue ecosystem (and beyond), with TypeScript and a pragmatic, agentic workflow (local + cloud). Previously React; broad full-stack foundation.",
     services: [
-      "Vue 3 and Nuxt 4 application development",
+      "Vue ecosystem application development",
       "Legacy frontend migration to modern frameworks",
       "Performance audits targeting Lighthouse 90+",
       "Design systems and component libraries",
       "EU and UK contracting (KVK, Outside IR35)",
       "Technical architecture"
     ],
-    techFocus: [
-      "Vue 3",
-      "Nuxt 4",
-      "TypeScript",
-      "Tailwind CSS",
-      "Pinia",
-      "Playwright",
-      "NestJS (learning)",
-      "PostgreSQL (learning)"
-    ]
+    techFocus: ["Vue ecosystem", "TypeScript", "Testing", "Performance", "Architecture"]
   }
 
   // Form validation rules

@@ -1,5 +1,7 @@
 <template>
-  <section class="min-h-screen flex items-center justify-center pb-20 bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden">
+  <section
+    class="min-h-screen flex items-center justify-center pb-20 bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden"
+  >
     <!-- Background: grid of circles, theme-aware -->
     <div
       class="absolute inset-0 text-gray-900 dark:text-gray-200 opacity-[0.07] dark:opacity-[0.1]"
@@ -8,10 +10,14 @@
       <div class="absolute inset-0 platform-hero-dots" />
     </div>
 
-    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div
+      class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+    >
       <SharedReveal class="space-y-8">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
-          <span class="text-transparent bg-clip-text bg-linear-to-r from-lab-600 to-lab-400 dark:from-lab-400 dark:to-lab-300">
+          <span
+            class="text-transparent bg-clip-text bg-linear-to-r from-lab-600 to-lab-400 dark:from-lab-400 dark:to-lab-300"
+          >
             The Lab
           </span>
         </h1>
@@ -19,31 +25,14 @@
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          AI workflows, backend/frontend experiments, and R&D.
+          Agentic AI workflows, RAG systems, and product architecture.
         </p>
-        <p
-          class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-4"
-        >
-          Local LLMs for sensitive code, Claude for reasoning and research.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-          <UButton
-            :to="contactInfo.bookingUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            size="lg"
-            color="primary"
-            icon="lucide:arrow-right"
-            class="shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            Get in Touch
-          </UButton>
-        </div>
       </SharedReveal>
     </div>
 
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+    >
       <Icon
         icon="lucide:chevron-down"
         width="2rem"
@@ -58,8 +47,6 @@
 import { Icon } from "@iconify/vue"
 
 defineOptions({ name: "PlatformHero" })
-
-const { contactInfo } = useContact()
 </script>
 
 <style scoped>

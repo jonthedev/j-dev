@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI: local LLMs for ALL client code, Claude ONLY for reasoning. KVK registered, Outside IR35. Six years in traffic, trading, media, finance.",
+    "British AI Product Engineer delivering modern web systems from Amsterdam. Agentic AI workflows (local + cloud). KVK registered, Outside IR35. Six years in traffic, trading, media, finance.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "British AI Product Engineer based in Amsterdam. Nuxt 4 and Agentic AI ecosystems. GDPR-compliant: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. Outside IR35, KVK registered.",
+    "British AI Product Engineer based in Amsterdam. Frontend-first delivery with an agentic workflow (local + cloud). Outside IR35, KVK registered.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -95,7 +95,7 @@ export const seoPresets = {
   // Tech Stack page
   techStack: () => usePageSeo(
     "Tech Stack",
-    "Vue 3, Nuxt 4, TypeScript. NestJS and PostgreSQL in active development. Tools used in production and in the lab.",
+    "A pragmatic stack for shipping modern web products: frontend systems, backend architecture, testing, and DevOps tooling.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#tech-stack"
   ),
@@ -103,7 +103,7 @@ export const seoPresets = {
   // Contact page
   contact: () => usePageSeo(
     "Contact",
-    "Available for Vue and Nuxt contract work. KVK registered in Amsterdam.",
+    "Available for frontend contract work. KVK registered in Amsterdam.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#contact"
   ),
@@ -111,7 +111,7 @@ export const seoPresets = {
   // Platform (AI) page
   platform: () => usePageSeo(
     "AI & Platform Engineering",
-    "British AI Product Engineer's lab: GDPR-compliant workflows with local LLMs (Ollama) for ALL client code. Claude used ONLY for reasoning/research. NestJS and PostgreSQL expanding.",
+    "British AI Product Engineer's lab: agentic workflows (local + cloud), platform engineering, and pragmatic architecture patterns.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )

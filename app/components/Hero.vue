@@ -27,16 +27,21 @@
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
           <span class="block">
-            Frontend-first product engineering with Nuxt 4 and Agentic AI.
+            Frontend-first product engineering across modern frontend ecosystems.
           </span>
           <span class="block">
-            GDPR-compliant: Local LLMs for ALL client code, Claude ONLY for reasoning.
+            Agentic AI workflows (local + cloud).
           </span>
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          British National. Amsterdam-based. KVK registered. Remote (UK/CET timezone). Outside IR35.
+          British National. Amsterdam-based.
+        </p>
+        <p
+          class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+        >
+          ZZP (KVK registered). Remote (UK/CET timezone). Outside IR35.
         </p>
       </div>
     </div>

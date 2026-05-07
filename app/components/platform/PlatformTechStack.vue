@@ -18,7 +18,7 @@
             The Lab Stack
           </h2>
           <p class="text-gray-600 dark:text-gray-300">
-            Evolving toolkit for AI workflows, backend experiments, and R&D. Currently exploring Claude, Ollama, NestJS, and PostgreSQL.
+            Tooling I use for agentic workflows and platform engineering.
           </p>
         </div>
 

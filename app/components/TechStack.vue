@@ -11,7 +11,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Full-Stack Agentic Architecture (NestJS / PostgreSQL). Vue 3, Nuxt 4, and TypeScript.
+          Full-stack product delivery with an agentic architecture mindset.
         </p>
       </SharedReveal>
 
