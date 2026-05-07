@@ -30,7 +30,7 @@
         <p
           class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
-          Frontend-first AI Product Engineer. Nuxt 4 and the Vue ecosystem, with prior years in React and Next.js.
+          British AI Product Engineer based in Amsterdam. Nuxt 4 and Agentic AI ecosystems, with prior years in React and Next.js.
         </p>
       </SharedReveal>
 
@@ -93,10 +93,10 @@
                 class="text-vue-600 dark:text-vue-400 shrink-0"
                 aria-hidden="true"
               >→</span>
-              <span><strong>Local-first cost efficiency.</strong> AI homelab and optimized Cursor workflows use a fraction of the tokens less experienced developers require, reducing API costs and keeping client data secure locally. <button
+              <span><strong>GDPR-compliant AI workflows.</strong> ALL client code stays on local LLMs (Ollama) — Claude used ONLY for reasoning tasks, never proprietary code. AI homelab reduces API costs and ensures enterprise-grade security. <button
                 class="text-vue-600 dark:text-vue-400 hover:underline font-medium"
                 @click="portfolioMode.setMode('platform')"
-              >Check out my lab →</button></span>
+              >Explore the Lab →</button></span>
             </li>
           </ul>
 
@@ -126,14 +126,6 @@
                   size="0.75rem"
                 />
                 Outside IR35 Compliant
-              </li>
-              <li class="flex items-center gap-1.5">
-                <Icon
-                  name="lucide:check"
-                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
-                  size="0.75rem"
-                />
-                W-8BEN-E & A1 Certificate Available
               </li>
             </ul>
           </div>

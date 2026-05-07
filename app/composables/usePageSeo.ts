@@ -3,7 +3,7 @@
  * Consolidates 7+ useHead patterns throughout the application
  */
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
-  const baseTitle = "Jonathan Kaonga | AI Product Engineer | Vue & Nuxt 4"
+  const baseTitle = "Jonathan Kaonga | British AI Product Engineer | Nuxt 4"
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : "https://j-dev.online")
@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "AI Product Engineer building high-performance Vue & Nuxt 4 products with agentic workflows and a hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research. Six years shipping production systems across traffic, trading, media, and finance.",
+    "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI: local LLMs for ALL client code, Claude ONLY for reasoning. KVK registered, IR35 compliant. Six years in traffic, trading, media, finance.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "Frontend-first AI Product Engineer working in Vue & Nuxt 4 with TypeScript. Agentic workflows and a hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research.",
+    "British AI Product Engineer based in Amsterdam. Nuxt 4 and Agentic AI ecosystems. GDPR-compliant: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. IR35 compliant, KVK registered.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -111,7 +111,7 @@ export const seoPresets = {
   // Platform (AI) page
   platform: () => usePageSeo(
     "AI & Platform Engineering",
-    "My lab environment for AI workflows and backend foundations. Hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research. NestJS and PostgreSQL are in development.",
+    "British AI Product Engineer's lab: GDPR-compliant workflows with local LLMs (Ollama) for ALL client code. Claude used ONLY for reasoning/research. NestJS and PostgreSQL expanding.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )

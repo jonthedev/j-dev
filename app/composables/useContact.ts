@@ -12,7 +12,7 @@ export function useContact() {
     kvk: "93792670",
     kvkUrl: "https://www.kvk.nl/zoeken/?source=all&q=93792670",
     availability: "Available from March 2026",
-    location: "Amsterdam, Netherlands",
+    location: "Amsterdam, Netherlands (UK/CET timezone)",
     status: "Freelance",
     bookingUrl: "https://calendly.com/jdev-online/new-meeting"
   }
@@ -50,13 +50,13 @@ export function useContact() {
     title: "AI Product Engineer",
     experience: "6+ years",
     specialization:
-      "Nuxt 4, TypeScript, Tailwind CSS, and privacy-first AI workflows (local LLM orchestration + secure RAG patterns). Previously React. Expanding into NestJS and PostgreSQL.",
+       "Nuxt 4, TypeScript, Tailwind CSS, and GDPR-compliant AI workflows (local LLMs for ALL client code, Claude ONLY for reasoning tasks). Previously React. Expanding into NestJS and PostgreSQL.",
     services: [
       "Vue 3 and Nuxt 4 application development",
       "Legacy frontend migration to modern frameworks",
       "Performance audits targeting Lighthouse 90+",
       "Design systems and component libraries",
-      "EU and UK contracting (KVK, IR35, W-8BEN-E)",
+      "EU and UK contracting (KVK, IR35)",
       "Technical architecture"
     ],
     techFocus: [

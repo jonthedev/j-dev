@@ -5,10 +5,10 @@ export const SITE_URL = "https://j-dev.online" as const
 /** Display brand (Navbar, Footer, OG); keep in sync with social copy */
 export const SITE_BRAND = "JDev Online" as const
 
-export const SITE_TITLE = "Jonathan Kaonga | AI Product Engineer | Vue & Nuxt 4 | Amsterdam"
+export const SITE_TITLE = "Jonathan Kaonga | British AI Product Engineer | Nuxt 4 | Amsterdam"
 
 export const SITE_DESCRIPTION
-  = "AI Product Engineer building high-performance Vue & Nuxt 4 products with agentic workflows and a hybrid AI setup: local LLMs for sensitive code, Claude for reasoning and research. Six years shipping production systems across traffic, trading, media, and finance."
+  = "British AI Product Engineer delivering Nuxt 4 systems from Amsterdam. GDPR-compliant AI workflows: local LLMs (Ollama) for ALL client code, Claude ONLY for reasoning tasks. KVK registered, IR35 compliant. Six years in traffic, trading, media, finance."
 
 export const PLATFORM_TITLE
   = "Jonathan Kaonga | Lab: AI Workflows, NestJS, PostgreSQL (In Development)"

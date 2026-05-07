@@ -30,13 +30,13 @@
             Frontend-first product engineering with Nuxt 4 and Agentic AI.
           </span>
           <span class="block">
-            Hybrid workflow: local LLMs for sensitive code, Claude for reasoning.
+            GDPR-compliant: Local LLMs for ALL client code, Claude ONLY for reasoning.
           </span>
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          Amsterdam-based. KVK registered. Remote within CET.
+          British National. Amsterdam-based. KVK registered. Remote (UK/CET timezone). IR35 compliant.
         </p>
       </div>
     </div>
