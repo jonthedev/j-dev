@@ -23,10 +23,9 @@
                 <p
                   class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed"
                 >
-                  My own portfolio site. Migrated from React to Nuxt 4 using AI
-                  tools in my development workflow. Sensitive code stayed local;
-                  Claude supported reasoning and research. This is the approach
-                  I'm building toward for client projects.
+                  My own portfolio site. Migrated from React to Nuxt 4 using a
+                  hybrid AI workflow. OpenCode with Ollama (Qwen) handled the
+                  main refactor locally, and Cursor supported everything else.
                 </p>
               </div>
               <div
@@ -159,8 +158,8 @@
                     Hybrid Privacy Workflow
                   </div>
                   <div class="text-[11px] text-gray-600 dark:text-gray-400">
-                    Local LLMs handled sensitive code paths; Claude was used
-                    selectively for reasoning and research.
+                    Sensitive code stayed local using Ollama. Cursor handled
+                    the rest, kept separate from proprietary logic.
                   </div>
                 </div>
               </div>
