@@ -5,11 +5,16 @@
   >
     <UContainer>
       <SharedReveal class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+        >
           Production Work
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          High-traffic frontends across traffic, trading, media, and finance. Here is what I've shipped.
+          High-traffic frontends across traffic, trading, media, and finance.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Here is what I've shipped.
         </p>
       </SharedReveal>
 
@@ -29,9 +34,6 @@
           :index="index"
         />
       </div>
-
-      <!-- Call to action -->
-      <SharedCtaCard class="mt-16" />
 
       <SharedReveal
         :delay="200"
