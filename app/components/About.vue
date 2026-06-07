@@ -20,7 +20,7 @@
         <p
           class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
-          Vue ecosystem specialist with prior years in React and Next.js.
+          Full-stack product engineer with 6+ years on high-traffic platforms at DPG Media, ANWB, and Thalex.
         </p>
       </SharedReveal>
 
@@ -47,7 +47,7 @@
                 6+
               </span>
               <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">
-                years · frontend-first
+                years · product engineering
               </span>
             </span>
           </div>

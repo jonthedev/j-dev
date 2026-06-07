@@ -11,7 +11,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Full-stack product delivery with an agentic architecture mindset.
+          React and Next.js at the core. Vue and Nuxt in recent production. Backend expanding through NestJS and PostgreSQL.
         </p>
       </SharedReveal>
 
@@ -33,7 +33,6 @@
               :key="tech.id"
               :delay="150 + index * 40"
               class="flex flex-col items-center p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
-              :class="{ 'opacity-50': tech.category === 'secondary' }"
             >
               <span
                 :class="`inline-flex items-center justify-center gap-1 text-2xl mb-1 ${tech.iconClass} group-hover:scale-110 transition-transform`"
@@ -185,9 +184,7 @@ import { Icon } from "@iconify/vue"
 import { techStack, strategicTooling } from "~/data/techStack"
 
 const frontendTech = computed(() =>
-  techStack.filter(
-    item => item.category === "frontend" || item.category === "secondary"
-  )
+  techStack.filter(item => item.category === "frontend")
 )
 const backendTech = computed(() =>
   techStack.filter(item => item.category === "backend")

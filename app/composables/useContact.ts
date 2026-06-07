@@ -11,9 +11,9 @@ export function useContact() {
     portfolio: "https://j-dev.online",
     kvk: "93792670",
     kvkUrl: "https://www.kvk.nl/zoeken/?source=all&q=93792670",
-    availability: "Available from March 2026",
-    location: "Amsterdam, Netherlands (UK/CET timezone)",
-    status: "Freelance",
+    availability: "Available from 1 July 2026",
+    location: "Amsterdam, Netherlands",
+    status: "Full-time or selective B2B",
     bookingUrl: "https://calendly.com/jdev-online/new-meeting"
   }
 
@@ -47,19 +47,18 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "AI Product Engineer",
+    title: "Senior Full-Stack Product Engineer",
     experience: "6+ years",
     specialization:
-       "Frontend-first product engineering in the Vue ecosystem (and beyond), with TypeScript and a pragmatic, agentic workflow (local + cloud). Previously React; broad full-stack foundation.",
+       "Full-stack product engineering on high-traffic platforms. React and Next.js at the core, Vue and Nuxt in recent production. Architecture and delivery end to end; AI-forward when it helps.",
     services: [
-      "Vue ecosystem application development",
-      "Legacy frontend migration to modern frameworks",
-      "Performance audits targeting Lighthouse 90+",
+      "Product engineering across React, Next.js, Vue, and Nuxt",
+      "Legacy frontend migration and performance (Lighthouse 90+)",
       "Design systems and component libraries",
-      "EU and UK contracting (KVK, Outside IR35)",
-      "Technical architecture"
+      "Technical architecture and API design",
+      "Full-time employment or B2B via JDev Online (KVK 93792670)"
     ],
-    techFocus: ["Vue ecosystem", "TypeScript", "Testing", "Performance", "Architecture"]
+    techFocus: ["React", "Next.js", "Vue", "Nuxt", "TypeScript", "Architecture", "AI workflows"]
   }
 
   // Form validation rules

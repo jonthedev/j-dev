@@ -13,6 +13,20 @@ export interface TechStackItem {
 
 export const techStack: TechStackItem[] = [
   {
+    id: "react",
+    title: "React",
+    icon: "simple-icons:react",
+    iconClass: "text-cyan-500",
+    category: "frontend"
+  },
+  {
+    id: "nextjs",
+    title: "Next.js",
+    icon: "simple-icons:nextdotjs",
+    iconClass: "text-gray-900 dark:text-white",
+    category: "frontend"
+  },
+  {
     id: "vue-3",
     title: "Vue 3",
     icon: "simple-icons:vuedotjs",
@@ -56,23 +70,6 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:tailwindcss",
     iconClass: "text-cyan-400",
     category: "frontend"
-  },
-  // Previously used at scale (ANWB, DPG Media, iO)
-  {
-    id: "react",
-    title: "React",
-    icon: "simple-icons:react",
-    iconClass: "text-gray-400 dark:text-gray-600",
-    category: "secondary",
-    sublabel: "Former Expertise"
-  },
-  {
-    id: "nextjs",
-    title: "Next.js",
-    icon: "simple-icons:nextdotjs",
-    iconClass: "text-gray-400 dark:text-gray-600",
-    category: "secondary",
-    sublabel: "Former Expertise"
   },
   {
     id: "playwright",

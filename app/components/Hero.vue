@@ -18,7 +18,7 @@
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            AI Product Engineer
+            Senior Full-Stack Product Engineer
           </span>
         </h1>
 
@@ -27,21 +27,16 @@
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
           <span class="block">
-            Frontend-first product engineering across modern frontend ecosystems.
+            React and Next.js at the core, with recent Vue and Nuxt on a live trading platform.
           </span>
           <span class="block">
-            Agentic AI workflows (local + cloud).
+            Architecture and delivery end to end. AI-forward when it helps.
           </span>
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          British National. Amsterdam-based.
-        </p>
-        <p
-          class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-        >
-          ZZP (KVK registered). Remote (UK/CET timezone). Outside IR35.
+          Open to full-time or selective B2B via JDev Online. Amsterdam, EU, Florida, and New York.
         </p>
       </div>
     </div>

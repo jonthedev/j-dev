@@ -10,7 +10,7 @@
             Get in Touch
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Available for EU/UK contract work. Amsterdam-based (ZZP). Remote-friendly (UK/CET). Outside IR35.
+            Open to full-time and selective B2B contracts. Amsterdam, EU, Florida, and New York.
           </p>
           <div class="space-y-2 flex flex-col">
             <a

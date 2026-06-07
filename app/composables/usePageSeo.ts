@@ -3,7 +3,7 @@
  * Consolidates 7+ useHead patterns throughout the application
  */
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
-  const baseTitle = "Jonathan Kaonga | British AI Product Engineer | Nuxt 4"
+  const baseTitle = "Jonathan Kaonga | Senior Full-Stack Product Engineer | Amsterdam"
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : "https://j-dev.online")
@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "British AI Product Engineer delivering modern web systems from Amsterdam. Agentic AI workflows (local + cloud). KVK registered, Outside IR35. Six years in traffic, trading, media, finance.",
+    "Senior full-stack product engineer in Amsterdam. React and Next.js at the core, Vue and Nuxt in recent production. Six years in traffic, trading, media, and finance.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "British AI Product Engineer based in Amsterdam. Frontend-first delivery with an agentic workflow (local + cloud). Outside IR35, KVK registered.",
+    "Full-stack product engineer based in Amsterdam. DPG Media, ANWB, Thalex. Open to full-time or selective B2B via JDev Online.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -87,7 +87,7 @@ export const seoPresets = {
   // Projects page
   projects: () => usePageSeo(
     "Projects",
-    "Case studies in Vue.js, Nuxt.js, and frontend architecture. Real production systems with measured results.",
+    "Case studies in React, Next.js, Vue, Nuxt, and full-stack product delivery. Real production systems with measured results.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#projects"
   ),
@@ -103,7 +103,7 @@ export const seoPresets = {
   // Contact page
   contact: () => usePageSeo(
     "Contact",
-    "Available for frontend contract work. KVK registered in Amsterdam.",
+    "Open to full-time and selective B2B contracts. Amsterdam, EU, Florida, and New York.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#contact"
   ),
@@ -111,7 +111,7 @@ export const seoPresets = {
   // Platform (AI) page
   platform: () => usePageSeo(
     "AI & Platform Engineering",
-    "British AI Product Engineer's lab: agentic workflows (local + cloud), platform engineering, and pragmatic architecture patterns.",
+    "Lab: agentic AI workflows, backend architecture, NestJS API, and platform experiments.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )
