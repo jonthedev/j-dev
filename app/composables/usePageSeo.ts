@@ -3,7 +3,7 @@
  * Consolidates 7+ useHead patterns throughout the application
  */
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
-  const baseTitle = "Jonathan Kaonga | Senior Full-Stack Product Engineer | Amsterdam"
+  const baseTitle = "Jonathan Kaonga | Freelance Software Engineer | Vue · Nuxt · TypeScript"
   const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : "https://j-dev.online")
@@ -71,7 +71,7 @@ export const seoPresets = {
   // Home page
   home: () => usePageSeo(
     "Home",
-    "Senior full-stack product engineer in Amsterdam. React and Next.js at the core, Vue and Nuxt in recent production. Six years in traffic, trading, media, and finance.",
+    "Freelance software engineer in Amsterdam. Vue ecosystem shop — Vue, Nuxt, Pinia, and TypeScript for B2B web products.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +79,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "Full-stack product engineer based in Amsterdam. DPG Media, ANWB, Thalex. Open to full-time or selective B2B via JDev Online.",
+    "Freelance software engineer via JDev Online. Vue, Nuxt, and TypeScript. Background at DPG Media, ANWB, and Thalex.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -87,7 +87,7 @@ export const seoPresets = {
   // Projects page
   projects: () => usePageSeo(
     "Projects",
-    "Case studies in React, Next.js, Vue, Nuxt, and full-stack product delivery. Real production systems with measured results.",
+    "Production case studies across Vue, Nuxt, React, and high-traffic product UI.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#projects"
   ),
@@ -95,7 +95,7 @@ export const seoPresets = {
   // Tech Stack page
   techStack: () => usePageSeo(
     "Tech Stack",
-    "A pragmatic stack for shipping modern web products: frontend systems, backend architecture, testing, and DevOps tooling.",
+    "Vue, Nuxt, Pinia, and TypeScript at the core — plus prior production React and Next.js.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#tech-stack"
   ),
@@ -103,15 +103,15 @@ export const seoPresets = {
   // Contact page
   contact: () => usePageSeo(
     "Contact",
-    "Open to full-time and selective B2B contracts. Amsterdam, EU, Florida, and New York.",
+    "Available for selective B2B via JDev Online. Amsterdam · EU.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#contact"
   ),
 
-  // Platform (AI) page
+  // Platform (parked)
   platform: () => usePageSeo(
-    "AI & Platform Engineering",
-    "Lab: agentic AI workflows, backend architecture, NestJS API, and platform experiments.",
+    "Lab",
+    "Private experiments — not currently part of the public offer.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )

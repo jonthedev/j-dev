@@ -11,9 +11,9 @@ export function useContact() {
     portfolio: "https://j-dev.online",
     kvk: "93792670",
     kvkUrl: "https://www.kvk.nl/zoeken/?source=all&q=93792670",
-    availability: "Available from 1 July 2026",
+    availability: "Available for B2B projects",
     location: "Amsterdam, Netherlands",
-    status: "Full-time or selective B2B",
+    status: "Selective B2B via JDev Online",
     bookingUrl: "https://calendly.com/jdev-online/new-meeting"
   }
 
@@ -47,18 +47,18 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Senior Full-Stack Product Engineer",
+    title: "Freelance Software Engineer",
     experience: "6+ years",
     specialization:
-       "Full-stack product engineering on high-traffic platforms. React and Next.js at the core, Vue and Nuxt in recent production. Architecture and delivery end to end; AI-forward when it helps.",
+      "Vue ecosystem shop — Vue, Nuxt, Pinia, and TypeScript for B2B web products, migrations, and maintainable product UI.",
     services: [
-      "Product engineering across React, Next.js, Vue, and Nuxt",
-      "Legacy frontend migration and performance (Lighthouse 90+)",
+      "Vue, Nuxt, and Pinia product engineering",
+      "Legacy frontend migration and performance",
       "Design systems and component libraries",
-      "Technical architecture and API design",
-      "Full-time employment or B2B via JDev Online (KVK 93792670)"
+      "TypeScript frontends with clean API integration",
+      "Selective B2B via JDev Online (KVK 93792670)"
     ],
-    techFocus: ["React", "Next.js", "Vue", "Nuxt", "TypeScript", "Architecture", "AI workflows"]
+    techFocus: ["Vue", "Nuxt", "Pinia", "TypeScript", "Vite", "Tailwind"]
   }
 
   // Form validation rules

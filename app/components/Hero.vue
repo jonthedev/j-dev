@@ -18,7 +18,7 @@
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Senior Full-Stack Product Engineer
+            Freelance Software Engineer
           </span>
         </h1>
 
@@ -27,16 +27,16 @@
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
           <span class="block">
-            React and Next.js at the core, with recent Vue and Nuxt on a live trading platform.
+            Vue ecosystem shop — Vue, Nuxt, Pinia, and TypeScript.
           </span>
           <span class="block">
-            Architecture and delivery end to end. AI-forward when it helps.
+            B2B web products, migrations, and production frontends that stay maintainable.
           </span>
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          Open to full-time or selective B2B via JDev Online. Amsterdam, EU, Florida, and New York.
+          Available for selective B2B via JDev Online. Amsterdam · EU.
         </p>
       </div>
     </div>

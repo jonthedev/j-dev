@@ -7,40 +7,31 @@ export interface TechStackItem {
   category: "primary" | "secondary" | "frontend" | "backend"
   /** Show "Certified" badge (e.g. Vue 3 certification in progress) */
   certified?: boolean
-  /** Sublabel for backend items (e.g. "Application Logic", "Persistence") */
+  /** Sublabel for items (e.g. prior production) */
   sublabel?: string
 }
 
 export const techStack: TechStackItem[] = [
   {
-    id: "react",
-    title: "React",
-    icon: "simple-icons:react",
-    iconClass: "text-cyan-500",
-    category: "frontend"
-  },
-  {
-    id: "nextjs",
-    title: "Next.js",
-    icon: "simple-icons:nextdotjs",
-    iconClass: "text-gray-900 dark:text-white",
-    category: "frontend"
-  },
-  {
     id: "vue-3",
     title: "Vue 3",
     icon: "simple-icons:vuedotjs",
     iconClass: "text-green-500",
-    category: "frontend",
-    certified: false
+    category: "frontend"
   },
   {
     id: "nuxt-3",
     title: "Nuxt 4",
     icon: "simple-icons:nuxtdotjs",
     iconClass: "text-green-600",
-    category: "frontend",
-    certified: false
+    category: "frontend"
+  },
+  {
+    id: "pinia",
+    title: "Pinia",
+    icon: "simple-icons:pinia",
+    iconClass: "text-yellow-500",
+    category: "frontend"
   },
   {
     id: "typescript",
@@ -55,14 +46,6 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:vite",
     iconClass: "text-purple-500",
     category: "frontend"
-  },
-  {
-    id: "pinia",
-    title: "Pinia",
-    icon: "simple-icons:pinia",
-    iconClass: "text-yellow-500",
-    category: "frontend",
-    certified: false
   },
   {
     id: "tailwind",
@@ -83,7 +66,45 @@ export const techStack: TechStackItem[] = [
     title: "Vitest",
     icon: "simple-icons:vitest",
     iconClass: "text-yellow-400",
-    category: "primary"
+    category: "frontend"
+  },
+  {
+    id: "storybook",
+    title: "Storybook",
+    icon: "simple-icons:storybook",
+    iconClass: "text-pink-500",
+    category: "frontend"
+  },
+  {
+    id: "figma",
+    title: "Figma",
+    icon: "simple-icons:figma",
+    iconClass: "text-purple-500",
+    category: "frontend"
+  },
+  {
+    id: "cypress",
+    title: "Cypress",
+    icon: "simple-icons:cypress",
+    iconClass: "text-cyan-600",
+    category: "frontend"
+  },
+  // Prior production stacks — real, not the shop offer
+  {
+    id: "react",
+    title: "React",
+    icon: "simple-icons:react",
+    iconClass: "text-cyan-500",
+    category: "secondary",
+    sublabel: "Prior production"
+  },
+  {
+    id: "nextjs",
+    title: "Next.js",
+    icon: "simple-icons:nextdotjs",
+    iconClass: "text-gray-900 dark:text-white",
+    category: "secondary",
+    sublabel: "Prior production"
   },
   {
     id: "html",
@@ -107,13 +128,6 @@ export const techStack: TechStackItem[] = [
     category: "primary"
   },
   {
-    id: "cypress",
-    title: "Cypress",
-    icon: "simple-icons:cypress",
-    iconClass: "text-cyan-600",
-    category: "frontend"
-  },
-  {
     id: "github",
     title: "GitHub",
     icon: "simple-icons:github",
@@ -126,45 +140,6 @@ export const techStack: TechStackItem[] = [
     icon: "simple-icons:gitlab",
     iconClass: "text-orange-600",
     category: "primary"
-  },
-  {
-    id: "storybook",
-    title: "Storybook",
-    icon: "simple-icons:storybook",
-    iconClass: "text-pink-500",
-    category: "frontend"
-  },
-  {
-    id: "figma",
-    title: "Figma",
-    icon: "simple-icons:figma",
-    iconClass: "text-purple-500",
-    category: "frontend"
-  },
-  // Backend (Architecture & Data)
-  {
-    id: "nestjs",
-    title: "NestJS",
-    icon: "simple-icons:nestjs",
-    iconClass: "text-red-600",
-    category: "backend",
-    sublabel: "Application logic and modular service architecture, active personal projects"
-  },
-  {
-    id: "postgresql-prisma",
-    title: "PostgreSQL + Prisma",
-    icons: ["simple-icons:postgresql", "simple-icons:prisma"],
-    iconClass: "text-blue-700",
-    category: "backend",
-    sublabel: "Type-safe persistence and schema-driven database access, active personal projects"
-  },
-  {
-    id: "swagger",
-    title: "Swagger / OpenAPI",
-    icon: "simple-icons:swagger",
-    iconClass: "text-green-600",
-    category: "backend",
-    sublabel: "API contract documentation and integration support"
   }
 ]
 

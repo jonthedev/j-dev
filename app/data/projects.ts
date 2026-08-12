@@ -175,20 +175,4 @@ export const jdevOnlineCaseStudyScreenshots = {
   whenThemeDark: "/jdev-online-light.png"
 } as const
 
-export const architecturePlaceholders: ArchitecturePlaceholder[] = [
-  {
-    id: "nestjs-system",
-    title: "Technical Blueprint: Type-Safe Modular API",
-    status: "inProgress",
-    description:
-      "Modular NestJS API architecture with type-safe DTOs, Prisma-managed PostgreSQL, and Swagger/OpenAPI documentation.",
-    keyFeatures: [
-      "Modular Domain Design (Clean Architecture)",
-      "Contract-First API Documentation (Swagger/OpenAPI)",
-      "Type-Safe Persistence Layer (Prisma & PostgreSQL)",
-      "Type-Safe DTOs for reliable API to client integration"
-    ],
-    swaggerUrl: null,
-    githubUrl: null
-  }
-]
+export const architecturePlaceholders: ArchitecturePlaceholder[] = []

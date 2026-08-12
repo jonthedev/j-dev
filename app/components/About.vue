@@ -20,7 +20,7 @@
         <p
           class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
-          Full-stack product engineer with 6+ years on high-traffic platforms at DPG Media, ANWB, and Thalex.
+          Full-stack product experience across DPG Media, ANWB, and Thalex — now focused on Vue, Nuxt, and TypeScript for B2B clients.
         </p>
       </SharedReveal>
 
@@ -47,7 +47,7 @@
                 6+
               </span>
               <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">
-                years · product engineering
+                years · Vue & product UI
               </span>
             </span>
           </div>
@@ -60,7 +60,7 @@
                 class="text-vue-600 dark:text-vue-400 shrink-0"
                 aria-hidden="true"
               >→</span>
-              <span><strong>Senior judgment.</strong> 6+ years of architecture experience helps define the right solution fast and avoid expensive detours.</span>
+              <span><strong>Senior judgment.</strong> 6+ years shipping production frontends — define the right approach fast and avoid expensive detours.</span>
             </li>
             <li class="flex gap-2">
               <span
@@ -68,13 +68,7 @@
                 aria-hidden="true"
               >→</span>
               <span>
-                <strong>Agentic workflows (local + cloud).</strong> Applied to research, implementation, and iteration speed.
-                <button
-                  class="text-vue-600 dark:text-vue-400 hover:underline font-medium"
-                  @click="portfolioMode.setMode('platform')"
-                >
-                  Explore the Lab →
-                </button>
+                <strong>Vue ecosystem focus.</strong> Vue, Nuxt, Pinia, and TypeScript for B2B products, migrations, and maintainable UI systems.
               </span>
             </li>
           </ul>
@@ -141,8 +135,6 @@ import type { TimelineItem } from "@nuxt/ui"
 import { careerTimeline } from "~/data/careerTimeline"
 
 defineOptions({ name: "AppAbout" })
-
-const portfolioMode = usePortfolioMode()
 
 const timelineItems = computed<TimelineItem[]>(() =>
   careerTimeline.map(entry => ({

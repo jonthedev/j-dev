@@ -1,6 +1,6 @@
-# JDev Online · AI Product Engineer
+# JDev Online · Freelance Software Engineer
 
-Personal portfolio and freelance site — **AI Product Engineer** focused on Nuxt 4, Vue ecosystem, and experimental lab work. Built with Nuxt 4, Nuxt UI, and TypeScript.
+Personal portfolio and freelance site — **Vue ecosystem shop** (Vue, Nuxt, Pinia, TypeScript). Built with Nuxt 4, Nuxt UI, and TypeScript.
 
 **Live:** [j-dev.online](https://j-dev.online)
 
@@ -76,16 +76,12 @@ Content (projects, tech stack, clients) lives in `app/data/`
 
 ---
 
-## Dual Portfolio Views
+## Site structure
 
-Switch between views using the **Portfolio / Lab** tab in the navbar:
+Single portfolio view (Lab / AI track parked until claims are real):
 
-- **Portfolio:** Frontend-first Vue/Nuxt work, client projects, and case studies
-- **Lab:** Experimental track for AI workflows, NestJS/PostgreSQL backend, and R&D
-
-Each view has its own color theme:
-- Portfolio: Vue green (`#42b883`)
-- Lab: Hazard yellow for R&D and experimentation
+- Hero, About, Projects, Tech Stack, Contact
+- Positioning: Freelance Software Engineer · Vue · Nuxt · TypeScript
 
 ---
 

@@ -11,7 +11,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          React and Next.js at the core. Vue and Nuxt in recent production. Backend expanding through NestJS and PostgreSQL.
+          Vue, Nuxt, Pinia, and TypeScript at the core. React and Next.js from earlier production roles.
         </p>
       </SharedReveal>
 
@@ -25,7 +25,7 @@
           <h3
             class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center"
           >
-            Frontend (Core Expertise)
+            Vue Ecosystem
           </h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <SharedReveal
@@ -71,7 +71,7 @@
           </div>
         </SharedReveal>
 
-        <!-- Block B: Backend (Architecture & Data) -->
+        <!-- Block B: Also used in production -->
         <SharedReveal
           :delay="150"
           class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
@@ -79,43 +79,33 @@
           <h3
             class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center"
           >
-            Backend (Expanding)
+            Also in production
           </h3>
-          <div class="space-y-4">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <SharedReveal
-              v-for="(tech, index) in backendTech"
+              v-for="(tech, index) in secondaryTech"
               :key="tech.id"
               :delay="200 + index * 50"
-              class="flex items-center gap-4 rounded-lg p-3 hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
+              class="flex flex-col items-center p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
             >
               <span
-                :class="`inline-flex items-center justify-center gap-0.5 w-10 h-10 rounded-lg ${tech.iconClass} bg-gray-100 dark:bg-gray-800 group-hover:scale-105 transition-transform`"
+                :class="`inline-flex items-center justify-center gap-1 text-2xl mb-1 ${tech.iconClass} group-hover:scale-110 transition-transform`"
               >
-                <template v-if="tech.icons">
-                  <Icon
-                    v-for="(iconId, i) in tech.icons"
-                    :key="i"
-                    :icon="iconId"
-                    width="1.125em"
-                    height="1.125em"
-                    class="inline-block"
-                  />
-                </template>
                 <Icon
-                  v-else-if="tech.icon"
+                  v-if="tech.icon"
                   :icon="tech.icon"
                   width="1.5em"
                   height="1.5em"
                   class="inline-block"
                 />
               </span>
-              <div class="min-w-0 flex-1">
-                <span class="text-sm font-medium text-gray-900 dark:text-white">
+              <div class="min-w-0 text-center">
+                <span class="text-xs font-medium text-gray-900 dark:text-white">
                   {{ tech.title }}
                 </span>
                 <span
                   v-if="tech.sublabel"
-                  class="block text-xs text-gray-500 dark:text-gray-400"
+                  class="block text-[10px] text-gray-500 dark:text-gray-400 mt-1"
                 >
                   {{ tech.sublabel }}
                 </span>
@@ -186,7 +176,7 @@ import { techStack, strategicTooling } from "~/data/techStack"
 const frontendTech = computed(() =>
   techStack.filter(item => item.category === "frontend")
 )
-const backendTech = computed(() =>
-  techStack.filter(item => item.category === "backend")
+const secondaryTech = computed(() =>
+  techStack.filter(item => item.category === "secondary")
 )
 </script>
