@@ -115,13 +115,13 @@
             <img
               v-if="!isDarkTheme"
               :src="jdevOnlineCaptureForLightUi"
-              alt="JDev Online — Portfolio Screenshot"
+              alt="JDev Online portfolio screenshot"
               class="w-full rounded-lg max-h-60 object-contain"
             >
             <img
               v-else
               :src="jdevOnlineCaptureForDarkUi"
-              alt="JDev Online — Portfolio Screenshot"
+              alt="JDev Online portfolio screenshot"
               class="w-full rounded-lg max-h-60 object-contain"
             >
           </div>

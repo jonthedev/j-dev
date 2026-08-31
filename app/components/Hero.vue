@@ -13,30 +13,25 @@
       class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
     >
       <div class="space-y-8">
-        <!-- Main headline: professional title -->
+        <!-- Main headline: expertise first; arrangement lives in the availability line -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            Freelance Software Engineer
+            {{ SITE_HEADLINE }}
           </span>
         </h1>
 
-        <!-- Subheader -->
         <p
           class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          <span class="block">
-            Vue ecosystem shop — Vue, Nuxt, Pinia, and TypeScript.
-          </span>
-          <span class="block">
-            B2B web products, migrations, and production frontends that stay maintainable.
-          </span>
+          Vue · Nuxt · TypeScript
         </p>
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          Available for selective B2B via JDev Online. Amsterdam · EU.
+          <span class="block">{{ SITE_AVAILABILITY }}</span>
+          <span class="block">{{ SITE_LOCATION }}</span>
         </p>
       </div>
     </div>
@@ -56,13 +51,15 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
+import { SITE_AVAILABILITY, SITE_HEADLINE, SITE_LOCATION } from "~/data/siteMeta"
 
 defineOptions({ name: "AppHero" })
 </script>
 
 <style scoped>
 .hero-grid {
-  background-image: linear-gradient(to right, currentColor 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
     linear-gradient(to bottom, currentColor 1px, transparent 1px);
   background-size: 40px 40px;
 }

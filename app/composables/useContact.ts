@@ -11,9 +11,9 @@ export function useContact() {
     portfolio: "https://j-dev.online",
     kvk: "93792670",
     kvkUrl: "https://www.kvk.nl/zoeken/?source=all&q=93792670",
-    availability: "Available for B2B projects",
+    availability: "Available for permanent roles or selective B2B",
     location: "Amsterdam, Netherlands",
-    status: "Selective B2B via JDev Online",
+    status: "Permanent roles or selective B2B via JDev Online",
     bookingUrl: "https://calendly.com/jdev-online/new-meeting"
   }
 
@@ -47,18 +47,18 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Freelance Software Engineer",
+    title: "Senior Full-Stack Engineer",
     experience: "6+ years",
     specialization:
-      "Vue ecosystem shop — Vue, Nuxt, Pinia, and TypeScript for B2B web products, migrations, and maintainable product UI.",
+      "Vue, Nuxt, Pinia, and TypeScript for product UI, migrations, and maintainable systems. Permanent roles or selective B2B via JDev Online.",
     services: [
       "Vue, Nuxt, and Pinia product engineering",
       "Legacy frontend migration and performance",
       "Design systems and component libraries",
       "TypeScript frontends with clean API integration",
-      "Selective B2B via JDev Online (KVK 93792670)"
+      "Permanent roles or selective B2B via JDev Online (KVK 93792670)"
     ],
-    techFocus: ["Vue", "Nuxt", "Pinia", "TypeScript", "Vite", "Tailwind"]
+    techFocus: ["Vue", "Nuxt", "Pinia", "TypeScript", "Python", "Linux"]
   }
 
   // Form validation rules

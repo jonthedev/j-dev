@@ -11,7 +11,7 @@
           Tech Stack
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Vue, Nuxt, Pinia, and TypeScript at the core. React and Next.js from earlier production roles.
+          Vue, Nuxt, Pinia, and TypeScript at the core. React and Next.js from earlier production roles. Python and Linux for systems work.
         </p>
       </SharedReveal>
 
@@ -123,7 +123,7 @@
         >
           DevOps & Quality Assurance
         </SharedReveal>
-        <div class="flex flex-col md:flex-row justify-center gap-8">
+        <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-8">
           <SharedReveal
             v-for="(group, groupIndex) in strategicTooling"
             :key="group.title"
@@ -171,7 +171,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
-import { techStack, strategicTooling } from "~/data/techStack"
+import { strategicTooling, techStack } from "~/data/techStack"
 
 const frontendTech = computed(() =>
   techStack.filter(item => item.category === "frontend")

@@ -20,7 +20,13 @@
         <p
           class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
-          Full-stack product experience across DPG Media, ANWB, and Thalex — now focused on Vue, Nuxt, and TypeScript for B2B clients.
+          Full-stack product experience across DPG Media, ANWB, and Thalex.
+        </p>
+        <p
+          class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
+        >
+          Vue, Nuxt, and TypeScript in production, plus Linux and Python for
+          systems work.
         </p>
       </SharedReveal>
 
@@ -43,10 +49,14 @@
             <span
               class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 font-normal dark:border-vue-800 dark:bg-vue-950/35"
             >
-              <span class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300">
+              <span
+                class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300"
+              >
                 6+
               </span>
-              <span class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400">
+              <span
+                class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400"
+              >
                 years · Vue & product UI
               </span>
             </span>
@@ -60,7 +70,9 @@
                 class="text-vue-600 dark:text-vue-400 shrink-0"
                 aria-hidden="true"
               >→</span>
-              <span><strong>Senior judgment.</strong> 6+ years shipping production frontends — define the right approach fast and avoid expensive detours.</span>
+              <span><strong>Senior judgment.</strong> 6+ years shipping production
+                frontends. I pick the right approach fast and skip expensive
+                detours.</span>
             </li>
             <li class="flex gap-2">
               <span
@@ -68,7 +80,18 @@
                 aria-hidden="true"
               >→</span>
               <span>
-                <strong>Vue ecosystem focus.</strong> Vue, Nuxt, Pinia, and TypeScript for B2B products, migrations, and maintainable UI systems.
+                <strong>Vue ecosystem focus.</strong> Vue, Nuxt, Pinia, and
+                TypeScript for product UI, migrations, and maintainable systems.
+              </span>
+            </li>
+            <li class="flex gap-2">
+              <span
+                class="text-vue-600 dark:text-vue-400 shrink-0"
+                aria-hidden="true"
+              >→</span>
+              <span>
+                <strong>Systems depth.</strong> Linux and Python for the command
+                line, permissions, and the systems behind the product.
               </span>
             </li>
           </ul>
@@ -85,9 +108,17 @@
                 class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
                 size="1rem"
               />
-              Contracting Ready
+              How I engage
             </h3>
             <ul class="space-y-1.5 text-xs text-gray-600 dark:text-gray-400">
+              <li class="flex items-center gap-1.5">
+                <Icon
+                  name="lucide:check"
+                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
+                  size="0.75rem"
+                />
+                Permanent roles or selective B2B
+              </li>
               <li class="flex items-center gap-1.5">
                 <Icon
                   name="lucide:check"
@@ -148,7 +179,8 @@ const timelineItems = computed<TimelineItem[]>(() =>
 
 <style scoped>
 .about-section-grid {
-  background-image: linear-gradient(to right, currentColor 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
     linear-gradient(to bottom, currentColor 1px, transparent 1px);
   background-size: 40px 40px;
 }

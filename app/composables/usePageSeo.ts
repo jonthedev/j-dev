@@ -2,9 +2,10 @@
  * SEO management composable
  * Consolidates 7+ useHead patterns throughout the application
  */
+import { SITE_AVAILABILITY, SITE_DESCRIPTION, SITE_LOCATION, SITE_TITLE } from "~/data/siteMeta"
+
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
-  const baseTitle = "Jonathan Kaonga | Freelance Software Engineer | Vue · Nuxt · TypeScript"
-  const fullTitle = title === baseTitle ? baseTitle : `${title} - ${baseTitle}`
+  const fullTitle = title === SITE_TITLE ? SITE_TITLE : `${title} - ${SITE_TITLE}`
 
   const siteUrl = url || (import.meta.client ? window.location.origin : "https://j-dev.online")
   const siteImagePath = image || "/jdk-portfolio-2024.jpeg"
@@ -70,8 +71,8 @@ export function usePageSeo(title: string, description?: string, image?: string, 
 export const seoPresets = {
   // Home page
   home: () => usePageSeo(
-    "Home",
-    "Freelance software engineer in Amsterdam. Vue ecosystem shop — Vue, Nuxt, Pinia, and TypeScript for B2B web products.",
+    SITE_TITLE,
+    SITE_DESCRIPTION,
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   ),
@@ -79,7 +80,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "Freelance software engineer via JDev Online. Vue, Nuxt, and TypeScript. Background at DPG Media, ANWB, and Thalex.",
+    "Senior full-stack engineer via JDev Online. Vue, Nuxt, and TypeScript. Background at DPG Media, ANWB, and Thalex.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -95,7 +96,7 @@ export const seoPresets = {
   // Tech Stack page
   techStack: () => usePageSeo(
     "Tech Stack",
-    "Vue, Nuxt, Pinia, and TypeScript at the core — plus prior production React and Next.js.",
+    "Vue, Nuxt, Pinia, and TypeScript at the core, plus React, Next.js, Python, and Linux.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#tech-stack"
   ),
@@ -103,7 +104,7 @@ export const seoPresets = {
   // Contact page
   contact: () => usePageSeo(
     "Contact",
-    "Available for selective B2B via JDev Online. Amsterdam · EU.",
+    `${SITE_AVAILABILITY} ${SITE_LOCATION}`,
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#contact"
   ),
@@ -111,7 +112,7 @@ export const seoPresets = {
   // Platform (parked)
   platform: () => usePageSeo(
     "Lab",
-    "Private experiments — not currently part of the public offer.",
+    "Private experiments. Not currently part of the public offer.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online"
   )

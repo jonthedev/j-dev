@@ -11,7 +11,7 @@ export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:zap",
     headline: "Vue Delivery Speed",
-    body: "I ship across React, Next.js, Vue, and Nuxt. A recent portfolio migration took 11 hours instead of the estimated 40+. React and Next.js are at the core from years at DPG Media and iO; Vue and Nuxt power recent production work at Thalex.",
+    body: "I ship across React, Next.js, Vue, and Nuxt. A recent portfolio migration took 11 hours instead of the estimated 40+. React and Next.js are at the core from years at DPG Media and iO. Vue and Nuxt power recent production work at Thalex.",
     metric: "40+ hours compressed to 11",
     tags: ["Nuxt", "Vue 3", "Migration"],
     featured: true

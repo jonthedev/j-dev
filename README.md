@@ -1,6 +1,6 @@
-# JDev Online · Freelance Software Engineer
+# JDev Online · Senior Full-Stack Engineer
 
-Personal portfolio and freelance site — **Vue ecosystem shop** (Vue, Nuxt, Pinia, TypeScript). Built with Nuxt 4, Nuxt UI, and TypeScript.
+Personal portfolio. Vue, Nuxt, Pinia, TypeScript. Built with Nuxt 4, Nuxt UI, and TypeScript.
 
 **Live:** [j-dev.online](https://j-dev.online)
 
@@ -81,7 +81,7 @@ Content (projects, tech stack, clients) lives in `app/data/`
 Single portfolio view (Lab / AI track parked until claims are real):
 
 - Hero, About, Projects, Tech Stack, Contact
-- Positioning: Freelance Software Engineer · Vue · Nuxt · TypeScript
+- Positioning: Senior Full-Stack Engineer · Vue · Nuxt · TypeScript · permanent or selective B2B
 
 ---
 
@@ -110,4 +110,4 @@ The site is deployed to **Netlify** from the `main` branch. Build uses:
 
 ## License
 
-Private — © Jonathan Kaonga / JDev Online.
+Private. © Jonathan Kaonga / JDev Online.

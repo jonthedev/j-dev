@@ -10,7 +10,8 @@
             Get in Touch
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            Available for selective B2B via JDev Online. Amsterdam · EU.
+            <span class="block">{{ SITE_AVAILABILITY }}</span>
+            <span class="block">{{ SITE_LOCATION }}</span>
           </p>
           <div class="space-y-2 flex flex-col">
             <a
@@ -104,6 +105,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
+import { SITE_AVAILABILITY, SITE_LOCATION } from "~/data/siteMeta"
 
 defineOptions({ name: "AppFooter" })
 

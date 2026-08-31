@@ -166,6 +166,13 @@ export const strategicTooling: StrategicToolingGroup[] = [
     ]
   },
   {
+    title: "Systems",
+    items: [
+      { id: "python", title: "Python", icon: "simple-icons:python", iconClass: "text-yellow-500" },
+      { id: "linux", title: "Linux", icon: "simple-icons:linux", iconClass: "text-gray-800 dark:text-white" }
+    ]
+  },
+  {
     title: "Auditing",
     items: [
       { id: "lighthouse", title: "Google Lighthouse (performance audits)", icon: "lucide:gauge", iconClass: "text-blue-600" },
