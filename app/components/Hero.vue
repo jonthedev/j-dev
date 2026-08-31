@@ -23,11 +23,6 @@
         </h1>
 
         <p
-          class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed"
-        >
-          Vue · Nuxt · TypeScript
-        </p>
-        <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
           <span class="block">{{ SITE_AVAILABILITY }}</span>

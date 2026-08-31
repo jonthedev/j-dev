@@ -9,7 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
 
 - **Positioning**: Hero and SEO lead with **Senior Full-Stack Engineer** instead of Freelance. Availability covers permanent roles or selective B2B.
-- **Tech Stack**: Python and Linux listed under Systems with CI/CD and auditing. No study-mode labels.
+- **Hero**: Stack line removed. Availability and location sit under the headline.
+- **Tech Stack**: Labeled rows (Core, Test and design, Systems). React and Next.js sit in Core. No subtitle. The projects section carries where each stack shipped.
 - **About**: Systems-depth bullet. Engagement box lists both doors plus KVK / IR35.
 
 ## [1.1.0] - 2026-05-13

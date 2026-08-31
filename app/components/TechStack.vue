@@ -4,161 +4,51 @@
     class="py-20 bg-white dark:bg-black"
   >
     <UContainer>
-      <SharedReveal class="text-center mb-16">
+      <SharedReveal class="text-center mb-12">
         <h2
-          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white"
         >
           Tech Stack
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Vue, Nuxt, Pinia, and TypeScript at the core. React and Next.js from earlier production roles. Python and Linux for systems work.
-        </p>
       </SharedReveal>
 
-      <!-- Two-column: Frontend (Core Expertise) + Backend (Architecture & Data) -->
-      <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">
-        <!-- Block A: Frontend (Core Expertise) -->
+      <div class="max-w-4xl mx-auto">
         <SharedReveal
-          :delay="100"
-          class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
+          v-for="(cluster, clusterIndex) in techClusters"
+          :key="cluster.id"
+          :delay="80 + clusterIndex * 50"
+          class="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:gap-10 sm:py-7"
+          :class="clusterIndex > 0 ? 'border-t border-gray-200 dark:border-gray-800' : ''"
         >
           <h3
-            class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center"
+            class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 sm:w-36 sm:shrink-0 sm:pt-2"
           >
-            Vue Ecosystem
+            {{ cluster.title }}
           </h3>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <SharedReveal
-              v-for="(tech, index) in frontendTech"
-              :key="tech.id"
-              :delay="150 + index * 40"
-              class="flex flex-col items-center p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
+          <ul class="m-0 flex list-none flex-wrap justify-center gap-x-5 gap-y-5 p-0 sm:justify-start sm:gap-x-7 sm:gap-y-6">
+            <li
+              v-for="item in cluster.items"
+              :key="item.id"
+              class="group flex w-18 flex-col items-center text-center sm:w-20"
             >
               <span
-                :class="`inline-flex items-center justify-center gap-1 text-2xl mb-1 ${tech.iconClass} group-hover:scale-110 transition-transform`"
+                :class="`inline-flex text-2xl ${item.iconClass} transition-transform group-hover:scale-110`"
               >
                 <Icon
-                  v-if="tech.icon"
-                  :icon="tech.icon"
+                  :icon="item.icon"
                   width="1.5em"
                   height="1.5em"
                   class="inline-block"
                 />
               </span>
-              <span
-                class="text-xs font-medium text-gray-700 dark:text-gray-300 text-center"
-              >
-                {{ tech.title }}
+              <span class="mt-1.5 text-[11px] font-medium leading-tight text-gray-700 dark:text-gray-300 sm:text-xs">
+                {{ item.title }}
               </span>
-              <span
-                v-if="tech.sublabel"
-                class="mt-1 inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-800/50 px-2 py-0.5 text-[10px] font-medium text-gray-500 dark:text-gray-400"
-              >
-                {{ tech.sublabel }}
-              </span>
-              <span
-                v-if="tech.certified"
-                class="mt-1 inline-flex items-center gap-1 rounded-full bg-vue-100 dark:bg-vue-900/50 px-2 py-0.5 text-[10px] font-semibold text-vue-700 dark:text-vue-300"
-              >
-                <Icon
-                  icon="lucide:badge-check"
-                  width="0.625rem"
-                  height="0.625rem"
-                />
-                Certified
-              </span>
-            </SharedReveal>
-          </div>
-        </SharedReveal>
-
-        <!-- Block B: Also used in production -->
-        <SharedReveal
-          :delay="150"
-          class="rounded-xl border border-gray-200 dark:border-gray-800 p-6 lg:p-8 bg-gray-50/50 dark:bg-gray-900/30 shadow-md dark:shadow-[0_4px_24px_0_rgba(255,255,255,0.06),0_0_1px_0_rgba(255,255,255,0.1)]"
-        >
-          <h3
-            class="text-lg font-semibold text-gray-900 dark:text-white mb-6 text-center"
-          >
-            Also in production
-          </h3>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <SharedReveal
-              v-for="(tech, index) in secondaryTech"
-              :key="tech.id"
-              :delay="200 + index * 50"
-              class="flex flex-col items-center p-3 rounded-lg hover:bg-white dark:hover:bg-gray-800/50 transition-colors group"
-            >
-              <span
-                :class="`inline-flex items-center justify-center gap-1 text-2xl mb-1 ${tech.iconClass} group-hover:scale-110 transition-transform`"
-              >
-                <Icon
-                  v-if="tech.icon"
-                  :icon="tech.icon"
-                  width="1.5em"
-                  height="1.5em"
-                  class="inline-block"
-                />
-              </span>
-              <div class="min-w-0 text-center">
-                <span class="text-xs font-medium text-gray-900 dark:text-white">
-                  {{ tech.title }}
-                </span>
-                <span
-                  v-if="tech.sublabel"
-                  class="block text-[10px] text-gray-500 dark:text-gray-400 mt-1"
-                >
-                  {{ tech.sublabel }}
-                </span>
-              </div>
-            </SharedReveal>
-          </div>
+            </li>
+          </ul>
         </SharedReveal>
       </div>
 
-      <!-- Strategic DevOps & Quality Assurance -->
-      <div>
-        <SharedReveal
-          :delay="100"
-          class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
-        >
-          DevOps & Quality Assurance
-        </SharedReveal>
-        <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-8">
-          <SharedReveal
-            v-for="(group, groupIndex) in strategicTooling"
-            :key="group.title"
-            :delay="150 + groupIndex * 60"
-            class="w-full md:max-w-sm rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
-          >
-            <h4
-              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4 text-center"
-            >
-              {{ group.title }}
-            </h4>
-            <div class="flex flex-wrap justify-center gap-6">
-              <div
-                v-for="item in group.items"
-                :key="item.id"
-                class="flex flex-col items-center text-center gap-2"
-              >
-                <span :class="`inline-flex text-2xl ${item.iconClass}`">
-                  <Icon
-                    :icon="item.icon"
-                    width="1.25em"
-                    height="1.25em"
-                    class="inline-block"
-                  />
-                </span>
-                <span
-                  class="text-xs font-semibold text-gray-700 dark:text-gray-300"
-                >
-                  {{ item.title }}
-                </span>
-              </div>
-            </div>
-          </SharedReveal>
-        </div>
-      </div>
       <SharedReveal :delay="220">
         <SharedBrandChannelBar
           triple-wide
@@ -171,12 +61,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
-import { strategicTooling, techStack } from "~/data/techStack"
+import { techClusters } from "~/data/techStack"
 
-const frontendTech = computed(() =>
-  techStack.filter(item => item.category === "frontend")
-)
-const secondaryTech = computed(() =>
-  techStack.filter(item => item.category === "secondary")
-)
+defineOptions({ name: "AppTechStack" })
 </script>
