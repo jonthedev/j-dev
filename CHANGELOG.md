@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - **Tech Stack**: Labeled rows (Core, Test and design, Systems). React and Next.js sit in Core. No subtitle. The projects section carries where each stack shipped.
 - **About**: Systems-depth bullet. Engagement box lists both doors plus KVK / IR35.
 - **Contact**: Let's Talk uses the same availability and location lines as the hero.
+- **Nav**: Active link follows the section in view (click and scroll). Sections offset under the sticky bar.
 
 ## [1.1.0] - 2026-05-13
 

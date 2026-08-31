@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="bg-gray-50 py-20 dark:bg-gray-950 relative overflow-hidden"
+    class="scroll-mt-20 bg-gray-50 py-20 dark:bg-gray-950 relative overflow-hidden"
   >
     <!-- Background: line grid (matches frontend hero) -->
     <div

@@ -1,7 +1,7 @@
 <template>
   <section
     id="projects"
-    class="py-20 bg-gray-50 dark:bg-gray-950"
+    class="scroll-mt-20 py-20 bg-gray-50 dark:bg-gray-950"
   >
     <UContainer>
       <SharedReveal class="text-center mb-16">

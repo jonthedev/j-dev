@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    class="py-20 bg-white dark:bg-black relative overflow-hidden"
+    class="scroll-mt-20 py-20 bg-white dark:bg-black relative overflow-hidden"
   >
     <!-- Background: line grid (frontend) or dot grid (platform), theme-aware -->
     <div

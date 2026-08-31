@@ -1,7 +1,7 @@
 <template>
   <section
     id="tech-stack"
-    class="py-20 bg-white dark:bg-black"
+    class="scroll-mt-20 py-20 bg-white dark:bg-black"
   >
     <UContainer>
       <SharedReveal class="text-center mb-12">

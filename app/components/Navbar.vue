@@ -7,6 +7,7 @@
           <NuxtLink
             to="/"
             class="text-xl font-bold text-gray-900 dark:text-white hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
+            @click="setActiveHref('')"
           >
             JDev Online
           </NuxtLink>
@@ -19,7 +20,10 @@
               v-for="link in navigationLinks"
               :key="link.name"
               :to="link.href"
-              class="text-gray-700 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              class="px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              :class="linkClass(link.href)"
+              :aria-current="isActive(link.href) ? 'true' : undefined"
+              @click="setActiveHref(link.href)"
             >
               {{ link.name }}
             </NuxtLink>
@@ -84,8 +88,10 @@
           v-for="link in navigationLinks"
           :key="link.name"
           :to="link.href"
-          class="text-gray-700 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-          @click="isMobileMenuOpen = false"
+          class="block px-3 py-2 rounded-md text-base font-medium transition-colors"
+          :class="linkClass(link.href)"
+          :aria-current="isActive(link.href) ? 'true' : undefined"
+          @click="onMobileNavClick(link.href)"
         >
           {{ link.name }}
         </NuxtLink>
@@ -108,4 +114,16 @@ function toggleColorMode() {
 const isMobileMenuOpen = ref(false)
 
 const { navigationLinks } = useNavigation()
+const { isActive, setActiveHref } = useActiveSection()
+
+function linkClass(href: string) {
+  return isActive(href)
+    ? "text-vue-600 dark:text-vue-400"
+    : "text-gray-700 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400"
+}
+
+function onMobileNavClick(href: string) {
+  setActiveHref(href)
+  isMobileMenuOpen.value = false
+}
 </script>
