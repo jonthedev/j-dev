@@ -65,7 +65,8 @@
             Let's Talk
           </h3>
           <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 max-w-xl mx-auto">
-            {{ contactMetadata.readyToStartNoObligation }}
+            <span class="block">{{ SITE_AVAILABILITY }}</span>
+            <span class="block">{{ SITE_LOCATION }}</span>
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -130,7 +131,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
-import { contactMetadata } from "~/data/contact"
+import { SITE_AVAILABILITY, SITE_LOCATION } from "~/data/siteMeta"
 
 defineOptions({ name: "AppContact" })
 

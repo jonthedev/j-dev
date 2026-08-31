@@ -11,12 +11,12 @@ export const SITE_HEADLINE = "Senior Full-Stack Engineer" as const
 export const SITE_TITLE = "Jonathan Kaonga | Senior Full-Stack Engineer | Vue · Nuxt · TypeScript"
 
 export const SITE_DESCRIPTION
-  = "Senior full-stack engineer in Amsterdam. Vue, Nuxt, Pinia, and TypeScript for product UI. Available for permanent roles or selective B2B via JDev Online."
+  = "Senior full-stack engineer based in Amsterdam. Open to remote, UK, and US. Vue, Nuxt, Pinia, and TypeScript for product UI. Available for permanent roles or selective B2B via JDev Online."
 
 export const SITE_AVAILABILITY
   = "Available for permanent roles or selective B2B via JDev Online."
 
-export const SITE_LOCATION = "Amsterdam · EU" as const
+export const SITE_LOCATION = "Based in Amsterdam. Open to remote, UK, and US." as const
 
 /** Lab mode parked until claims are real — kept for future re-enable */
 export const PLATFORM_TITLE
