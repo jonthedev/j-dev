@@ -44,12 +44,10 @@ export const techClusters: TechCluster[] = [
     id: "systems",
     title: "Systems",
     items: [
-      { id: "python", title: "Python", icon: "simple-icons:python", iconClass: "text-yellow-500" },
+      { id: "python", title: "Python", icon: "simple-icons:python", iconClass: "text-[#4B8BBE]" },
       { id: "linux", title: "Linux", icon: "simple-icons:linux", iconClass: "text-gray-800 dark:text-white" },
-      { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-600" },
-      { id: "github", title: "GitHub", icon: "simple-icons:github", iconClass: "text-gray-800 dark:text-white" },
-      { id: "gitlab", title: "GitLab", icon: "simple-icons:gitlab", iconClass: "text-orange-600" },
-      { id: "jenkins", title: "Jenkins", icon: "simple-icons:jenkins", iconClass: "text-gray-700 dark:text-gray-300" }
+      { id: "git", title: "Git", icon: "simple-icons:git", iconClass: "text-orange-600" },
+      { id: "github", title: "GitHub", icon: "simple-icons:github", iconClass: "text-gray-800 dark:text-white" }
     ]
   }
 ]

@@ -36,7 +36,7 @@ export const featuredProject: ProjectItem = {
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
-  text: "Real-time derivatives trading dashboards handling live market data with options, futures, and perpetuals for professional traders.",
+  text: "Trading UI on Vue 3 and Nuxt for a crypto derivatives exchange. Exchange APIs, real-time D3.js charting, and the internal operations panel for Trading Operations.",
   tech: [
     {
       id: "vue-thalex",
@@ -83,7 +83,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB Traffic Verkeer",
-    text: "Market-leading traffic platform for millions of daily commuters. Won Website van het Jaar 2022.",
+    text: "Traffic platform for millions of daily users. Platform won Website van het Jaar 2022.",
     tech: [
       {
         id: "next-anwb",
@@ -113,7 +113,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
-    text: "Nationale Vacaturebank, the Netherlands largest job board with millions of monthly visits.",
+    text: "Nationale Vacaturebank. Performance work on Next.js for a large Dutch job board.",
     tech: [
       {
         id: "next-dpg",
@@ -138,12 +138,12 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
-    text: "Secure, data-intensive wealth management platform for high-net-worth clients.",
+    text: "Chakra UI component library for a private bank during a company-wide rebrand.",
     tech: [
       {
-        id: "next-vlk",
-        icon: "simple-icons:nextdotjs",
-        classname: "text-gray-900 dark:text-white"
+        id: "chakra-vlk",
+        icon: "simple-icons:chakraui",
+        classname: "text-teal-500"
       },
       {
         id: "react-vlk",
@@ -154,11 +154,6 @@ export const pastProjects: ProjectItem[] = [
         id: "ts-vlk",
         icon: "simple-icons:typescript",
         classname: "text-blue-600"
-      },
-      {
-        id: "tailwind-vlk",
-        icon: "simple-icons:tailwindcss",
-        classname: "text-cyan-400"
       },
       {
         id: "storybook-vlk",

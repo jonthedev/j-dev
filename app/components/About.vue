@@ -20,13 +20,12 @@
         <p
           class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
-          Full-stack product experience across DPG Media, ANWB, and Thalex.
+          {{ ABOUT_LEAD }}
         </p>
         <p
-          class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
+          class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
-          Vue, Nuxt, and TypeScript in production, plus Linux and Python for
-          systems work.
+          {{ ABOUT_CURRENT }}
         </p>
       </SharedReveal>
 
@@ -70,9 +69,8 @@
                 class="text-vue-600 dark:text-vue-400 shrink-0"
                 aria-hidden="true"
               >→</span>
-              <span><strong>Senior judgment.</strong> 6+ years shipping production
-                frontends. I pick the right approach fast and skip expensive
-                detours.</span>
+              <span><strong>Production UI.</strong> 6+ years shipping Vue, Nuxt,
+                React, and Next.js.</span>
             </li>
             <li class="flex gap-2">
               <span
@@ -80,8 +78,8 @@
                 aria-hidden="true"
               >→</span>
               <span>
-                <strong>Vue ecosystem focus.</strong> Vue, Nuxt, Pinia, and
-                TypeScript for product UI, migrations, and maintainable systems.
+                <strong>Vue and Nuxt at Thalex.</strong> React and Next.js at DPG
+                Media, ANWB, and Van Lanschot Kempen.
               </span>
             </li>
             <li class="flex gap-2">
@@ -90,8 +88,14 @@
                 aria-hidden="true"
               >→</span>
               <span>
-                <strong>Systems depth.</strong> Linux and Python for the command
-                line, permissions, and the systems behind the product.
+                <strong>Covering more of the stack.</strong> Boot.dev DevOps path.
+                Linux on a remote Ubuntu server.
+                <a
+                  href="https://github.com/jonthedev/systems"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline underline-offset-2 hover:text-vue-600 dark:hover:text-vue-400"
+                >github.com/jonthedev/systems</a>
               </span>
             </li>
           </ul>
@@ -135,6 +139,14 @@
                 />
                 Outside IR35
               </li>
+              <li class="flex items-center gap-1.5">
+                <Icon
+                  name="lucide:check"
+                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
+                  size="0.75rem"
+                />
+                {{ SITE_RESIDENCY }}
+              </li>
             </ul>
           </div>
         </SharedReveal>
@@ -164,6 +176,7 @@
 <script setup lang="ts">
 import type { TimelineItem } from "@nuxt/ui"
 import { careerTimeline } from "~/data/careerTimeline"
+import { ABOUT_CURRENT, ABOUT_LEAD, SITE_RESIDENCY } from "~/data/siteMeta"
 
 defineOptions({ name: "AppAbout" })
 

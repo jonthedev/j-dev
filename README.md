@@ -1,4 +1,4 @@
-# JDev Online · Senior Full-Stack Engineer
+# JDev Online · Software Engineer
 
 Personal portfolio. Vue, Nuxt, Pinia, TypeScript. Built with Nuxt 4, Nuxt UI, and TypeScript.
 
@@ -81,7 +81,7 @@ Content (projects, tech stack, clients) lives in `app/data/`
 Single portfolio view (Lab / AI track parked until claims are real):
 
 - Hero, About, Projects, Tech Stack, Contact
-- Positioning: Senior Full-Stack Engineer · Vue · Nuxt · TypeScript · permanent or selective B2B
+- Positioning: Software Engineer · Vue · Nuxt · TypeScript · permanent or selective B2B
 
 ---
 
@@ -92,19 +92,6 @@ The site is deployed to **Netlify** from the `main` branch. Build uses:
 - **Build command:** `pnpm run build`
 - **Publish directory:** `.output/public`
 - **SPA redirect:** `/*` → `/index.html` (via `netlify.toml` and `public/_redirects`)
-
----
-
-## Metrics
-
-**Portfolio refactor: React → Nuxt 4**
-
-| | |
-|---|---|
-| **Baseline** | ~40–50 manual engineering hours. |
-| **Actual** | ~11 hours total (4h Agentic Refactor + 7h Human Refinement). |
-| **Efficiency gain** | ~72–80% reduction in migration latency. |
-| **Stack** | Ollama, Qwen2.5-Coder 32B, OpenCode. |
 
 ---
 

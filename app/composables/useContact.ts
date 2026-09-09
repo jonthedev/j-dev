@@ -7,6 +7,7 @@ export function useContact() {
   const contactInfo = {
     email: "jonathan@j-dev.online",
     github: "https://github.com/jonthedev",
+    systems: "https://github.com/jonthedev/systems",
     linkedin: "https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/",
     portfolio: "https://j-dev.online",
     kvk: "93792670",
@@ -47,18 +48,18 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Senior Full-Stack Engineer",
+    title: "Software Engineer",
     experience: "6+ years",
     specialization:
-      "Vue, Nuxt, Pinia, and TypeScript for product UI, migrations, and maintainable systems. Permanent roles or selective B2B via JDev Online.",
+      "Vue and Nuxt at Thalex. React and Next.js at DPG Media, ANWB, and Van Lanschot Kempen. Upskilling in DevOps to cover more of the stack.",
     services: [
-      "Vue, Nuxt, and Pinia product engineering",
-      "Legacy frontend migration and performance",
+      "Vue and Nuxt product UI",
+      "React and Next.js in production",
       "Design systems and component libraries",
-      "TypeScript frontends with clean API integration",
+      "TypeScript frontends with API integration",
       "Permanent roles or selective B2B via JDev Online (KVK 93792670)"
     ],
-    techFocus: ["Vue", "Nuxt", "Pinia", "TypeScript", "Python", "Linux"]
+    techFocus: ["Vue", "Nuxt", "TypeScript", "React", "Python", "Linux"]
   }
 
   // Form validation rules

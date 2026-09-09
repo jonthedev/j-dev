@@ -18,7 +18,7 @@ export function useNavigation() {
     {
       name: "Tech Stack",
       href: "#tech-stack",
-      description: "Frontend and backend technologies I work with"
+      description: "Tools I use in production and while upskilling in DevOps"
     },
     {
       name: "Contact",
@@ -37,6 +37,12 @@ export function useNavigation() {
       url: "https://github.com/jonthedev",
       icon: "simple-icons:github",
       description: "View my code repositories"
+    },
+    {
+      name: "Systems",
+      url: "https://github.com/jonthedev/systems",
+      icon: "simple-icons:github",
+      description: "Boot.dev notes and Linux work"
     },
     {
       name: "LinkedIn",

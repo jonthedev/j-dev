@@ -10,45 +10,44 @@ export interface CareerTimelineItem {
 export const careerTimeline: CareerTimelineItem[] = [
   {
     date: "Feb 2026 – Present",
-    title: "Senior Full-Stack Engineer",
+    title: "Software Engineer",
     company: "JDev Online",
-    description: "B2B via JDev Online · Vue product UI & migrations",
+    description: "ZZP · Boot.dev, Ubuntu, Home Lab Collective",
     icon: "i-lucide-briefcase"
   },
   {
     date: "Feb 2025 – Feb 2026",
     title: "Senior Frontend Engineer",
     company: "TLX Technology",
-    description: "Finance · crypto derivatives exchange (Thalex)",
+    description: "Thalex, crypto derivatives exchange",
     icon: "i-lucide-chart-line"
   },
   {
     date: "Aug 2024 – Feb 2025",
-    title: "Medior Frontend Engineer",
+    title: "Frontend Engineer",
     company: "DPG Media",
-    description:
-      "Media & recruitment · B2C job platform (Nationale Vacaturebank)",
+    description: "Nationale Vacaturebank",
     icon: "i-lucide-newspaper"
   },
   {
     date: "May 2022 – May 2024",
     title: "Frontend Consultant",
-    company: "iO Tech Consultancy",
-    description: "Digital consultancy · ANWB & Van Lanschot Kempen",
+    company: "iO",
+    description: "ANWB and Van Lanschot Kempen",
     icon: "i-lucide-users"
   },
   {
     date: "May 2021 – May 2022",
-    title: "Freelance Frontend Engineer",
+    title: "Frontend Developer",
     company: "JDev Online",
-    description: "ZZP · multi-client frontend delivery",
+    description: "Frontend for j-dev.online",
     icon: "i-lucide-laptop"
   },
   {
     date: "Mar 2020 – May 2021",
     title: "Frontend Engineer",
-    company: "Technology Catalogue",
-    description: "Startup · B2B gas & energy sector",
+    company: "TechnologyCatalogue",
+    description: "B2B energy marketplace",
     icon: "i-lucide-code"
   }
 ]
