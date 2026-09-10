@@ -34,7 +34,7 @@
       type="button"
       class="mt-3 inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-vue-300 hover:text-vue-700 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300 dark:hover:border-vue-700 dark:hover:text-vue-300"
       :aria-label="`Copy ${copyValue}`"
-      @click="copyToClipboard"
+      @click="emitCopy"
     >
       <Icon
         icon="lucide:copy"
@@ -67,29 +67,15 @@ const props = withDefaults(defineProps<Props>(), {
   delay: 0
 })
 
+const emit = defineEmits<{
+  copy: [value: string]
+}>()
+
 const isExternal = computed(() => props.href?.startsWith("http") ?? false)
-const toast = useToast()
 
-async function copyToClipboard() {
-  if (!props.copyValue || !import.meta.client) {
-    return
-  }
-
-  try {
-    await navigator.clipboard.writeText(props.copyValue)
-    toast.add({
-      title: "Email copied",
-      description: props.copyValue,
-      icon: "i-lucide-check",
-      color: "success"
-    })
-  } catch {
-    toast.add({
-      title: "Could not copy email",
-      description: "Select the address and copy it manually.",
-      icon: "i-lucide-circle-alert",
-      color: "error"
-    })
+function emitCopy() {
+  if (props.copyValue) {
+    emit("copy", props.copyValue)
   }
 }
 </script>

@@ -41,6 +41,7 @@
           :href="`mailto:${contactInfo.email}`"
           :copy-value="contactInfo.email"
           :delay="100"
+          @copy="copyEmail"
         />
         <SharedContactCard
           icon="lucide:building-2"
@@ -139,6 +140,30 @@ defineOptions({ name: "AppContact" })
 const { contactInfo, contactMethods } = useContact()
 const portfolioMode = usePortfolioMode()
 const isPlatformMode = computed(() => portfolioMode.mode.value !== "frontend")
+const toast = useToast()
+
+async function copyEmail(value: string) {
+  if (!import.meta.client) {
+    return
+  }
+
+  try {
+    await navigator.clipboard.writeText(value)
+    toast.add({
+      title: "Email copied",
+      description: value,
+      icon: "i-lucide-check",
+      color: "success"
+    })
+  } catch {
+    toast.add({
+      title: "Could not copy email",
+      description: "Select the address and copy it manually.",
+      icon: "i-lucide-circle-alert",
+      color: "error"
+    })
+  }
+}
 </script>
 
 <style scoped>

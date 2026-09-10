@@ -93,15 +93,29 @@ describe("ContactCard", () => {
       },
       global: {
         stubs: { Icon: true, transition: false, SharedReveal: false },
-        directives: { motion: noopMotion },
-        mocks: {
-          useToast: () => ({ add: () => ({}) })
-        }
+        directives: { motion: noopMotion }
       }
     })
 
     expect(wrapper.text()).toContain("Copy email")
     expect(wrapper.find("button").exists()).toBe(true)
-    expect(wrapper.text()).not.toContain("Copied")
+  })
+
+  it("emits copy with the email value when copy is clicked", async () => {
+    const wrapper = mount(ContactCard, {
+      props: {
+        icon: "lucide:mail",
+        title: "Email",
+        content: "hello@example.com",
+        copyValue: "hello@example.com"
+      },
+      global: {
+        stubs: { Icon: true, transition: false, SharedReveal: false },
+        directives: { motion: noopMotion }
+      }
+    })
+
+    await wrapper.find("button").trigger("click")
+    expect(wrapper.emitted("copy")?.[0]).toEqual(["hello@example.com"])
   })
 })
