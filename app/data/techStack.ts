@@ -42,11 +42,17 @@ export const techClusters: TechCluster[] = [
   },
   {
     id: "systems",
-    title: "Systems",
+    title: "Systems and DevOps",
     items: [
       { id: "python", title: "Python", icon: "simple-icons:python", iconClass: "text-[#4B8BBE]" },
       { id: "linux", title: "Linux", icon: "simple-icons:linux", iconClass: "text-gray-800 dark:text-white" },
       { id: "git", title: "Git", icon: "simple-icons:git", iconClass: "text-orange-600" },
+      { id: "go", title: "Go", icon: "simple-icons:go", iconClass: "text-cyan-600" },
+      { id: "sql", title: "SQL", icon: "lucide:database", iconClass: "text-sky-600" },
+      { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-500" },
+      { id: "aws", title: "AWS", icon: "simple-icons:amazonaws", iconClass: "text-orange-500" },
+      { id: "cicd", title: "CI/CD", icon: "lucide:git-branch", iconClass: "text-emerald-600" },
+      { id: "kubernetes", title: "Kubernetes", icon: "simple-icons:kubernetes", iconClass: "text-blue-600" },
       { id: "github", title: "GitHub", icon: "simple-icons:github", iconClass: "text-gray-800 dark:text-white" }
     ]
   }

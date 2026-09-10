@@ -10,9 +10,9 @@ export interface CareerTimelineItem {
 export const careerTimeline: CareerTimelineItem[] = [
   {
     date: "Feb 2026 – Present",
-    title: "Software Engineer",
+    title: "Full Stack Engineer",
     company: "JDev Online",
-    description: "ZZP · Boot.dev, Ubuntu, Home Lab Collective",
+    description: "ZZP / B2B · UI, API, DevOps",
     icon: "i-lucide-briefcase"
   },
   {

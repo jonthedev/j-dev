@@ -80,7 +80,7 @@ export const seoPresets = {
   // About page
   about: () => usePageSeo(
     "About",
-    "Software engineer via JDev Online. Vue, Nuxt, and TypeScript. Background at DPG Media, ANWB, Van Lanschot Kempen, and Thalex.",
+    "Full stack engineer via JDev Online. Product UI at Thalex, DPG Media, ANWB, and Van Lanschot Kempen. DevOps depth across Go, Docker, AWS, and Kubernetes.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#about"
   ),
@@ -96,7 +96,7 @@ export const seoPresets = {
   // Tech Stack page
   techStack: () => usePageSeo(
     "Tech Stack",
-    "Vue, Nuxt, Pinia, and TypeScript at the core, plus React, Next.js, Python, and Linux.",
+    "TypeScript, Vue, React, Go, Docker, AWS, Kubernetes, Python, Linux, and more.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#tech-stack"
   ),

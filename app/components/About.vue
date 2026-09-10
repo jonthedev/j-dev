@@ -56,7 +56,7 @@
               <span
                 class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400"
               >
-                years · Vue & product UI
+                years · full stack
               </span>
             </span>
           </div>
@@ -69,8 +69,8 @@
                 class="text-vue-600 dark:text-vue-400 shrink-0"
                 aria-hidden="true"
               >→</span>
-              <span><strong>Production UI.</strong> 6+ years shipping Vue, Nuxt,
-                React, and Next.js.</span>
+              <span><strong>Production UI.</strong> 6+ years shipping product
+                frontends across Vue, Nuxt, React, and Next.js.</span>
             </li>
             <li class="flex gap-2">
               <span
@@ -78,8 +78,8 @@
                 aria-hidden="true"
               >→</span>
               <span>
-                <strong>Vue and Nuxt at Thalex.</strong> React and Next.js at DPG
-                Media, ANWB, and Van Lanschot Kempen.
+                <strong>Thalex, DPG, ANWB, VLK.</strong> ANWB Traffic Verkeer won
+                Website van het Jaar 2022.
               </span>
             </li>
             <li class="flex gap-2">
@@ -88,14 +88,8 @@
                 aria-hidden="true"
               >→</span>
               <span>
-                <strong>Covering more of the stack.</strong> Boot.dev DevOps path.
-                Linux on a remote Ubuntu server.
-                <a
-                  href="https://github.com/jonthedev/systems"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="underline underline-offset-2 hover:text-vue-600 dark:hover:text-vue-400"
-                >github.com/jonthedev/systems</a>
+                <strong>DevOps depth.</strong> Boot.dev DevOps path. Linux for
+                ToekomstTech. Go, SQL, Docker, AWS, CI/CD, and Kubernetes.
               </span>
             </li>
           </ul>
@@ -121,7 +115,7 @@
                   class="shrink-0 text-emerald-600 dark:text-emerald-400"
                   size="0.75rem"
                 />
-                Permanent roles or selective B2B
+                Full-time roles or selective B2B via JDev Online
               </li>
               <li class="flex items-center gap-1.5">
                 <Icon

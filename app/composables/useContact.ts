@@ -12,9 +12,9 @@ export function useContact() {
     portfolio: "https://j-dev.online",
     kvk: "93792670",
     kvkUrl: "https://www.kvk.nl/zoeken/?source=all&q=93792670",
-    availability: "Available for permanent roles or selective B2B",
+    availability: "Open to full-time roles and selective B2B",
     location: "Amsterdam, Netherlands",
-    status: "Permanent roles or selective B2B via JDev Online",
+    status: "Full-time roles or selective B2B via JDev Online",
     bookingUrl: "https://calendly.com/jdev-online/new-meeting"
   }
 
@@ -48,18 +48,18 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Software Engineer",
+    title: "Full Stack Engineer",
     experience: "6+ years",
     specialization:
-      "Vue and Nuxt at Thalex. React and Next.js at DPG Media, ANWB, and Van Lanschot Kempen. Upskilling in DevOps to cover more of the stack.",
+      "Product UI at Thalex, DPG Media, ANWB, and Van Lanschot Kempen. DevOps depth across Python, Linux, Go, SQL, Docker, AWS, CI/CD, and Kubernetes.",
     services: [
-      "Vue and Nuxt product UI",
-      "React and Next.js in production",
+      "Product UI and API-integrated frontends",
+      "Vue, Nuxt, React, and Next.js in production",
+      "Linux, Docker, Go, SQL, AWS, CI/CD, and Kubernetes",
       "Design systems and component libraries",
-      "TypeScript frontends with API integration",
-      "Permanent roles or selective B2B via JDev Online (KVK 93792670)"
+      "Full-time roles or selective B2B via JDev Online (KVK 93792670)"
     ],
-    techFocus: ["Vue", "Nuxt", "TypeScript", "React", "Python", "Linux"]
+    techFocus: ["TypeScript", "Vue", "React", "Go", "Docker", "AWS", "Kubernetes"]
   }
 
   // Form validation rules

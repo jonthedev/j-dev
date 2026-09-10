@@ -1,4 +1,4 @@
-# JDev Online · Software Engineer
+# JDev Online · Full Stack Engineer
 
 Personal portfolio. Vue, Nuxt, Pinia, TypeScript. Built with Nuxt 4, Nuxt UI, and TypeScript.
 
@@ -81,7 +81,7 @@ Content (projects, tech stack, clients) lives in `app/data/`
 Single portfolio view (Lab / AI track parked until claims are real):
 
 - Hero, About, Projects, Tech Stack, Contact
-- Positioning: Software Engineer · Vue · Nuxt · TypeScript · permanent or selective B2B
+- Positioning: Full Stack Engineer · TypeScript · Vue · React · Go · Docker · AWS · Kubernetes · full-time or selective B2B
 
 ---
 

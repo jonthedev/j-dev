@@ -5,16 +5,17 @@ export const SITE_URL = "https://j-dev.online" as const
 /** Display brand (Navbar, Footer, OG); keep in sync with social copy */
 export const SITE_BRAND = "JDev Online" as const
 
-/** Hero H1 — match cv.md */
-export const SITE_HEADLINE = "Software Engineer" as const
+/** Hero H1 — match cv.md / LinkedIn title */
+export const SITE_HEADLINE = "Full Stack Engineer" as const
 
-export const SITE_TITLE = "Jonathan Kaonga | Software Engineer | Vue · Nuxt · TypeScript"
+export const SITE_TITLE
+  = "Jonathan Kaonga | Full Stack Engineer | TypeScript · Vue · React · Go · Docker · AWS · Kubernetes"
 
 export const SITE_DESCRIPTION
-  = "Software engineer with 6+ years shipping product UI in TypeScript. Vue and Nuxt at Thalex. React and Next.js at DPG Media, ANWB, and Van Lanschot Kempen. Based in Amsterdam. Open to the Netherlands, UK, and US."
+  = "Full stack engineer with 6+ years shipping high-traffic product UI, plus DevOps depth across Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. Production at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam. Open to full-time roles and selective B2B via JDev Online."
 
 export const SITE_AVAILABILITY
-  = "Available for permanent roles or selective B2B via JDev Online."
+  = "Open to full-time roles and selective B2B contracts via JDev Online."
 
 export const SITE_LOCATION
   = "Based in Amsterdam. Open to the Netherlands, UK, and US." as const
@@ -23,10 +24,10 @@ export const SITE_RESIDENCY
   = "Permanent Dutch resident. British passport. No visa sponsorship required for NL or UK." as const
 
 export const ABOUT_LEAD
-  = "Software engineer with 6+ years shipping product UI in TypeScript. Strongest in Vue and Nuxt (Thalex crypto exchange). Production React and Next.js at DPG Media, ANWB Verkeer, and Van Lanschot Kempen (private bank)."
+  = "Full stack engineer with 6+ years shipping high-traffic product UI, plus DevOps depth across Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. I deliver product features, modernisations, API-integrated UIs, and the Linux, container, and cloud work needed to run them."
 
 export const ABOUT_CURRENT
-  = "Currently upskilling in DevOps and platform engineering to cover more of the stack, including Linux administration on a remote Ubuntu server. I also run local AI and self-hosted infra (Ollama, Home Lab Collective)."
+  = "Production frontend at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Linux administration for ToekomstTech. Member of Amsterdam AI Tinkerers and ToekomstTech, where we co-organise the Home Lab Collective for self-hosted infra and local AI."
 
 /** Lab mode parked until claims are real — kept for future re-enable */
 export const PLATFORM_TITLE
