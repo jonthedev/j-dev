@@ -18,9 +18,9 @@ export const platformPillars: ServicePillar[] = [
   },
   {
     icon: "lucide:shield",
-    headline: "DevOps depth",
-    body: "Boot.dev DevOps path. Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. Linux administration for ToekomstTech. Home Lab Collective and local AI.",
-    metric: "UI through deploy",
-    tags: ["Go", "Docker", "Kubernetes"]
+    headline: "Systems and DevOps",
+    body: "Systems admin for ToekomstTech. Containers, cloud, CI/CD, and Kubernetes in the toolkit. Home Lab Collective and local AI.",
+    metric: "Admin plus platform",
+    tags: ["Linux", "Docker", "Kubernetes"]
   }
 ]

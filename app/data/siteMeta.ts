@@ -24,10 +24,7 @@ export const SITE_RESIDENCY
   = "Permanent Dutch resident. British passport. No visa sponsorship required for NL or UK." as const
 
 export const ABOUT_LEAD
-  = "Full stack engineer with 6+ years shipping high-traffic product UI, plus DevOps depth across Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. I deliver product features, modernisations, API-integrated UIs, and the Linux, container, and cloud work needed to run them."
-
-export const ABOUT_CURRENT
-  = "Production frontend at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Linux administration for ToekomstTech. Member of Amsterdam AI Tinkerers and ToekomstTech, where we co-organise the Home Lab Collective for self-hosted infra and local AI."
+  = "Full stack engineer. High-traffic product UI, plus the Linux, container, and cloud work to run it."
 
 /** Lab mode parked until claims are real — kept for future re-enable */
 export const PLATFORM_TITLE

@@ -11,90 +11,87 @@
       <div class="absolute inset-0 about-section-grid" />
     </div>
     <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-      <SharedReveal class="mb-16 text-center">
+      <SharedReveal class="mb-12 text-center">
         <h2
           class="mb-6 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
           About
         </h2>
         <p
-          class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
+          class="mx-auto max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
         >
           {{ ABOUT_LEAD }}
         </p>
-        <p
-          class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
+      </SharedReveal>
+
+      <SharedReveal
+        :delay="80"
+        class="mb-12 flex flex-col items-center gap-6"
+      >
+        <div class="flex items-center justify-center gap-4">
+          <img
+            src="/jdk-portfolio-comp.webp"
+            alt="Jonathan Kaonga"
+            width="144"
+            height="144"
+            loading="lazy"
+            class="h-28 w-28 rounded-full object-cover ring-2 ring-gray-200 shadow-sm dark:ring-gray-800"
+          >
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 font-normal dark:border-vue-800 dark:bg-vue-950/35"
+          >
+            <span
+              class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300"
+            >
+              6+
+            </span>
+            <span
+              class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400"
+            >
+              years · full stack
+            </span>
+          </span>
+        </div>
+
+        <!-- Circular proof cards: story beats, not a second tech stack -->
+        <ul
+          class="m-0 flex list-none flex-wrap items-start justify-center gap-8 p-0 sm:gap-10"
         >
-          {{ ABOUT_CURRENT }}
-        </p>
+          <li
+            v-for="(item, index) in aboutProofItems"
+            :key="item.id"
+            class="flex w-[9.5rem] flex-col items-center text-center sm:w-40"
+          >
+            <SharedReveal :delay="120 + index * 60">
+              <div
+                class="flex aspect-square w-[9.5rem] flex-col items-center justify-center rounded-full border border-vue-200/90 bg-white/90 px-4 shadow-sm dark:border-vue-800 dark:bg-gray-950/90 sm:w-40"
+              >
+                <Icon
+                  :name="item.icon"
+                  class="mb-2 text-vue-600 dark:text-vue-400"
+                  size="1.75rem"
+                />
+                <span
+                  class="text-sm font-semibold text-gray-900 dark:text-white"
+                >
+                  {{ item.title }}
+                </span>
+              </div>
+              <p
+                class="mt-3 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                {{ item.caption }}
+              </p>
+            </SharedReveal>
+          </li>
+        </ul>
       </SharedReveal>
 
       <div class="grid items-start gap-12 md:grid-cols-2">
-        <!-- Left: Advantage -->
         <SharedReveal
-          :delay="100"
+          :delay="200"
           direction="left"
-          class="space-y-6"
         >
-          <div class="flex items-center justify-center gap-4">
-            <img
-              src="/jdk-portfolio-comp.webp"
-              alt="Jonathan Kaonga"
-              width="144"
-              height="144"
-              loading="lazy"
-              class="h-28 w-28 rounded-full object-cover ring-2 ring-gray-200 shadow-sm dark:ring-gray-800"
-            >
-            <span
-              class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 font-normal dark:border-vue-800 dark:bg-vue-950/35"
-            >
-              <span
-                class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300"
-              >
-                6+
-              </span>
-              <span
-                class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400"
-              >
-                years · full stack
-              </span>
-            </span>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-            Your Advantage
-          </h3>
-          <ul class="list-none space-y-2 text-gray-700 dark:text-gray-300">
-            <li class="flex gap-2">
-              <span
-                class="text-vue-600 dark:text-vue-400 shrink-0"
-                aria-hidden="true"
-              >→</span>
-              <span><strong>Production UI.</strong> 6+ years shipping product
-                frontends across Vue, Nuxt, React, and Next.js.</span>
-            </li>
-            <li class="flex gap-2">
-              <span
-                class="text-vue-600 dark:text-vue-400 shrink-0"
-                aria-hidden="true"
-              >→</span>
-              <span>
-                <strong>Thalex, DPG, ANWB, VLK.</strong> ANWB Traffic Verkeer won
-                Website van het Jaar 2022.
-              </span>
-            </li>
-            <li class="flex gap-2">
-              <span
-                class="text-vue-600 dark:text-vue-400 shrink-0"
-                aria-hidden="true"
-              >→</span>
-              <span>
-                <strong>DevOps depth.</strong> Boot.dev DevOps path. Linux for
-                ToekomstTech. Go, SQL, Docker, AWS, CI/CD, and Kubernetes.
-              </span>
-            </li>
-          </ul>
-
-          <!-- Compliance -->
           <div
             class="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-black"
           >
@@ -145,9 +142,8 @@
           </div>
         </SharedReveal>
 
-        <!-- Right: Timeline -->
         <SharedReveal
-          :delay="150"
+          :delay="240"
           direction="right"
           class="rounded-xl border border-gray-200 bg-white/80 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-950/80"
         >
@@ -169,8 +165,9 @@
 
 <script setup lang="ts">
 import type { TimelineItem } from "@nuxt/ui"
+import { aboutProofItems } from "~/data/aboutProof"
 import { careerTimeline } from "~/data/careerTimeline"
-import { ABOUT_CURRENT, ABOUT_LEAD, SITE_RESIDENCY } from "~/data/siteMeta"
+import { ABOUT_LEAD, SITE_RESIDENCY } from "~/data/siteMeta"
 
 defineOptions({ name: "AppAbout" })
 
