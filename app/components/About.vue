@@ -98,6 +98,7 @@
         <SharedReveal
           :delay="200"
           direction="left"
+          class="space-y-4"
         >
           <div
             class="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-black"
@@ -147,6 +148,17 @@
               </li>
             </ul>
           </div>
+          <figure class="m-0 overflow-hidden rounded-lg">
+            <img
+              src="/jdev-desk-setup.jpg"
+              alt="Desk setup with j-dev.online on the left monitor, code on the right, and system processes on the MacBook"
+              width="1024"
+              height="768"
+              loading="lazy"
+              decoding="async"
+              class="h-auto w-full object-cover"
+            >
+          </figure>
         </SharedReveal>
 
         <SharedReveal
