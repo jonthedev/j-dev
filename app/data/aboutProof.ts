@@ -18,7 +18,7 @@ export const aboutProofItems: AboutProofItem[] = [
     id: "devops",
     icon: "lucide:server",
     title: "Systems",
-    caption: "Systems admin for ToekomstTech. Containers, cloud, and CI/CD."
+    caption: "Remote Linux administration on a partitioned Ubuntu server. Containers, cloud, and CI/CD."
   },
   {
     id: "network",

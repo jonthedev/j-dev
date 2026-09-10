@@ -60,22 +60,29 @@
           <li
             v-for="(item, index) in aboutProofItems"
             :key="item.id"
-            class="flex w-[9.5rem] flex-col items-center text-center sm:w-40"
+            class="flex w-32 flex-col items-center text-center sm:w-36"
           >
             <SharedReveal :delay="120 + index * 60">
-              <div
-                class="flex aspect-square w-[9.5rem] flex-col items-center justify-center rounded-full border border-vue-200/90 bg-white/90 px-4 shadow-sm dark:border-vue-800 dark:bg-gray-950/90 sm:w-40"
-              >
-                <Icon
-                  :name="item.icon"
-                  class="mb-2 text-vue-600 dark:text-vue-400"
-                  size="1.75rem"
-                />
+              <div class="about-proof-orb relative aspect-square w-32 overflow-visible sm:w-36">
                 <span
-                  class="text-sm font-semibold text-gray-900 dark:text-white"
+                  class="about-proof-pulse pointer-events-none absolute -inset-1 rounded-full border-2 border-vue-500 dark:border-vue-400"
+                  :style="{ animationDelay: `${index * 0.55}s` }"
+                  aria-hidden="true"
+                />
+                <div
+                  class="relative z-[1] flex h-full w-full flex-col items-center justify-center rounded-full border border-vue-200/90 bg-white/90 px-3 shadow-sm dark:border-vue-800 dark:bg-gray-950/90"
                 >
-                  {{ item.title }}
-                </span>
+                  <Icon
+                    :name="item.icon"
+                    class="mb-1.5 text-vue-600 dark:text-vue-400"
+                    size="1.5rem"
+                  />
+                  <span
+                    class="text-xs font-semibold text-gray-900 sm:text-sm dark:text-white"
+                  >
+                    {{ item.title }}
+                  </span>
+                </div>
               </div>
               <p
                 class="mt-3 text-xs leading-snug text-gray-600 dark:text-gray-400"
@@ -187,5 +194,39 @@ const timelineItems = computed<TimelineItem[]>(() =>
     linear-gradient(to right, currentColor 1px, transparent 1px),
     linear-gradient(to bottom, currentColor 1px, transparent 1px);
   background-size: 40px 40px;
+}
+
+.about-proof-orb {
+  overflow: visible;
+}
+
+.about-proof-pulse {
+  animation: about-proof-pulse 2.4s ease-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes about-proof-pulse {
+  0% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-proof-pulse {
+    animation: none;
+    opacity: 0.4;
+    transform: scale(1.02);
+  }
 }
 </style>

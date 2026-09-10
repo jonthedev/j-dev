@@ -19,7 +19,7 @@ export const platformPillars: ServicePillar[] = [
   {
     icon: "lucide:shield",
     headline: "Systems and DevOps",
-    body: "Systems admin for ToekomstTech. Containers, cloud, CI/CD, and Kubernetes in the toolkit. Home Lab Collective and local AI.",
+    body: "Remote Linux administration on a partitioned Ubuntu server. Containers, cloud, CI/CD, and Kubernetes in the toolkit. Home Lab Collective and local AI.",
     metric: "Admin plus platform",
     tags: ["Linux", "Docker", "Kubernetes"]
   }
