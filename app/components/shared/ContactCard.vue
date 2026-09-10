@@ -33,22 +33,22 @@
       v-if="copyValue"
       type="button"
       class="mt-3 inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-vue-300 hover:text-vue-700 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300 dark:hover:border-vue-700 dark:hover:text-vue-300"
-      :aria-label="copied ? 'Email copied' : `Copy ${copyValue}`"
+      :aria-label="`Copy ${copyValue}`"
       @click="copyToClipboard"
     >
       <Icon
-        :icon="copied ? 'lucide:check' : 'lucide:copy'"
+        icon="lucide:copy"
         width="0.875rem"
         height="0.875rem"
         class="shrink-0"
       />
-      {{ copied ? "Copied" : "Copy email" }}
+      Copy email
     </button>
   </SharedReveal>
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref } from "vue"
+import { computed } from "vue"
 import { Icon } from "@iconify/vue"
 
 defineOptions({ name: "ContactCard" })
@@ -68,8 +68,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const isExternal = computed(() => props.href?.startsWith("http") ?? false)
-const copied = ref(false)
-let copiedReset: ReturnType<typeof setTimeout> | undefined
+const toast = useToast()
 
 async function copyToClipboard() {
   if (!props.copyValue || !import.meta.client) {
@@ -78,21 +77,19 @@ async function copyToClipboard() {
 
   try {
     await navigator.clipboard.writeText(props.copyValue)
-    copied.value = true
-    if (copiedReset) {
-      clearTimeout(copiedReset)
-    }
-    copiedReset = setTimeout(() => {
-      copied.value = false
-    }, 2000)
+    toast.add({
+      title: "Email copied",
+      description: props.copyValue,
+      icon: "i-lucide-check",
+      color: "success"
+    })
   } catch {
-    copied.value = false
+    toast.add({
+      title: "Could not copy email",
+      description: "Select the address and copy it manually.",
+      icon: "i-lucide-circle-alert",
+      color: "error"
+    })
   }
 }
-
-onBeforeUnmount(() => {
-  if (copiedReset) {
-    clearTimeout(copiedReset)
-  }
-})
 </script>

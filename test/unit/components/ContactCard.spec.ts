@@ -93,11 +93,15 @@ describe("ContactCard", () => {
       },
       global: {
         stubs: { Icon: true, transition: false, SharedReveal: false },
-        directives: { motion: noopMotion }
+        directives: { motion: noopMotion },
+        mocks: {
+          useToast: () => ({ add: () => ({}) })
+        }
       }
     })
 
     expect(wrapper.text()).toContain("Copy email")
     expect(wrapper.find("button").exists()).toBe(true)
+    expect(wrapper.text()).not.toContain("Copied")
   })
 })
