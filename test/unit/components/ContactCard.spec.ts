@@ -81,4 +81,23 @@ describe("ContactCard", () => {
     expect(wrapper.find("span").exists()).toBe(true)
     expect(wrapper.text()).toContain("+1 234 567 8900")
   })
+
+  it("shows copy email control when copyValue is provided", () => {
+    const wrapper = mount(ContactCard, {
+      props: {
+        icon: "lucide:mail",
+        title: "Email",
+        content: "hello@example.com",
+        href: "mailto:hello@example.com",
+        copyValue: "hello@example.com"
+      },
+      global: {
+        stubs: { Icon: true, transition: false, SharedReveal: false },
+        directives: { motion: noopMotion }
+      }
+    })
+
+    expect(wrapper.text()).toContain("Copy email")
+    expect(wrapper.find("button").exists()).toBe(true)
+  })
 })

@@ -62,6 +62,29 @@
           <span class="block">{{ SITE_AVAILABILITY }}</span>
           <span class="block">{{ SITE_LOCATION }}</span>
         </p>
+
+        <div class="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <UButton
+            to="#projects"
+            size="lg"
+            color="primary"
+            icon="lucide:briefcase"
+            class="shadow-lg shadow-vue-500/20"
+          >
+            Production Work
+          </UButton>
+          <UButton
+            :to="bookingUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            size="lg"
+            variant="outline"
+            color="neutral"
+            icon="lucide:calendar"
+          >
+            Book a Call
+          </UButton>
+        </div>
       </div>
     </div>
   </section>
@@ -71,6 +94,9 @@
 import { SITE_AVAILABILITY, SITE_HEADLINE, SITE_LOCATION } from "~/data/siteMeta"
 
 defineOptions({ name: "AppHero" })
+
+const { contactInfo } = useContact()
+const bookingUrl = contactInfo.bookingUrl
 </script>
 
 <style scoped>

@@ -39,6 +39,7 @@
           title="Email"
           :content="contactInfo.email"
           :href="`mailto:${contactInfo.email}`"
+          :copy-value="contactInfo.email"
           :delay="100"
         />
         <SharedContactCard
