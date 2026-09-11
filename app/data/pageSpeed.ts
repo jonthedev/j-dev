@@ -6,7 +6,7 @@ export interface PageSpeedCategory {
 
 /** Lab scores from PageSpeed Insights (mobile). Re-run after a deploy and update here. */
 export const PAGE_SPEED_REPORT_URL
-  = "https://pagespeed.web.dev/analysis/https-j-dev-online/wanuzb015o?form_factor=mobile"
+  = "https://pagespeed.web.dev/analysis/https-j-dev-online/xxgfgtypsw?form_factor=mobile"
 
 export const PAGE_SPEED_FORM_FACTOR = "mobile" as const
 
