@@ -1,0 +1,18 @@
+# JDev Online
+
+> Portfolio of Jonathan Kaonga, a full stack engineer in Amsterdam.
+
+This is a one-page site. Use the links below.
+
+## Pages
+
+- [Home](https://j-dev.online/): Full stack engineer portfolio
+- [About](https://j-dev.online/#about): Background and work history
+- [Tech Stack](https://j-dev.online/#tech-stack): Tools and PageSpeed scores
+- [Production Work](https://j-dev.online/#projects): Thalex, ANWB, DPG Media, and Van Lanschot Kempen
+- [Contact](https://j-dev.online/#contact): Email and booking
+
+## Optional
+
+- [GitHub](https://github.com/jonthedev)
+- [Systems notes](https://github.com/jonthedev/systems): Boot.dev Linux and Python notes
