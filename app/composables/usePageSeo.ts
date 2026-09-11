@@ -96,7 +96,7 @@ export const seoPresets = {
   // Tech Stack page
   techStack: () => usePageSeo(
     "Tech Stack",
-    "TypeScript, Vue, React, Go, Docker, AWS, Kubernetes, Python, Linux, and more.",
+    "Cursor, Ollama, Qwen, OpenCode, TypeScript, Vue, React, Python, Linux, and more.",
     "/jdk-portfolio-2024.jpeg",
     "https://j-dev.online#tech-stack"
   ),

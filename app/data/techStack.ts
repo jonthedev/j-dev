@@ -14,6 +14,16 @@ export interface TechCluster {
 /** Labeled rows. Each tool appears once. */
 export const techClusters: TechCluster[] = [
   {
+    id: "ai",
+    title: "AI",
+    items: [
+      { id: "cursor", title: "Cursor", icon: "simple-icons:cursor", iconClass: "text-gray-800 dark:text-gray-200" },
+      { id: "ollama", title: "Ollama", icon: "simple-icons:ollama", iconClass: "text-gray-700 dark:text-gray-300" },
+      { id: "qwen", title: "Qwen", icon: "lucide:sparkles", iconClass: "text-amber-500" },
+      { id: "opencode", title: "OpenCode", icon: "lucide:terminal", iconClass: "text-emerald-600" }
+    ]
+  },
+  {
     id: "core",
     title: "Core",
     items: [

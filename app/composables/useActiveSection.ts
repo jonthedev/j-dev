@@ -1,4 +1,4 @@
-const SECTION_IDS = ["about", "projects", "tech-stack", "contact"] as const
+const SECTION_IDS = ["about", "tech-stack", "projects", "contact"] as const
 
 /**
  * Scroll-spy for the one-page nav. Tracks which section sits under the sticky bar.

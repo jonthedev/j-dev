@@ -49,6 +49,13 @@
         </SharedReveal>
       </div>
 
+      <SharedReveal
+        :delay="200"
+        class="mx-auto mt-4 max-w-4xl"
+      >
+        <SharedPageSpeedBar />
+      </SharedReveal>
+
       <SharedReveal :delay="220">
         <SharedBrandChannelBar
           triple-wide

@@ -11,14 +11,14 @@ export function useNavigation() {
       description: "Learn more about my background and expertise"
     },
     {
-      name: "Projects",
-      href: "#projects",
-      description: "Portfolio of my recent work"
-    },
-    {
       name: "Tech Stack",
       href: "#tech-stack",
       description: "Tools I use across product UI and DevOps"
+    },
+    {
+      name: "Projects",
+      href: "#projects",
+      description: "Portfolio of my recent work"
     },
     {
       name: "Contact",
@@ -103,7 +103,7 @@ export const navigationPresets = {
   // Mobile navigation (simplified)
   mobile: () => {
     const { navigationLinks } = useNavigation()
-    return navigationLinks.slice(0, 4) // Limit for mobile
+    return navigationLinks
   },
 
   // Footer navigation (all links)
