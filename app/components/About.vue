@@ -150,10 +150,10 @@
           </div>
           <figure class="m-0 overflow-hidden rounded-lg">
             <img
-              src="/jdev-desk-setup.jpg"
+              src="/jdev-desk-setup.webp"
               alt="Desk setup with j-dev.online on the left monitor, code on the right, and system processes on the MacBook"
-              width="1024"
-              height="768"
+              width="800"
+              height="600"
               loading="lazy"
               decoding="async"
               class="h-auto w-full object-cover"

@@ -31,8 +31,8 @@ export interface ArchitecturePlaceholder {
 
 export const featuredProject: ProjectItem = {
   id: "thalex",
-  img: "/project-tlx-light.png",
-  imgDark: "/project-tlx-dark.png",
+  img: "/project-tlx-light.webp",
+  imgDark: "/project-tlx-dark.webp",
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
@@ -79,7 +79,7 @@ export const featuredProject: ProjectItem = {
 export const pastProjects: ProjectItem[] = [
   {
     id: "anwb",
-    img: "/project-traffic-verkeer.png",
+    img: "/project-traffic-verkeer.webp",
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB Traffic Verkeer",
@@ -109,7 +109,7 @@ export const pastProjects: ProjectItem[] = [
   },
   {
     id: "dpg-media",
-    img: "/project-nationale-vacaturebank.png",
+    img: "/project-nationale-vacaturebank.webp",
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
@@ -134,7 +134,7 @@ export const pastProjects: ProjectItem[] = [
   },
   {
     id: "van-lanschot",
-    img: "/project-vlk.png",
+    img: "/project-vlk.webp",
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
