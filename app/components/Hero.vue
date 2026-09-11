@@ -69,7 +69,7 @@
             size="lg"
             color="primary"
             icon="lucide:briefcase"
-            class="shadow-lg shadow-vue-500/20"
+            class="shadow-lg shadow-vue-700/20 bg-vue-700! text-white! hover:bg-vue-800!"
           >
             Production Work
           </UButton>

@@ -62,6 +62,7 @@
           size="sm"
           color="primary"
           icon="lucide:eye"
+          class="bg-vue-700! text-white! hover:bg-vue-800!"
         >
           View Live
         </UButton>

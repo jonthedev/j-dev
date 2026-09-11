@@ -16,6 +16,7 @@
         color="primary"
         icon="lucide:arrow-right"
         trailing
+        class="bg-vue-700! text-white! hover:bg-vue-800!"
       >
         {{ buttonText }}
       </UButton>
