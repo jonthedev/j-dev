@@ -30,7 +30,7 @@
         {{ pillar.headline }}
       </h3>
 
-      <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+      <p class="mb-4 whitespace-pre-line text-sm leading-relaxed text-gray-600 dark:text-gray-300">
         {{ pillar.body }}
       </p>
 

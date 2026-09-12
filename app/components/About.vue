@@ -87,7 +87,13 @@
               <p
                 class="mt-3 text-xs leading-snug text-gray-600 dark:text-gray-400"
               >
-                {{ item.caption }}
+                <span
+                  v-for="(line, lineIndex) in item.captions"
+                  :key="lineIndex"
+                  class="block"
+                >
+                  {{ line }}
+                </span>
               </p>
             </SharedReveal>
           </li>
