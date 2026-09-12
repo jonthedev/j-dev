@@ -36,9 +36,18 @@
           {{ project.title }}
         </h3>
 
-        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-4">
-          {{ project.text }}
+        <p class="mb-3 text-sm text-gray-500 dark:text-gray-400">
+          {{ project.intro }}
         </p>
+
+        <ul class="mb-4 list-disc space-y-1.5 pl-5 text-gray-600 dark:text-gray-300">
+          <li
+            v-for="(bullet, bulletIndex) in project.bullets"
+            :key="bulletIndex"
+          >
+            {{ bullet }}
+          </li>
+        </ul>
 
         <div class="flex flex-wrap gap-2 mb-6">
           <span
@@ -105,13 +114,3 @@ const projectImageSrc = computed(() => {
 
 const hasImage = computed(() => !!props.project.img)
 </script>
-
-<style scoped>
-.line-clamp-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-</style>

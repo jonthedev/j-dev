@@ -11,7 +11,8 @@ export interface ProjectItem {
   url: string
   github: string | null
   title: string
-  text: string
+  intro: string
+  bullets: string[]
   tech: TechItem[]
 }
 
@@ -36,7 +37,12 @@ export const featuredProject: ProjectItem = {
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
-  text: "Trading UI on Vue 3 and Nuxt for a crypto derivatives exchange. Exchange APIs, real-time D3.js charting, and the internal operations panel for Trading Operations.",
+  intro: "Crypto derivatives exchange. Traders buy and sell futures and options on a professional trading platform.",
+  bullets: [
+    "Migrated the trading UI to Vue 3/Nuxt with Nuxt UI and built the Trading Operations panel in Vuetify.",
+    "About 25% faster onboarding for ops, plus clearer tools for supporting customers.",
+    "Real-time D3.js charting and Thalex API integration."
+  ],
   tech: [
     {
       id: "vue-thalex",
@@ -83,7 +89,11 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB Traffic Verkeer",
-    text: "Traffic platform for millions of daily users. Platform won Website van het Jaar 2022.",
+    intro: "ANWB’s national traffic and travel platform. Millions of people in the Netherlands check live traffic, road conditions, and route info here every day.",
+    bullets: [
+      "Refactored the Less-based style system into styled-components for Traffic Verkeer (millions of daily users).",
+      "The product won Best Website and Most Popular Website at Website van het Jaar 2022."
+    ],
     tech: [
       {
         id: "next-anwb",
@@ -99,11 +109,6 @@ export const pastProjects: ProjectItem[] = [
         id: "tailwind-anwb",
         icon: "simple-icons:tailwindcss",
         classname: "text-cyan-400"
-      },
-      {
-        id: "cypress-anwb",
-        icon: "simple-icons:cypress",
-        classname: "text-red-500"
       }
     ]
   },
@@ -113,7 +118,11 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
-    text: "Nationale Vacaturebank. Performance work on Next.js for a large Dutch job board.",
+    intro: "Nationale Vacaturebank is a large Dutch job board within DPG Media, connecting employers and candidates across major publishing brands.",
+    bullets: [
+      "Led the Nationale Vacaturebank brand-refresh style system in Tailwind, shrinking a large legacy Sass codebase.",
+      "Maintained React/Next.js and web components so other DPG properties (for example ad.nl) could embed job-board UI."
+    ],
     tech: [
       {
         id: "next-dpg",
@@ -138,7 +147,11 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
-    text: "Chakra UI component library for a private bank during a company-wide rebrand.",
+    intro: "Dutch private bank and wealth manager. Client-facing digital products for high-net-worth and institutional customers.",
+    bullets: [
+      "Rolled out a Chakra UI design system while five applications were merged into one during a company-wide rebrand.",
+      "Paired daily with the client's frontend engineer alongside their native team (2 backend, 1 frontend)."
+    ],
     tech: [
       {
         id: "chakra-vlk",

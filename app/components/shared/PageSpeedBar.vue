@@ -44,7 +44,7 @@
               :stroke-dasharray="GAUGE_CIRCUMFERENCE"
               :style="{
                 '--ring-offset': String(dashOffset(category.score)),
-                '--stagger': `${index * 90}ms`
+                '--stagger': `${index * 140}ms`
               }"
             />
           </svg>
@@ -76,12 +76,13 @@ defineOptions({ name: "SharedPageSpeedBar" })
 
 const GAUGE_RADIUS = 15.5
 const GAUGE_CIRCUMFERENCE = 2 * Math.PI * GAUGE_RADIUS
-const COUNT_DURATION_MS = 1150
-const STAGGER_MS = 90
+const COUNT_DURATION_MS = 2200
+const STAGGER_MS = 140
 
 const { target, isVisible } = useInView()
 const displayedScores = reactive(pageSpeedCategories.map(() => 0))
 const reduceMotion = ref(false)
+const hasAnimated = ref(false)
 
 const isFilled = computed(() => reduceMotion.value || isVisible.value)
 
@@ -101,6 +102,8 @@ const snapToFinal = () => {
 }
 
 const countUp = () => {
+  if (hasAnimated.value) return
+  hasAnimated.value = true
   pageSpeedCategories.forEach((category, index) => {
     const startAt = performance.now() + index * STAGGER_MS
     const tick = (now: number) => {
@@ -120,7 +123,10 @@ const countUp = () => {
 
 onMounted(() => {
   reduceMotion.value = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  if (reduceMotion.value) snapToFinal()
+  if (reduceMotion.value) {
+    hasAnimated.value = true
+    snapToFinal()
+  }
 })
 
 watch(isVisible, (visible) => {
@@ -132,7 +138,7 @@ watch(isVisible, (visible) => {
 <style scoped>
 .pagespeed-progress {
   stroke-dashoffset: v-bind(GAUGE_CIRCUMFERENCE);
-  transition: stroke-dashoffset 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: stroke-dashoffset 2.2s cubic-bezier(0.22, 1, 0.36, 1);
   transition-delay: var(--stagger, 0ms);
 }
 
