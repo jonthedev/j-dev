@@ -17,6 +17,10 @@ export const SITE_DESCRIPTION
 export const SITE_AVAILABILITY
   = "Open to full-time roles and selective B2B contracts via JDev Online."
 
+/** Shorter repeat for Contact / Footer. Full line lives in the hero. */
+export const SITE_AVAILABILITY_SHORT
+  = "Open to full-time roles and B2B contracts"
+
 export const SITE_LOCATION
   = "Based in Amsterdam. Open to the Netherlands, UK, and US." as const
 

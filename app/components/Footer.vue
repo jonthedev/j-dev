@@ -10,8 +10,7 @@
             Get in Touch
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">
-            <span class="block">{{ SITE_AVAILABILITY }}</span>
-            <span class="block">{{ SITE_LOCATION }}</span>
+            {{ SITE_AVAILABILITY_SHORT }}
           </p>
           <div class="space-y-2 flex flex-col">
             <a
@@ -105,7 +104,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
-import { SITE_AVAILABILITY, SITE_LOCATION } from "~/data/siteMeta"
+import { SITE_AVAILABILITY_SHORT } from "~/data/siteMeta"
 
 defineOptions({ name: "AppFooter" })
 

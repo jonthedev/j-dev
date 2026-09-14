@@ -62,8 +62,7 @@ export const techClusters: TechCluster[] = [
       { id: "docker", title: "Docker", icon: "simple-icons:docker", iconClass: "text-blue-500" },
       { id: "aws", title: "AWS", icon: "simple-icons:amazonaws", iconClass: "text-orange-500" },
       { id: "cicd", title: "CI/CD", icon: "lucide:git-branch", iconClass: "text-emerald-600" },
-      { id: "kubernetes", title: "Kubernetes", icon: "simple-icons:kubernetes", iconClass: "text-blue-600" },
-      { id: "github", title: "GitHub", icon: "simple-icons:github", iconClass: "text-gray-800 dark:text-white" }
+      { id: "kubernetes", title: "Kubernetes", icon: "simple-icons:kubernetes", iconClass: "text-blue-600" }
     ]
   }
 ]
