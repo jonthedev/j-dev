@@ -32,9 +32,24 @@
       </div>
 
       <div class="px-4 sm:px-6 pt-4 sm:pt-6">
-        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-          {{ project.title }}
-        </h3>
+        <div class="mb-3 flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+            {{ project.title }}
+          </h3>
+          <ul class="m-0 flex list-none flex-wrap gap-1.5 p-0">
+            <li
+              v-for="category in project.categories"
+              :key="category"
+            >
+              <span
+                class="inline-flex rounded-sm px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider"
+                :class="categoryBadgeClass[category]"
+              >
+                {{ category }}
+              </span>
+            </li>
+          </ul>
+        </div>
 
         <p class="mb-3 text-sm text-gray-500 dark:text-gray-400">
           {{ project.intro }}
@@ -59,13 +74,17 @@
               :icon="tech.icon"
               class="mr-1 shrink-0"
             />
-            {{ getTechName(tech.icon) }}
+            {{ tech.label ?? getTechName(tech.icon) }}
           </span>
         </div>
       </div>
 
-      <div class="flex space-x-3 mt-auto px-4 sm:px-6 pb-4 sm:pb-6">
+      <div
+        v-if="project.url || project.github"
+        class="flex space-x-3 mt-auto px-4 sm:px-6 pb-4 sm:pb-6"
+      >
         <UButton
+          v-if="project.url"
           :to="project.url"
           target="_blank"
           size="sm"
@@ -94,7 +113,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
-import type { ProjectItem } from "~/data/projects"
+import type { ProjectCategory, ProjectItem } from "~/data/projects"
 
 interface Props {
   project: ProjectItem
@@ -105,6 +124,11 @@ const props = defineProps<Props>()
 
 const colorMode = useColorMode()
 const { getTechName, getTechBrandClass } = useIcons()
+
+const categoryBadgeClass: Record<ProjectCategory, string> = {
+  Frontend: "border border-vue-600/50 text-vue-700 dark:border-vue-500/50 dark:text-vue-400",
+  AI: "border border-amber-500/50 text-amber-800 dark:border-amber-400/50 dark:text-amber-400"
+}
 
 const projectImageSrc = computed(() => {
   const isDark = colorMode.value === "dark"

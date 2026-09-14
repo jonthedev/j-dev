@@ -2,15 +2,20 @@ interface TechItem {
   id: string
   icon: string
   classname: string
+  /** Override the icon-derived badge label when it would collide with another card. */
+  label?: string
 }
+
+export type ProjectCategory = "Frontend" | "AI"
 
 export interface ProjectItem {
   id: string
   img: string
   imgDark?: string
-  url: string
+  url: string | null
   github: string | null
   title: string
+  categories: ProjectCategory[]
   intro: string
   bullets: string[]
   tech: TechItem[]
@@ -37,6 +42,7 @@ export const featuredProject: ProjectItem = {
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
+  categories: ["Frontend"],
   intro: "Crypto derivatives exchange. Traders buy and sell futures and options on a professional trading platform.",
   bullets: [
     "Migrated the trading UI to Vue 3/Nuxt with Nuxt UI and built the Trading Operations panel in Vuetify.",
@@ -89,6 +95,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB Traffic Verkeer",
+    categories: ["Frontend"],
     intro: "ANWB’s national traffic and travel platform. Millions of people in the Netherlands check live traffic, road conditions, and route info here every day.",
     bullets: [
       "Refactored the Less-based style system into styled-components for Traffic Verkeer (millions of daily users).",
@@ -118,6 +125,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
+    categories: ["Frontend"],
     intro: "Nationale Vacaturebank is a large Dutch job board within DPG Media, connecting employers and candidates across major publishing brands.",
     bullets: [
       "Led the Nationale Vacaturebank brand-refresh style system in Tailwind, shrinking a large legacy Sass codebase.",
@@ -147,6 +155,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
+    categories: ["Frontend"],
     intro: "Dutch private bank and wealth manager. Client-facing digital products for high-net-worth and institutional customers.",
     bullets: [
       "Rolled out a Chakra UI design system while five applications were merged into one during a company-wide rebrand.",
@@ -172,6 +181,64 @@ export const pastProjects: ProjectItem[] = [
         id: "storybook-vlk",
         icon: "simple-icons:storybook",
         classname: "text-pink-500"
+      }
+    ]
+  },
+  {
+    id: "this-site",
+    img: "/project-this-site-light.webp",
+    imgDark: "/project-this-site-dark.webp",
+    url: null,
+    github: null,
+    title: "This Site",
+    categories: ["Frontend", "AI"],
+    intro: "Own portfolio site, migrated from React to Nuxt 4 / Nuxt UI.",
+    bullets: [
+      "Ran the migration locally using a self-hosted homelab: Ollama serving Qwen models, driven through QwenCode and OpenCode. No cloud AI API in the loop.",
+      "Refined the AI-driven migration into production quality using Cursor and hands-on frontend work.",
+      "Part of ongoing homelab and local-inference work alongside Amsterdam AI Tinkerers and the Home Lab Collective."
+    ],
+    tech: [
+      {
+        id: "nuxt-site",
+        icon: "simple-icons:nuxtdotjs",
+        classname: "text-green-600",
+        label: "Nuxt 4"
+      },
+      {
+        id: "nuxtui-site",
+        icon: "lucide:panels-top-left",
+        classname: "text-green-600",
+        label: "Nuxt UI"
+      },
+      {
+        id: "ts-site",
+        icon: "simple-icons:typescript",
+        classname: "text-blue-600"
+      },
+      {
+        id: "ollama-site",
+        icon: "simple-icons:ollama",
+        classname: "text-gray-700 dark:text-gray-300",
+        label: "Ollama"
+      },
+      {
+        id: "qwencode-site",
+        icon: "lucide:sparkles",
+        classname: "text-amber-500",
+        label: "QwenCode"
+      },
+      {
+        id: "opencode-site",
+        icon: "lucide:terminal",
+        classname: "text-emerald-600",
+        label: "OpenCode"
+      },
+      {
+        id: "cursor-site",
+        icon: "simple-icons:cursor",
+        classname: "text-gray-800 dark:text-gray-200",
+        label: "Cursor"
       }
     ]
   }

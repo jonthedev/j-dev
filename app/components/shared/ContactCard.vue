@@ -14,36 +14,38 @@
     <h3 class="font-semibold text-gray-900 dark:text-white mb-2">
       {{ title }}
     </h3>
-    <a
-      v-if="href"
-      :href="href"
-      :target="isExternal ? '_blank' : undefined"
-      :rel="isExternal ? 'noopener noreferrer' : undefined"
-      class="text-vue-600 dark:text-vue-400 hover:text-vue-700 dark:hover:text-vue-300 underline underline-offset-2 transition-colors"
-    >
-      {{ content }}
-    </a>
-    <span
-      v-else
-      class="text-gray-600 dark:text-gray-300"
-    >
-      {{ content }}
-    </span>
-    <button
-      v-if="copyValue"
-      type="button"
-      class="mt-3 inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-vue-300 hover:text-vue-700 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300 dark:hover:border-vue-700 dark:hover:text-vue-300"
-      :aria-label="`Copy ${copyValue}`"
-      @click="emitCopy"
-    >
-      <Icon
-        icon="lucide:copy"
-        width="0.875rem"
-        height="0.875rem"
-        class="shrink-0"
-      />
-      Copy email
-    </button>
+    <div class="flex flex-col items-center">
+      <a
+        v-if="href"
+        :href="href"
+        :target="isExternal ? '_blank' : undefined"
+        :rel="isExternal ? 'noopener noreferrer' : undefined"
+        class="text-vue-600 dark:text-vue-400 hover:text-vue-700 dark:hover:text-vue-300 underline underline-offset-2 transition-colors"
+      >
+        {{ content }}
+      </a>
+      <span
+        v-else
+        class="text-gray-600 dark:text-gray-300"
+      >
+        {{ content }}
+      </span>
+      <button
+        v-if="copyValue"
+        type="button"
+        class="mt-3 inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-vue-300 hover:text-vue-700 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-300 dark:hover:border-vue-700 dark:hover:text-vue-300"
+        :aria-label="`Copy ${copyValue}`"
+        @click="emitCopy"
+      >
+        <Icon
+          icon="lucide:copy"
+          width="0.875rem"
+          height="0.875rem"
+          class="shrink-0"
+        />
+        Copy email
+      </button>
+    </div>
   </SharedReveal>
 </template>
 
