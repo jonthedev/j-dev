@@ -78,7 +78,7 @@ Content (projects, tech stack, clients) lives in `app/data/`
 
 ## Site structure
 
-Single portfolio view (Lab / AI track parked until claims are real):
+Single portfolio view:
 
 - Hero, About, Projects, Tech Stack, Contact
 - Positioning: Full Stack Engineer · TypeScript · Vue · React · Go · Docker · AWS · Kubernetes · full-time or selective B2B

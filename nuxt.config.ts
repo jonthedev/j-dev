@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import {
   OG_IMAGE,
+  SITE_BRAND,
   SITE_DESCRIPTION,
+  SITE_JSON_LD,
   SITE_TITLE,
   SITE_URL
 } from "./app/data/siteMeta"
@@ -29,6 +31,12 @@ export default defineNuxtConfig({
       title: SITE_TITLE,
       htmlAttrs: { lang: "en" },
       link: [{ rel: "canonical", href: `${SITE_URL}/` }],
+      script: [
+        {
+          type: "application/ld+json",
+          innerHTML: JSON.stringify(SITE_JSON_LD)
+        }
+      ],
       meta: [
         { name: "description", content: SITE_DESCRIPTION },
         { property: "og:type", content: "website" },
@@ -36,7 +44,7 @@ export default defineNuxtConfig({
         { property: "og:title", content: SITE_TITLE },
         { property: "og:description", content: SITE_DESCRIPTION },
         { property: "og:image", content: OG_IMAGE },
-        { property: "og:site_name", content: "JDev Online" },
+        { property: "og:site_name", content: SITE_BRAND },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: SITE_TITLE },
         { name: "twitter:description", content: SITE_DESCRIPTION },
