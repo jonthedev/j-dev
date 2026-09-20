@@ -16,21 +16,26 @@ export const SITE_KVK = "93792670" as const
 
 export const SITE_HEADLINE = "Full Stack Engineer" as const
 
+/** Thalex, DPG, ANWB Verkeer, Van Lanschot Kempen */
+export const PRODUCTION_PRODUCT_COUNT = 4
+
 export const SITE_TITLE
   = "Jonathan Kaonga | JDEV Online | Full Stack Engineer | TypeScript · Vue · React · Go · Docker · AWS · Kubernetes"
 
 export const SITE_DESCRIPTION
-  = `Full stack engineer with ${yearsInCareerLabel()} years shipping high-traffic product UI, plus DevOps depth across Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. Production at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam. Open to full-time roles and selective B2B via JDev Online.`
+  = `Full stack engineer with ${yearsInCareerLabel()} years shipping high-traffic product UI at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam. Open to full-time roles and selective B2B via JDev Online.`
 
 export const SITE_AVAILABILITY
   = "Open to full-time roles and selective B2B contracts via JDev Online."
+
+/** Short status on the hero portrait. */
+export const SITE_AVAILABLE_STATUS = "Available" as const
 
 /** Shorter repeat for Contact / Footer. Full line lives in the hero. */
 export const SITE_AVAILABILITY_SHORT
   = "Open to full-time roles and B2B contracts"
 
-export const SITE_LOCATION
-  = "Based in Amsterdam. Open to the Netherlands, UK, and US." as const
+export const SITE_LOCATION = "Amsterdam, NL" as const
 
 export const SITE_RESIDENCY
   = "Permanent Dutch resident. British passport. No visa sponsorship required for NL or UK." as const
@@ -38,8 +43,8 @@ export const SITE_RESIDENCY
 export function aboutLeadParagraphs(now = new Date()) {
   const years = yearsInWords(yearsInCareer(now))
   return [
-    `I'm from London. I moved to the Netherlands and have spent the last ${years} years on product UI here: ANWB traffic, DPG's job board, Van Lanschot Kempen, and most recently Thalex.`,
-    "Amsterdam is home now. I show up at ToekomstTech and Amsterdam AI Tinkerers because I like being in the room with people who build things. Lately that curiosity has gone under the UI: Linux, Git, and Boot.dev's DevOps path, so I can run what I ship and build the rails those applications sit on."
+    `I have spent the last ${years} years shipping product UI in the Netherlands: ANWB traffic, DPG's job board, Van Lanschot Kempen, and most recently Thalex.`,
+    "I am based in Amsterdam, originally from London. I show up at ToekomstTech and Amsterdam AI Tinkerers. I ship the UI, and I work on the rails those applications sit on."
   ]
 }
 

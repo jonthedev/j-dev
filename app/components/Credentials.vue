@@ -6,7 +6,7 @@
   >
     <UContainer>
       <SharedSectionHeader title="Credentials">
-        <p>Certificates earned to verify the systems skills beside {{ careerYearsSpoken }} years of product UI.</p>
+        <p>Verified certificates beside the production work.</p>
       </SharedSectionHeader>
 
       <UCarousel
@@ -53,9 +53,6 @@
 
 <script setup lang="ts">
 import { bootdevCredentials } from "~/data/credentials"
-import { yearsInCareer, yearsInWords } from "~/utils/careerYears"
-
-const careerYearsSpoken = yearsInWords(yearsInCareer())
 
 // Four slides are easy to click through. Autoplay only earns its keep once
 // the list is long enough that paging by hand is tedious.

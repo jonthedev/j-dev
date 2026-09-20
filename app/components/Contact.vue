@@ -92,18 +92,6 @@
             >
               Send Email
             </UButton>
-
-            <UButton
-              :to="contactInfo.linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-              size="lg"
-              variant="outline"
-              color="neutral"
-              icon="lucide:briefcase"
-            >
-              LinkedIn
-            </UButton>
           </div>
         </div>
       </SharedReveal>

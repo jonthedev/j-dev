@@ -29,33 +29,8 @@
 
       <SharedReveal
         :delay="80"
-        class="mb-12 flex flex-col items-center gap-6"
+        class="mb-12"
       >
-        <div class="flex items-center justify-center gap-4">
-          <img
-            src="/jdk-portfolio-comp.webp"
-            :alt="SITE_PERSON_NAME"
-            width="144"
-            height="144"
-            loading="lazy"
-            class="h-28 w-28 rounded-full object-cover ring-2 ring-gray-200 shadow-sm dark:ring-gray-800"
-          >
-          <span
-            class="inline-flex items-center gap-2 rounded-full border border-vue-200/90 bg-vue-50/80 px-5 py-2.5 font-normal dark:border-vue-800 dark:bg-vue-950/35"
-          >
-            <span
-              class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300"
-            >
-              {{ careerYearsLabel }}
-            </span>
-            <span
-              class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400"
-            >
-              years · full stack
-            </span>
-          </span>
-        </div>
-
         <!-- Circular proof cards: story beats, not a second tech stack -->
         <ul
           class="m-0 flex list-none flex-wrap items-start justify-center gap-8 p-0 sm:gap-10"
@@ -204,13 +179,11 @@
 import type { TimelineItem } from "@nuxt/ui"
 import { aboutProofItems } from "~/data/aboutProof"
 import { careerTimeline } from "~/data/careerTimeline"
-import { aboutLeadParagraphs, SITE_PERSON_NAME, SITE_RESIDENCY } from "~/data/siteMeta"
-import { yearsInCareerLabel } from "~/utils/careerYears"
+import { aboutLeadParagraphs, SITE_RESIDENCY } from "~/data/siteMeta"
 
 defineOptions({ name: "AppAbout" })
 
 const aboutLead = aboutLeadParagraphs()
-const careerYearsLabel = yearsInCareerLabel()
 
 const timelineItems = computed<TimelineItem[]>(() =>
   careerTimeline.map(entry => ({

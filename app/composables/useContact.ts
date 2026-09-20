@@ -52,7 +52,7 @@ export function useContact() {
     title: "Full Stack Engineer",
     experience: `${yearsInCareerLabel()} years`,
     specialization:
-      "Product UI at Thalex, DPG Media, ANWB, and Van Lanschot Kempen. DevOps depth across Python, Linux, Go, SQL, Docker, AWS, CI/CD, and Kubernetes.",
+      "Product UI at Thalex, DPG Media, ANWB, and Van Lanschot Kempen.",
     services: [
       "Product UI and API-integrated frontends",
       "Vue, Nuxt, React, and Next.js in production",

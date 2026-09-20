@@ -45,29 +45,83 @@
     </div>
 
     <div
-      class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+      class="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-24 sm:px-6 md:grid-cols-2 md:gap-12 lg:px-8"
     >
-      <div class="space-y-8">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">
+      <div class="order-2 space-y-6 text-center md:order-1 md:text-left">
+        <h1 class="text-4xl font-bold md:text-6xl lg:text-7xl">
           <span
-            class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
+            class="bg-linear-to-r from-vue-600 to-vue-400 bg-clip-text text-transparent dark:from-vue-400 dark:to-vue-300"
           >
             {{ SITE_PERSON_NAME }}
           </span>
         </h1>
 
-        <p
-          class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200"
-        >
+        <p class="text-xl font-medium text-gray-700 md:text-2xl dark:text-gray-200">
           {{ SITE_HEADLINE }}
         </p>
 
-        <p
-          class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-        >
+        <p class="text-base text-gray-600 md:text-lg dark:text-gray-300">
           <span class="block">{{ SITE_AVAILABILITY }}</span>
-          <span class="block">{{ SITE_LOCATION }}</span>
+          <span class="mt-1 inline-flex items-center justify-center gap-1.5 md:justify-start">
+            <Icon
+              name="lucide:map-pin"
+              class="shrink-0 text-vue-600 dark:text-vue-400"
+              size="1rem"
+            />
+            {{ SITE_LOCATION }}
+          </span>
         </p>
+      </div>
+
+      <div class="order-1 mx-auto w-full max-w-sm md:order-2">
+        <div class="relative mx-auto w-fit px-8 pt-4 pb-10 sm:px-12">
+          <div class="relative">
+            <img
+              src="/jdk-portfolio-comp.webp"
+              :alt="SITE_PERSON_NAME"
+              width="320"
+              height="320"
+              fetchpriority="high"
+              class="h-56 w-56 rounded-full object-cover ring-4 ring-white shadow-lg sm:h-72 sm:w-72 dark:ring-gray-900"
+            >
+            <p
+              class="absolute inset-x-0 -bottom-4 mx-auto flex w-fit items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-800 shadow-sm dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100"
+            >
+              <span
+                class="relative flex h-2.5 w-2.5"
+                aria-hidden="true"
+              >
+                <span class="hero-status-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+              </span>
+              {{ SITE_AVAILABLE_STATUS }}
+            </p>
+          </div>
+
+          <dl
+            class="pointer-events-none absolute top-8 left-0 rounded-xl border border-gray-200 bg-white/95 px-3 py-2 shadow-md dark:border-gray-700 dark:bg-gray-950/95"
+          >
+            <dt class="sr-only">
+              Years of experience
+            </dt>
+            <dd class="text-center">
+              <span class="block text-lg font-bold tabular-nums text-vue-700 dark:text-vue-300">{{ careerYearsLabel }}</span>
+              <span class="block text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Years</span>
+            </dd>
+          </dl>
+
+          <dl
+            class="pointer-events-none absolute right-0 bottom-16 rounded-xl border border-gray-200 bg-white/95 px-3 py-2 shadow-md dark:border-gray-700 dark:bg-gray-950/95"
+          >
+            <dt class="sr-only">
+              Production products
+            </dt>
+            <dd class="text-center">
+              <span class="block text-lg font-bold tabular-nums text-vue-700 dark:text-vue-300">{{ PRODUCTION_PRODUCT_COUNT }}</span>
+              <span class="block text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Products</span>
+            </dd>
+          </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -75,13 +129,18 @@
 
 <script setup lang="ts">
 import {
+  PRODUCTION_PRODUCT_COUNT,
   SITE_AVAILABILITY,
+  SITE_AVAILABLE_STATUS,
   SITE_HEADLINE,
   SITE_LOCATION,
   SITE_PERSON_NAME
 } from "~/data/siteMeta"
+import { yearsInCareerLabel } from "~/utils/careerYears"
 
 defineOptions({ name: "AppHero" })
+
+const careerYearsLabel = yearsInCareerLabel()
 </script>
 
 <style scoped>
@@ -132,12 +191,25 @@ defineOptions({ name: "AppHero" })
 
 @media (prefers-reduced-motion: reduce) {
   .hero-cursor,
-  .hero-geometry-square {
+  .hero-geometry-square,
+  .hero-status-ping {
     animation: none;
   }
 
   .hero-cursor {
     transform: translate(18vw, 28vh);
+  }
+}
+
+.hero-status-ping {
+  animation: hero-status-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes hero-status-ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 </style>
