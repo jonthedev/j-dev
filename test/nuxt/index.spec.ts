@@ -11,5 +11,7 @@ describe("Navbar", () => {
     expect(wrapper.text()).toContain("Tech Stack")
     expect(wrapper.text()).toContain("Projects")
     expect(wrapper.text()).toContain("Contact")
+    expect(wrapper.findAll('a[aria-label="GitHub"]').length).toBeGreaterThan(0)
+    expect(wrapper.findAll('a[aria-label="LinkedIn"]').length).toBeGreaterThan(0)
   })
 })

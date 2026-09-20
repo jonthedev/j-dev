@@ -27,6 +27,22 @@
             >
               {{ link.name }}
             </NuxtLink>
+            <a
+              v-for="item in profileSocials"
+              :key="item.name"
+              :href="item.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              :aria-label="item.name"
+              class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 hover:text-vue-600 dark:hover:bg-gray-900 dark:hover:text-vue-400 transition-colors"
+            >
+              <Icon
+                :icon="item.icon"
+                width="1.25rem"
+                height="1.25rem"
+                class="inline-block"
+              />
+            </a>
             <!-- Theme Toggle -->
             <button
               type="button"
@@ -46,7 +62,23 @@
         </div>
 
         <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center space-x-2">
+        <div class="md:hidden flex items-center space-x-1">
+          <a
+            v-for="item in profileSocials"
+            :key="item.name"
+            :href="item.href"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="item.name"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 hover:text-vue-600 dark:hover:bg-gray-900 dark:hover:text-vue-400 transition-colors"
+          >
+            <Icon
+              :icon="item.icon"
+              width="1.25rem"
+              height="1.25rem"
+              class="inline-block"
+            />
+          </a>
           <!-- Theme Toggle -->
           <button
             type="button"
@@ -114,7 +146,21 @@ function toggleColorMode() {
 const isMobileMenuOpen = ref(false)
 
 const { navigationLinks } = useNavigation()
+const { contactInfo } = useContact()
 const { isActive, setActiveHref } = useActiveSection()
+
+const profileSocials = [
+  {
+    name: "GitHub",
+    href: contactInfo.github,
+    icon: "simple-icons:github"
+  },
+  {
+    name: "LinkedIn",
+    href: contactInfo.linkedin,
+    icon: "simple-icons:linkedin"
+  }
+]
 
 function linkClass(href: string) {
   return isActive(href)
