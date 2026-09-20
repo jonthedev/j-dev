@@ -44,7 +44,8 @@ export function aboutLeadParagraphs(now = new Date()) {
   const years = yearsInWords(yearsInCareer(now))
   return [
     `I have spent the last ${years} years shipping product UI in the Netherlands: ANWB traffic, DPG's job board, Van Lanschot Kempen, and most recently Thalex.`,
-    "I am based in Amsterdam, originally from London. I show up at ToekomstTech and Amsterdam AI Tinkerers. I ship the UI, and I work on the rails those applications sit on."
+    "After years on the frontend I am working on the layer underneath. I show up at ToekomstTech because it is a room for hackers and builders, and at Amsterdam AI Tinkerers to stay among hands-on AI builders who demo working systems.",
+    "Originally from London."
   ]
 }
 

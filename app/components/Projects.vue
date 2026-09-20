@@ -11,9 +11,6 @@
           Production Work
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Product UI with real outcomes at Thalex, ANWB Traffic Verkeer, DPG Media, and Van Lanschot Kempen.
-        </p>
-        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Here is what I have shipped.
         </p>
       </SharedReveal>

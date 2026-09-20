@@ -9,11 +9,11 @@ export interface AboutProofItem {
 /** Visual proof for About. Tools stay in Tech Stack. */
 export const aboutProofItems: AboutProofItem[] = [
   {
-    id: "product-ui",
-    icon: "lucide:layout-dashboard",
-    title: "Product UI",
+    id: "award",
+    icon: "lucide:award",
+    title: "Award",
     captions: [
-      "Thalex, DPG, ANWB, VLK.",
+      "ANWB Verkeer.",
       "Website van het Jaar 2022."
     ]
   },
@@ -22,17 +22,17 @@ export const aboutProofItems: AboutProofItem[] = [
     icon: "lucide:server",
     title: "Systems",
     captions: [
-      "Run what I ship.",
-      "Build the rails it sits on."
+      "After the frontend.",
+      "The layer underneath."
     ]
   },
   {
-    id: "network",
-    icon: "lucide:users",
-    title: "Network",
+    id: "homelab",
+    icon: "lucide:house",
+    title: "Home Lab",
     captions: [
-      "AI Tinkerers and ToekomstTech.",
-      "Home Lab Collective."
+      "Co-organise the Collective.",
+      "Self-hosted infra and local AI."
     ]
   }
 ]
