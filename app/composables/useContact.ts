@@ -7,7 +7,6 @@ export function useContact() {
   const contactInfo = {
     email: "jonathan@j-dev.online",
     github: "https://github.com/jonthedev",
-    systems: "https://github.com/jonthedev/systems",
     linkedin: "https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/",
     portfolio: "https://j-dev.online",
     kvk: "93792670",

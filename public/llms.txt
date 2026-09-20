@@ -16,4 +16,3 @@ This is a one-page site. Use the links below.
 ## Optional
 
 - [GitHub](https://github.com/jonthedev)
-- [Systems notes](https://github.com/jonthedev/systems): Boot.dev Linux and Python notes

@@ -44,12 +44,6 @@ export function useNavigation() {
       description: "View my code repositories"
     },
     {
-      name: "Systems",
-      url: "https://github.com/jonthedev/systems",
-      icon: "simple-icons:github",
-      description: "Systems and DevOps materials"
-    },
-    {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/jonathan-kaonga-5a04871b5/",
       icon: "simple-icons:linkedin",
