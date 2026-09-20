@@ -156,14 +156,23 @@
           </div>
           <figure class="m-0 overflow-hidden rounded-lg">
             <img
-              src="/jdev-desk-setup.webp"
-              alt="Desk setup with j-dev.online on the left monitor, code on the right, and system processes on the MacBook"
-              width="800"
-              height="600"
+              src="/jdev-toekomsttech.webp"
+              alt="Jonathan at ToekomstTech pointing a foam dart at the AI block on a whiteboard map of a PC build labeled CPU, GPU, RAM, SSD, and Cloud"
+              width="1024"
+              height="891"
               loading="lazy"
               decoding="async"
               class="h-auto w-full object-cover"
             >
+            <figcaption class="mt-3 text-center text-xs italic leading-relaxed text-gray-600 dark:text-gray-400">
+              Identifying the problem, and the solution
+              <a
+                href="https://tech.toekomst.org/"
+                class="text-vue-700 underline-offset-2 hover:underline dark:text-vue-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >@ ToekomstTech</a>
+            </figcaption>
           </figure>
         </SharedReveal>
 
