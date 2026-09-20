@@ -1,4 +1,4 @@
-import { yearsInCareer, yearsInCareerLabel, yearsInWords } from "~/utils/careerYears"
+import { yearsInCareer, yearsInCareerLabel, yearsInWords } from "../utils/careerYears"
 
 /** Single source of truth for SEO strings (used by nuxt.config static head + app.vue). */
 
