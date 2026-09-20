@@ -10,7 +10,7 @@
     </div>
 
     <div
-      class="hero-cursor-layer pointer-events-none absolute inset-0 z-[1] overflow-hidden"
+      class="hero-cursor-layer pointer-events-none absolute inset-0 z-1 overflow-hidden"
       aria-hidden="true"
     >
       <div class="hero-cursor" />
@@ -68,7 +68,11 @@
 </template>
 
 <script setup lang="ts">
-import { SITE_AVAILABILITY, SITE_HEADLINE, SITE_LOCATION } from "~/data/siteMeta"
+import {
+  SITE_AVAILABILITY,
+  SITE_HEADLINE,
+  SITE_LOCATION
+} from "~/data/siteMeta"
 
 defineOptions({ name: "AppHero" })
 </script>
