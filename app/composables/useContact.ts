@@ -1,3 +1,5 @@
+import { yearsInCareerLabel } from "~/utils/careerYears"
+
 /**
  * Contact information management composable
  * Centralizes contact details and form handling logic
@@ -48,7 +50,7 @@ export function useContact() {
   // Professional information
   const professionalInfo = {
     title: "Full Stack Engineer",
-    experience: "6+ years",
+    experience: `${yearsInCareerLabel()} years`,
     specialization:
       "Product UI at Thalex, DPG Media, ANWB, and Van Lanschot Kempen. DevOps depth across Python, Linux, Go, SQL, Docker, AWS, CI/CD, and Kubernetes.",
     services: [

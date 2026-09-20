@@ -17,11 +17,14 @@
         >
           About
         </h2>
-        <p
-          class="mx-auto max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300"
-        >
-          {{ ABOUT_LEAD }}
-        </p>
+        <div class="mx-auto max-w-2xl space-y-4 text-left text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+          <p
+            v-for="para in aboutLead"
+            :key="para"
+          >
+            {{ para }}
+          </p>
+        </div>
       </SharedReveal>
 
       <SharedReveal
@@ -31,7 +34,7 @@
         <div class="flex items-center justify-center gap-4">
           <img
             src="/jdk-portfolio-comp.webp"
-            alt="Jonathan Kaonga"
+            :alt="SITE_PERSON_NAME"
             width="144"
             height="144"
             loading="lazy"
@@ -43,7 +46,7 @@
             <span
               class="text-2xl font-bold tabular-nums text-vue-700 dark:text-vue-300"
             >
-              6+
+              {{ careerYearsLabel }}
             </span>
             <span
               class="text-xs font-semibold uppercase tracking-wider text-vue-600 dark:text-vue-400"
@@ -201,9 +204,13 @@
 import type { TimelineItem } from "@nuxt/ui"
 import { aboutProofItems } from "~/data/aboutProof"
 import { careerTimeline } from "~/data/careerTimeline"
-import { ABOUT_LEAD, SITE_RESIDENCY } from "~/data/siteMeta"
+import { aboutLeadParagraphs, SITE_PERSON_NAME, SITE_RESIDENCY } from "~/data/siteMeta"
+import { yearsInCareerLabel } from "~/utils/careerYears"
 
 defineOptions({ name: "AppAbout" })
+
+const aboutLead = aboutLeadParagraphs()
+const careerYearsLabel = yearsInCareerLabel()
 
 const timelineItems = computed<TimelineItem[]>(() =>
   careerTimeline.map(entry => ({

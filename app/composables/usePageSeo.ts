@@ -2,7 +2,7 @@
  * SEO management composable
  * Consolidates 7+ useHead patterns throughout the application
  */
-import { SITE_AVAILABILITY, SITE_DESCRIPTION, SITE_LOCATION, SITE_TITLE } from "~/data/siteMeta"
+import { SITE_AVAILABILITY, SITE_DESCRIPTION, SITE_LOCATION, SITE_PERSON_NAME, SITE_TITLE } from "~/data/siteMeta"
 
 export function usePageSeo(title: string, description?: string, image?: string, url?: string) {
   const fullTitle = title === SITE_TITLE ? SITE_TITLE : `${title} - ${SITE_TITLE}`
@@ -48,7 +48,7 @@ export function usePageSeo(title: string, description?: string, image?: string, 
 
   // Additional meta tags
   meta.push(
-    { name: "author", content: "Jonathan Kaonga" },
+    { name: "author", content: SITE_PERSON_NAME },
     { name: "robots", content: "index, follow" },
     { name: "googlebot", content: "index, follow" }
   )

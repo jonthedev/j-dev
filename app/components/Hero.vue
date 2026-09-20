@@ -17,7 +17,7 @@
     </div>
 
     <div
-      class="pointer-events-none absolute inset-0 z-[1] flex items-center justify-center text-vue-600 dark:text-vue-400"
+      class="pointer-events-none absolute inset-0 z-1 flex items-center justify-center text-vue-600 dark:text-vue-400"
       aria-hidden="true"
     >
       <svg
@@ -52,9 +52,15 @@
           <span
             class="text-transparent bg-clip-text bg-linear-to-r from-vue-600 to-vue-400 dark:from-vue-400 dark:to-vue-300"
           >
-            {{ SITE_HEADLINE }}
+            {{ SITE_PERSON_NAME }}
           </span>
         </h1>
+
+        <p
+          class="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200"
+        >
+          {{ SITE_HEADLINE }}
+        </p>
 
         <p
           class="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
@@ -71,7 +77,8 @@
 import {
   SITE_AVAILABILITY,
   SITE_HEADLINE,
-  SITE_LOCATION
+  SITE_LOCATION,
+  SITE_PERSON_NAME
 } from "~/data/siteMeta"
 
 defineOptions({ name: "AppHero" })

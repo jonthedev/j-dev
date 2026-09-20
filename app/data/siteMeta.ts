@@ -1,3 +1,5 @@
+import { yearsInCareer, yearsInCareerLabel, yearsInWords } from "~/utils/careerYears"
+
 /** Single source of truth for SEO strings (used by nuxt.config static head + app.vue). */
 
 export const SITE_URL = "https://j-dev.online" as const
@@ -8,6 +10,8 @@ export const SITE_BRAND = "JDev Online" as const
 /** KVK trade name */
 export const SITE_LEGAL_NAME = "JDEV Online" as const
 
+export const SITE_PERSON_NAME = "Jonathan Kaonga" as const
+
 export const SITE_KVK = "93792670" as const
 
 export const SITE_HEADLINE = "Full Stack Engineer" as const
@@ -16,7 +20,7 @@ export const SITE_TITLE
   = "Jonathan Kaonga | JDEV Online | Full Stack Engineer | TypeScript · Vue · React · Go · Docker · AWS · Kubernetes"
 
 export const SITE_DESCRIPTION
-  = "Full stack engineer with 6+ years shipping high-traffic product UI, plus DevOps depth across Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. Production at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam. Open to full-time roles and selective B2B via JDev Online."
+  = `Full stack engineer with ${yearsInCareerLabel()} years shipping high-traffic product UI, plus DevOps depth across Python, Linux, Git, Go, SQL, Docker, AWS, CI/CD, and Kubernetes. Production at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam. Open to full-time roles and selective B2B via JDev Online.`
 
 export const SITE_AVAILABILITY
   = "Open to full-time roles and selective B2B contracts via JDev Online."
@@ -31,11 +35,15 @@ export const SITE_LOCATION
 export const SITE_RESIDENCY
   = "Permanent Dutch resident. British passport. No visa sponsorship required for NL or UK." as const
 
-export const ABOUT_LEAD
-  = "Full stack engineer. High-traffic product UI, plus the Linux, container, and cloud work to run it."
+export function aboutLeadParagraphs(now = new Date()) {
+  const years = yearsInWords(yearsInCareer(now))
+  return [
+    `I'm from London. I moved to the Netherlands and have spent the last ${years} years on product UI here: ANWB traffic, DPG's job board, Van Lanschot Kempen, and most recently Thalex.`,
+    "Amsterdam is home now. I show up at ToekomstTech and Amsterdam AI Tinkerers because I like being in the room with people who build things. Lately that curiosity has gone under the UI: Linux, Git, and Boot.dev's DevOps path, so I can run what I ship and build the rails those applications sit on."
+  ]
+}
 
-export const PLATFORM_TITLE
-  = "Jonathan Kaonga | Lab (coming back later)"
+export const PLATFORM_TITLE = "Jonathan Kaonga | Lab (coming back later)"
 
 export const PLATFORM_DESCRIPTION
   = "Private experiments. Not currently part of the public offer."
@@ -66,7 +74,7 @@ export const SITE_JSON_LD = {
     {
       "@type": "Person",
       "@id": `${SITE_URL}/#person`,
-      "name": "Jonathan Kaonga",
+      "name": SITE_PERSON_NAME,
       "url": SITE_URL,
       "jobTitle": SITE_HEADLINE,
       "worksFor": { "@id": `${SITE_URL}/#organization` }

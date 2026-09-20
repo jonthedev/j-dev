@@ -22,8 +22,8 @@ export const aboutProofItems: AboutProofItem[] = [
     icon: "lucide:server",
     title: "Systems",
     captions: [
-      "Remote Linux for real workloads.",
-      "Containers, cloud, and CI/CD in the same delivery path."
+      "Run what I ship.",
+      "Build the rails it sits on."
     ]
   },
   {
