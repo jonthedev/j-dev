@@ -8,6 +8,7 @@ This is a one-page site. Use the links below.
 
 - [Home](https://j-dev.online/): Full stack engineer portfolio
 - [About](https://j-dev.online/#about): Background and work history
+- [Credentials](https://j-dev.online/#credentials): Verifiable Boot.dev certificates
 - [Tech Stack](https://j-dev.online/#tech-stack): Tools and PageSpeed scores
 - [Production Work](https://j-dev.online/#projects): Thalex, ANWB, DPG Media, and Van Lanschot Kempen
 - [Contact](https://j-dev.online/#contact): Email and booking

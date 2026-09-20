@@ -12,6 +12,12 @@
     >
       {{ description }}
     </p>
+    <div
+      v-if="$slots.default"
+      class="space-y-2 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+    >
+      <slot />
+    </div>
   </SharedReveal>
 </template>
 

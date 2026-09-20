@@ -2,6 +2,7 @@
   <div>
     <Hero />
     <LazyAbout hydrate-on-visible />
+    <Credentials />
     <LazyTechStack hydrate-on-visible />
     <LazyProjects hydrate-on-visible />
     <LazyContact hydrate-on-visible />

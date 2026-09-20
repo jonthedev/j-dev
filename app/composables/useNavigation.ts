@@ -11,6 +11,11 @@ export function useNavigation() {
       description: "Learn more about my background and expertise"
     },
     {
+      name: "Credentials",
+      href: "#credentials",
+      description: "Verifiable certificates"
+    },
+    {
       name: "Tech Stack",
       href: "#tech-stack",
       description: "Tools I use across product UI and DevOps"

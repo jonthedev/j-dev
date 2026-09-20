@@ -85,6 +85,14 @@ export const seoPresets = {
     "https://j-dev.online#about"
   ),
 
+  // Credentials
+  credentials: () => usePageSeo(
+    "Credentials",
+    "Verifiable certificates for the systems skills beside the product UI work.",
+    "/jdk-portfolio-2024.jpeg",
+    "https://j-dev.online#credentials"
+  ),
+
   // Projects page
   projects: () => usePageSeo(
     "Projects",

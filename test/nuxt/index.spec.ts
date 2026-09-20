@@ -7,6 +7,7 @@ describe("Navbar", () => {
     const wrapper = await mountSuspended(Navbar)
     expect(wrapper.text()).toContain("JDev Online")
     expect(wrapper.text()).toContain("About")
+    expect(wrapper.text()).toContain("Credentials")
     expect(wrapper.text()).toContain("Tech Stack")
     expect(wrapper.text()).toContain("Projects")
     expect(wrapper.text()).toContain("Contact")
