@@ -12,8 +12,6 @@ export interface BootdevCredential {
 }
 
 const BOOTDEV_CERT_PAGE = "https://www.boot.dev/certificates"
-const BOOTDEV_CERT_IMAGE
-  = "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates"
 
 function bootdevCert(
   cert: Omit<BootdevCredential, "href" | "imageSrc" | "alt"> & { alt?: string }
@@ -21,7 +19,8 @@ function bootdevCert(
   return {
     ...cert,
     href: `${BOOTDEV_CERT_PAGE}/${cert.uuid}`,
-    imageSrc: `${BOOTDEV_CERT_IMAGE}/${cert.uuid}.jpeg`,
+    // Served from public/ so the carousel still works if Boot.dev is down.
+    imageSrc: `/credential-${cert.id}.jpeg`,
     alt: cert.alt ?? `Boot.dev ${cert.title} certificate`
   }
 }

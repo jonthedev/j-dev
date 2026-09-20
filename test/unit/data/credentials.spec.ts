@@ -7,12 +7,10 @@ describe("bootdevCredentials", () => {
     expect(bootdevCredentials.every(c => c.kind === "course")).toBe(true)
   })
 
-  it("uses Boot.dev verify URLs and hosted certificate images", () => {
+  it("uses Boot.dev verify URLs and local certificate image backups", () => {
     for (const cert of bootdevCredentials) {
       expect(cert.href).toBe(`https://www.boot.dev/certificates/${cert.uuid}`)
-      expect(cert.imageSrc).toBe(
-        `https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/${cert.uuid}.jpeg`
-      )
+      expect(cert.imageSrc).toBe(`/credential-${cert.id}.jpeg`)
     }
   })
 })
