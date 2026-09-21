@@ -47,7 +47,7 @@
     <div
       class="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-24 sm:px-6 md:grid-cols-2 md:gap-12 lg:px-8"
     >
-      <div class="order-2 space-y-6 text-center md:order-1 md:text-left">
+      <div class="order-2 space-y-5 text-center md:order-1 md:text-left">
         <h1 class="text-4xl font-bold md:text-6xl lg:text-7xl">
           <span
             class="bg-linear-to-r from-vue-600 to-vue-400 bg-clip-text text-transparent dark:from-vue-400 dark:to-vue-300"
@@ -56,9 +56,31 @@
           </span>
         </h1>
 
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
+          {{ SITE_HERO_STANCE }}
+        </p>
+
         <p class="text-xl font-medium text-gray-700 md:text-2xl dark:text-gray-200">
           {{ SITE_HEADLINE }}
         </p>
+
+        <p class="text-base leading-relaxed text-gray-600 md:text-lg dark:text-gray-300">
+          {{ SITE_HERO_LEAD }}
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 md:justify-start">
+          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            Current Focus
+          </span>
+          <UBadge
+            color="primary"
+            variant="subtle"
+            size="md"
+            class="whitespace-normal text-left"
+          >
+            {{ SITE_CURRENT_FOCUS }}
+          </UBadge>
+        </div>
 
         <p class="text-base text-gray-600 md:text-lg dark:text-gray-300">
           <span class="block">{{ SITE_AVAILABILITY }}</span>
@@ -132,7 +154,10 @@ import {
   PRODUCTION_PRODUCT_COUNT,
   SITE_AVAILABILITY,
   SITE_AVAILABLE_STATUS,
+  SITE_CURRENT_FOCUS,
   SITE_HEADLINE,
+  SITE_HERO_LEAD,
+  SITE_HERO_STANCE,
   SITE_LOCATION,
   SITE_PERSON_NAME
 } from "~/data/siteMeta"

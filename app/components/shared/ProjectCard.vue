@@ -4,7 +4,7 @@
       class="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full"
       :ui="{
         root: 'border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden flex flex-col',
-        body: 'px-4 sm:px-6 pb-4 sm:pb-6 pt-0 flex flex-col flex-1'
+        body: 'p-0 flex flex-col flex-1'
       }"
     >
       <div
@@ -31,7 +31,31 @@
         </span>
       </div>
 
-      <div class="px-4 sm:px-6 pt-4 sm:pt-6">
+      <ul
+        v-if="project.tech.length"
+        class="m-0 flex list-none flex-wrap gap-1.5 border-b border-gray-200 bg-gray-50 px-4 py-3 sm:px-6 dark:border-gray-800 dark:bg-gray-900/80"
+        aria-label="Tech stack"
+      >
+        <li
+          v-for="tech in project.tech"
+          :key="tech.id"
+        >
+          <span
+            :class="['flex items-center space-x-1.5 rounded-full px-3 py-1 text-xs font-medium', getTechBrandClass(tech.icon)]"
+          >
+            <Icon
+              :icon="tech.icon"
+              class="mr-1 shrink-0"
+            />
+            {{ tech.label ?? getTechName(tech.icon) }}
+          </span>
+        </li>
+      </ul>
+
+      <div
+        class="px-4 pt-4 sm:px-6 sm:pt-6"
+        :class="project.url || project.github ? 'pb-2' : 'pb-4 sm:pb-6'"
+      >
         <div class="mb-3 flex flex-wrap items-center gap-x-2.5 gap-y-1.5">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white">
             {{ project.title }}
@@ -63,20 +87,6 @@
             {{ bullet }}
           </li>
         </ul>
-
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span
-            v-for="tech in project.tech"
-            :key="tech.id"
-            :class="['flex items-center space-x-1.5 rounded-full px-3 py-1 text-xs font-medium', getTechBrandClass(tech.icon)]"
-          >
-            <Icon
-              :icon="tech.icon"
-              class="mr-1 shrink-0"
-            />
-            {{ tech.label ?? getTechName(tech.icon) }}
-          </span>
-        </div>
       </div>
 
       <div

@@ -11,6 +11,7 @@ describe("bootdevCredentials", () => {
     for (const cert of bootdevCredentials) {
       expect(cert.href).toBe(`https://www.boot.dev/certificates/${cert.uuid}`)
       expect(cert.imageSrc).toBe(`/credential-${cert.id}.jpeg`)
+      expect(cert.skills.length).toBeGreaterThan(0)
     }
   })
 })

@@ -11,24 +11,25 @@
           Production Work
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Here is what I have shipped.
+          National platforms and live trading systems. I keep them stable when the traffic hits.
         </p>
       </SharedReveal>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Featured project: Thalex -->
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <SharedProjectCard
-          :project="featuredProject"
-          :index="0"
-          class="md:col-span-2"
-        />
-
-        <!-- Past projects -->
-        <SharedProjectCard
-          v-for="(project, index) in pastProjects"
+          v-for="(project, index) in enterpriseProjects"
           :key="project.id"
           :project="project"
           :index="index"
+        />
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <SharedProjectCard
+          v-for="(project, index) in supportingProjects"
+          :key="project.id"
+          :project="project"
+          :index="index + enterpriseProjects.length"
         />
       </div>
 
@@ -43,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { featuredProject, pastProjects } from "~/data/projects"
+import { enterpriseProjects, supportingProjects } from "~/data/projects"
 
 defineOptions({ name: "ProjectsSection" })
 </script>

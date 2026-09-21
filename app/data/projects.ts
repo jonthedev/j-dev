@@ -43,7 +43,7 @@ export const featuredProject: ProjectItem = {
   github: null,
   title: "Thalex",
   categories: ["Frontend"],
-  intro: "Crypto derivatives exchange. Traders buy and sell futures and options on a professional trading platform.",
+  intro: "Crypto derivatives exchange. I direct the trading UI where futures and options move in real time, and the interface has to keep pace with the book.",
   bullets: [
     "Migrated the trading UI to Vue 3/Nuxt with Nuxt UI and built the Trading Operations panel in Vuetify.",
     "About 25% faster onboarding for ops, plus clearer tools for supporting customers.",
@@ -96,10 +96,10 @@ export const pastProjects: ProjectItem[] = [
     github: null,
     title: "ANWB Traffic Verkeer",
     categories: ["Frontend"],
-    intro: "ANWB’s national traffic and travel platform. Millions of people in the Netherlands check live traffic, road conditions, and route info here every day.",
+    intro: "ANWB’s national traffic platform. Millions of people in the Netherlands open it for live roads, incidents, and routes. When the country moves at once, this surface has to stay fast.",
     bullets: [
-      "Refactored the Less-based style system into styled-components for Traffic Verkeer (millions of daily users).",
-      "The product won Best Website and Most Popular Website at Website van het Jaar 2022."
+      "Rebuilt the Traffic Verkeer style system from Less into Tailwind on a product that absorbs national traffic spikes.",
+      "The site won Best Website and Most Popular Website at Website van het Jaar 2022."
     ],
     tech: [
       {
@@ -126,10 +126,10 @@ export const pastProjects: ProjectItem[] = [
     github: null,
     title: "DPG Media",
     categories: ["Frontend"],
-    intro: "Nationale Vacaturebank is a large Dutch job board within DPG Media, connecting employers and candidates across major publishing brands.",
+    intro: "Nationale Vacaturebank, the national job board inside DPG Media. Employers and candidates hit it at volume, and the same UI is embedded across one of the largest publishing groups in the Netherlands.",
     bullets: [
-      "Led the Nationale Vacaturebank brand-refresh style system in Tailwind, shrinking a large legacy Sass codebase.",
-      "Maintained React/Next.js and web components so other DPG properties (for example ad.nl) could embed job-board UI."
+      "Directed the brand-refresh style system in Tailwind and cut a large legacy Sass codebase down while the board stayed in production.",
+      "Kept the React and Next.js web components stable so properties such as ad.nl could embed the job-board UI under the same load."
     ],
     tech: [
       {
@@ -156,10 +156,10 @@ export const pastProjects: ProjectItem[] = [
     github: null,
     title: "Van Lanschot Kempen",
     categories: ["Frontend"],
-    intro: "Dutch private bank and wealth manager. Client-facing digital products for high-net-worth and institutional customers.",
+    intro: "Dutch private bank and wealth manager. I held the client-facing products together for high-net-worth and institutional customers through a full rebrand.",
     bullets: [
-      "Rolled out a Chakra UI design system while five applications were merged into one during a company-wide rebrand.",
-      "Paired daily with the client's frontend engineer alongside their native team (2 backend, 1 frontend)."
+      "Rolled a Chakra UI design system out while five applications merged into one product surface.",
+      "Kept that surface coherent across the bank’s backend and frontend while the brands consolidated."
     ],
     tech: [
       {
@@ -196,7 +196,7 @@ export const pastProjects: ProjectItem[] = [
     bullets: [
       "Ran the migration locally using a self-hosted homelab: Ollama serving Qwen models, driven through QwenCode and OpenCode. No cloud AI API in the loop.",
       "Refined the AI-driven migration into production quality using Cursor and hands-on frontend work.",
-      "Part of ongoing homelab and local-inference work alongside Amsterdam AI Tinkerers and the Home Lab Collective."
+      "Part of ongoing homelab and local-inference work with the Home Lab Collective."
     ],
     tech: [
       {
@@ -242,6 +242,17 @@ export const pastProjects: ProjectItem[] = [
       }
     ]
   }
+]
+
+const ENTERPRISE_IDS = new Set(["anwb", "dpg-media"])
+
+/** Largest consumer platforms. Rendered as the prominent feature cards. */
+export const enterpriseProjects = pastProjects.filter(project => ENTERPRISE_IDS.has(project.id))
+
+/** Remaining production apps, including the trading UI. */
+export const supportingProjects = [
+  featuredProject,
+  ...pastProjects.filter(project => !ENTERPRISE_IDS.has(project.id))
 ]
 
 /** Public asset paths for the JDev Online migration case study (PlatformProjects). */
