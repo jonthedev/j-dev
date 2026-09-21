@@ -6,6 +6,10 @@
 /site.webmanifest    /site.webmanifest    200
 /robots.txt    /robots.txt    200
 /llms.txt    /llms.txt    200
+/404.html    /404.html    200
 /_nuxt/*    /_nuxt/:splat    200
+# No agent catalog. A 200 HTML rewrite makes Lighthouse parse index.html as JSON.
+/.well-known/ai-catalog.json    /404.html    404
+/.well-known/ard.json    /404.html    404
 # SPA: serve index.html for all other routes (client-side routing)
 /*    /index.html    200
