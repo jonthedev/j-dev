@@ -76,7 +76,7 @@
             color="primary"
             variant="subtle"
             size="md"
-            class="whitespace-normal text-left"
+            class="bg-vue-50 text-left whitespace-normal text-vue-800 ring-vue-800/30 dark:bg-vue-950 dark:text-vue-200 dark:ring-vue-200/40"
           >
             {{ SITE_CURRENT_FOCUS }}
           </UBadge>

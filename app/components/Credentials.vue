@@ -33,7 +33,7 @@
                 color="primary"
                 variant="subtle"
                 size="sm"
-                class="w-fit"
+                class="w-fit bg-vue-50 text-vue-800 ring-vue-800/30 dark:bg-vue-950 dark:text-vue-200 dark:ring-vue-200/40"
               >
                 Boot.dev
               </UBadge>
