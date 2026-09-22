@@ -20,10 +20,10 @@ export const SITE_HEADLINE = "Full Stack Engineer" as const
 export const SITE_HERO_STANCE = "Technical direction · Code literacy" as const
 
 export const SITE_HERO_LEAD
-  = "Building fluid product UIs while bridging the gap straight to the server infrastructure. I diagnose systems, isolate the fault, and direct the engineering logic from TypeScript and Vue through Docker and AWS."
+  = "I build fluid product UIs in TypeScript and Vue that have to hold when the traffic hits. I am working toward the systems those products run on."
 
 export const SITE_CURRENT_FOCUS
-  = "Deepening server-side Go and advanced systems architecture." as const
+  = "Python, Linux, and Git in hand. Working the DevOps path through to Kubernetes." as const
 
 /** Thalex, DPG, ANWB Verkeer, Van Lanschot Kempen */
 export const PRODUCTION_PRODUCT_COUNT = 4
@@ -32,7 +32,7 @@ export const SITE_TITLE
   = "Jonathan Kaonga | JDEV Online | Full Stack Engineer | TypeScript · Vue · React · Go · Docker · AWS · Kubernetes"
 
 export const SITE_DESCRIPTION
-  = `I build fluid product UIs and carry them through Docker and AWS. ${yearsInCareerLabel()} years directing high-traffic systems at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam.`
+  = `I build fluid product UIs for high-traffic products. ${yearsInCareerLabel()} years at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam.`
 
 export const SITE_AVAILABILITY
   = "Open to full-time roles and selective B2B contracts via JDev Online."
