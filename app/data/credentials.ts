@@ -3,6 +3,7 @@ export type CredentialKind = "course" | "path"
 export interface BootdevCredential {
   id: string
   title: string
+  issuer: string
   kind: CredentialKind
   issued: string
   uuid: string
@@ -13,13 +14,23 @@ export interface BootdevCredential {
   skills: string[]
 }
 
+/** Official exams not earned yet. Practice platforms stay off this list. */
+export interface PlannedCredential {
+  id: string
+  title: string
+  issuer: string
+  note: string
+  skills: string[]
+}
+
 const BOOTDEV_CERT_PAGE = "https://www.boot.dev/certificates"
 
 function bootdevCert(
-  cert: Omit<BootdevCredential, "href" | "imageSrc" | "alt"> & { alt?: string }
+  cert: Omit<BootdevCredential, "href" | "imageSrc" | "alt" | "issuer"> & { alt?: string }
 ): BootdevCredential {
   return {
     ...cert,
+    issuer: "Boot.dev",
     href: `${BOOTDEV_CERT_PAGE}/${cert.uuid}`,
     // Served from public/ so the grid still works if Boot.dev is down.
     imageSrc: `/credential-${cert.id}.jpeg`,
@@ -93,3 +104,24 @@ export const bootdevCredentials: BootdevCredential[] = [
 ]
 
 export const bootdevPathComplete = bootdevCredentials.some(c => c.kind === "path")
+
+/**
+ * Linux Foundation exams only. Killercoda and KodeKloud are practice —
+ * add a card here when the official cert exists, not when a lab is booked.
+ */
+export const plannedCredentials: PlannedCredential[] = [
+  {
+    id: "lfcs",
+    title: "Linux Foundation Certified System Administrator",
+    issuer: "Linux Foundation",
+    note: "Target exam. Not earned yet.",
+    skills: ["Linux Administration", "Systems"]
+  },
+  {
+    id: "cka",
+    title: "Certified Kubernetes Administrator",
+    issuer: "Linux Foundation",
+    note: "Target exam. Not earned yet.",
+    skills: ["Kubernetes", "Clusters"]
+  }
+]

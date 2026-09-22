@@ -53,8 +53,9 @@ export function aboutLeadParagraphs(now = new Date()) {
   const years = yearsInWords(yearsInCareer(now))
   return [
     `For ${years} years I have directed product interfaces that have to stay up under real traffic: ANWB, DPG's job board, Van Lanschot Kempen, and Thalex.`,
-    "I do not stop at the component. I diagnose the system, isolate the fault, and carry the engineering logic from the UI through Docker and AWS.",
-    "I show up at ToekomstTech because it is a room for people who build working systems. Originally from London."
+    "After years on the frontend I am working on the layer underneath.",
+    "I show up at ToekomstTech because it is a room for people who build working systems.",
+    "I am originally from London and currently based in Amsterdam."
   ]
 }
 
