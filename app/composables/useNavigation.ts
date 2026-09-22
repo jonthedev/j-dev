@@ -11,6 +11,11 @@ export function useNavigation() {
       description: "Learn more about my background and expertise"
     },
     {
+      name: "Projects",
+      href: "#projects",
+      description: "Portfolio of my recent work"
+    },
+    {
       name: "Credentials",
       href: "#credentials",
       description: "Verifiable certificates"
@@ -19,11 +24,6 @@ export function useNavigation() {
       name: "Tech Stack",
       href: "#tech-stack",
       description: "Tools I use across product UI and DevOps"
-    },
-    {
-      name: "Projects",
-      href: "#projects",
-      description: "Portfolio of my recent work"
     },
     {
       name: "Contact",
