@@ -100,6 +100,21 @@ export const bootdevCredentials: BootdevCredential[] = [
       "Git Internals",
       "Remote Repositories"
     ]
+  }),
+  bootdevCert({
+    id: "oop",
+    title: "Learn Object Oriented Programming in Python",
+    kind: "course",
+    issued: "2026-09-23",
+    uuid: "71c554a3-ddf3-4fea-9fa4-d07d89e83e41",
+    skills: [
+      "Clean Code Principles",
+      "Classes",
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism"
+    ]
   })
 ]
 
