@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest"
 import {
   bootdevCredentials,
   bootdevPathComplete,
+  handshakeCredentials,
   plannedCredentials
 } from "../../../app/data/credentials"
 
@@ -22,11 +23,9 @@ describe("bootdevCredentials", () => {
 })
 
 describe("plannedCredentials", () => {
-  it("lists official Linux Foundation exams only, not practice platforms", () => {
-    expect(plannedCredentials.map(c => c.id)).toEqual(["lfcs", "cka"])
-    for (const item of plannedCredentials) {
-      expect(item.issuer).toBe("Linux Foundation")
-      expect(item.note).toMatch(/not earned/i)
-    }
+  it("keeps official Linux Foundation exams in data, off the handshake", () => {
+    expect(plannedCredentials.map(c => c.id)).toEqual(["devops-path", "lfcs", "cka"])
+    expect(handshakeCredentials.map(c => c.id)).toEqual(["devops-path"])
+    expect(plannedCredentials.filter(c => c.onHandshake === false).every(c => c.issuer === "Linux Foundation")).toBe(true)
   })
 })

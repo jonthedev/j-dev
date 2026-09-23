@@ -14,13 +14,14 @@ export interface BootdevCredential {
   skills: string[]
 }
 
-/** Official exams not earned yet. Practice platforms stay off this list. */
+/** Path or official exam not earned yet. Practice platforms stay off this list. */
 export interface PlannedCredential {
   id: string
   title: string
   issuer: string
-  note: string
   skills: string[]
+  /** False keeps LF exams in data without implying they are the current campaign. */
+  onHandshake?: boolean
 }
 
 const BOOTDEV_CERT_PAGE = "https://www.boot.dev/certificates"
@@ -39,8 +40,9 @@ function bootdevCert(
 }
 
 /**
- * Completed Boot.dev certificates only. Add a row when a course (or the
- * DevOps path) is done. `kind: "path"` is for the full track certificate.
+ * Earned Boot.dev course certificates. These live in the expand, not the
+ * handshake grid. Add a row when a course is done. `kind: "path"` is for
+ * the track certificate — then drop the planned path card.
  */
 export const bootdevCredentials: BootdevCredential[] = [
   bootdevCert({
@@ -121,22 +123,43 @@ export const bootdevCredentials: BootdevCredential[] = [
 export const bootdevPathComplete = bootdevCredentials.some(c => c.kind === "path")
 
 /**
- * Linux Foundation exams only. Killercoda and KodeKloud are practice —
- * add a card here when the official cert exists, not when a lab is booked.
+ * Planned path and official exams. Only `onHandshake` cards sit on the wall.
+ * LFCS/CKA wait until the Boot.dev path is further along.
+ * Killercoda and KodeKloud stay off this list.
  */
 export const plannedCredentials: PlannedCredential[] = [
+  {
+    id: "devops-path",
+    title: "DevOps Engineer Path",
+    issuer: "Boot.dev",
+    skills: [
+      "Python",
+      "Linux",
+      "Go",
+      "SQL",
+      "Docker",
+      "Observability",
+      "AWS",
+      "CI/CD",
+      "Kubernetes"
+    ]
+  },
   {
     id: "lfcs",
     title: "Linux Foundation Certified System Administrator",
     issuer: "Linux Foundation",
-    note: "Target exam. Not earned yet.",
+    onHandshake: false,
     skills: ["Linux Administration", "Systems"]
   },
   {
     id: "cka",
     title: "Certified Kubernetes Administrator",
     issuer: "Linux Foundation",
-    note: "Target exam. Not earned yet.",
+    onHandshake: false,
     skills: ["Kubernetes", "Clusters"]
   }
 ]
+
+export const handshakeCredentials = plannedCredentials.filter(
+  item => item.onHandshake !== false
+)

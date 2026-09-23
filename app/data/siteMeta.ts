@@ -60,6 +60,11 @@ export function aboutLeadParagraphs(now = new Date()) {
   ]
 }
 
+/** Why the credentials section exists. Not a course inventory. */
+export function credentialsLead(now = new Date()) {
+  return `From ${yearsInWords(yearsInCareer(now))} years of product UI toward the layer underneath.`
+}
+
 export const PLATFORM_TITLE = "Jonathan Kaonga | Lab (coming back later)"
 
 export const PLATFORM_DESCRIPTION
