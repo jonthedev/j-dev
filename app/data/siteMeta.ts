@@ -22,8 +22,9 @@ export const SITE_HERO_STANCE = "Technical direction · Code literacy" as const
 export const SITE_HERO_LEAD
   = "I build fluid product UIs in TypeScript and Vue that have to hold when the traffic hits. I am working toward the systems those products run on."
 
+/** Campaign destination, not a chapter list. Update when the path itself changes. */
 export const SITE_CURRENT_FOCUS
-  = "Python, Linux, and Git in hand. Working the DevOps path through to Kubernetes." as const
+  = "Services, cloud, and clusters." as const
 
 /** Thalex, DPG, ANWB Verkeer, Van Lanschot Kempen */
 export const PRODUCTION_PRODUCT_COUNT = 4

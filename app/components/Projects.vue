@@ -6,13 +6,10 @@
     <UContainer>
       <SharedReveal class="text-center mb-16">
         <h2
-          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+          class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white"
         >
           Production Work
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          National platforms and live trading systems. I keep them stable when the traffic hits.
-        </p>
       </SharedReveal>
 
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
