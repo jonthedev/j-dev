@@ -117,6 +117,22 @@ export const bootdevCredentials: BootdevCredential[] = [
       "Inheritance",
       "Polymorphism"
     ]
+  }),
+  bootdevCert({
+    id: "asteroids",
+    title: "Build Asteroids using Python and Pygame",
+    kind: "course",
+    issued: "2026-09-23",
+    uuid: "7aa97cbb-bb51-4fb7-bce3-7cb0960e5ca6",
+    skills: [
+      "2D Graphics Programming",
+      "Game Loop Architecture",
+      "Event Handling",
+      "Sprite Management",
+      "Game Physics",
+      "Collision Detection",
+      "Projectile Systems"
+    ]
   })
 ]
 
