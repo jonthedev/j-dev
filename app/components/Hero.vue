@@ -45,7 +45,8 @@
     </div>
 
     <div
-      class="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-24 sm:px-6 md:grid-cols-2 md:gap-12 lg:px-8"
+      class="hero-content relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-24 sm:px-6 md:grid-cols-2 md:gap-12 lg:px-8"
+      :class="{ 'hero-content-ready': contentVisible }"
     >
       <div class="order-2 space-y-5 text-center md:order-1 md:text-left">
         <h1 class="text-4xl font-bold md:text-6xl lg:text-7xl">
@@ -166,6 +167,26 @@ import { yearsInCareerLabel } from "~/utils/careerYears"
 defineOptions({ name: "AppHero" })
 
 const careerYearsLabel = yearsInCareerLabel()
+const contentVisible = ref(false)
+
+onMounted(() => {
+  void revealHeroContent()
+})
+
+async function revealHeroContent() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    contentVisible.value = true
+    return
+  }
+
+  const fontsReady = document.fonts?.ready ?? Promise.resolve()
+  const timeout = new Promise<void>((resolve) => {
+    window.setTimeout(resolve, 700)
+  })
+
+  await Promise.race([fontsReady, timeout])
+  contentVisible.value = true
+}
 </script>
 
 <style scoped>
@@ -214,6 +235,19 @@ const careerYearsLabel = yearsInCareerLabel()
   }
 }
 
+.hero-content {
+  opacity: 0;
+  transform: translateY(0.5rem);
+}
+
+.hero-content-ready {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-cursor,
   .hero-geometry-square,
@@ -223,6 +257,13 @@ const careerYearsLabel = yearsInCareerLabel()
 
   .hero-cursor {
     transform: translate(18vw, 28vh);
+  }
+
+  .hero-content,
+  .hero-content-ready {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 

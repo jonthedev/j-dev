@@ -31,7 +31,6 @@ export const aboutProofItems: AboutProofItem[] = [
     icon: "lucide:house",
     title: "Home Lab",
     captions: [
-      "Co-organise the Collective.",
       "Self-hosted infra and local AI."
     ]
   }

@@ -97,7 +97,7 @@ export default defineNuxtConfig({
       {
         name: "Kanit",
         provider: "google",
-        weights: ["400", "600"],
+        weights: ["400", "500", "600", "700"],
         display: "swap",
         preload: true
       }

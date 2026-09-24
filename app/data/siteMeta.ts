@@ -30,7 +30,7 @@ export const SITE_CURRENT_FOCUS
 export const PRODUCTION_PRODUCT_COUNT = 4
 
 export const SITE_TITLE
-  = "Jonathan Kaonga | JDEV Online | Full Stack Engineer | TypeScript · Vue · React · Go · Docker · AWS · Kubernetes"
+  = "Jonathan Kaonga | JDEV Online | Full Stack Engineer | TypeScript · Vue · React · Linux · Go · Docker · AWS · Kubernetes"
 
 export const SITE_DESCRIPTION
   = `I build fluid product UIs for high-traffic products. ${yearsInCareerLabel()} years at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam.`

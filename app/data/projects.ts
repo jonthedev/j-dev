@@ -43,7 +43,7 @@ export const featuredProject: ProjectItem = {
   github: null,
   title: "Thalex",
   categories: ["Frontend"],
-  intro: "Crypto derivatives exchange. I direct the trading UI where futures and options move in real time, and the interface has to keep pace with the book.",
+  intro: "Crypto derivatives exchange. I directed the trading UI where futures and options move in real time, and the interface had to keep pace with the book.",
   bullets: [
     "Migrated the trading UI to Vue 3/Nuxt with Nuxt UI and built the Trading Operations panel in Vuetify.",
     "About 25% faster onboarding for ops, plus clearer tools for supporting customers.",
@@ -98,7 +98,7 @@ export const pastProjects: ProjectItem[] = [
     categories: ["Frontend"],
     intro: "ANWB’s national traffic platform. Millions of people in the Netherlands open it for live roads, incidents, and routes. When the country moves at once, this surface has to stay fast.",
     bullets: [
-      "Rebuilt the Traffic Verkeer style system from Less into Tailwind on a product that absorbs national traffic spikes.",
+      "Refactored the Traffic Verkeer style system from Less into styled-components on a product that absorbs national traffic spikes.",
       "The site won Best Website and Most Popular Website at Website van het Jaar 2022."
     ],
     tech: [
@@ -113,9 +113,9 @@ export const pastProjects: ProjectItem[] = [
         classname: "text-blue-600"
       },
       {
-        id: "tailwind-anwb",
-        icon: "simple-icons:tailwindcss",
-        classname: "text-cyan-400"
+        id: "styled-anwb",
+        icon: "simple-icons:styledcomponents",
+        classname: "text-pink-400"
       }
     ]
   },

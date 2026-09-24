@@ -52,6 +52,7 @@ export function useIcons() {
     "simple-icons:css3": "CSS3",
     "simple-icons:react": "React",
     "simple-icons:nextdotjs": "Next.js",
+    "simple-icons:styledcomponents": "styled-components",
     "simple-icons:nodedotjs": "Node.js",
     "simple-icons:python": "Python",
     "simple-icons:postgresql": "PostgreSQL",
