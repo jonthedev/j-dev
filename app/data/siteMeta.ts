@@ -20,11 +20,11 @@ export const SITE_HEADLINE = "Full Stack Engineer" as const
 export const SITE_HERO_STANCE = "Technical direction · Code literacy" as const
 
 export const SITE_HERO_LEAD
-  = "I build fluid product UIs in TypeScript and Vue that have to hold when the traffic hits. I am working toward the systems those products run on."
+  = "I build fluid product UIs in TypeScript and Vue that hold firm when peak traffic hits. Right now, I am scaling down the stack—bringing that same runtime resilience to cloud services and infrastructure."
 
 /** Campaign destination, not a chapter list. Update when the path itself changes. */
 export const SITE_CURRENT_FOCUS
-  = "Services, cloud, and clusters." as const
+  = "Go, distributed systems, and cloud clusters." as const
 
 /** Thalex, DPG, ANWB Verkeer, Van Lanschot Kempen */
 export const PRODUCTION_PRODUCT_COUNT = 4
@@ -53,10 +53,10 @@ export const SITE_RESIDENCY
 export function aboutLeadParagraphs(now = new Date()) {
   const years = yearsInWords(yearsInCareer(now))
   return [
-    `For ${years} years I have directed product interfaces that have to stay up under real traffic: ANWB, DPG's job board, Van Lanschot Kempen, and Thalex.`,
-    "After years on the frontend I am working on the layer underneath.",
+    `For ${years} years, I have engineered and shipped core product interfaces that scale under real-world pressure: ANWB, DPG Media's job board, Van Lanschot Kempen, and Thalex.`,
+    "After mastering the frontend, I am focused on the engineering layers underneath. I am currently deepening my system depth in Go, Linux internals, and container orchestration to bridge the gap between product code and infrastructure.",
     "I show up at ToekomstTech because it is a room for people who build working systems.",
-    "I am originally from London and currently based in Amsterdam."
+    "Originally from London, currently based in Amsterdam."
   ]
 }
 
