@@ -41,7 +41,7 @@
                 size="sm"
                 class="w-fit"
               >
-                In progress
+                Specialized Deep-Dives
               </UBadge>
               <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-amber-800 dark:text-amber-300">
                 {{ item.issuer }}

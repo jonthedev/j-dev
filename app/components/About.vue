@@ -120,7 +120,7 @@
                   class="shrink-0 text-emerald-600 dark:text-emerald-400"
                   size="0.75rem"
                 />
-                Outside IR35
+                Outside IR35 (UK) / W-8BEN Compliant (US)
               </li>
               <li class="flex items-center gap-1.5">
                 <Icon

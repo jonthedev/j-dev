@@ -71,7 +71,7 @@
 
         <div class="flex flex-wrap items-center justify-center gap-2 md:justify-start">
           <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-            Current Focus
+            Core Stack & Focus
           </span>
           <UBadge
             color="primary"
