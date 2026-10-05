@@ -66,16 +66,18 @@
                   </span>
                 </div>
               </div>
-              <p
-                class="mt-3 text-xs leading-snug"
-                :class="item.tone.caption"
-              >
+              <p class="mt-3 text-xs leading-snug">
                 <span
-                  v-for="(line, lineIndex) in item.captions"
-                  :key="lineIndex"
-                  class="block"
+                  class="block font-medium"
+                  :class="item.tone.heading"
                 >
-                  {{ line }}
+                  {{ item.heading }}
+                </span>
+                <span
+                  class="mt-0.5 block"
+                  :class="item.tone.subtitle"
+                >
+                  {{ item.subtitle }}
                 </span>
               </p>
             </SharedReveal>
