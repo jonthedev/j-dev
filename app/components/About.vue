@@ -43,27 +43,32 @@
             <SharedReveal :delay="120 + index * 60">
               <div class="about-proof-orb relative aspect-square w-32 overflow-visible sm:w-36">
                 <span
-                  class="about-proof-pulse pointer-events-none absolute -inset-1 rounded-full border-2 border-vue-500 dark:border-vue-400"
+                  class="about-proof-pulse pointer-events-none absolute -inset-1 rounded-full border-2"
+                  :class="item.tone.pulse"
                   :style="{ animationDelay: `${index * 0.55}s` }"
                   aria-hidden="true"
                 />
                 <div
-                  class="relative z-[1] flex h-full w-full flex-col items-center justify-center rounded-full border border-vue-200/90 bg-white/90 px-3 shadow-sm dark:border-vue-800 dark:bg-gray-950/90"
+                  class="relative z-[1] flex h-full w-full flex-col items-center justify-center rounded-full border px-3 shadow-sm"
+                  :class="item.tone.orb"
                 >
                   <Icon
                     :name="item.icon"
-                    class="mb-1.5 text-vue-600 dark:text-vue-400"
+                    class="mb-1.5"
+                    :class="item.tone.icon"
                     size="1.5rem"
                   />
                   <span
-                    class="text-xs font-semibold text-gray-900 sm:text-sm dark:text-white"
+                    class="text-xs font-semibold sm:text-sm"
+                    :class="item.tone.title"
                   >
                     {{ item.title }}
                   </span>
                 </div>
               </div>
               <p
-                class="mt-3 text-xs leading-snug text-gray-600 dark:text-gray-400"
+                class="mt-3 text-xs leading-snug"
+                :class="item.tone.caption"
               >
                 <span
                   v-for="(line, lineIndex) in item.captions"

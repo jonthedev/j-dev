@@ -1,3 +1,4 @@
+import { SITE_HEADLINE } from "~/data/siteMeta"
 import { yearsInCareerLabel } from "~/utils/careerYears"
 
 /**
@@ -49,7 +50,7 @@ export function useContact() {
 
   // Professional information
   const professionalInfo = {
-    title: "Full Stack Engineer",
+    title: SITE_HEADLINE,
     experience: `${yearsInCareerLabel()} years`,
     specialization:
       "Product UI at Thalex, DPG Media, ANWB, and Van Lanschot Kempen.",

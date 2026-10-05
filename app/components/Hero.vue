@@ -65,9 +65,14 @@
           {{ SITE_HEADLINE }}
         </p>
 
-        <p class="text-base leading-relaxed text-gray-600 md:text-lg dark:text-gray-300">
-          {{ SITE_HERO_LEAD }}
-        </p>
+        <div class="space-y-3 text-base leading-relaxed text-gray-600 md:text-lg dark:text-gray-300">
+          <p
+            v-for="para in heroLead"
+            :key="para"
+          >
+            {{ para }}
+          </p>
+        </div>
 
         <div class="flex flex-wrap items-center justify-center gap-2 md:justify-start">
           <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
@@ -152,12 +157,12 @@
 
 <script setup lang="ts">
 import {
+  heroLeadParagraphs,
   PRODUCTION_PRODUCT_COUNT,
   SITE_AVAILABILITY,
   SITE_AVAILABLE_STATUS,
   SITE_CURRENT_FOCUS,
   SITE_HEADLINE,
-  SITE_HERO_LEAD,
   SITE_HERO_STANCE,
   SITE_LOCATION,
   SITE_PERSON_NAME
@@ -167,6 +172,7 @@ import { yearsInCareerLabel } from "~/utils/careerYears"
 defineOptions({ name: "AppHero" })
 
 const careerYearsLabel = yearsInCareerLabel()
+const heroLead = heroLeadParagraphs()
 const contentVisible = ref(false)
 
 onMounted(() => {

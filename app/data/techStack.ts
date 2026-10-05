@@ -53,7 +53,7 @@ export const techClusters: TechCluster[] = [
   },
   {
     id: "systems",
-    title: "Systems and DevOps",
+    title: "Systems and Infrastructure",
     items: [
       { id: "python", title: "Python", icon: "simple-icons:python", iconClass: "text-[#4B8BBE]" },
       { id: "linux", title: "Linux", icon: "simple-icons:linux", iconClass: "text-gray-800 dark:text-white" },

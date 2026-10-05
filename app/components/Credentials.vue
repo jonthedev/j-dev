@@ -41,7 +41,7 @@
                 size="sm"
                 class="w-fit"
               >
-                Specialized Deep-Dives
+                Systems Training
               </UBadge>
               <p class="mt-2 text-[11px] font-medium uppercase tracking-wide text-amber-800 dark:text-amber-300">
                 {{ item.issuer }}

@@ -14,26 +14,30 @@ export const SITE_PERSON_NAME = "Jonathan Kaonga" as const
 
 export const SITE_KVK = "93792670" as const
 
-export const SITE_HEADLINE = "Full Stack Engineer" as const
+export const SITE_HEADLINE = "Full-Stack Engineer" as const
 
 /** Hero framing: direction and literacy, not a job-title dump. */
 export const SITE_HERO_STANCE = "Technical direction · Code literacy" as const
 
-export const SITE_HERO_LEAD
-  = "I build fluid product UIs in TypeScript and Vue that hold firm when peak traffic hits. I bring that same runtime resilience down the stack, securing performance across distributed cloud services and backend infrastructure."
+export function heroLeadParagraphs() {
+  return [
+    "I build production web products with TypeScript, modern frameworks and AI-native workflows.",
+    "I’m extending that same product-engineering mindset into backend services, Linux systems and cloud infrastructure."
+  ]
+}
 
 /** Campaign destination, not a chapter list. Update when the path itself changes. */
 export const SITE_CURRENT_FOCUS
-  = "Go, distributed systems, and cloud clusters." as const
+  = "Product engineering, AI-native development and systems work." as const
 
 /** Thalex, DPG, ANWB Verkeer, Van Lanschot Kempen */
 export const PRODUCTION_PRODUCT_COUNT = 4
 
 export const SITE_TITLE
-  = "Jonathan Kaonga | JDEV Online | Full Stack Engineer | TypeScript · Vue · React · Linux · Go · Docker · AWS · Kubernetes"
+  = "Jonathan Kaonga | JDEV Online | Full-Stack Engineer | TypeScript · Vue · React · Linux · Go · Docker · AWS · Kubernetes"
 
 export const SITE_DESCRIPTION
-  = `I build fluid product UIs for high-traffic products. ${yearsInCareerLabel()} years at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam.`
+  = `I build production web products with TypeScript, modern frameworks and AI-native workflows. ${yearsInCareerLabel()} years at Thalex, DPG Media, ANWB Verkeer (Website van het Jaar 2022), and Van Lanschot Kempen. Based in Amsterdam.`
 
 export const SITE_AVAILABILITY
   = "Open to full-time roles and selective B2B contracts via JDev Online."
@@ -43,7 +47,7 @@ export const SITE_AVAILABLE_STATUS = "Available" as const
 
 /** Shorter repeat for Contact / Footer. Full line lives in the hero. */
 export const SITE_AVAILABILITY_SHORT
-  = "Open to full-time roles and B2B contracts"
+  = "Open to full-time roles and selective B2B contracts"
 
 export const SITE_LOCATION = "Amsterdam, NL" as const
 
@@ -53,8 +57,9 @@ export const SITE_RESIDENCY
 export function aboutLeadParagraphs(now = new Date()) {
   const years = yearsInWords(yearsInCareer(now))
   return [
-    `For ${years} years, I have engineered and shipped core product interfaces that scale under real-world pressure: ANWB, DPG Media's job board, Van Lanschot Kempen, and Thalex.`,
-    "With a core mastery of the product layer, I architect the systems underneath—leveraging Go, Linux internals, and container orchestration to bridge the gap between user-facing code and infrastructure.",
+    `For ${years} years, I have engineered and shipped production web products across media, mobility, finance and real-time trading, including work for ANWB, DPG Media’s Nationale Vacaturebank, Van Lanschot Kempen and Thalex.`,
+    "My foundation is product engineering across TypeScript, React and Vue. I now use AI-native workflows to work more fluidly across frameworks and extend that experience into backend services, Go, Linux, containers and infrastructure projects.",
+    "I’m interested in the layer underneath the interface: the systems, APIs and infrastructure that make products reliable in production.",
     "I show up at ToekomstTech because it is a room for people who build working systems.",
     "Originally from London, currently based in Amsterdam."
   ]
@@ -62,7 +67,7 @@ export function aboutLeadParagraphs(now = new Date()) {
 
 /** Why the credentials section exists. Not a course inventory. */
 export function credentialsLead(now = new Date()) {
-  return `From ${yearsInWords(yearsInCareer(now))} years of product UI toward the layer underneath.`
+  return `From ${yearsInWords(yearsInCareer(now))} years of product UI, extending into systems and infrastructure.`
 }
 
 export const PLATFORM_TITLE = "Jonathan Kaonga | Lab (coming back later)"
@@ -82,6 +87,7 @@ export const SITE_JSON_LD = {
       "alternateName": [
         SITE_BRAND,
         "JDev",
+        "J Dev Online",
         "jdev online",
         "j dev online",
         "j-dev"
@@ -105,7 +111,7 @@ export const SITE_JSON_LD = {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       "name": SITE_LEGAL_NAME,
-      "alternateName": [SITE_BRAND, "j-dev.online"],
+      "alternateName": [SITE_BRAND, "J Dev Online", "j-dev.online"],
       "url": SITE_URL,
       "publisher": { "@id": `${SITE_URL}/#organization` }
     }
