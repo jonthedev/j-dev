@@ -60,7 +60,7 @@ export function aboutLeadParagraphs(now = new Date()) {
     `For ${years} years, I have engineered and shipped production web products across media, mobility, finance and real-time trading, including work for ANWB, DPG Media’s Nationale Vacaturebank, Van Lanschot Kempen and Thalex.`,
     "My foundation is product engineering across TypeScript, React and Vue. I now use AI-native workflows to work more fluidly across frameworks and extend that experience into backend services, Go, Linux, containers and infrastructure projects.",
     "I’m interested in the layer underneath the interface: the systems, APIs and infrastructure that make products reliable in production.",
-    "I show up at ToekomstTech because it is a room for people who build working systems.",
+    "At ToekomstTech, an Amsterdam hackerspace, I build alongside other makers and engineers who share the workshop. I also go to Amsterdam AI Tinkerers meetups to watch the demos, talk, and stay current with what people are shipping.",
     "Originally from London, currently based in Amsterdam."
   ]
 }
