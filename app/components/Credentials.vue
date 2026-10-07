@@ -37,14 +37,11 @@
                   />
                 </div>
                 <div class="flex flex-1 flex-col px-3 py-3 sm:px-4">
-                  <UBadge
-                    color="warning"
-                    variant="subtle"
-                    size="sm"
-                    class="w-fit rounded-sm font-mono"
+                  <span
+                    class="inline-flex w-fit items-center rounded-sm border border-amber-300 bg-amber-100 px-1.5 py-1 font-mono text-[10px] font-medium leading-3 text-amber-950 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-100"
                   >
                     Systems Training
-                  </UBadge>
+                  </span>
                   <p class="mt-2 font-mono text-[11px] font-medium tracking-wide text-amber-800 uppercase dark:text-amber-300">
                     {{ item.issuer }}
                   </p>
