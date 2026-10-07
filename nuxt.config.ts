@@ -30,7 +30,15 @@ export default defineNuxtConfig({
     head: {
       title: SITE_TITLE,
       htmlAttrs: { lang: "en" },
-      link: [{ rel: "canonical", href: `${SITE_URL}/` }],
+      link: [
+        { rel: "canonical", href: `${SITE_URL}/` },
+        {
+          rel: "preload",
+          as: "image",
+          href: "/jdk-portfolio-comp.webp",
+          fetchpriority: "high"
+        }
+      ],
       script: [
         {
           type: "application/ld+json",
@@ -106,13 +114,15 @@ export default defineNuxtConfig({
         provider: "google",
         weights: ["400", "500"],
         display: "swap",
-        preload: true
+        preload: false
       }
     ]
   },
 
   // Nuxt Image: explicit Netlify provider so production uses Netlify Image CDN (https://image.nuxt.com/providers/netlify)
+  // Netlify Image CDN in production. Local dev uses IPX so resized
+  // images still load without the Netlify image endpoint.
   image: {
-    provider: "netlify"
+    provider: process.env.NETLIFY ? "netlify" : "ipx"
   }
 })

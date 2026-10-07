@@ -48,7 +48,7 @@
       class="hero-content relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-24 sm:px-6 md:grid-cols-2 md:gap-12 lg:px-8"
       :class="{ 'hero-content-ready': contentVisible }"
     >
-      <div class="order-2 space-y-5 text-center md:order-1 md:text-left">
+      <div class="hero-copy order-2 space-y-5 text-center md:order-1 md:text-left">
         <h1 class="text-4xl font-bold md:text-6xl lg:text-7xl">
           <span
             class="bg-linear-to-r from-vue-600 to-vue-400 bg-clip-text text-transparent dark:from-vue-400 dark:to-vue-300"
@@ -241,12 +241,12 @@ async function revealHeroContent() {
   }
 }
 
-.hero-content {
+.hero-copy {
   opacity: 0;
   transform: translateY(0.5rem);
 }
 
-.hero-content-ready {
+.hero-content-ready .hero-copy {
   opacity: 1;
   transform: none;
   transition:
@@ -265,8 +265,8 @@ async function revealHeroContent() {
     transform: translate(18vw, 28vh);
   }
 
-  .hero-content,
-  .hero-content-ready {
+  .hero-copy,
+  .hero-content-ready .hero-copy {
     opacity: 1;
     transform: none;
     transition: none;

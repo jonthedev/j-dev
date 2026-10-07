@@ -27,15 +27,14 @@
             </div>
 
             <figure class="m-0 mt-8 max-w-md overflow-hidden rounded-sm border border-blueprint">
-              <img
+              <NuxtImg
                 src="/jdev-toekomsttech.webp"
                 alt="Jonathan at ToekomstTech pointing a foam dart at the AI block on a whiteboard map of a PC build labeled CPU, GPU, RAM, SSD, and Cloud"
-                width="1024"
-                height="891"
+                sizes="sm:100vw md:448px"
                 loading="lazy"
                 decoding="async"
                 class="aspect-video w-full object-cover object-[center_42%]"
-              >
+              />
               <figcaption class="mt-3 px-3 pb-3 text-left font-mono text-xs leading-relaxed text-gray-600 dark:text-gray-400">
                 Identifying the problem, and the solution
                 <a
