@@ -2,7 +2,7 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Kanit', sans-serif;
+  --font-sans: 'Kanit', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
   --color-blueprint: rgb(0 0 0 / 0.08);
 

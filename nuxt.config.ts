@@ -99,21 +99,24 @@ export default defineNuxtConfig({
   fonts: {
     defaults: {
       subsets: ["latin"],
-      preload: true
+      // Optional fonts must not compete with the portrait and the entry CSS.
+      preload: false
     },
     families: [
       {
         name: "Kanit",
         provider: "google",
         weights: ["400", "500", "600", "700"],
-        display: "swap",
-        preload: true
+        // Use the face when it is already cached. A cold Slow 4G load
+        // paints with the system sans instead of waiting on four weights.
+        display: "optional",
+        preload: false
       },
       {
         name: "JetBrains Mono",
         provider: "google",
         weights: ["400", "500"],
-        display: "swap",
+        display: "optional",
         preload: false
       }
     ]
