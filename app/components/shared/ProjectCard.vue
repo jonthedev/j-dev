@@ -120,11 +120,11 @@
               :key="tech.id"
             >
               <span
-                :class="['flex items-center space-x-1.5 rounded-sm px-2 py-1 font-mono text-[11px] font-medium', getTechBrandClass(tech.icon)]"
+                :class="['flex items-center gap-2 rounded-sm px-2 py-1 font-mono text-[11px] font-medium', getTechBrandClass(tech.icon)]"
               >
                 <Icon
                   :icon="tech.icon"
-                  class="mr-1 shrink-0"
+                  class="shrink-0"
                 />
                 {{ tech.label ?? getTechName(tech.icon) }}
               </span>
