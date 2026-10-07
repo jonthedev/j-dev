@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-gray-800"
+    class="border-t border-blueprint bg-gray-50 dark:bg-black"
   >
     <UContainer class="py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -15,7 +15,7 @@
           <div class="space-y-2 flex flex-col">
             <a
               :href="`mailto:${contactInfo.email}`"
-              class="inline-flex items-center w-fit text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+              class="blueprint-link inline-flex w-fit items-center text-gray-600 transition-colors hover:text-vue-600 dark:text-gray-300 dark:hover:text-vue-400"
             >
               <Icon
                 icon="lucide:mail"
@@ -29,7 +29,7 @@
               :href="contactInfo.kvkUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center w-fit text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+              class="blueprint-link inline-flex w-fit items-center text-gray-600 transition-colors hover:text-vue-600 dark:text-gray-300 dark:hover:text-vue-400"
             >
               <Icon
                 icon="lucide:building-2"
@@ -52,7 +52,7 @@
               v-for="link in quickLinks"
               :key="link.name"
               :to="link.href"
-              class="inline-block w-fit text-gray-600 dark:text-gray-300 hover:text-vue-600 dark:hover:text-vue-400 underline underline-offset-2 transition-colors"
+              class="blueprint-link inline-block w-fit font-mono text-xs tracking-wider text-gray-600 uppercase transition-colors hover:text-vue-600 dark:text-gray-300 dark:hover:text-vue-400"
             >
               {{ link.name }}
             </NuxtLink>
@@ -61,9 +61,9 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
+      <div class="mt-8 border-t border-blueprint pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-gray-500 dark:text-gray-400 text-sm">
+          <p class="font-mono text-xs tracking-wider text-gray-500 uppercase dark:text-gray-400">
             © {{ new Date().getFullYear() }} JDev Online
           </p>
           <div class="flex space-x-6 mt-4 md:mt-0">

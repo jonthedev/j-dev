@@ -1,6 +1,6 @@
 <template>
   <div
-    class="terminal-brand-channel relative flex min-h-22 items-center justify-center overflow-hidden rounded-xl border border-vue-200/90 bg-vue-50/45 md:min-h-26 dark:border-vue-800 dark:bg-vue-950/25"
+    class="terminal-brand-channel relative flex min-h-22 items-center justify-center overflow-hidden rounded-sm border border-blueprint bg-vue-50/45 md:min-h-26 dark:bg-vue-950/25"
   >
     <div
       class="pointer-events-none absolute inset-0 text-gray-900 opacity-[0.07] dark:text-gray-200 dark:opacity-[0.1]"

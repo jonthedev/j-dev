@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="scroll-mt-20 bg-gray-50 py-20 dark:bg-gray-950 relative overflow-hidden"
+    class="relative scroll-mt-20 overflow-hidden border-b border-blueprint bg-gray-50 py-16 dark:bg-gray-950"
   >
     <!-- Background: line grid (matches frontend hero) -->
     <div
@@ -10,183 +10,68 @@
     >
       <div class="absolute inset-0 about-section-grid" />
     </div>
-    <div class="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-      <SharedReveal class="mb-12 text-center">
-        <h2
-          class="mb-6 text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
-        >
-          About
-        </h2>
-        <div class="mx-auto max-w-2xl space-y-4 text-left text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-          <p
-            v-for="para in aboutLead"
-            :key="para"
-          >
-            {{ para }}
-          </p>
-        </div>
-      </SharedReveal>
-
-      <SharedReveal
-        :delay="80"
-        class="mb-12"
-      >
-        <!-- Circular proof cards: story beats, not a second tech stack -->
-        <ul
-          class="m-0 flex list-none flex-wrap items-start justify-center gap-8 p-0 sm:gap-10"
-        >
-          <li
-            v-for="(item, index) in aboutProofItems"
-            :key="item.id"
-            class="flex w-32 flex-col items-center text-center sm:w-36"
-          >
-            <SharedReveal :delay="120 + index * 60">
-              <div class="about-proof-orb relative aspect-square w-32 overflow-visible sm:w-36">
-                <span
-                  class="about-proof-pulse pointer-events-none absolute -inset-1 rounded-full border-2"
-                  :class="item.tone.pulse"
-                  :style="{ animationDelay: `${index * 0.55}s` }"
-                  aria-hidden="true"
-                />
-                <div
-                  class="relative z-[1] flex h-full w-full flex-col items-center justify-center rounded-full border px-3 shadow-sm"
-                  :class="item.tone.orb"
-                >
-                  <Icon
-                    :name="item.icon"
-                    class="mb-1.5"
-                    :class="item.tone.icon"
-                    size="1.5rem"
-                  />
-                  <span
-                    class="text-xs font-semibold sm:text-sm"
-                    :class="item.tone.title"
-                  >
-                    {{ item.title }}
-                  </span>
-                </div>
-              </div>
-              <p class="mt-3 text-xs leading-snug">
-                <span
-                  class="block font-medium"
-                  :class="item.tone.heading"
-                >
-                  {{ item.heading }}
-                </span>
-                <span
-                  class="mt-0.5 block"
-                  :class="item.tone.subtitle"
-                >
-                  {{ item.subtitle }}
-                </span>
+    <div class="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <SharedBlueprintFrame label="01 / ABOUT">
+        <div class="grid items-start gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,7fr)_minmax(16rem,3fr)] lg:gap-12 lg:px-8 lg:py-10">
+          <div>
+            <h2 class="mb-6 text-left text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+              About
+            </h2>
+            <div class="space-y-4 text-left text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+              <p
+                v-for="para in aboutLead"
+                :key="para"
+              >
+                {{ para }}
               </p>
-            </SharedReveal>
-          </li>
-        </ul>
-      </SharedReveal>
+            </div>
 
-      <div class="grid items-start gap-12 md:grid-cols-2">
-        <SharedReveal
-          :delay="200"
-          direction="left"
-          class="space-y-4"
-        >
-          <div
-            class="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-black"
-          >
-            <h3
-              class="mb-3 flex items-center text-sm font-semibold text-gray-900 dark:text-white"
-            >
-              <Icon
-                name="lucide:file-check"
-                class="mr-2 shrink-0 text-emerald-600 dark:text-emerald-400"
-                size="1rem"
-              />
-              How I engage
-            </h3>
-            <ul class="space-y-1.5 text-xs text-gray-600 dark:text-gray-400">
-              <li class="flex items-center gap-1.5">
-                <Icon
-                  name="lucide:check"
-                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
-                  size="0.75rem"
-                />
-                Full-time roles or selective B2B via JDev Online
-              </li>
-              <li class="flex items-center gap-1.5">
-                <Icon
-                  name="lucide:check"
-                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
-                  size="0.75rem"
-                />
-                KVK Registered (93792670)
-              </li>
-              <li class="flex items-center gap-1.5">
-                <Icon
-                  name="lucide:check"
-                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
-                  size="0.75rem"
-                />
-                Outside IR35 (UK) / W-8BEN Compliant (US)
-              </li>
-              <li class="flex items-center gap-1.5">
-                <Icon
-                  name="lucide:check"
-                  class="shrink-0 text-emerald-600 dark:text-emerald-400"
-                  size="0.75rem"
-                />
-                {{ SITE_RESIDENCY }}
-              </li>
-            </ul>
+            <figure class="m-0 mt-8 max-w-md overflow-hidden rounded-sm border border-blueprint">
+              <img
+                src="/jdev-toekomsttech.webp"
+                alt="Jonathan at ToekomstTech pointing a foam dart at the AI block on a whiteboard map of a PC build labeled CPU, GPU, RAM, SSD, and Cloud"
+                width="1024"
+                height="891"
+                loading="lazy"
+                decoding="async"
+                class="aspect-video w-full object-cover object-[center_42%]"
+              >
+              <figcaption class="mt-3 px-3 pb-3 text-left font-mono text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+                Identifying the problem, and the solution
+                <a
+                  href="https://tech.toekomst.org/"
+                  class="blueprint-link text-vue-700 dark:text-vue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >@ ToekomstTech</a>
+              </figcaption>
+            </figure>
           </div>
-          <figure class="m-0 overflow-hidden rounded-lg">
-            <img
-              src="/jdev-toekomsttech.webp"
-              alt="Jonathan at ToekomstTech pointing a foam dart at the AI block on a whiteboard map of a PC build labeled CPU, GPU, RAM, SSD, and Cloud"
-              width="1024"
-              height="891"
-              loading="lazy"
-              decoding="async"
-              class="h-auto w-full object-cover"
-            >
-            <figcaption class="mt-3 text-center text-xs italic leading-relaxed text-gray-600 dark:text-gray-400">
-              Identifying the problem, and the solution
-              <a
-                href="https://tech.toekomst.org/"
-                class="text-vue-700 underline-offset-2 hover:underline dark:text-vue-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >@ ToekomstTech</a>
-            </figcaption>
-          </figure>
-        </SharedReveal>
 
-        <SharedReveal
-          :delay="240"
-          direction="right"
-          class="rounded-xl border border-gray-200 bg-white/80 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-950/80"
-        >
-          <UTimeline
-            :items="timelineItems"
-            size="sm"
-            :ui="{
-              indicator: 'text-vue-600 dark:text-vue-400',
-              date: 'text-vue-600 dark:text-vue-400 font-semibold',
-              title: 'text-gray-900 dark:text-white font-medium',
-              description: 'text-gray-600 dark:text-gray-400'
-            }"
-          />
-        </SharedReveal>
-      </div>
+          <div>
+            <div class="rounded-sm border border-blueprint bg-white/80 p-4 backdrop-blur-sm dark:bg-gray-950/80">
+              <UTimeline
+                :items="timelineItems"
+                size="sm"
+                :ui="{
+                  indicator: 'text-vue-600 dark:text-vue-400',
+                  date: 'font-mono text-vue-600 dark:text-vue-400 font-medium',
+                  title: 'text-gray-900 dark:text-white font-medium',
+                  description: 'text-gray-600 dark:text-gray-400'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+      </SharedBlueprintFrame>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import type { TimelineItem } from "@nuxt/ui"
-import { aboutProofItems } from "~/data/aboutProof"
 import { careerTimeline } from "~/data/careerTimeline"
-import { aboutLeadParagraphs, SITE_RESIDENCY } from "~/data/siteMeta"
+import { aboutLeadParagraphs } from "~/data/siteMeta"
 
 defineOptions({ name: "AppAbout" })
 
@@ -208,39 +93,5 @@ const timelineItems = computed<TimelineItem[]>(() =>
     linear-gradient(to right, currentColor 1px, transparent 1px),
     linear-gradient(to bottom, currentColor 1px, transparent 1px);
   background-size: 40px 40px;
-}
-
-.about-proof-orb {
-  overflow: visible;
-}
-
-.about-proof-pulse {
-  animation: about-proof-pulse 2.4s ease-out infinite;
-  will-change: transform, opacity;
-}
-
-@keyframes about-proof-pulse {
-  0% {
-    opacity: 0.85;
-    transform: scale(1);
-  }
-
-  70% {
-    opacity: 0;
-    transform: scale(1.18);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(1.18);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-proof-pulse {
-    animation: none;
-    opacity: 0.4;
-    transform: scale(1.02);
-  }
 }
 </style>

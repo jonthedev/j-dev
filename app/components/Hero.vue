@@ -1,6 +1,6 @@
 <template>
   <section
-    class="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950 relative overflow-hidden"
+    class="relative flex min-h-screen items-center justify-center overflow-hidden border-b border-blueprint bg-linear-to-br from-gray-50 to-gray-100 dark:from-black dark:to-gray-950"
   >
     <div
       class="absolute inset-0 z-0 text-gray-900 dark:text-gray-200 opacity-[0.06] dark:opacity-[0.08]"
@@ -57,7 +57,7 @@
           </span>
         </h1>
 
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
+        <p class="font-mono text-sm font-medium uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
           {{ SITE_HERO_STANCE }}
         </p>
 
@@ -75,14 +75,14 @@
         </div>
 
         <div class="flex flex-wrap items-center justify-center gap-2 md:justify-start">
-          <span class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+          <span class="font-mono text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
             Core Stack & Focus
           </span>
           <UBadge
             color="primary"
             variant="subtle"
             size="md"
-            class="bg-vue-50 text-left whitespace-normal text-vue-800 ring-vue-800/30 dark:bg-vue-950 dark:text-vue-200 dark:ring-vue-200/40"
+            class="rounded-sm bg-vue-50 text-left font-mono whitespace-normal text-vue-800 ring-vue-800/30 dark:bg-vue-950 dark:text-vue-200 dark:ring-vue-200/40"
           >
             {{ SITE_CURRENT_FOCUS }}
           </UBadge>
@@ -113,7 +113,7 @@
               class="h-56 w-56 rounded-full object-cover ring-4 ring-white shadow-lg sm:h-72 sm:w-72 dark:ring-gray-900"
             >
             <p
-              class="absolute inset-x-0 -bottom-4 mx-auto flex w-fit items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-800 shadow-sm dark:border-gray-700 dark:bg-gray-950 dark:text-gray-100"
+              class="absolute inset-x-0 -bottom-4 mx-auto flex w-fit items-center gap-2 rounded-sm border border-blueprint bg-white px-3 py-1.5 font-mono text-xs font-medium text-gray-800 shadow-sm dark:bg-gray-950 dark:text-gray-100"
             >
               <span
                 class="relative flex h-2.5 w-2.5"
@@ -127,26 +127,26 @@
           </div>
 
           <dl
-            class="pointer-events-none absolute top-8 left-0 rounded-xl border border-gray-200 bg-white/95 px-3 py-2 shadow-md dark:border-gray-700 dark:bg-gray-950/95"
+            class="pointer-events-none absolute top-8 left-0 rounded-sm border border-blueprint bg-white/95 px-3 py-2 shadow-md dark:bg-gray-950/95"
           >
             <dt class="sr-only">
               Years of experience
             </dt>
             <dd class="text-center">
               <span class="block text-lg font-bold tabular-nums text-vue-700 dark:text-vue-300">{{ careerYearsLabel }}</span>
-              <span class="block text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Years</span>
+              <span class="block font-mono text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Years</span>
             </dd>
           </dl>
 
           <dl
-            class="pointer-events-none absolute right-0 bottom-16 rounded-xl border border-gray-200 bg-white/95 px-3 py-2 shadow-md dark:border-gray-700 dark:bg-gray-950/95"
+            class="pointer-events-none absolute right-0 bottom-16 rounded-sm border border-blueprint bg-white/95 px-3 py-2 shadow-md dark:bg-gray-950/95"
           >
             <dt class="sr-only">
               Production products
             </dt>
             <dd class="text-center">
               <span class="block text-lg font-bold tabular-nums text-vue-700 dark:text-vue-300">{{ PRODUCTION_PRODUCT_COUNT }}</span>
-              <span class="block text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Products</span>
+              <span class="block font-mono text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">Products</span>
             </dd>
           </dl>
         </div>

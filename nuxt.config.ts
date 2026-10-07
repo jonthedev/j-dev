@@ -100,6 +100,13 @@ export default defineNuxtConfig({
         weights: ["400", "500", "600", "700"],
         display: "swap",
         preload: true
+      },
+      {
+        name: "JetBrains Mono",
+        provider: "google",
+        weights: ["400", "500"],
+        display: "swap",
+        preload: true
       }
     ]
   },

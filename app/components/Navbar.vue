@@ -1,12 +1,12 @@
 <template>
-  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-black/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+  <nav class="sticky top-0 z-50 border-b border-blueprint bg-white/80 backdrop-blur-md dark:bg-black/90">
     <UContainer>
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Name -->
         <div class="shrink-0">
           <NuxtLink
             to="/"
-            class="text-xl font-bold text-gray-900 dark:text-white hover:text-vue-600 dark:hover:text-vue-400 transition-colors"
+            class="font-mono text-sm font-medium tracking-[0.16em] text-gray-900 uppercase transition-colors hover:text-vue-600 dark:text-white dark:hover:text-vue-400"
             @click="setActiveHref('')"
           >
             JDev Online
@@ -20,7 +20,7 @@
               v-for="link in navigationLinks"
               :key="link.name"
               :to="link.href"
-              class="px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              class="blueprint-link rounded-sm px-3 py-2 font-mono text-xs font-medium tracking-wider uppercase transition-colors"
               :class="linkClass(link.href)"
               :aria-current="isActive(link.href) ? 'true' : undefined"
               @click="setActiveHref(link.href)"
@@ -34,7 +34,7 @@
               target="_blank"
               rel="noopener noreferrer"
               :aria-label="item.name"
-              class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 hover:text-vue-600 dark:hover:bg-gray-900 dark:hover:text-vue-400 transition-colors"
+              class="rounded-sm p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-vue-600 dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-vue-400"
             >
               <Icon
                 :icon="item.icon"
@@ -46,7 +46,7 @@
             <!-- Theme Toggle -->
             <button
               type="button"
-              class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+              class="rounded-sm p-2 text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
               :title="colorMode.value === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
               aria-label="Toggle light/dark mode"
               @click="toggleColorMode"
@@ -70,7 +70,7 @@
             target="_blank"
             rel="noopener noreferrer"
             :aria-label="item.name"
-            class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 hover:text-vue-600 dark:hover:bg-gray-900 dark:hover:text-vue-400 transition-colors"
+            class="rounded-sm p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-vue-600 dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-vue-400"
           >
             <Icon
               :icon="item.icon"
@@ -82,7 +82,7 @@
           <!-- Theme Toggle -->
           <button
             type="button"
-            class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+            class="rounded-sm p-2 text-gray-600 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-900"
             :title="colorMode.value === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
             aria-label="Toggle light/dark mode"
             @click="toggleColorMode"
@@ -95,7 +95,7 @@
             />
           </button>
           <button
-            class="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
+            class="rounded-sm p-2 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-gray-200"
             :aria-label="isMobileMenuOpen ? 'Close menu' : 'Open menu'"
             @click="isMobileMenuOpen = !isMobileMenuOpen"
           >
@@ -120,7 +120,7 @@
           v-for="link in navigationLinks"
           :key="link.name"
           :to="link.href"
-          class="block px-3 py-2 rounded-md text-base font-medium transition-colors"
+          class="blueprint-link block rounded-sm px-3 py-2 font-mono text-sm font-medium tracking-wider uppercase transition-colors"
           :class="linkClass(link.href)"
           :aria-current="isActive(link.href) ? 'true' : undefined"
           @click="onMobileNavClick(link.href)"
