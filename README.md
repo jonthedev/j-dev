@@ -25,8 +25,8 @@ Personal portfolio. Vue, Nuxt, Pinia, TypeScript. Built with Nuxt 4, Nuxt UI, an
 
 ```bash
 # Clone
-git clone https://github.com/jonthedev/jdev.git
-cd jdev
+git clone https://github.com/jonthedev/j-dev.git
+cd j-dev
 
 # Install
 pnpm install
