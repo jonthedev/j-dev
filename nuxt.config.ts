@@ -128,7 +128,7 @@ export default defineNuxtConfig({
     },
     families: [
       {
-        name: "Kanit",
+        name: "Rajdhani",
         provider: "google",
         weights: ["400", "500", "600", "700"],
         // Recorded for intent. The close hook is what ships optional,
