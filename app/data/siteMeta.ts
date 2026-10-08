@@ -21,8 +21,7 @@ export const SITE_HERO_STANCE = "Technical direction · Code literacy" as const
 
 export function heroLeadParagraphs() {
   return [
-    "I build production web products with TypeScript, modern frameworks and AI-native workflows.",
-    "I’m extending that same product-engineering mindset into backend services, Linux systems and cloud infrastructure."
+    "I combine 6+ years of high-scale UI experience with Go backends, Docker containers, and cloud infrastructure to build end-to-end, AI-native products."
   ]
 }
 
@@ -57,11 +56,11 @@ export const SITE_RESIDENCY
 export function aboutLeadParagraphs(now = new Date()) {
   const years = yearsInWords(yearsInCareer(now))
   return [
-    `For ${years} years, I have engineered and shipped production web products across media, mobility, finance and real-time trading, including work for ANWB, DPG Media’s Nationale Vacaturebank, Van Lanschot Kempen and Thalex.`,
-    "My foundation is product engineering across TypeScript, React and Vue. I now use AI-native workflows to work more fluidly across frameworks and extend that experience into backend services, Go, Linux, containers and infrastructure projects.",
-    "I’m interested in the layer underneath the interface: the systems, APIs and infrastructure that make products reliable in production.",
+    `I’ve spent ${years} years building interfaces for high-traffic products in media, mobility, finance, and real-time trading.`,
+    "I build them in TypeScript, with React and Vue, and more recently Svelte.",
+    "I’m carrying that same work into Go, Docker, and the systems around the product.",
     "At ToekomstTech, an Amsterdam hackerspace, I build alongside other makers and engineers who share the workshop. I also go to Amsterdam AI Tinkerers meetups to watch the demos, talk, and stay current with what people are shipping.",
-    "Originally from London, currently based in Amsterdam."
+    "I’m from London, and I live in Amsterdam now."
   ]
 }
 
