@@ -19,7 +19,7 @@
             />
           </div>
 
-          <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
             <SharedProjectCard
               v-for="(project, index) in supportingProjects"
               :key="project.id"
