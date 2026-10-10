@@ -19,15 +19,14 @@
         v-if="hasImage"
         class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900"
       >
-        <img
+        <NuxtImg
           :src="projectImageSrc"
           :alt="project.title"
-          width="800"
-          height="450"
+          sizes="sm:100vw md:100vw lg:600px"
           loading="lazy"
           decoding="async"
           class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-        >
+        />
       </div>
 
       <div
