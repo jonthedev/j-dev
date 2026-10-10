@@ -40,6 +40,12 @@
 
       <div class="grid flex-1 md:auto-rows-fr md:grid-cols-[minmax(0,7fr)_minmax(9.5rem,3fr)]">
         <div class="flex h-full flex-col px-4 py-4 sm:px-6 sm:py-6">
+          <p
+            v-if="project.industry"
+            class="mb-1 font-mono text-xs font-medium tracking-[0.18em] text-gray-500 uppercase dark:text-gray-400"
+          >
+            {{ project.industry }}
+          </p>
           <h3 class="mb-3 text-xl font-bold text-gray-900 dark:text-white">
             {{ project.title }}
           </h3>

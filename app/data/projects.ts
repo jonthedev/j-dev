@@ -15,6 +15,8 @@ export interface ProjectItem {
   url: string | null
   github: string | null
   title: string
+  /** Sector of the product. Omitted when the card is not a client industry. */
+  industry?: string
   categories: ProjectCategory[]
   intro: string
   bullets: string[]
@@ -42,6 +44,7 @@ export const featuredProject: ProjectItem = {
   url: "https://thalex.com/exchange/futures?underlying=BTCUSD&type=perpetual",
   github: null,
   title: "Thalex",
+  industry: "Trading",
   categories: ["Frontend"],
   intro: "Crypto derivatives exchange. I worked on and migrated the trading UI for futures and options, where the interface had to keep pace with the real-time order book.",
   bullets: [
@@ -95,6 +98,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.anwb.nl/verkeer",
     github: null,
     title: "ANWB Traffic Verkeer",
+    industry: "Mobility",
     categories: ["Frontend"],
     intro: "ANWB’s national traffic platform, used for live roads, incidents and routes across the Netherlands. Millions of people in the Netherlands open it. When the country moves at once, this surface has to stay fast.",
     bullets: [
@@ -125,6 +129,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.nationalevacaturebank.nl",
     github: null,
     title: "DPG Media",
+    industry: "Recruitment",
     categories: ["Frontend"],
     intro: "Nationale Vacaturebank, the national job board inside DPG Media. Employers and candidates hit it at volume, and the same UI is embedded across one of the largest publishing groups in the Netherlands.",
     bullets: [
@@ -155,6 +160,7 @@ export const pastProjects: ProjectItem[] = [
     url: "https://www.vanlanschotkempen.com/nl-nl",
     github: null,
     title: "Van Lanschot Kempen",
+    industry: "Banking",
     categories: ["Frontend"],
     intro: "Dutch private bank and wealth manager. I worked on client-facing products for high-net-worth and institutional customers during a full rebrand.",
     bullets: [
