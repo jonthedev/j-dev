@@ -59,8 +59,7 @@ export function aboutLeadParagraphs(now = new Date()) {
     `I’ve spent ${years} years building interfaces for high-traffic products in media, mobility, finance, and real-time trading.`,
     "I build them in TypeScript, with React and Vue, and more recently Svelte.",
     "I’m carrying that same work into Go, Docker, and the systems around the product.",
-    "At ToekomstTech, an Amsterdam hackerspace, I build alongside other makers and engineers who share the workshop. I also go to Amsterdam AI Tinkerers meetups to watch the demos, talk, and stay current with what people are shipping.",
-    "I’m from London, and I live in Amsterdam now."
+    "At ToekomstTech, an Amsterdam hackerspace, I build alongside other makers and engineers who share the workshop. I also go to Amsterdam AI Tinkerers meetups to watch the demos, talk, and stay current with what people are shipping."
   ]
 }
 
