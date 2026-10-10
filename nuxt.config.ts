@@ -1,6 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { readdir, readFile, writeFile } from "node:fs/promises"
-import { join } from "node:path"
 import {
   OG_IMAGE,
   SITE_BRAND,
@@ -9,21 +7,6 @@ import {
   SITE_TITLE,
   SITE_URL
 } from "./app/data/siteMeta"
-
-// @nuxt/fonts 0.13 drops `display` for Google families, so the build
-// still emits font-display:swap. Rewrite the shipped CSS after the build.
-const OPTIONAL_FONT_DISPLAY = /font-display:\s*swap/g
-
-async function forceOptionalFontDisplay(rootDir: string) {
-  const dir = join(rootDir, ".output/public/_nuxt")
-  const names = await readdir(dir).catch(() => [])
-  await Promise.all(names.filter(name => name.endsWith(".css")).map(async (name) => {
-    const path = join(dir, name)
-    const css = await readFile(path, "utf8")
-    const next = css.replace(OPTIONAL_FONT_DISPLAY, "font-display:optional")
-    if (next !== css) await writeFile(path, next)
-  }))
-}
 
 export default defineNuxtConfig({
 
@@ -104,13 +87,6 @@ export default defineNuxtConfig({
     preset: "static"
   },
 
-  hooks: {
-    async "close"(nuxt) {
-      if (nuxt.options.dev) return
-      await forceOptionalFontDisplay(nuxt.options.rootDir)
-    }
-  },
-
   eslint: {
     config: {
       stylistic: {
@@ -123,7 +99,6 @@ export default defineNuxtConfig({
   fonts: {
     defaults: {
       subsets: ["latin"],
-      // Optional fonts must not compete with the portrait and the entry CSS.
       preload: false
     },
     families: [
@@ -131,16 +106,16 @@ export default defineNuxtConfig({
         name: "Rajdhani",
         provider: "google",
         weights: ["400", "500", "600", "700"],
-        // Recorded for intent. The close hook is what ships optional,
-        // because this module ignores display on Google families.
-        display: "optional",
-        preload: false
+        // Swap applies the face during the first visit. Optional kept the
+        // system font until a refresh, which is the wrong first impression.
+        display: "swap",
+        preload: true
       },
       {
         name: "JetBrains Mono",
         provider: "google",
         weights: ["400", "500"],
-        display: "optional",
+        display: "swap",
         preload: false
       }
     ]
