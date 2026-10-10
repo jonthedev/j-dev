@@ -74,32 +74,14 @@
             >
               <button
                 type="button"
-                class="group flex flex-col items-center gap-3 rounded-sm px-2 py-1 text-center"
+                class="group inline-flex items-center gap-1.5 rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm font-semibold text-gray-900 shadow-sm dark:border-gray-700 dark:bg-gray-950 dark:text-white"
               >
-                <span
-                  class="flex items-center -space-x-5"
-                  aria-hidden="true"
-                >
-                  <img
-                    v-for="item in bootdevCredentials"
-                    :key="item.id"
-                    :src="item.imageSrc"
-                    alt=""
-                    width="96"
-                    height="48"
-                    class="h-10 w-18 rounded-md border border-gray-200 object-cover object-top shadow-sm ring-1 ring-black/5 dark:border-gray-700 dark:ring-white/10 sm:h-12 sm:w-24"
-                  >
-                </span>
-                <span
-                  class="inline-flex items-center gap-1.5 rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm font-semibold text-gray-900 shadow-sm dark:border-gray-700 dark:bg-gray-950 dark:text-white"
-                >
-                  View {{ bootdevCredentials.length }} earned certificates
-                  <Icon
-                    icon="lucide:chevron-down"
-                    class="size-4 text-gray-500 transition-transform group-aria-expanded:rotate-180 dark:text-gray-400"
-                    :class="{ 'rotate-180': earnedOpen }"
-                  />
-                </span>
+                View {{ bootdevCredentials.length }} earned certificates
+                <Icon
+                  icon="lucide:chevron-down"
+                  class="size-4 text-gray-500 transition-transform group-aria-expanded:rotate-180 dark:text-gray-400"
+                  :class="{ 'rotate-180': earnedOpen }"
+                />
               </button>
 
               <template #body>
@@ -116,14 +98,15 @@
                         class="blueprint-scan"
                         aria-hidden="true"
                       />
-                      <img
+                      <NuxtImg
                         :src="item.imageSrc"
                         :alt="item.alt"
-                        width="450"
-                        height="253"
+                        width="480"
+                        height="270"
+                        format="webp"
                         loading="lazy"
                         class="h-24 w-full object-cover object-top sm:h-28"
-                      >
+                      />
                       <div class="flex flex-1 flex-col px-3 py-3 sm:px-4">
                         <UBadge
                           color="primary"
