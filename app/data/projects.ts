@@ -102,7 +102,7 @@ export const pastProjects: ProjectItem[] = [
     categories: ["Frontend"],
     intro: "ANWB’s national traffic platform, used for live roads, incidents and routes across the Netherlands. Millions of people in the Netherlands open it. When the country moves at once, this surface has to stay fast.",
     bullets: [
-      "Refactored the Traffic Verkeer style system from Less into styled-components on a product that absorbs national traffic spikes.",
+      "Moved the Traffic Verkeer style system from Less to styled-components and applied the new brand, without changing how the product worked.",
       "The site won Best Website and Most Popular Website at Website van het Jaar 2022."
     ],
     tech: [
