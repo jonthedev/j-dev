@@ -111,18 +111,6 @@
               fetchpriority="high"
               class="h-56 w-56 rounded-full object-cover ring-4 ring-white shadow-lg sm:h-72 sm:w-72 dark:ring-gray-900"
             >
-            <p
-              class="absolute inset-x-0 -bottom-4 mx-auto flex w-fit items-center gap-2 rounded-sm border border-blueprint bg-white px-3 py-1.5 font-mono text-xs font-medium text-gray-800 shadow-sm dark:bg-gray-950 dark:text-gray-100"
-            >
-              <span
-                class="relative flex h-2.5 w-2.5"
-                aria-hidden="true"
-              >
-                <span class="hero-status-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
-              </span>
-              {{ SITE_AVAILABLE_STATUS }}
-            </p>
           </div>
 
           <dl
@@ -159,7 +147,6 @@ import {
   heroLeadParagraphs,
   PRODUCTION_PRODUCT_COUNT,
   SITE_AVAILABILITY,
-  SITE_AVAILABLE_STATUS,
   SITE_CURRENT_FOCUS,
   SITE_HEADLINE,
   SITE_HERO_STANCE,
@@ -222,25 +209,12 @@ const heroLead = heroLeadParagraphs()
 
 @media (prefers-reduced-motion: reduce) {
   .hero-cursor,
-  .hero-geometry-square,
-  .hero-status-ping {
+  .hero-geometry-square {
     animation: none;
   }
 
   .hero-cursor {
     transform: translate(18vw, 28vh);
-  }
-}
-
-.hero-status-ping {
-  animation: hero-status-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes hero-status-ping {
-  75%,
-  100% {
-    transform: scale(2);
-    opacity: 0;
   }
 }
 </style>

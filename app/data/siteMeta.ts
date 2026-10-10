@@ -41,7 +41,7 @@ export const SITE_DESCRIPTION
 export const SITE_AVAILABILITY
   = "Open to full-time roles and selective B2B contracts via JDev Online."
 
-/** Short status on the hero portrait. */
+/** Short status beside the navbar wordmark. */
 export const SITE_AVAILABLE_STATUS = "Available" as const
 
 /** Shorter repeat for Contact / Footer. Full line lives in the hero. */

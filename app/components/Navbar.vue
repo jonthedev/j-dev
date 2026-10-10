@@ -3,7 +3,7 @@
     <UContainer>
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Name -->
-        <div class="shrink-0">
+        <div class="relative shrink-0">
           <NuxtLink
             to="/"
             class="font-mono text-sm font-medium tracking-[0.16em] text-gray-900 uppercase transition-colors hover:text-vue-600 dark:text-white dark:hover:text-vue-400"
@@ -11,6 +11,20 @@
           >
             JDev Online
           </NuxtLink>
+          <span
+            class="pointer-events-none absolute -top-2 -right-3 flex h-2.5 w-2.5"
+            role="status"
+          >
+            <span class="sr-only">{{ SITE_AVAILABLE_STATUS }}</span>
+            <span
+              class="nav-status-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+              aria-hidden="true"
+            />
+            <span
+              class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"
+              aria-hidden="true"
+            />
+          </span>
         </div>
 
         <!-- Desktop Navigation -->
@@ -134,6 +148,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue"
+import { SITE_AVAILABLE_STATUS } from "~/data/siteMeta"
 
 defineOptions({ name: "AppNavbar" })
 
@@ -173,3 +188,23 @@ function onMobileNavClick(href: string) {
   isMobileMenuOpen.value = false
 }
 </script>
+
+<style scoped>
+.nav-status-ping {
+  animation: nav-status-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes nav-status-ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-status-ping {
+    animation: none;
+  }
+}
+</style>
